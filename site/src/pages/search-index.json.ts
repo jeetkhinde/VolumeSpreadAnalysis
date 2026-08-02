@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import glossary from '../data/glossary.json';
+import annotations from '../data/annotations.json';
 
 const strip = (s: string) =>
   s
@@ -15,12 +16,20 @@ export const GET: APIRoute = async () => {
   const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   const book = (await getCollection('book')).sort((a, b) => a.data.order - b.data.order);
 
-  const docs = book.map((e) => ({
-    title: e.data.title,
-    section: e.data.section,
-    url: `${base}/read/${e.id.replace(/^\d+-/, '')}/`,
-    text: strip(e.body ?? ''),
-  }));
+  const notes = annotations as Record<string, any>;
+  const docs = book.map((e) => {
+    const slug = e.id.replace(/^\d+-/, '');
+    const n = notes[slug];
+    // The plain-English summary and takeaways are searchable too, so a reader
+    // can find a chapter by the words they'd actually use.
+    const extra = n ? ` ${n.plain} ${n.remember.join(' ')}` : '';
+    return {
+      title: e.data.title,
+      section: e.data.section,
+      url: `${base}/read/${slug}/`,
+      text: strip(e.body ?? '') + extra,
+    };
+  });
 
   for (const g of glossary as any[]) {
     docs.push({

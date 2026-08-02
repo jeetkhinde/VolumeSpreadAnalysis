@@ -11,6 +11,7 @@ import shutil
 import unicodedata
 
 import paths as cfg
+import prune
 import toc
 from PIL import Image
 
@@ -89,6 +90,8 @@ def blocks_for_pages(pages):
     prev = None
     for pdfpage in pages:
         items = page_items(pdfpage)
+        para_gap = page_para_gap(items)
+        first_on_page = True
         i = 0
         while i < len(items):
             it = items[i]
@@ -115,23 +118,61 @@ def blocks_for_pages(pages):
             is_bullet = bool(BULLET.match(txt))
             is_num = bool(NUMBERED.match(txt)) and l['left'] < 130
 
-            if is_sub:
-                blocks.append({'t': 'subhead', 'text': clean(txt)})
-                cur = None
+            # A sub-heading must *start* a block. A line sitting at normal line
+            # pitch below its predecessor is a wrapped continuation, even when
+            # its glyph metrics look large — parentheses and descenders inflate
+            # the median height on short lines. Across a page break the gap is
+            # meaningless (it goes negative), so treat the first line of a page
+            # as starting a block; merge_page_breaks rejoins real continuations.
+            if is_sub and (first_on_page or gap > para_gap):
+                cur = {'t': 'subhead', 'text': clean(txt)}
+                blocks.append(cur)
             elif is_bullet:
                 cur = {'t': 'bullet', 'text': clean(BULLET.sub('', txt))}
                 blocks.append(cur)
             elif is_num:
                 cur = {'t': 'number', 'text': clean(txt)}
                 blocks.append(cur)
-            elif gap > PARA_GAP or cur is None:
+            elif gap > para_gap or cur is None:
                 cur = {'t': 'para', 'text': clean(txt)}
                 blocks.append(cur)
             else:
                 cur['text'] = join_lines([cur['text'], txt])
             prev = l
+            first_on_page = False
             i += 1
-    return blocks
+    return merge_wrapped_subheads(blocks)
+
+
+def page_para_gap(items):
+    """Paragraph threshold for one page, from its own body line pitch.
+
+    Leading is not constant across the book (11.5pt in the chapters, 17pt on
+    the Trading Facts page), so a fixed threshold either splits wrapped lines
+    or glues paragraphs together depending on the page.
+    """
+    tops = [it['l']['top'] for it in items
+            if it['kind'] == 'line' and it['l']['size'] < TERM_SIZE]
+    gaps = sorted(a - b for a, b in zip(tops, tops[1:]) if 4 < a - b < 60)
+    if not gaps:
+        return PARA_GAP
+    pitch = gaps[len(gaps) // 2]
+    return max(14.0, pitch * 1.45)
+
+
+def merge_wrapped_subheads(blocks):
+    """Join a heading that wrapped onto more than one line.
+
+    Two sub-headings never sit back-to-back in this book — there is always body
+    text between them — so consecutive subhead blocks are one wrapped heading.
+    """
+    out = []
+    for b in blocks:
+        if b['t'] == 'subhead' and out and out[-1]['t'] == 'subhead':
+            out[-1]['text'] = join_lines([out[-1]['text'], b['text']])
+        else:
+            out.append(b)
+    return out
 
 
 def merge_page_breaks(blocks):
@@ -225,6 +266,7 @@ def main():
     os.makedirs(FIGS_OUT, exist_ok=True)
 
     manifest = []
+    prune_hits = []
     order = 0
 
     def emit(title, section, start, end):
@@ -232,8 +274,14 @@ def main():
         order += 1
         pages = [toc.printed_to_pdf(p) for p in range(start, end + 1)]
         blocks = merge_page_breaks(blocks_for_pages(pages))
-        body = to_mdx(blocks)
         slug = slugify(title)
+        # drop a sub-heading that merely repeats the chapter title
+        while blocks and blocks[0]['t'] == 'subhead' and \
+                blocks[0]['text'].rstrip('!?.').lower() == title.rstrip('!?.').lower():
+            blocks = blocks[1:]
+        blocks, hits = prune.apply(slug, blocks)
+        prune_hits.extend(hits)
+        body = to_mdx(blocks)
         fm = {'title': title, 'section': section, 'order': order,
               'printedStart': start, 'printedEnd': end,
               'figures': body.count('<Figure')}
@@ -267,6 +315,13 @@ def main():
         im = Image.open(src).convert('RGB')
         im.save(os.path.join(FIGS_OUT, name), quality=WEBP_QUALITY, method=6)
 
+    unmatched = [h for h in prune_hits if h[3] == 0]
+    if unmatched:
+        for slug, kind, match, _ in unmatched:
+            print(f'  ✗ prune rule never matched: [{slug}] {kind} {match[:70]!r}')
+        raise SystemExit('prune rules out of date — fix tools/prune.py')
+    print(f'pruned   : {len(prune_hits)} promo passages '
+          f'({sum(h[3] for h in prune_hits)} blocks touched)')
     print(f'chapters : {len(manifest)}')
     print(f'words    : {sum(m["words"] for m in manifest):,}')
     print(f'figures  : {sum(m["figures"] for m in manifest)} in chapters, '

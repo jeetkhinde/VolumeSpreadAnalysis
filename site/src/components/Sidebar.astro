@@ -35,6 +35,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   ))}
 
   <div class="sidebar__section">Reference</div>
+  <a class="sidebar__link" href={`${base}/key-points/`} aria-current={current === 'key-points' ? 'page' : undefined}>
+    <span class="sidebar__num">★</span><span>Key Points</span>
+  </a>
   <a class="sidebar__link" href={`${base}/glossary/`} aria-current={current === 'glossary' ? 'page' : undefined}>
     <span class="sidebar__num">§</span><span>Glossary of Terms</span>
   </a>

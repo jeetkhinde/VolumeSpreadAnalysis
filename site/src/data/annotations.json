@@ -1,0 +1,561 @@
+{
+  "preamble": {
+    "plain": "This is the setup note. It tells you the charts come from the author's own software, and states the one idea the whole book rests on: volume tells you how much activity happened, and the price spread tells you what that activity achieved. You need both together. Looking at either one alone will mislead you.",
+    "remember": [
+      "Volume = how much activity. Spread = what the activity achieved.",
+      "Neither number means anything on its own. Always read them as a pair.",
+      "The goal is to spot what professional operators are doing, not to predict news."
+    ]
+  },
+  "introduction": {
+    "plain": "Trading is the biggest business in the world, yet most people in it cannot say why markets rise or fall. The author's claim is simple: prices move because supply and demand get out of balance, and that imbalance is created by large professional operators. If you learn to read volume and spread, you can see their footprints on the chart.",
+    "remember": [
+      "Markets move on supply/demand imbalance, not on news.",
+      "That imbalance is created by big money, and it leaves visible marks on the chart.",
+      "Most traders lose because they never learn to read those marks."
+    ]
+  },
+  "random-walks-and-other-misconceptions": {
+    "plain": "Many people believe markets move randomly, because moves often seem to have no connection to the news. The author disagrees. Moves look random only because you are watching the wrong thing. Once you read volume alongside spread, the logic behind sudden moves becomes visible.",
+    "remember": [
+      "Markets look random only when you are reading the wrong signals.",
+      "Bear markets can happen in good times, and bull markets in bad times. News is not the cause.",
+      "Charts read correctly are not a gamble."
+    ]
+  },
+  "what-is-the-market": {
+    "plain": "An index is just a basket of individual shares, usually the biggest and most actively traded ones. The important mindset shift here: for trading, forget what a company is 'really worth'. What matters is what the price is doing and who is behind that movement.",
+    "remember": [
+      "An index is a weighted average of its constituent stocks.",
+      "For trading, intrinsic value is not the point. Price behaviour is.",
+      "Investing and trading are two different jobs. Do not mix them up."
+    ]
+  },
+  "the-market-professionals": {
+    "plain": "Every business with money in it has professionals, and markets are no different. But 'professional' here does not mean your fund manager or pension company. It means the operators who trade for a living off price differences: syndicates, specialists, market-makers, floor traders.",
+    "remember": [
+      "'Professional' means someone who lives off the price difference, not someone with a job title.",
+      "Fund managers are not the smart money the book talks about.",
+      "These operators specialise, just like doctors do."
+    ]
+  },
+  "a-special-word-about-market-makers": {
+    "plain": "Market-makers do not control the market. They respond to it and take whatever opportunity it hands them. When conditions get thin or panicky, that opportunity gets bigger, and they use it. Understanding this stops you treating them as an all-powerful enemy.",
+    "remember": [
+      "Market-makers react to conditions. They do not dictate them.",
+      "Thin trading and panic selling are their best opportunities.",
+      "They can only push price around when it is cheap for them to do so."
+    ]
+  },
+  "volume-the-key-to-the-truth": {
+    "plain": "Volume is the single most important thing a professional watches, and the author points out that exchanges have historically made true volume data hard to get. That should tell you how valuable it is. Volume is the record of activity that actually happened, and it cannot be faked by a headline.",
+    "remember": [
+      "Volume is a record of real activity. News is opinion.",
+      "Price and volume are linked, and the relationship is not simple.",
+      "If volume data is hard to get, ask yourself who benefits from that."
+    ]
+  },
+  "further-understanding-volume": {
+    "plain": "Volume by itself is just a number. It only becomes information when you relate it to what the price did on that same bar. Once you start doing that, you are trading on observed facts instead of on stories.",
+    "remember": [
+      "Never read a volume bar without looking at the price bar above it.",
+      "Volume is the powerhouse. Price action is the result.",
+      "Facts over 'news' is the whole shift."
+    ]
+  },
+  "what-is-bullish-and-bearish-volume": {
+    "plain": "The basic definitions are easy. Bullish volume means volume rises on up-moves and falls on down-moves. Bearish volume is the opposite: volume rises on down-moves and falls on up-moves. The author warns that knowing just this is not enough to trade on. It is only the starting point.",
+    "remember": [
+      "Bullish volume: rising on up-moves, falling on down-moves.",
+      "Bearish volume: rising on down-moves, falling on up-moves.",
+      "These definitions are a foundation, not a trading signal by themselves."
+    ]
+  },
+  "accumulation-and-distribution": {
+    "plain": "Large operators cannot just buy a big position in one go. That would push the price up against themselves. So they run a planned campaign, buying quietly over time whenever selling appears. That is accumulation. Distribution is the same process in reverse: selling into strength while the public is eager to buy.",
+    "remember": [
+      "Big money buys over time, absorbing selling, so the price does not run away from it.",
+      "Accumulation happens at the bottom, quietly. Distribution happens at the top, into good news.",
+      "These two processes are what create bull and bear markets."
+    ],
+    "diagram": "cycle"
+  },
+  "strong-and-weak-holders": {
+    "plain": "Strong holders are the professionals with capital and a plan. Weak holders are everyone who bought without one and will panic out at the first scare. Markets move stock from weak hands to strong hands at the bottom, and back again at the top.",
+    "remember": [
+      "Strong holders: deep pockets, a plan, and patience.",
+      "Weak holders: no plan, easily frightened out.",
+      "A sustained rise needs stock transferred from weak to strong hands first."
+    ]
+  },
+  "resistance-and-crowd-behaviour": {
+    "plain": "Resistance is simply people selling as soon as a rally starts. Often these are traders trapped at higher prices from before, waiting to get their money back. Until that overhead supply is cleared out, rallies keep stalling in the same area.",
+    "remember": [
+      "Resistance = trapped holders selling into any rally to break even.",
+      "Old trading areas above the current price are supply waiting to hit you.",
+      "Supply must be removed before a market can move up cleanly."
+    ]
+  },
+  "supply-and-demand": {
+    "plain": "The professional's whole focus is on the state of supply and demand. He does not have better information than you. He just reads volume, price action and spread properly. This chapter names the method: Volume Spread Analysis, or VSA.",
+    "remember": [
+      "The professional's edge is reading skill, not secret information.",
+      "Everything reduces to the state of supply and demand.",
+      "VSA = reading volume, spread and close together."
+    ]
+  },
+  "the-basics-of-market-reading": {
+    "plain": "This is the practical starting point. Look back over several months of price action first. Each bar shows a high, a low, and a closing price. Then read three things on every bar: how much volume, how wide the spread, and where the price closed within that spread.",
+    "remember": [
+      "Always read the background first, going back months.",
+      "Volume only matters relative to recent volume, never in absolute terms.",
+      "Three readings per bar: volume, spread width, and close position."
+    ],
+    "diagram": "bar-anatomy"
+  },
+  "how-to-tell-if-a-market-is-weak-or-strong": {
+    "plain": "This is one of the most important chapters in the book. Market-makers need stock to trade with. If they do not have enough, they must mark prices down to shake it loose from weak holders. So a sharp move down on high volume that then refuses to fall further is often buying, not selling.",
+    "remember": [
+      "Strength appears on down-bars. Weakness appears on up-bars.",
+      "High volume down, then no further fall = professionals were buying.",
+      "Always ask what happened on the NEXT bar. That confirms the reading."
+    ]
+  },
+  "how-to-identify-buying-and-selling": {
+    "plain": "For a market to rise you need real buying, seen as an up-bar with increasing volume. But there is a limit. If volume becomes excessive on an up-bar, that extra volume is professionals selling into the buying, not more demand.",
+    "remember": [
+      "Healthy up-move: up-bar, increasing but not excessive volume.",
+      "Excessive volume on an up-bar means supply is entering.",
+      "Too much volume on the way up is a warning, not a confirmation."
+    ]
+  },
+  "how-to-identify-lack-of-demand": {
+    "plain": "'No demand' is the most common weakness signal and it is easy to spot: an up-bar with a narrow spread on low volume. The professionals simply are not participating in the rise. If they are not buying, the move up has nothing behind it.",
+    "remember": [
+      "No demand = up-bar + narrow spread + low volume.",
+      "It means the professionals are not taking part in the rally.",
+      "Never trade it alone. Check the background and wait for confirmation."
+    ]
+  },
+  "testing-supply": {
+    "plain": "A test is the best low-volume buy signal in the book. Price gets marked down hard during the bar, but then recovers to close near the high, on low volume. Low volume on the dip means there is no selling left to hit. A large operator does this deliberately to check the road is clear before marking prices up.",
+    "remember": [
+      "Test = marked down during the bar, closes near the high, on LOW volume.",
+      "Low volume on the dip proves supply has dried up.",
+      "A test is only bullish with strength behind it, such as a selling climax or an uptrend.",
+      "A test on HIGH volume has failed. Supply is still present."
+    ]
+  },
+  "pushing-up-through-supply": {
+    "plain": "When price pushes up into an old trading range, it meets trapped sellers. To get through, professional money has to absorb that supply, which shows up as high volume. If the market keeps going after that effort, the supply has been cleared.",
+    "remember": [
+      "Old trading ranges are known supply levels.",
+      "Pushing through them requires high volume, which is the absorption.",
+      "If price continues after the high volume, supply has been beaten."
+    ]
+  },
+  "high-volume-on-market-tops": {
+    "plain": "The media treats new highs on huge volume as proof the rally continues. The author calls this dangerous. High volume at a top, when the news is at its best, is usually professionals handing stock over to an excited public.",
+    "remember": [
+      "Very high volume at new highs is a warning, not a confirmation.",
+      "Good news at the top is the cover under which distribution happens.",
+      "High volume alone means nothing. Look at spread and close too."
+    ]
+  },
+  "effort-versus-results": {
+    "plain": "This is the mental model behind everything else. Effort is volume. Results are the price movement it produces. Big effort should give a big result. When you see huge volume but the price barely moves, an opposing force is absorbing it, and that tells you who is really in control.",
+    "remember": [
+      "Effort = volume. Result = the price move it caused.",
+      "Effort up: wide spread up, closing high, on increased (not excessive) volume.",
+      "Big effort with no result means the opposite side is absorbing it.",
+      "This principle explains climaxes, tests, up-thrusts and absorption alike."
+    ],
+    "diagram": "effort-result"
+  },
+  "the-path-of-least-resistance": {
+    "plain": "A simple way to think about direction. If selling has dried up on a down-move, the easiest path is up. If buying has dried up on an up-move, the easiest path is down. Markets move where there is least resistance.",
+    "remember": [
+      "Selling decreasing on a down-move = market wants to go up.",
+      "Buying decreasing on an up-move = market wants to fall.",
+      "Ask which direction has less opposition, rather than trying to predict."
+    ]
+  },
+  "markets-can-be-marked-up-or-down": {
+    "plain": "Big moves from one price level to another happen fast, and that speed is deliberate. It is designed to lock you into a bad position or lock you out of a good one before you can react. Expect it rather than being surprised by it.",
+    "remember": [
+      "Rapid mark-ups and mark-downs are engineered, not accidental.",
+      "Their purpose is to trap you in or out within a bar or two.",
+      "Plan your response in advance, because there is no time to think during one."
+    ]
+  },
+  "volume-surges-in-related-markets": {
+    "plain": "Professionals who see strength or weakness in the cash market immediately act in related markets, especially options. So a sudden volume surge in a related market can warn you about a move before it shows up where you are looking.",
+    "remember": [
+      "Related markets (options, futures) can signal before the cash market moves.",
+      "Watch for unusual volume surges there.",
+      "The same operators are active across all of them at once."
+    ]
+  },
+  "using-different-timeframes": {
+    "plain": "When a daily bar looks unclear, drop to an intraday chart of that same day. The smaller timeframe often shows exactly where the volume came in and how price responded, filling in the detail the daily bar hides.",
+    "remember": [
+      "An unclear daily bar often becomes obvious on an intraday chart.",
+      "Lower timeframes reveal where inside the bar the activity happened.",
+      "Use timeframes together, not as alternatives."
+    ]
+  },
+  "the-relationship-between-the-cash-and-futures-price": {
+    "plain": "Futures swing above and below the cash price, but the cash price sets the limits. Large houses with low costs arbitrage any gap away, which keeps the two tied together. Useful to know so you do not misread a futures move as independent.",
+    "remember": [
+      "Cash price sets the boundaries. Futures oscillate around it.",
+      "Arbitrage by large dealers keeps them aligned.",
+      "Do not read a futures divergence as a signal in itself."
+    ]
+  },
+  "manipulation-of-the-markets": {
+    "plain": "Markets are manipulated, and the author says you should simply expect it. Rules allow large deals to be reported late, so what you see is incomplete. Good and bad news gets used to improve professional positions. This is not a conspiracy theory, it is how the business works.",
+    "remember": [
+      "Expect manipulation. Do not be shocked by it.",
+      "Large trades can be reported with a delay, so your data is incomplete.",
+      "News gets used as cover for positioning."
+    ]
+  },
+  "introduction-to-trends": {
+    "plain": "The section on trends starts here. The core instruction is to trade with the professional consensus rather than against it. Trend lines are the tool for seeing which way that consensus is currently pointing.",
+    "remember": [
+      "Trade with the consensus of professional opinion, not against it.",
+      "Trends give you the background that every signal must be read against.",
+      "This is the most subjective part of the method. Treat it as context."
+    ]
+  },
+  "constructing-trend-lines": {
+    "plain": "Trend lines are drawn to show the direction of the underlying trend and to mark where price has repeatedly turned. Old lines from far back in the chart's history still matter, especially where several of them overlap.",
+    "remember": [
+      "Draw lines to show direction and to mark repeated turning points.",
+      "Old trend lines still act as support and resistance.",
+      "Overlapping historical lines mark the strongest areas."
+    ]
+  },
+  "bottoms-and-tops": {
+    "plain": "Simple structural rules. Consecutively higher lows are a medium-term sign of strength. Consecutively lower highs are the mirror image, showing weakness. These give you the trend background against which you read individual bars.",
+    "remember": [
+      "Higher lows in sequence = medium-term strength.",
+      "Lower highs in sequence = medium-term weakness.",
+      "Use structure as background, then read individual bars inside it."
+    ]
+  },
+  "trend-scaling": {
+    "plain": "Trends are fractal. A chart looks jagged at every zoom level, so 'the trend' depends entirely on the timeframe you are observing from. You must fix your point of observation before the word trend means anything.",
+    "remember": [
+      "Trends look the same at every scale, like a coastline.",
+      "'The trend' is meaningless until you fix a timeframe.",
+      "Decide your timeframe first, then read the trend within it."
+    ]
+  },
+  "why-do-trend-lines-appear-to-work": {
+    "plain": "An honest chapter. The author admits this is observation rather than proof. The suggested explanation involves long moving averages and where traders' perceived value sits, which creates repeated buying and selling at the same lines.",
+    "remember": [
+      "The author openly states this is not mathematically proven.",
+      "The explanation is about trader perception, not a physical law.",
+      "Treat trend lines as useful context, not as a mechanical rule."
+    ]
+  },
+  "using-trends-to-determine-overbought-and-oversold-levels": {
+    "plain": "The space between the upper and lower trend lines is the trading range. Near the top of the range the market is overbought, near the bottom it is oversold. Overbought and oversold are relative to the channel, not absolute values.",
+    "remember": [
+      "Overbought/oversold is defined by position in the channel.",
+      "It is relative, never an absolute number.",
+      "A sideways market keeps trading in its range until effort breaks it out."
+    ]
+  },
+  "perceived-value-and-trend-lines": {
+    "plain": "Using three traders as an example, the author shows that different people form different ideas of what a fair price is, based on their own past trades. Those clustered opinions are what create resistance at a line.",
+    "remember": [
+      "Resistance is built out of many traders' remembered prices.",
+      "Your own past trades shape what you think is 'cheap' or 'dear'.",
+      "Trend lines work because opinions cluster, not because of magic."
+    ]
+  },
+  "introducing-trend-clusters": {
+    "plain": "A trend cluster is an area where many old trend lines, drawn from history, happen to intersect. The claim is that price reacts noticeably at these areas. This came out of automating trend drawing across large amounts of history.",
+    "remember": [
+      "A cluster = many old trend lines intersecting in one area.",
+      "Clusters mark unusually strong support/resistance zones.",
+      "They are built only from lines starting before the current view."
+    ]
+  },
+  "using-trend-clusters": {
+    "plain": "The practical rules for clusters. Do not mentally extend a line of clusters past where it actually ends, because beyond that the trends are diverging. And clusters only matter when price is actually near them.",
+    "remember": [
+      "Never extend a cluster line beyond its natural end.",
+      "Clusters only matter when price comes close to them.",
+      "Ignore clusters sitting far away from current price action."
+    ]
+  },
+  "analysing-volume-near-a-trend-line": {
+    "plain": "Changing a trend takes effort, and effort costs money. You usually see that effort as price approaches a trend line, not exactly at it. Wide spreads and increased volume near the line show someone is trying to break it.",
+    "remember": [
+      "Effort appears as price approaches the line, not on the line itself.",
+      "Effort looks like wide spreads with increased volume.",
+      "No effort near a line means no break is likely."
+    ]
+  },
+  "pushing-through-supply-support-lines": {
+    "plain": "A wide spread up on high volume that punches through the top of a channel, followed by a bar that holds or goes higher, points to higher prices. A low-volume down-bar afterwards, which is a test, confirms it.",
+    "remember": [
+      "Breakout: wide spread up, high volume, through the channel top.",
+      "The next bar must hold or extend the move.",
+      "A low-volume down-bar afterwards confirms the break."
+    ]
+  },
+  "absorption-volume-and-lower-trend-lines": {
+    "plain": "High volume on a down-bar at the lower trend line looks like selling. But if the next bar is up, that volume must have contained buying that absorbed the selling. That makes it a sign of strength.",
+    "remember": [
+      "Absorption = high volume down-bar at the lower line, next bar UP.",
+      "The up-bar afterwards is what proves buying was inside the volume.",
+      "Without the follow-up bar, you cannot call it absorption."
+    ]
+  },
+  "what-starts-a-bull-market": {
+    "plain": "Bull markets start in gloom, not optimism. Prices fall for a long time until weak holders finally give up and dump their stock. Professionals buy that panic. Once stock has moved into strong hands, there is nothing left to sell, and the market can rise.",
+    "remember": [
+      "Bull markets begin at the point of maximum pessimism.",
+      "They need weak holders to have already sold out.",
+      "No supply left = the market can rise on little buying."
+    ]
+  },
+  "the-forces-of-supply-and-demand-move-the-markets": {
+    "plain": "The author pushes back on the simple version of 'more buyers than sellers'. Every trade has a buyer and a seller, so it is not about counting. What matters is who is buying and selling, and whether the buying is professional or public.",
+    "remember": [
+      "Every trade has both a buyer and a seller. Counting them is meaningless.",
+      "What matters is WHO is on each side.",
+      "Professional buying supports a move. Public buying does not."
+    ]
+  },
+  "it-all-starts-with-a-campaign": {
+    "plain": "Acquiring a large position is a campaign requiring planning, patience and money. One useful tell: the stock refuses to fall when the index falls. That reluctance shows someone is supporting it.",
+    "remember": [
+      "Large positions are built as planned campaigns over time.",
+      "A stock that will not fall when the index falls is being supported.",
+      "Relative strength against the index is an accumulation clue."
+    ]
+  },
+  "how-to-recognise-the-likely-market-top": {
+    "plain": "After a long rise, into new high ground, watch for high volume with a narrow spread on an up-bar. That is a strong sign of weakness. If the huge volume were genuine buying, the spread would have been wide and price would have travelled.",
+    "remember": [
+      "Top signal: new high ground + up-bar + narrow spread + high volume.",
+      "The narrow spread is the giveaway. Real buying would widen it.",
+      "Expect good news and euphoria at exactly this point."
+    ]
+  },
+  "how-to-recognise-the-likely-end-of-a-rally": {
+    "plain": "The author lists the five supply signals that stop an up-move: a buying climax, a failed test, narrow spreads on high volume up-bars, up-thrusts, and no-demand bars. If you are long, these five are what you watch for.",
+    "remember": [
+      "The five: buying climax, failed test, narrow spread on high volume up-bar, up-thrust, no demand.",
+      "A failed test is one that is NOT on low volume.",
+      "Any of these slows or stops a bullish move."
+    ]
+  },
+  "up-thrusts-in-more-detail": {
+    "plain": "An up-thrust pushes price up above recent highs, often on good news and round numbers, triggering stops and pulling buyers in. Then it closes back down near the low of the bar on high volume. Professionals sold into that excitement. You rarely see up-thrusts in genuinely strong markets.",
+    "remember": [
+      "Up-thrust = pushed up, closes near the LOW of the bar, on high volume.",
+      "It appears after a rally, at tops, and is a sign of weakness.",
+      "Its purpose is to trigger stops and trap buyers.",
+      "Rarely seen in strong markets, so the background matters."
+    ]
+  },
+  "the-selling-climax-and-professional-support": {
+    "plain": "A selling climax shows ultra-wide spreads down on exceptionally high volume, closing on or near the high of the bar. Bad news makes it more bullish, not less, because the panic is what lets professionals buy heavily. A reverse up-thrust is the same idea in milder form.",
+    "remember": [
+      "Selling climax = ultra-wide spread down + very high volume + close on/near the HIGH.",
+      "Bad news makes it more bullish, because that is what creates the panic.",
+      "The close near the high is what proves buying came in.",
+      "A reverse up-thrust is a less intense version of the same thing."
+    ]
+  },
+  "the-buying-climax-and-professional-selling": {
+    "plain": "The mirror image, shown on the Nikkei top of 1989. Ultra-high volume on up-weeks, at the end of a long rise, and the market cannot go higher afterwards. The crucial detail: the high volume must come in on up-bars. That is where the selling hides.",
+    "remember": [
+      "Buying climax = very high volume on UP-bars after a long rise.",
+      "True weakness always appears on an up-bar.",
+      "If price cannot make progress on that volume, it was distribution.",
+      "This is what creates the bear market that follows."
+    ]
+  },
+  "a-buying-climax-in-an-individual-stock": {
+    "plain": "Same pattern in a single stock: wide spreads up on very high volume, but price does not respond upward. Your judgement gets clouded by the good news and the fast mark-up. That is exactly the design.",
+    "remember": [
+      "Wide spread up + very high volume + no upward response = climax.",
+      "Good news at this moment is the trap, not the confirmation.",
+      "Effort without result is the tell."
+    ]
+  },
+  "from-bear-to-bull-markets": {
+    "plain": "A historical comparison written in the early 1990s, contrasting the Japanese bear market after 1989 with the Dow's bull run. The point is that the same volume and spread principles explain both, in any market and any era.",
+    "remember": [
+      "The principles are not market-specific or era-specific.",
+      "Written in the early 1990s. Read the examples as history.",
+      "Opposite outcomes in two markets, same underlying logic."
+    ]
+  },
+  "bear-markets-in-general": {
+    "plain": "In a bear market, prices pause and drift sideways or even rise. Any low-volume up-move during this is weakness, not recovery. You may also see something that looks like a test. If it is genuine and the market still does not respond, the weakness is confirmed.",
+    "remember": [
+      "Low-volume up-moves in a bear market are weakness, not recovery.",
+      "A test that gets no response confirms weakness.",
+      "Sideways drift in a downtrend is usually rest, not reversal."
+    ]
+  },
+  "what-stops-a-down-move-and-how-will-i-recognise-this": {
+    "plain": "High volume on a down-bar always means selling happened. But if that bar closes in the middle or near the high, professionals must have bought into that selling. That absorption is what stops the fall. They only do this when they think price is low enough.",
+    "remember": [
+      "High volume down-bar closing MIDDLE or HIGH = buying absorbed the selling.",
+      "High volume down-bar closing on the LOW = selling won.",
+      "The close position within the bar is the deciding detail."
+    ]
+  },
+  "how-to-recognise-a-market-bottom": {
+    "plain": "Worked example. A wide spread down on high volume looks bearish, but over the following days the market does not fall and in fact rises. If that volume had really been selling, the market could not have gone up. So it was buying.",
+    "remember": [
+      "Judge the high volume bar by what the NEXT few bars do.",
+      "No further fall after heavy volume = that volume was buying.",
+      "This 'what happened next' test is the core reasoning of the method."
+    ]
+  },
+  "professional-support": {
+    "plain": "The signs that professionals are supporting a market: within a downtrend, a very high volume down-bar closing in the middle or high, with the next bar up. Demand is overcoming supply at that point.",
+    "remember": [
+      "Downtrend + very high volume down-bar + close middle/high + next bar up.",
+      "That combination says demand has overcome supply.",
+      "Support shows up on down-bars, never on up-bars."
+    ]
+  },
+  "the-shake-out": {
+    "plain": "A shake-out appears near the end of a bear move. Prices gap down and fall alarmingly, frightening the last weak holders out. If there is little distribution in the background, and the market gaps back up afterwards, it is a sign of strength.",
+    "remember": [
+      "Shake-out = gap down, sharp fall, then the market gaps back up.",
+      "Only bullish when there is NO major distribution behind it.",
+      "Its purpose is to frighten out the last weak holders."
+    ]
+  },
+  "stopping-volume": {
+    "plain": "During a fall, price starts resisting further decline. You see it as a down-bar on very high volume closing on the highs. Buying must have entered for it to close there. Think of it as large buy orders acting like a brake on the down-move.",
+    "remember": [
+      "Stopping volume = down-bar + very high volume + close on the HIGH.",
+      "It comes from buy orders big enough to brake the fall.",
+      "It marks resistance to further decline, not an instant reversal."
+    ]
+  },
+  "falling-pressure": {
+    "plain": "A wide spread down on LOW volume, closing on the low. It looks bad, but it shows nobody is really selling. It is not a buy signal on its own. It tells you the market is unlikely to fall much further.",
+    "remember": [
+      "Falling pressure = wide spread down + LOW volume + close on the low.",
+      "Low volume means determined selling is absent.",
+      "Not a buy signal by itself. It only says further decline is unlikely."
+    ]
+  },
+  "the-dream": {
+    "plain": "An honest reality check about going full-time. Many are wiped out while learning. The people who survive are usually good at money management and handling risk, sometimes knowing very little else.",
+    "remember": [
+      "Most traders are wiped out during the learning process.",
+      "Money management matters more than clever analysis.",
+      "Survival first, profits second."
+    ]
+  },
+  "beware-of-the-news": {
+    "plain": "One of the strongest warnings in the book. Most news is hype and is not published for your benefit. The sooner you accept that, the sooner you can approach trading coldly and mechanically instead of emotionally.",
+    "remember": [
+      "Most news is hype, and it is not there to help you.",
+      "News is used to cover professional positioning.",
+      "Ask what the volume says, not what the headline says."
+    ]
+  },
+  "you-need-a-system": {
+    "plain": "No system is perfect, and even a perfect one would be imperfect because a human has to follow it. What matters is that your system is based on sound reasoning and that you actually follow it under pressure.",
+    "remember": [
+      "No system is perfect. Human error guarantees it.",
+      "A system must rest on sound reasoning, not on curve-fitting.",
+      "Deciding in advance is what stops emotion deciding for you."
+    ]
+  },
+  "trading-hints-and-tips": {
+    "plain": "A collection of practical advice: listen to news but always add 'BUT', do not fix future price targets in your mind, always have a plan, plan what you will do when you are wrong, place stops on odd numbers because the crowd uses round ones, and be your own boss.",
+    "remember": [
+      "Place stops on odd numbers. Professionals hunt the round ones.",
+      "Put stops below the last reaction low, not at an arbitrary distance.",
+      "Plan what you will do when wrong, before you are wrong.",
+      "Do not fix a future price target in your mind."
+    ]
+  },
+  "what-are-the-main-signs-of-strength": {
+    "plain": "The author's own condensed list of strength signals, all found at the bottom of a market: tests on low volume, low volume on a reaction back into an old high-volume area, stopping volume, and shake-outs. A strong market also has no distribution behind it.",
+    "remember": [
+      "Testing is the single best sign of strength.",
+      "Low volume returning to an old high-volume area = supply gone.",
+      "Stopping volume: high volume down-bar closing on the highs.",
+      "A shake-out stops a down-move.",
+      "Strength requires no distribution in the background."
+    ],
+    "diagram": "signals"
+  },
+  "what-are-the-main-signs-of-weakness": {
+    "plain": "The mirror list, and the most directly codeable page in the book: buying climax, up-thrust, no-demand bar, narrow spread up-bar into new high ground on very high volume, and high volume on an up-bar with no follow-through.",
+    "remember": [
+      "Buying climax, up-thrust, and no demand are the three headline signals.",
+      "Narrow spread up-bar into new highs on very high volume = weakness.",
+      "High volume up-bar with no higher prices next bar = weakness.",
+      "Weakness always shows itself on up-bars."
+    ]
+  },
+  "checklist-for-going-long-buying": {
+    "plain": "A pre-trade checklist to run before every long. Can you see an uptrend forming, with higher lows? Is there daily support, meaning each low is higher than the last? Are you chasing the move? Is there strength in the background and no weakness overhead?",
+    "remember": [
+      "In a strong market, buy on low-volume reactions. Do not chase.",
+      "Each low should be higher than the last low.",
+      "Check for signs of weakness ABOVE you before buying.",
+      "Run the checklist every time you feel an urge to trade."
+    ]
+  },
+  "checklist-for-going-short-selling": {
+    "plain": "The mirror checklist for shorts. Is a downtrend forming with lower highs? Is the market falling with no support appearing? Are there signs of weakness such as up-thrusts or no demand in the recent background?",
+    "remember": [
+      "Each low lower than the last low confirms a downtrend.",
+      "Look for no support appearing on the way down.",
+      "Sell into rallies that show no demand, rather than chasing the fall."
+    ]
+  },
+  "how-to-select-a-stock-the-easy-way": {
+    "plain": "A practical shortcut. Let analysts do the fundamental work. You do not need to know earnings or what the company makes. What you need is a stock behaving stronger than its index, because that relative strength is the footprint of accumulation.",
+    "remember": [
+      "You do not need fundamentals to trade a stock.",
+      "Buy stocks acting STRONGER than their parent index.",
+      "A stock resisting down-moves in the index is being accumulated.",
+      "Never buy just because something looks cheap."
+    ]
+  },
+  "closing-comments": {
+    "plain": "The closing message. Knowing which way prices will move is not enough on its own. Your own skill, discipline and judgement decide whether you actually profit from that knowledge.",
+    "remember": [
+      "Reading the market correctly is only half the job.",
+      "Trading skill and discipline decide the outcome.",
+      "Treat learning to trade as a long apprenticeship."
+    ]
+  },
+  "suggested-reading-list": {
+    "plain": "The reading list, and it is worth noticing what dominates it: Richard Wyckoff. VSA is essentially a systematised descendant of Wyckoff's tape reading. If you want the source material behind this method, that is where to go.",
+    "remember": [
+      "Wyckoff is the direct ancestor of VSA. Several entries are his.",
+      "Humphrey Neill's Tape Reading and Market Tactics is the other key text.",
+      "Reading the originals will deepen everything in this book."
+    ]
+  },
+  "do-not-ignore-these-trading-facts": {
+    "plain": "A short closing list of blunt statistics and principles. Around 90% of traders lose money, most options expire worthless, supply and demand drive everything, and the smart money makes its decisions from changes in volume and price.",
+    "remember": [
+      "About 90% of people entering the stock market lose money.",
+      "Supply and demand ultimately drive every market.",
+      "Smart money decides from volume and price, not from news."
+    ]
+  }
+}

@@ -2,6 +2,8 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Figure from '../../components/Figure.astro';
+import Diagram from '../../components/Diagram.astro';
+import annotations from '../../data/annotations.json';
 
 export async function getStaticPaths() {
   const all = (await getCollection('book')).sort((a, b) => a.data.order - b.data.order);
@@ -18,6 +20,7 @@ const href = (e: any) => `${base}/read/${e.id.replace(/^\d+-/, '')}/`;
 const d = entry.data;
 const pages = d.printedStart === d.printedEnd ? `p. ${d.printedStart}` : `pp. ${d.printedStart}–${d.printedEnd}`;
 const slug = entry.id.replace(/^\d+-/, '');
+const note = (annotations as Record<string, any>)[slug];
 ---
 
 <Base
@@ -36,9 +39,27 @@ const slug = entry.id.replace(/^\d+-/, '');
         {d.figures > 0 && ` · ${d.figures} chart${d.figures > 1 ? 's' : ''}`}
       </div>
 
+      {note && (
+        <aside class="plain">
+          <div class="plain__h">In plain English</div>
+          <p>{note.plain}</p>
+        </aside>
+      )}
+
+      {note?.diagram && <Diagram name={note.diagram} />}
+
       <div class="prose">
         <Content components={{ Figure }} />
       </div>
+
+      {note?.remember?.length > 0 && (
+        <aside class="recall">
+          <div class="recall__h">Things to remember</div>
+          <ul>
+            {note.remember.map((r: string) => <li>{r}</li>)}
+          </ul>
+        </aside>
+      )}
     </div>
 
     <nav class="chapnav">
