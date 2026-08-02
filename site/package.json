@@ -7,7 +7,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "extract": "python3 ../tools/run.py"
+    "extract": "python3 ../tools/run.py",
+    "deploy": "npm run build && npx wrangler pages deploy dist"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +19,8 @@
     "sharp": "^0.35.3"
   },
   "private": true,
-  "type": "module"
+  "type": "module",
+  "engines": {
+    "node": ">=20.3"
+  }
 }

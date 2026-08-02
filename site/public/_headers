@@ -1,0 +1,16 @@
+# Astro emits content-hashed filenames here, so these are safe to pin forever.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Figure filenames are derived from page numbers, not content hashes — a
+# re-render reuses the name, so cache for a week rather than a year.
+/figures/*
+  Cache-Control: public, max-age=604800
+
+/search-index.json
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Robots-Tag: noindex, nofollow

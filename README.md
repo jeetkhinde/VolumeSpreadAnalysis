@@ -85,6 +85,47 @@ Zero client JS for the content itself; the interactive bits are ~4 KB of vanilla
 - Reading progress bar, resumes where you left off
 - Every chapter cites its printed page range, so you can check any passage against the PDF
 
+## Deploying to Cloudflare Pages
+
+The generated chapters and figures are committed, so the build needs Node only —
+no Python step in CI.
+
+**Git integration (recommended).** In the Cloudflare dashboard → Workers & Pages →
+Create → Pages → connect this repo, then:
+
+| Setting | Value |
+|---|---|
+| Framework preset | Astro |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Root directory | `site` |
+
+`site/.nvmrc` pins Node 22. Nothing else needs configuring.
+
+**From the CLI instead:**
+
+```bash
+cd site && npm run deploy      # astro build && wrangler pages deploy dist
+```
+
+### Keeping it private
+
+`public/_headers` sends `X-Robots-Tag: noindex, nofollow`, every page carries a
+`noindex` meta tag, and `public/robots.txt` disallows all crawlers. That stops it
+being indexed — it does **not** stop anyone who has the URL.
+
+For actual access control, put [Cloudflare Access](https://developers.cloudflare.com/cloudflare-one/policies/access/)
+in front of the project (Zero Trust → Access → Applications → Self-hosted, pointed
+at the `pages.dev` hostname). A one-time-PIN policy against your own email address
+takes about a minute and keeps the deployment genuinely private, which given the
+licence position below is the sensible default.
+
+### Caching
+
+`_headers` pins `/_astro/*` for a year (those filenames are content-hashed) and
+`/figures/*` for a week — figure filenames come from page numbers rather than
+content hashes, so a re-render reuses the name and must not be cached immutably.
+
 ## Licence
 
 The text and charts are © 1993–2009 Tom Williams / TradeGuider Systems Ltd, and

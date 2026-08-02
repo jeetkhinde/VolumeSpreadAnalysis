@@ -22,6 +22,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     <meta name="color-scheme" content="light dark" />
+    <meta name="robots" content="noindex, nofollow" />
     {prevHref && <link rel="prev" href={prevHref} />}
     {nextHref && <link rel="next" href={nextHref} />}
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%93%8A%3C/text%3E%3C/svg%3E" />
@@ -152,26 +153,48 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
       function esc(s) { return s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]); }
 
-      function snippet(text, q) {
-        const i = text.toLowerCase().indexOf(q);
-        if (i < 0) return esc(text.slice(0, 150)) + '…';
-        const s = Math.max(0, i - 60);
-        const raw = text.slice(s, i + q.length + 110);
-        const rel = i - s;
+      // The book hyphenates its own vocabulary ("up-thrust", "shake-out",
+      // "no-demand"), so match on a punctuation- and space-free form and keep an
+      // index map back into the original text for highlighting.
+      const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '');
+
+      function prep(d) {
+        if (d._n !== undefined) return d;
+        let n = '';
+        const map = [];
+        const t = d.text;
+        for (let i = 0; i < t.length; i++) {
+          const c = t[i].toLowerCase();
+          if (c >= 'a' && c <= 'z' || c >= '0' && c <= '9') { n += c; map.push(i); }
+        }
+        d._n = n;
+        d._m = map;
+        d._nt = norm(d.title);
+        return d;
+      }
+
+      function snippet(d, nq) {
+        const at = d._n.indexOf(nq);
+        if (at < 0) return esc(d.text.slice(0, 150)) + '…';
+        const from = d._m[at];
+        const to = (d._m[at + nq.length - 1] ?? from) + 1;
+        const s = Math.max(0, from - 60);
+        const e = Math.min(d.text.length, to + 110);
         return (
-          (s > 0 ? '…' : '') + esc(raw.slice(0, rel)) +
-          '<mark>' + esc(raw.slice(rel, rel + q.length)) + '</mark>' +
-          esc(raw.slice(rel + q.length)) + '…'
+          (s > 0 ? '…' : '') + esc(d.text.slice(s, from)) +
+          '<mark>' + esc(d.text.slice(from, to)) + '</mark>' +
+          esc(d.text.slice(to, e)) + (e < d.text.length ? '…' : '')
         );
       }
 
       function render(q) {
-        if (!index || q.length < 2) { results.innerHTML = ''; return; }
-        const ql = q.toLowerCase();
+        const nq = norm(q);
+        if (!index || nq.length < 2) { results.innerHTML = ''; return; }
         const hits = [];
-        for (const d of index) {
-          const inTitle = d.title.toLowerCase().includes(ql);
-          const at = d.text.toLowerCase().indexOf(ql);
+        for (const raw of index) {
+          const d = prep(raw);
+          const inTitle = d._nt.includes(nq);
+          const at = d._n.indexOf(nq);
           if (!inTitle && at < 0) continue;
           hits.push({ d, score: (inTitle ? 1000 : 0) + (at >= 0 ? 100 - Math.min(at / 400, 99) : 0) });
         }
@@ -181,7 +204,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
           <a class="search__hit${i === 0 ? ' is-active' : ''}" href="${h.d.url}">
             <div class="search__hit-t">${esc(h.d.title)}</div>
             <div class="search__hit-s">${esc(h.d.section)}</div>
-            <div class="search__hit-x">${snippet(h.d.text, ql)}</div>
+            <div class="search__hit-x">${snippet(h.d, nq)}</div>
           </a>`).join('') ||
           '<div class="search__hint" style="border:0">No matches.</div>';
       }
