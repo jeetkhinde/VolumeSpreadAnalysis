@@ -1,0 +1,263 @@
+---
+import Sidebar from '../components/Sidebar.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  current?: string;
+  crumb?: string;
+  description?: string;
+  prevHref?: string;
+  nextHref?: string;
+}
+const { title, current, crumb, description, prevHref, nextHref } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<!doctype html>
+<html lang="en" data-theme="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <meta name="color-scheme" content="light dark" />
+    <meta name="robots" content="noindex, nofollow" />
+    {prevHref && <link rel="prev" href={prevHref} />}
+    {nextHref && <link rel="next" href={nextHref} />}
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%93%8A%3C/text%3E%3C/svg%3E" />
+    <script is:inline>
+      (function () {
+        try {
+          var t = localStorage.getItem('mtm-theme');
+          if (t) document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+
+  <body data-slug={current}>
+    <div class="progress" id="progress"></div>
+
+    <div class="shell">
+      <Sidebar current={current} />
+
+      <div class="main">
+        <header class="topbar">
+          <button class="iconbtn menubtn" id="menubtn" aria-label="Open table of contents">☰</button>
+          <span class="topbar__crumb">{crumb ?? 'Master the Markets'}</span>
+          <span class="topbar__spacer"></span>
+          <button class="iconbtn" id="searchbtn" aria-label="Search the book">
+            <span aria-hidden="true">⌕</span><span class="only-wide">Search</span><kbd>/</kbd>
+          </button>
+          <button class="iconbtn" id="themebtn" aria-label="Toggle light or dark theme" title="Toggle theme">
+            <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true">
+              <circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.4" />
+              <path d="M8 1.75A6.25 6.25 0 0 1 8 14.25Z" fill="currentColor" />
+            </svg>
+          </button>
+        </header>
+
+        <slot />
+      </div>
+    </div>
+
+    <!-- search -->
+    <div class="search" id="search" role="dialog" aria-modal="true" aria-label="Search">
+      <div class="search__scrim" data-close></div>
+      <div class="search__panel">
+        <input
+          class="search__input"
+          id="searchinput"
+          type="search"
+          placeholder="Search the book…"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <div class="search__results" id="searchresults"></div>
+        <div class="search__hint">↑↓ to move · ↵ to open · esc to close</div>
+      </div>
+    </div>
+
+    <!-- figure lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged chart">
+      <img id="lightboximg" src="" alt="" />
+    </div>
+
+    <script is:inline define:vars={{ base }}>
+      // ── theme ─────────────────────────────────────────────────────
+      const root = document.documentElement;
+      document.getElementById('themebtn')?.addEventListener('click', () => {
+        const now =
+          root.getAttribute('data-theme') ||
+          (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        const next = now === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('mtm-theme', next); } catch (e) {}
+      });
+
+      // ── mobile drawer ─────────────────────────────────────────────
+      const sidebar = document.getElementById('sidebar');
+      const scrim = document.getElementById('scrim');
+      const toggleNav = (open) => {
+        sidebar?.classList.toggle('is-open', open);
+        scrim?.classList.toggle('is-open', open);
+      };
+      document.getElementById('menubtn')?.addEventListener('click', () => toggleNav(true));
+      scrim?.addEventListener('click', () => toggleNav(false));
+
+      // ── reading progress ──────────────────────────────────────────
+      const bar = document.getElementById('progress');
+      const onScroll = () => {
+        const h = document.documentElement.scrollHeight - innerHeight;
+        bar.style.width = (h > 0 ? (scrollY / h) * 100 : 0) + '%';
+      };
+      addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // ── figure lightbox ───────────────────────────────────────────
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightboximg');
+      document.querySelectorAll('figure.fig img').forEach((img) => {
+        img.addEventListener('click', () => {
+          lbImg.src = img.currentSrc || img.src;
+          lbImg.alt = img.alt;
+          lb.classList.add('is-open');
+        });
+      });
+      lb?.addEventListener('click', () => lb.classList.remove('is-open'));
+
+      // ── search ────────────────────────────────────────────────────
+      const searchEl = document.getElementById('search');
+      const input = document.getElementById('searchinput');
+      const results = document.getElementById('searchresults');
+      let index = null;
+      let active = 0;
+
+      async function loadIndex() {
+        if (index) return index;
+        const r = await fetch(base + '/search-index.json');
+        index = await r.json();
+        return index;
+      }
+      function openSearch() {
+        searchEl.classList.add('is-open');
+        loadIndex();
+        input.focus();
+        input.select();
+      }
+      function closeSearch() { searchEl.classList.remove('is-open'); }
+
+      document.getElementById('searchbtn')?.addEventListener('click', openSearch);
+      searchEl?.querySelector('[data-close]')?.addEventListener('click', closeSearch);
+
+      function esc(s) { return s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]); }
+
+      // The book hyphenates its own vocabulary ("up-thrust", "shake-out",
+      // "no-demand"), so match on a punctuation- and space-free form and keep an
+      // index map back into the original text for highlighting.
+      const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '');
+
+      function prep(d) {
+        if (d._n !== undefined) return d;
+        let n = '';
+        const map = [];
+        const t = d.text;
+        for (let i = 0; i < t.length; i++) {
+          const c = t[i].toLowerCase();
+          if (c >= 'a' && c <= 'z' || c >= '0' && c <= '9') { n += c; map.push(i); }
+        }
+        d._n = n;
+        d._m = map;
+        d._nt = norm(d.title);
+        return d;
+      }
+
+      function snippet(d, nq) {
+        const at = d._n.indexOf(nq);
+        if (at < 0) return esc(d.text.slice(0, 150)) + '…';
+        const from = d._m[at];
+        const to = (d._m[at + nq.length - 1] ?? from) + 1;
+        const s = Math.max(0, from - 60);
+        const e = Math.min(d.text.length, to + 110);
+        return (
+          (s > 0 ? '…' : '') + esc(d.text.slice(s, from)) +
+          '<mark>' + esc(d.text.slice(from, to)) + '</mark>' +
+          esc(d.text.slice(to, e)) + (e < d.text.length ? '…' : '')
+        );
+      }
+
+      function render(q) {
+        const nq = norm(q);
+        if (!index || nq.length < 2) { results.innerHTML = ''; return; }
+        const hits = [];
+        for (const raw of index) {
+          const d = prep(raw);
+          const inTitle = d._nt.includes(nq);
+          const at = d._n.indexOf(nq);
+          if (!inTitle && at < 0) continue;
+          hits.push({ d, score: (inTitle ? 1000 : 0) + (at >= 0 ? 100 - Math.min(at / 400, 99) : 0) });
+        }
+        hits.sort((a, b) => b.score - a.score);
+        active = 0;
+        results.innerHTML = hits.slice(0, 30).map((h, i) => `
+          <a class="search__hit${i === 0 ? ' is-active' : ''}" href="${h.d.url}">
+            <div class="search__hit-t">${esc(h.d.title)}</div>
+            <div class="search__hit-s">${esc(h.d.section)}</div>
+            <div class="search__hit-x">${snippet(h.d, nq)}</div>
+          </a>`).join('') ||
+          '<div class="search__hint" style="border:0">No matches.</div>';
+      }
+
+      input?.addEventListener('input', async () => { await loadIndex(); render(input.value.trim()); });
+
+      function move(delta) {
+        const hits = [...results.querySelectorAll('.search__hit')];
+        if (!hits.length) return;
+        hits[active]?.classList.remove('is-active');
+        active = (active + delta + hits.length) % hits.length;
+        hits[active].classList.add('is-active');
+        hits[active].scrollIntoView({ block: 'nearest' });
+      }
+
+      // ── keyboard ──────────────────────────────────────────────────
+      addEventListener('keydown', (e) => {
+        const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
+
+        if (searchEl.classList.contains('is-open')) {
+          if (e.key === 'Escape') { closeSearch(); return; }
+          if (e.key === 'ArrowDown') { e.preventDefault(); move(1); return; }
+          if (e.key === 'ArrowUp') { e.preventDefault(); move(-1); return; }
+          if (e.key === 'Enter') {
+            const a = results.querySelectorAll('.search__hit')[active];
+            if (a) { e.preventDefault(); location.href = a.getAttribute('href'); }
+            return;
+          }
+          return;
+        }
+
+        if (e.key === 'Escape') {
+          lb?.classList.remove('is-open');
+          toggleNav(false);
+          return;
+        }
+        if (typing) return;
+        if (e.key === '/') { e.preventDefault(); openSearch(); return; }
+        if (e.key === 'g') { location.href = base + '/glossary/'; return; }
+
+        const prev = document.querySelector('link[rel="prev"]');
+        const next = document.querySelector('link[rel="next"]');
+        if (e.key === 'ArrowLeft' && prev) location.href = prev.getAttribute('href');
+        if (e.key === 'ArrowRight' && next) location.href = next.getAttribute('href');
+      });
+
+      // ── remember reading position ─────────────────────────────────
+      const slug = document.body.dataset.slug;
+      if (slug) { try { localStorage.setItem('mtm-last', slug); } catch (e) {} }
+    </script>
+
+    <style is:inline>
+      @media (max-width: 44rem) { .only-wide { display: none; } }
+    </style>
+  </body>
+</html>

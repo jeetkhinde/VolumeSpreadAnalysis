@@ -1,0 +1,15 @@
+{
+  // Static-assets-only Worker: no `main` script, Cloudflare just serves ./site/dist.
+  // Paired with site/wrangler.jsonc — this one is used when the Workers Builds
+  // "Root directory" is `/` (the default); that one when it is `site`.
+  // Keep `name` and `compatibility_date` in sync between the two.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "vsa",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./site/dist",
+    // Astro emits directory-style URLs; this redirects /read/foo -> /read/foo/
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

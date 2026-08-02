@@ -1,0 +1,59 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Figure from '../../components/Figure.astro';
+
+export async function getStaticPaths() {
+  const all = (await getCollection('book')).sort((a, b) => a.data.order - b.data.order);
+  return all.map((entry, i) => ({
+    params: { slug: entry.id.replace(/^\d+-/, '') },
+    props: { entry, prev: all[i - 1] ?? null, next: all[i + 1] ?? null, total: all.length },
+  }));
+}
+
+const { entry, prev, next, total } = Astro.props;
+const { Content } = await render(entry);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const href = (e: any) => `${base}/read/${e.id.replace(/^\d+-/, '')}/`;
+const d = entry.data;
+const pages = d.printedStart === d.printedEnd ? `p. ${d.printedStart}` : `pp. ${d.printedStart}–${d.printedEnd}`;
+const slug = entry.id.replace(/^\d+-/, '');
+---
+
+<Base
+  title={`${d.title} · Master the Markets`}
+  current={slug}
+  crumb={d.section}
+  prevHref={prev ? href(prev) : undefined}
+  nextHref={next ? href(next) : undefined}
+>
+  <article class="article">
+    <div class="article__inner">
+      <div class="eyebrow">{d.section}</div>
+      <h1>{d.title}</h1>
+      <div class="pageref">
+        Chapter {d.order} of {total} · {pages} in the 4th edition
+        {d.figures > 0 && ` · ${d.figures} chart${d.figures > 1 ? 's' : ''}`}
+      </div>
+
+      <div class="prose">
+        <Content components={{ Figure }} />
+      </div>
+    </div>
+
+    <nav class="chapnav">
+      {prev && (
+        <a class="prev" href={href(prev)} rel="prev">
+          <span class="chapnav__dir">← Previous</span>
+          <span class="chapnav__t">{prev.data.title}</span>
+        </a>
+      )}
+      {next && (
+        <a class="next" href={href(next)} rel="next">
+          <span class="chapnav__dir">Next →</span>
+          <span class="chapnav__t">{next.data.title}</span>
+        </a>
+      )}
+    </nav>
+  </article>
+</Base>

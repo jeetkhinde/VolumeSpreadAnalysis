@@ -1,0 +1,26 @@
+{
+  "name": "master-the-markets-reader",
+  "version": "1.0.0",
+  "description": "Tom Williams' Master the Markets (4th ed.), reformatted as a modern online reader",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "extract": "python3 ../tools/run.py",
+    "deploy": "npm run build && npx wrangler pages deploy dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@astrojs/mdx": "^4.3.14",
+    "astro": "^5.18.2",
+    "sharp": "^0.35.3"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.3"
+  }
+}

@@ -1,0 +1,11 @@
+# extraction cache (regenerate with: python3 tools/run.py)
+tools/.cache/
+tools/__pycache__/
+*.pyc
+
+# node / astro
+node_modules/
+site/dist/
+site/.astro/
+.DS_Store
+.wrangler/

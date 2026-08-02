@@ -1,0 +1,16 @@
+{
+  "name": "volume-spread-analysis",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Master the Markets (Tom Williams, 4th ed.) as a modern online reader",
+  "scripts": {
+    "build": "npm --prefix site ci && npm --prefix site run build",
+    "dev": "npm --prefix site run dev",
+    "preview": "npm --prefix site run preview",
+    "extract": "python3 tools/run.py",
+    "deploy": "npm run build && npx wrangler deploy"
+  },
+  "engines": {
+    "node": ">=20.3"
+  }
+}

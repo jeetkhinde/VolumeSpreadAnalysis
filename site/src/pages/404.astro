@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import manifest from '../data/manifest.json';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const first = manifest[0];
+---
+
+<Base title="Not found · Master the Markets" crumb="Not found">
+  <div class="home">
+    <div class="eyebrow">404</div>
+    <h1>That page isn't here</h1>
+    <p class="home__sub">
+      The book has {manifest.length} chapters and a glossary — try the contents,
+      or press <kbd>/</kbd> to search the text.
+    </p>
+    <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+      <a class="cta" href={`${base}/`}>Contents</a>
+      <a class="cta cta--ghost" href={`${base}/read/${first.slug}/`}>Start reading</a>
+      <a class="cta cta--ghost" href={`${base}/glossary/`}>Glossary</a>
+    </div>
+  </div>
+</Base>
