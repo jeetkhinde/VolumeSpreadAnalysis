@@ -85,28 +85,42 @@ Zero client JS for the content itself; the interactive bits are ~4 KB of vanilla
 - Reading progress bar, resumes where you left off
 - Every chapter cites its printed page range, so you can check any passage against the PDF
 
-## Deploying to Cloudflare Pages
+## Deploying to Cloudflare
 
-The generated chapters and figures are committed, so the build needs Node only —
-no Python step in CI.
+Deployed as a **static-assets-only Worker** (service `vsa`) — no server code, just
+`site/dist` served from the edge. The generated chapters and figures are committed,
+so CI needs Node only; there is no Python step.
 
-**Git integration (recommended).** In the Cloudflare dashboard → Workers & Pages →
-Create → Pages → connect this repo, then:
+`wrangler.jsonc` declares the assets directory. It is duplicated in two places
+because the Workers Builds **Root directory** setting decides which one is read:
+
+| Root directory | Config used | Assets path |
+|---|---|---|
+| `/` (default) | `wrangler.jsonc` | `./site/dist` |
+| `site` | `site/wrangler.jsonc` | `./dist` |
+
+Both are committed so either setting works. If you change one, change the other —
+`name` and `compatibility_date` must stay in sync.
+
+Build settings, either root:
 
 | Setting | Value |
 |---|---|
-| Framework preset | Astro |
 | Build command | `npm run build` |
-| Build output directory | `dist` |
-| Root directory | `site` |
+| Deploy command | `npx wrangler deploy` |
 
-`site/.nvmrc` pins Node 22. Nothing else needs configuring.
+The repo-root `package.json` delegates into `site/` (`npm ci && npm run build`), so
+`npm run build` works from either directory. `.nvmrc` pins Node 22 at both levels.
 
-**From the CLI instead:**
+**From the CLI:**
 
 ```bash
-cd site && npm run deploy      # astro build && wrangler pages deploy dist
+npm run deploy            # from the repo root
+cd site && npm run deploy # or from site/, using Pages instead
 ```
+
+`html_handling: auto-trailing-slash` matches Astro's directory-style URLs, and
+`not_found_handling: 404-page` serves the generated `404.html`.
 
 ### Keeping it private
 
