@@ -2,7 +2,7 @@
 
 Tom Williams' *Master the Markets* (4th edition, 2009, TradeGuider Systems) rebuilt
 as a modern, responsive web reader — the full method text and every chart, with the
-product marketing stripped out.
+product marketing stripped out, plus a plain-English layer written for this edition.
 
 ```bash
 pip install -r tools/requirements.txt
@@ -23,8 +23,27 @@ tools/                                   PDF extraction pipeline
 site/                                    Astro 5 site
   src/content/book/*.mdx                 68 chapters
   src/data/glossary.json                 61 glossary entries
+  src/data/annotations.json              plain-English summaries + takeaways
+  src/components/Diagram.astro           original explanatory diagrams
   public/figures/*.webp                  82 charts
 ```
+
+## The plain-English layer
+
+Every chapter opens with an **In plain English** summary and closes with
+**Things to remember** — 2,844 words of summary and 215 takeaways across the 68
+chapters, in short conversational sentences.
+
+This is added *alongside* Williams' text, never in place of it. Rewriting his
+prose would risk quietly changing the exact bar conditions the method depends on
+(spread, close position, volume, and the required background), and would throw
+away the completeness guarantee below. You get the plain version first and his
+precise wording underneath.
+
+Four diagrams were drawn for this edition — how to read a single bar, the four
+bar signatures side by side, effort versus result, and the market cycle. They are
+inline SVG, theme-aware, and labelled as not being from the book. Every takeaway
+is also collected on one **Key Points** page.
 
 ## What was kept, and what wasn't
 
@@ -41,17 +60,23 @@ site/                                    Astro 5 site
 | Glossary of Terms | 142–180 | kept, with its illustrations |
 | Index | 181–185 | **dropped** — page-number pointers, meaningless online |
 
-Section 5 is the only marketing removed: *Features List*, *Product Detail*,
-*Data Provision*, *Broker Alliances*, *Customer Testimonials*. Inline mentions of
-TradeGuider inside the method chapters are left intact — they're woven into
-Williams' own sentences, and cutting them would damage the text.
+Section 5 is dropped wholesale: *Features List*, *Product Detail*, *Data
+Provision*, *Broker Alliances*, *Customer Testimonials*.
+
+The product plugs woven into the method chapters are removed too — 24 rules in
+`tools/prune.py`, 696 words in total. Each rule is explicit and verified at build
+time, so if one stops matching the build fails rather than silently keeping or
+losing text. Where a sentence mixes advertising with method ("...turn on the
+instant trend indicator. On any reaction, if the low is higher than the last
+reaction, this is an uptrend"), only the advertising half is cut.
 
 ### Completeness
 
 Reconciled against the source PDF rather than assumed:
 
-- **38,964 words** across 68 chapters vs 38,701 extractable words in the kept page
-  ranges (the small surplus is markdown list markers).
+- **38,268 words** across 68 chapters, after removing 696 words of product
+  marketing (38,964 before the prune, against 38,701 extractable words in the kept
+  page ranges — the small surplus is markdown list markers).
 - **82 of 82** non-brochure figures carried over — 47 in chapters, 35 in the glossary.
 - **61 of 61** glossary entries, 5,927 words vs 5,930 in the source.
 
