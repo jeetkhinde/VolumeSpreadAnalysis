@@ -1,0 +1,682 @@
+[
+ {
+  "title": "Preamble",
+  "section": "Front Matter",
+  "order": 1,
+  "printedStart": 8,
+  "printedEnd": 8,
+  "figures": 0,
+  "slug": "preamble",
+  "words": 389
+ },
+ {
+  "title": "Introduction",
+  "section": "Front Matter",
+  "order": 2,
+  "printedStart": 9,
+  "printedEnd": 10,
+  "figures": 0,
+  "slug": "introduction",
+  "words": 850
+ },
+ {
+  "title": "Random Walks & Other Misconceptions",
+  "section": "Market Basics",
+  "order": 3,
+  "printedStart": 12,
+  "printedEnd": 12,
+  "figures": 0,
+  "slug": "random-walks-and-other-misconceptions",
+  "words": 552
+ },
+ {
+  "title": "What is the Market?",
+  "section": "Market Basics",
+  "order": 4,
+  "printedStart": 13,
+  "printedEnd": 13,
+  "figures": 0,
+  "slug": "what-is-the-market",
+  "words": 427
+ },
+ {
+  "title": "The Market Professionals",
+  "section": "Market Basics",
+  "order": 5,
+  "printedStart": 14,
+  "printedEnd": 14,
+  "figures": 0,
+  "slug": "the-market-professionals",
+  "words": 481
+ },
+ {
+  "title": "A Special Word About Market-Makers",
+  "section": "Market Basics",
+  "order": 6,
+  "printedStart": 15,
+  "printedEnd": 15,
+  "figures": 0,
+  "slug": "a-special-word-about-market-makers",
+  "words": 135
+ },
+ {
+  "title": "Volume – The Key to the Truth",
+  "section": "Market Basics",
+  "order": 7,
+  "printedStart": 16,
+  "printedEnd": 17,
+  "figures": 0,
+  "slug": "volume-the-key-to-the-truth",
+  "words": 740
+ },
+ {
+  "title": "Further Understanding Volume",
+  "section": "Market Basics",
+  "order": 8,
+  "printedStart": 18,
+  "printedEnd": 18,
+  "figures": 0,
+  "slug": "further-understanding-volume",
+  "words": 605
+ },
+ {
+  "title": "What is Bullish & Bearish Volume",
+  "section": "Market Basics",
+  "order": 9,
+  "printedStart": 19,
+  "printedEnd": 19,
+  "figures": 0,
+  "slug": "what-is-bullish-and-bearish-volume",
+  "words": 545
+ },
+ {
+  "title": "Accumulation & Distribution",
+  "section": "Market Basics",
+  "order": 10,
+  "printedStart": 20,
+  "printedEnd": 20,
+  "figures": 0,
+  "slug": "accumulation-and-distribution",
+  "words": 493
+ },
+ {
+  "title": "Strong & Weak Holders",
+  "section": "Market Basics",
+  "order": 11,
+  "printedStart": 21,
+  "printedEnd": 22,
+  "figures": 0,
+  "slug": "strong-and-weak-holders",
+  "words": 765
+ },
+ {
+  "title": "Resistance & Crowd Behaviour",
+  "section": "Market Basics",
+  "order": 12,
+  "printedStart": 23,
+  "printedEnd": 24,
+  "figures": 0,
+  "slug": "resistance-and-crowd-behaviour",
+  "words": 602
+ },
+ {
+  "title": "Supply & Demand",
+  "section": "Market Basics",
+  "order": 13,
+  "printedStart": 25,
+  "printedEnd": 25,
+  "figures": 0,
+  "slug": "supply-and-demand",
+  "words": 619
+ },
+ {
+  "title": "The Basics of Market Reading",
+  "section": "Market Basics",
+  "order": 14,
+  "printedStart": 26,
+  "printedEnd": 27,
+  "figures": 3,
+  "slug": "the-basics-of-market-reading",
+  "words": 482
+ },
+ {
+  "title": "How to Tell if a Market is Weak or Strong",
+  "section": "Market Basics",
+  "order": 15,
+  "printedStart": 28,
+  "printedEnd": 30,
+  "figures": 1,
+  "slug": "how-to-tell-if-a-market-is-weak-or-strong",
+  "words": 1199
+ },
+ {
+  "title": "How to Identify Buying & Selling",
+  "section": "Market Basics",
+  "order": 16,
+  "printedStart": 31,
+  "printedEnd": 31,
+  "figures": 0,
+  "slug": "how-to-identify-buying-and-selling",
+  "words": 379
+ },
+ {
+  "title": "How to Identify Lack of Demand",
+  "section": "Market Basics",
+  "order": 17,
+  "printedStart": 32,
+  "printedEnd": 33,
+  "figures": 2,
+  "slug": "how-to-identify-lack-of-demand",
+  "words": 452
+ },
+ {
+  "title": "Testing Supply",
+  "section": "Market Basics",
+  "order": 18,
+  "printedStart": 34,
+  "printedEnd": 35,
+  "figures": 1,
+  "slug": "testing-supply",
+  "words": 817
+ },
+ {
+  "title": "Pushing Up Through Supply",
+  "section": "Market Basics",
+  "order": 19,
+  "printedStart": 36,
+  "printedEnd": 37,
+  "figures": 1,
+  "slug": "pushing-up-through-supply",
+  "words": 664
+ },
+ {
+  "title": "High Volume on Market Tops",
+  "section": "Market Basics",
+  "order": 20,
+  "printedStart": 38,
+  "printedEnd": 38,
+  "figures": 1,
+  "slug": "high-volume-on-market-tops",
+  "words": 262
+ },
+ {
+  "title": "Effort Versus Results",
+  "section": "Market Basics",
+  "order": 21,
+  "printedStart": 39,
+  "printedEnd": 39,
+  "figures": 0,
+  "slug": "effort-versus-results",
+  "words": 562
+ },
+ {
+  "title": "The Path of Least Resistance",
+  "section": "Market Basics",
+  "order": 22,
+  "printedStart": 40,
+  "printedEnd": 40,
+  "figures": 0,
+  "slug": "the-path-of-least-resistance",
+  "words": 291
+ },
+ {
+  "title": "Markets can be Marked Up (or Down)",
+  "section": "Market Basics",
+  "order": 23,
+  "printedStart": 41,
+  "printedEnd": 41,
+  "figures": 1,
+  "slug": "markets-can-be-marked-up-or-down",
+  "words": 317
+ },
+ {
+  "title": "Volume Surges in Related Markets",
+  "section": "Market Basics",
+  "order": 24,
+  "printedStart": 42,
+  "printedEnd": 43,
+  "figures": 2,
+  "slug": "volume-surges-in-related-markets",
+  "words": 516
+ },
+ {
+  "title": "Using Different Timeframes",
+  "section": "Market Basics",
+  "order": 25,
+  "printedStart": 44,
+  "printedEnd": 44,
+  "figures": 1,
+  "slug": "using-different-timeframes",
+  "words": 226
+ },
+ {
+  "title": "The Relationship between the Cash & Futures Price",
+  "section": "Market Basics",
+  "order": 26,
+  "printedStart": 45,
+  "printedEnd": 45,
+  "figures": 0,
+  "slug": "the-relationship-between-the-cash-and-futures-price",
+  "words": 177
+ },
+ {
+  "title": "Manipulation of the Markets",
+  "section": "Market Basics",
+  "order": 27,
+  "printedStart": 46,
+  "printedEnd": 48,
+  "figures": 0,
+  "slug": "manipulation-of-the-markets",
+  "words": 2046
+ },
+ {
+  "title": "Introduction to Trends",
+  "section": "Trends & Volume Spread Analysis",
+  "order": 28,
+  "printedStart": 50,
+  "printedEnd": 50,
+  "figures": 1,
+  "slug": "introduction-to-trends",
+  "words": 229
+ },
+ {
+  "title": "Constructing Trend Lines",
+  "section": "Trends & Volume Spread Analysis",
+  "order": 29,
+  "printedStart": 51,
+  "printedEnd": 51,
+  "figures": 1,
+  "slug": "constructing-trend-lines",
+  "words": 336
+ },
+ {
+  "title": "Bottoms & Tops",
+  "section": "Trends & Volume Spread Analysis",
+  "order": 30,
+  "printedStart": 52,
+  "printedEnd": 53,
+  "figures": 2,
+  "slug": "bottoms-and-tops",
+  "words": 379
+ },
+ {
+  "title": "Trend Scaling",
+  "section": "Trends & Volume Spread Analysis",
+  "order": 31,
+  "printedStart": 54,
+  "printedEnd": 54,
+  "figures": 0,
+  "slug": "trend-scaling",
+  "words": 293
+ },
+ {
+  "title": "Why do Trend Lines Appear to Work?",
+  "section": "Trends & Volume Spread Analysis",
+  "order": 32,
+  "printedStart": 55,
+  "printedEnd": 55,
+  "figures": 1,
+  "slug": "why-do-trend-lines-appear-to-work",
+  "words": 361
+ },
+ {
+  "title": "Using Trends to Determine Overbought and Oversold Levels",
+  "section": "Trends & Volume Spread Analysis",
+  "order": 33,
+  "printedStart": 56,
+  "printedEnd": 57,
+  "figures": 2,
+  "slug": "using-trends-to-determine-overbought-and-oversold-levels",
+  "words": 480
+ },
+ {
+  "title": "Perceived Value & Trend Lines",
+  "section": "Trends & Volume Spread Analysis",
+  "order": 34,
+  "printedStart": 58,
+  "printedEnd": 58,
+  "figures": 0,
+  "slug": "perceived-value-and-trend-lines",
+  "words": 487
+ },
+ {
+  "title": "Introducing Trend Clusters",
+  "section": "Trends & Volume Spread Analysis",
+  "order": 35,
+  "printedStart": 59,
+  "printedEnd": 60,
+  "figures": 2,
+  "slug": "introducing-trend-clusters",
+  "words": 394
+ },
+ {
+  "title": "Using Trend Clusters",
+  "section": "Trends & Volume Spread Analysis",
+  "order": 36,
+  "printedStart": 61,
+  "printedEnd": 62,
+  "figures": 2,
+  "slug": "using-trend-clusters",
+  "words": 503
+ },
+ {
+  "title": "Analysing Volume Near a Trend Line",
+  "section": "Trends & Volume Spread Analysis",
+  "order": 37,
+  "printedStart": 63,
+  "printedEnd": 64,
+  "figures": 2,
+  "slug": "analysing-volume-near-a-trend-line",
+  "words": 412
+ },
+ {
+  "title": "Pushing Through Supply/Support Lines",
+  "section": "Trends & Volume Spread Analysis",
+  "order": 38,
+  "printedStart": 65,
+  "printedEnd": 67,
+  "figures": 3,
+  "slug": "pushing-through-supply-support-lines",
+  "words": 760
+ },
+ {
+  "title": "Absorption Volume & Lower Trend Lines",
+  "section": "Trends & Volume Spread Analysis",
+  "order": 39,
+  "printedStart": 68,
+  "printedEnd": 68,
+  "figures": 1,
+  "slug": "absorption-volume-and-lower-trend-lines",
+  "words": 239
+ },
+ {
+  "title": "What Starts a Bull Market?",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 40,
+  "printedStart": 70,
+  "printedEnd": 71,
+  "figures": 1,
+  "slug": "what-starts-a-bull-market",
+  "words": 827
+ },
+ {
+  "title": "The Forces of Supply & Demand Move the Markets",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 41,
+  "printedStart": 72,
+  "printedEnd": 72,
+  "figures": 0,
+  "slug": "the-forces-of-supply-and-demand-move-the-markets",
+  "words": 320
+ },
+ {
+  "title": "It All Starts With a ‘Campaign’",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 42,
+  "printedStart": 73,
+  "printedEnd": 74,
+  "figures": 0,
+  "slug": "it-all-starts-with-a-campaign",
+  "words": 1464
+ },
+ {
+  "title": "How to Recognise the Likely Market Top",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 43,
+  "printedStart": 75,
+  "printedEnd": 76,
+  "figures": 1,
+  "slug": "how-to-recognise-the-likely-market-top",
+  "words": 395
+ },
+ {
+  "title": "How to Recognise the Likely End of a Rally",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 44,
+  "printedStart": 77,
+  "printedEnd": 78,
+  "figures": 0,
+  "slug": "how-to-recognise-the-likely-end-of-a-rally",
+  "words": 716
+ },
+ {
+  "title": "Up-thrusts in More Detail",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 45,
+  "printedStart": 79,
+  "printedEnd": 80,
+  "figures": 2,
+  "slug": "up-thrusts-in-more-detail",
+  "words": 472
+ },
+ {
+  "title": "The Selling Climax and Professional Support",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 46,
+  "printedStart": 81,
+  "printedEnd": 82,
+  "figures": 0,
+  "slug": "the-selling-climax-and-professional-support",
+  "words": 802
+ },
+ {
+  "title": "The Buying Climax and Professional Selling",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 47,
+  "printedStart": 83,
+  "printedEnd": 84,
+  "figures": 1,
+  "slug": "the-buying-climax-and-professional-selling",
+  "words": 475
+ },
+ {
+  "title": "A Buying Climax in an Individual Stock",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 48,
+  "printedStart": 85,
+  "printedEnd": 86,
+  "figures": 1,
+  "slug": "a-buying-climax-in-an-individual-stock",
+  "words": 505
+ },
+ {
+  "title": "From Bear to Bull Markets",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 49,
+  "printedStart": 87,
+  "printedEnd": 88,
+  "figures": 1,
+  "slug": "from-bear-to-bull-markets",
+  "words": 1023
+ },
+ {
+  "title": "Bear Markets in General",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 50,
+  "printedStart": 89,
+  "printedEnd": 89,
+  "figures": 1,
+  "slug": "bear-markets-in-general",
+  "words": 246
+ },
+ {
+  "title": "What Stops a Down-Move & how will I Recognise This?",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 51,
+  "printedStart": 90,
+  "printedEnd": 91,
+  "figures": 1,
+  "slug": "what-stops-a-down-move-and-how-will-i-recognise-this",
+  "words": 445
+ },
+ {
+  "title": "How to Recognise a Market Bottom",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 52,
+  "printedStart": 92,
+  "printedEnd": 93,
+  "figures": 1,
+  "slug": "how-to-recognise-a-market-bottom",
+  "words": 544
+ },
+ {
+  "title": "Professional Support",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 53,
+  "printedStart": 94,
+  "printedEnd": 94,
+  "figures": 0,
+  "slug": "professional-support",
+  "words": 283
+ },
+ {
+  "title": "The Shake-out",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 54,
+  "printedStart": 95,
+  "printedEnd": 96,
+  "figures": 2,
+  "slug": "the-shake-out",
+  "words": 663
+ },
+ {
+  "title": "Stopping Volume",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 55,
+  "printedStart": 97,
+  "printedEnd": 97,
+  "figures": 1,
+  "slug": "stopping-volume",
+  "words": 251
+ },
+ {
+  "title": "Falling Pressure",
+  "section": "The Anatomy of Bull & Bear Markets",
+  "order": 56,
+  "printedStart": 98,
+  "printedEnd": 98,
+  "figures": 1,
+  "slug": "falling-pressure",
+  "words": 216
+ },
+ {
+  "title": "The Dream",
+  "section": "Becoming a Trader or Investor",
+  "order": 57,
+  "printedStart": 100,
+  "printedEnd": 101,
+  "figures": 1,
+  "slug": "the-dream",
+  "words": 759
+ },
+ {
+  "title": "Beware of the News",
+  "section": "Becoming a Trader or Investor",
+  "order": 58,
+  "printedStart": 102,
+  "printedEnd": 104,
+  "figures": 0,
+  "slug": "beware-of-the-news",
+  "words": 1222
+ },
+ {
+  "title": "You Need a System",
+  "section": "Becoming a Trader or Investor",
+  "order": 59,
+  "printedStart": 105,
+  "printedEnd": 105,
+  "figures": 0,
+  "slug": "you-need-a-system",
+  "words": 535
+ },
+ {
+  "title": "Trading Hints & Tips",
+  "section": "Becoming a Trader or Investor",
+  "order": 60,
+  "printedStart": 106,
+  "printedEnd": 109,
+  "figures": 0,
+  "slug": "trading-hints-and-tips",
+  "words": 2199
+ },
+ {
+  "title": "What are the Main Signs of Strength?",
+  "section": "Becoming a Trader or Investor",
+  "order": 61,
+  "printedStart": 110,
+  "printedEnd": 110,
+  "figures": 0,
+  "slug": "what-are-the-main-signs-of-strength",
+  "words": 374
+ },
+ {
+  "title": "What are the Main Signs of Weakness?",
+  "section": "Becoming a Trader or Investor",
+  "order": 62,
+  "printedStart": 111,
+  "printedEnd": 111,
+  "figures": 0,
+  "slug": "what-are-the-main-signs-of-weakness",
+  "words": 476
+ },
+ {
+  "title": "Checklist for Going Long (Buying)",
+  "section": "Becoming a Trader or Investor",
+  "order": 63,
+  "printedStart": 112,
+  "printedEnd": 113,
+  "figures": 0,
+  "slug": "checklist-for-going-long-buying",
+  "words": 785
+ },
+ {
+  "title": "Checklist for Going Short (Selling)",
+  "section": "Becoming a Trader or Investor",
+  "order": 64,
+  "printedStart": 114,
+  "printedEnd": 115,
+  "figures": 0,
+  "slug": "checklist-for-going-short-selling",
+  "words": 662
+ },
+ {
+  "title": "How to Select a Stock the Easy Way",
+  "section": "Becoming a Trader or Investor",
+  "order": 65,
+  "printedStart": 116,
+  "printedEnd": 118,
+  "figures": 2,
+  "slug": "how-to-select-a-stock-the-easy-way",
+  "words": 1149
+ },
+ {
+  "title": "Closing Comments",
+  "section": "Becoming a Trader or Investor",
+  "order": 66,
+  "printedStart": 119,
+  "printedEnd": 120,
+  "figures": 0,
+  "slug": "closing-comments",
+  "words": 459
+ },
+ {
+  "title": "Suggested Reading List",
+  "section": "Appendix",
+  "order": 67,
+  "printedStart": 138,
+  "printedEnd": 138,
+  "figures": 0,
+  "slug": "suggested-reading-list",
+  "words": 100
+ },
+ {
+  "title": "Do Not Ignore These Trading Facts!",
+  "section": "Appendix",
+  "order": 68,
+  "printedStart": 140,
+  "printedEnd": 140,
+  "figures": 0,
+  "slug": "do-not-ignore-these-trading-facts",
+  "words": 131
+ }
+]

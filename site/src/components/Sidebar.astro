@@ -1,0 +1,42 @@
+---
+import manifest from '../data/manifest.json';
+
+const { current } = Astro.props as { current?: string };
+
+const sections: { name: string; items: typeof manifest }[] = [];
+for (const ch of manifest) {
+  let s = sections.find((x) => x.name === ch.section);
+  if (!s) sections.push((s = { name: ch.section, items: [] }));
+  s.items.push(ch);
+}
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<nav class="sidebar" id="sidebar" aria-label="Table of contents">
+  <a class="sidebar__brand" href={`${base}/`}>
+    <div class="sidebar__title">Master the Markets</div>
+    <div class="sidebar__author">Tom Williams</div>
+  </a>
+
+  {sections.map((s) => (
+    <div>
+      <div class="sidebar__section">{s.name}</div>
+      {s.items.map((ch) => (
+        <a
+          class="sidebar__link"
+          href={`${base}/read/${ch.slug}/`}
+          aria-current={ch.slug === current ? 'page' : undefined}
+        >
+          <span class="sidebar__num">{ch.order}</span>
+          <span>{ch.title}</span>
+        </a>
+      ))}
+    </div>
+  ))}
+
+  <div class="sidebar__section">Reference</div>
+  <a class="sidebar__link" href={`${base}/glossary/`} aria-current={current === 'glossary' ? 'page' : undefined}>
+    <span class="sidebar__num">§</span><span>Glossary of Terms</span>
+  </a>
+</nav>
+<div class="scrim" id="scrim"></div>

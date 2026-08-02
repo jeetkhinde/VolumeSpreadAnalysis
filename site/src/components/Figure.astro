@@ -1,0 +1,26 @@
+---
+interface Props {
+  src: string;
+  label?: string;
+  caption?: string;
+  width?: number;
+  height?: number;
+}
+const { src, label, caption, width, height } = Astro.props;
+---
+
+<figure class="fig">
+  <img
+    src={src}
+    width={width}
+    height={height}
+    loading="lazy"
+    decoding="async"
+    alt={caption ? `${label ? label + ' — ' : ''}${caption}` : (label ?? 'Chart from Master the Markets')}
+  />
+  {(label || caption) && (
+    <figcaption>
+      {label && <b>{label}</b>}{label && caption ? ' — ' : ''}{caption}
+    </figcaption>
+  )}
+</figure>

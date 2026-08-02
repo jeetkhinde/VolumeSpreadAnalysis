@@ -1,0 +1,93 @@
+---
+import Base from '../layouts/Base.astro';
+import manifest from '../data/manifest.json';
+import glossary from '../data/glossary.json';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const words = manifest.reduce((n, c) => n + c.words, 0);
+const charts = manifest.reduce((n, c) => n + c.figures, 0);
+const glCharts = glossary.reduce(
+  (n, e) => n + e.blocks.filter((b: any) => b.t === 'figure').length, 0);
+
+const sections: { name: string; items: typeof manifest }[] = [];
+for (const ch of manifest) {
+  let s = sections.find((x) => x.name === ch.section);
+  if (!s) sections.push((s = { name: ch.section, items: [] }));
+  s.items.push(ch);
+}
+const first = manifest[0];
+---
+
+<Base
+  title="Master the Markets — Tom Williams"
+  crumb="Contents"
+  description="Tom Williams' Master the Markets (4th edition), reformatted for reading online. Volume Spread Analysis, in full."
+>
+  <div class="home">
+    <div class="home__hero">
+      <div class="eyebrow">Volume Spread Analysis</div>
+      <h1>Master the Markets</h1>
+      <p class="home__sub">
+        Tom Williams' course in reading the market through the relationship between
+        volume, price spread and close — reformatted for reading online.
+      </p>
+
+      <div class="home__meta">
+        <span>{manifest.length} chapters</span>
+        <span>{words.toLocaleString()} words</span>
+        <span>{charts + glCharts} charts</span>
+        <span>{glossary.length} glossary terms</span>
+        <span>4th edition (2009)</span>
+      </div>
+
+      <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+        <a class="cta" href={`${base}/read/${first.slug}/`}>Start reading →</a>
+        <a class="cta cta--ghost" id="resume" href={`${base}/read/${first.slug}/`} hidden>
+          Continue where you left off
+        </a>
+      </div>
+    </div>
+
+    {sections.map((s) => (
+      <section class="toc__section">
+        <div class="toc__h">{s.name}</div>
+        {s.items.map((ch) => (
+          <a class="toc__row" href={`${base}/read/${ch.slug}/`}>
+            <span class="toc__n">{ch.order}</span>
+            <span class="toc__t">{ch.title}</span>
+            <span class="toc__p">
+              {ch.printedStart === ch.printedEnd ? `p. ${ch.printedStart}` : `pp. ${ch.printedStart}–${ch.printedEnd}`}
+            </span>
+          </a>
+        ))}
+      </section>
+    ))}
+
+    <section class="toc__section">
+      <div class="toc__h">Reference</div>
+      <a class="toc__row" href={`${base}/glossary/`}>
+        <span class="toc__n">§</span>
+        <span class="toc__t">Glossary of Terms</span>
+        <span class="toc__p">{glossary.length} entries</span>
+      </a>
+    </section>
+
+    <p style="margin-top:3rem;font-family:var(--sans);font-size:.78rem;color:var(--ink-faint);line-height:1.6">
+      Text and charts are Tom Williams' / TradeGuider Systems'
+      (© 1993–2009), reproduced here for personal reading.
+      The Section 5 product brochure and the page-number index have been omitted;
+      everything else in the book is present in full.
+    </p>
+  </div>
+
+  <script is:inline define:vars={{ base }}>
+    try {
+      const last = localStorage.getItem('mtm-last');
+      if (last) {
+        const a = document.getElementById('resume');
+        a.href = base + '/read/' + last + '/';
+        a.hidden = false;
+      }
+    } catch (e) {}
+  </script>
+</Base>
