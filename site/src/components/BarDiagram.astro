@@ -1,0 +1,231 @@
+---
+/**
+ * Data-driven VSA diagram renderer.
+ *
+ * A concept is described as data (bars with spread / close position / volume)
+ * and laid out here, so new diagrams cost a few lines of JSON rather than a
+ * hand-drawn SVG. Two shapes:
+ *
+ *   panels   — several mini charts side by side, each with a verdict
+ *   sequence — one run of bars, with optional zones, lines and callouts
+ *
+ * Price values (h, l, c) and volume (v) are 0–100 within the diagram, not
+ * real prices.
+ */
+export interface Bar {
+  h: number; l: number; c: number; v: number;
+  dir?: 'up' | 'down';
+  tone?: 'strong' | 'weak';
+  gapBefore?: number;
+}
+export interface Panel {
+  label: string;
+  verdict?: 'strong' | 'weak' | 'neutral';
+  note?: string;
+  bars: Bar[];
+}
+export interface Spec {
+  type: 'panels' | 'sequence';
+  title: string;
+  panels?: Panel[];
+  bars?: Bar[];
+  note?: string;
+  zones?: { from: number; to: number; top: number; bottom: number; tone?: string; label?: string }[];
+  lines?: { from: number; to: number; at: number; slope?: number; label?: string }[];
+  marks?: { at: number; text: string; tone?: 'strong' | 'weak'; above?: boolean }[];
+}
+
+const { spec } = Astro.props as { spec: Spec };
+
+const W = 640;
+const isPanels = spec.type === 'panels';
+
+// vertical layout
+const PY_TOP = isPanels ? 36 : 40;
+const PY_BOT = isPanels ? 138 : 140;
+// The band between PY_BOT and the top of the tallest volume bar is where
+// below-bar callouts live, so it has to stay clear.
+const VOL_BASE = isPanels ? 190 : 214;
+const VOL_MAX = 44;
+
+// Fit the price axis to the data rather than to a fixed 0–100, so the bars
+// fill the box. Panels share one scale so they stay comparable with each other.
+const allBars: Bar[] = isPanels
+  ? (spec.panels ?? []).flatMap((p) => p.bars)
+  : (spec.bars ?? []);
+const zoneVals = (spec.zones ?? []).flatMap((z) => [z.top, z.bottom]);
+const lineVals = (spec.lines ?? []).flatMap((l) => [l.at, l.at + (l.slope ?? 0)]);
+const lows = [...allBars.map((b) => b.l), ...zoneVals, ...lineVals];
+const highs = [...allBars.map((b) => b.h), ...zoneVals, ...lineVals];
+const rawLo = Math.min(...lows);
+const rawHi = Math.max(...highs);
+const pad = Math.max((rawHi - rawLo) * 0.08, 3);
+const LO = rawLo - pad;
+const HI = rawHi + pad;
+const VMAX = Math.max(...allBars.map((b) => b.v), 1);
+
+const py = (v: number) => PY_BOT - ((v - LO) / (HI - LO)) * (PY_BOT - PY_TOP);
+const vy = (v: number) => VOL_BASE - (v / VMAX) * VOL_MAX;
+
+/** Lay a run of bars into a horizontal box; returns drawable primitives. */
+function layout(bars: Bar[], x0: number, x1: number) {
+  const slots = bars.reduce((n, b) => n + 1 + (b.gapBefore ?? 0), 0);
+  const step = (x1 - x0) / Math.max(slots, 1);
+  const tick = Math.min(step * 0.34, 11);
+  let cursor = 0;
+  return bars.map((b) => {
+    cursor += b.gapBefore ?? 0;
+    const x = x0 + step * (cursor + 0.5);
+    cursor += 1;
+    return {
+      b, x, tick,
+      top: py(b.h), bot: py(b.l), close: py(b.c),
+      volY: vy(b.v), volH: VOL_BASE - vy(b.v),
+      volW: Math.min(step * 0.44, 15),
+    };
+  });
+}
+
+const panels = isPanels
+  ? (spec.panels ?? []).map((p, i, arr) => {
+      const w = W / arr.length;
+      const x0 = i * w + 16;
+      const x1 = (i + 1) * w - 16;
+      return { p, i, cx: (x0 + x1) / 2, divider: i > 0 ? i * w : null, bars: layout(p.bars, x0, x1) };
+    })
+  : [];
+
+const seq = !isPanels ? layout(spec.bars ?? [], 40, W - 24) : [];
+const H = isPanels ? 262 : 268;
+---
+
+<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={spec.title}>
+  <g class="ink">
+    {/* ── zones (sequence only) ───────────────────────────────────── */}
+    {!isPanels && (spec.zones ?? []).map((z) => {
+      const a = seq[Math.max(0, Math.min(z.from, seq.length - 1))];
+      const b = seq[Math.max(0, Math.min(z.to, seq.length - 1))];
+      if (!a || !b) return null;
+      return (
+        <g>
+          <rect
+            x={a.x - 14} y={py(z.top)}
+            width={b.x - a.x + 28} height={Math.max(py(z.bottom) - py(z.top), 2)}
+            class={`zone ${z.tone === 'weak' ? 'zone--weak' : 'zone--strong'}`}
+          />
+          {z.label && (
+            <text x={a.x - 10} y={py(z.top) - 6} class="lbl xs">{z.label}</text>
+          )}
+        </g>
+      );
+    })}
+
+    {/* ── trend lines (sequence only) ─────────────────────────────── */}
+    {!isPanels && (spec.lines ?? []).map((ln) => {
+      const a = seq[Math.max(0, Math.min(ln.from, seq.length - 1))];
+      const b = seq[Math.max(0, Math.min(ln.to, seq.length - 1))];
+      if (!a || !b) return null;
+      const y1 = py(ln.at);
+      const y2 = py(ln.at + (ln.slope ?? 0));
+      return (
+        <g>
+          <line x1={a.x - 16} y1={y1} x2={b.x + 16} y2={y2} class="trend" />
+          {ln.label && <text x={b.x + 20} y={y2 + 4} class="lbl xs">{ln.label}</text>}
+        </g>
+      );
+    })}
+
+    {/* ── panels ──────────────────────────────────────────────────── */}
+    {panels.map((pl) => (
+      <g>
+        {pl.divider !== null && (
+          <line x1={pl.divider} y1="30" x2={pl.divider} y2={VOL_BASE + 6} class="divider" />
+        )}
+        <text x={pl.cx} y="18" class="cap mid">{pl.p.label}</text>
+        <line x1={pl.cx - (W / panels.length) / 2 + 14} y1={VOL_BASE}
+              x2={pl.cx + (W / panels.length) / 2 - 14} y2={VOL_BASE} class="axis" />
+        {pl.bars.map((d) => (
+          <g>
+            <line x1={d.x} y1={d.top} x2={d.x} y2={d.bot} class="bar" />
+            <line x1={d.x} y1={d.close} x2={d.x + d.tick} y2={d.close}
+                  class={`bar ${d.b.dir ?? ''}`} />
+            <rect x={d.x - d.volW / 2} y={d.volY} width={d.volW} height={d.volH}
+                  class={`vol ${d.b.tone ?? ''}`} />
+          </g>
+        ))}
+        {pl.p.verdict && pl.p.verdict !== 'neutral' && (
+          <text x={pl.cx} y={VOL_BASE + 26} class={`lbl sm mid ${pl.p.verdict}`}>
+            {pl.p.verdict === 'strong' ? 'STRENGTH' : 'WEAKNESS'}
+          </text>
+        )}
+        {pl.p.note && pl.p.note.split('|').map((line, k) => (
+          <text x={pl.cx} y={VOL_BASE + 46 + k * 15} class="lbl xs mid">{line.trim()}</text>
+        ))}
+      </g>
+    ))}
+
+    {/* ── sequence ────────────────────────────────────────────────── */}
+    {!isPanels && (
+      <g>
+        <text x="8" y={PY_TOP - 14} class="cap">PRICE</text>
+        <text x="8" y={VOL_BASE - 2} class="cap">VOL</text>
+        <line x1="34" y1={VOL_BASE} x2={W - 16} y2={VOL_BASE} class="axis" />
+        {seq.map((d) => (
+          <g>
+            <line x1={d.x} y1={d.top} x2={d.x} y2={d.bot} class="bar" />
+            <line x1={d.x} y1={d.close} x2={d.x + d.tick} y2={d.close}
+                  class={`bar ${d.b.dir ?? ''}`} />
+            <rect x={d.x - d.volW / 2} y={d.volY} width={d.volW} height={d.volH}
+                  class={`vol ${d.b.tone ?? ''}`} />
+          </g>
+        ))}
+        {(spec.marks ?? []).map((m) => {
+          const d = seq[Math.max(0, Math.min(m.at, seq.length - 1))];
+          if (!d) return null;
+          // Below-marks sit in the band between the price and volume areas so
+          // they never collide with a trend line or another bar.
+          const below = m.above === false;
+          const y = below ? PY_BOT + 18 : d.top - 12;
+          return (
+            <g>
+              <line x1={d.x} y1={below ? d.bot + 4 : y + 4}
+                    x2={d.x} y2={below ? y - 9 : d.top - 4} class="pointer" />
+              <text x={d.x} y={y} class={`lbl xs mid mark ${m.tone ?? ''}`}>{m.text}</text>
+            </g>
+          );
+        })}
+        {spec.note && spec.note.split('|').map((line, k) => (
+          <text x={W / 2} y={VOL_BASE + 28 + k * 16} class="lbl sm mid">{line.trim()}</text>
+        ))}
+      </g>
+    )}
+  </g>
+</svg>
+
+<style>
+  svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .bar { stroke: var(--ink); stroke-width: 3; stroke-linecap: butt; }
+  .bar.up { stroke: var(--strength); }
+  .bar.down { stroke: var(--weakness); }
+  .axis { stroke: var(--rule); stroke-width: 1.5; }
+  .divider { stroke: var(--rule); stroke-width: 1; }
+  .trend { stroke: var(--ink-faint); stroke-width: 1.6; stroke-dasharray: 5 4; }
+  .pointer { stroke: var(--ink-faint); stroke-width: 1.2; }
+  .vol { fill: var(--ink-faint); }
+  .vol.strong { fill: var(--strength); }
+  .vol.weak { fill: var(--weakness); }
+  .zone { rx: 5; }
+  .zone--strong { fill: var(--strength); opacity: .12; }
+  .zone--weak { fill: var(--weakness); opacity: .12; }
+
+  text { font-family: var(--sans); fill: var(--ink); }
+  .cap { font-size: 10.5px; font-weight: 700; letter-spacing: .09em; fill: var(--ink-faint); }
+  .lbl { font-size: 13px; }
+  .lbl.sm { font-size: 11.5px; }
+  .lbl.xs { font-size: 10.5px; fill: var(--ink-soft); }
+  .mid { text-anchor: middle; }
+  /* halo so callouts stay legible over trend lines and bars */
+  .mark { paint-order: stroke; stroke: var(--paper-2); stroke-width: 3.5px; stroke-linejoin: round; }
+  .strong { fill: var(--strength); }
+  .weak { fill: var(--weakness); }
+</style>

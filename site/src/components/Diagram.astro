@@ -3,15 +3,24 @@
  * Original explanatory diagrams — not from the book.
  * Inline SVG so they stay crisp, theme-aware and weightless.
  */
+import BarDiagram from './BarDiagram.astro';
+import specs from '../data/diagrams.json';
+
 interface Props { name: string }
 const { name } = Astro.props;
 
-const TITLES: Record<string, string> = {
+// Two hand-drawn diagrams that don't fit the bar/volume grammar; everything
+// else is described as data in diagrams.json and laid out by BarDiagram.
+const BESPOKE: Record<string, string> = {
   'bar-anatomy': 'How to read one price bar',
-  'signals': 'The four bar signatures, side by side',
-  'effort-result': 'Effort versus result',
   'cycle': 'The four phases of a market cycle',
 };
+
+const spec = (specs as Record<string, any>)[name];
+const title = BESPOKE[name] ?? spec?.title ?? '';
+if (!spec && !BESPOKE[name]) {
+  throw new Error(`Unknown diagram "${name}" — add it to src/data/diagrams.json`);
+}
 ---
 
 <figure class="dgm">
@@ -53,68 +62,6 @@ const TITLES: Record<string, string> = {
       </svg>
     )}
 
-    {name === 'signals' && (
-      <svg viewBox="0 0 640 300" role="img" aria-label="Four bar signatures: no demand, test, up-thrust and stopping volume, each showing spread, close and volume">
-        <g class="ink">
-          {[
-            { x: 0, t: 'No demand', v: 22, hi: 96, lo: 132, close: 100, cd: 'up', tag: 'weak',
-              d: 'narrow spread up-bar, low volume' },
-            { x: 160, t: 'Test', v: 26, hi: 90, lo: 168, close: 96, cd: 'up', tag: 'strong',
-              d: 'marked down, closes high, low volume' },
-            { x: 320, t: 'Up-thrust', v: 74, hi: 74, lo: 150, close: 144, cd: 'down', tag: 'weak',
-              d: 'pushed up, closes near low, high volume' },
-            { x: 480, t: 'Stopping volume', v: 86, hi: 84, lo: 170, close: 92, cd: 'up', tag: 'strong',
-              d: 'down-bar, closes on high, very high volume' },
-          ].map((s) => (
-            <g transform={`translate(${s.x + 60},0)`}>
-              <text x="0" y="16" class="cap mid">{s.t}</text>
-              <line x1="0" y1={s.hi} x2="0" y2={s.lo} class="bar" />
-              <line x1="0" y1={s.close} x2="18" y2={s.close} class={`bar ${s.cd}`} />
-              <line x1="-46" y1="200" x2="46" y2="200" class="axis" />
-              <rect x="-7" y={200 - s.v} width="14" height={s.v} class={`vol ${s.tag}`} />
-              <text x="0" y="228" class={`lbl sm mid ${s.tag}`}>{s.tag === 'strong' ? 'STRENGTH' : 'WEAKNESS'}</text>
-              <text x="0" y="252" class="lbl xs mid">{s.d.split(',')[0]},</text>
-              <text x="0" y="268" class="lbl xs mid">{s.d.split(',').slice(1).join(',').trim()}</text>
-            </g>
-          ))}
-        </g>
-      </svg>
-    )}
-
-    {name === 'effort-result' && (
-      <svg viewBox="0 0 640 260" role="img" aria-label="Effort versus result: high volume that moves price, versus high volume that does not">
-        <g class="ink">
-          <g transform="translate(20,0)">
-            <text x="120" y="16" class="cap mid">EFFORT — AND A RESULT</text>
-            <text x="-6" y="70" class="cap">PRICE</text>
-            {[0, 1, 2, 3, 4].map((i) => (
-              <line x1={40 + i * 40} y1={110 - i * 18} x2={40 + i * 40} y2={136 - i * 18} class="bar" />
-            ))}
-            <text x="-6" y="196" class="cap">VOL</text>
-            <line x1="0" y1="200" x2="240" y2="200" class="axis" />
-            {[20, 28, 36, 44, 52].map((h, i) => (
-              <rect x={33 + i * 40} y={200 - h} width="14" height={h} class="vol strong" />
-            ))}
-            <text x="120" y="232" class="lbl sm mid strong">Volume rises, price travels.</text>
-            <text x="120" y="250" class="lbl xs mid">The move is genuine.</text>
-          </g>
-          <line x1="320" y1="30" x2="320" y2="212" class="divider" />
-          <g transform="translate(360,0)">
-            <text x="120" y="16" class="cap mid">EFFORT — AND NO RESULT</text>
-            {[0, 1, 2, 3, 4].map((i) => (
-              <line x1={40 + i * 40} y1={104 + (i % 2) * 5} x2={40 + i * 40} y2={130 + (i % 2) * 5} class="bar" />
-            ))}
-            <line x1="0" y1="200" x2="240" y2="200" class="axis" />
-            {[30, 40, 46, 50, 55].map((h, i) => (
-              <rect x={33 + i * 40} y={200 - h} width="14" height={h} class="vol weak" />
-            ))}
-            <text x="120" y="232" class="lbl sm mid weak">Volume rises, price stalls.</text>
-            <text x="120" y="250" class="lbl xs mid">Someone is absorbing it.</text>
-          </g>
-        </g>
-      </svg>
-    )}
-
     {name === 'cycle' && (
       <svg viewBox="0 0 640 260" role="img" aria-label="Market cycle: accumulation, mark-up, distribution and mark-down">
         <g class="ink">
@@ -140,8 +87,9 @@ const TITLES: Record<string, string> = {
         </g>
       </svg>
     )}
+    {spec && <BarDiagram spec={spec} />}
   </div>
-  <figcaption>{TITLES[name]} <span>· added for this edition, not from the book</span></figcaption>
+  <figcaption>{title} <span>· added for this edition, not from the book</span></figcaption>
 </figure>
 
 <style>

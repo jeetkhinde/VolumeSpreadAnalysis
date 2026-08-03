@@ -69,7 +69,8 @@
       "Bullish volume: rising on up-moves, falling on down-moves.",
       "Bearish volume: rising on down-moves, falling on up-moves.",
       "These definitions are a foundation, not a trading signal by themselves."
-    ]
+    ],
+    "diagram": "bullish-bearish-volume"
   },
   "accumulation-and-distribution": {
     "plain": "Large operators cannot just buy a big position in one go. That would push the price up against themselves. So they run a planned campaign, buying quietly over time whenever selling appears. That is accumulation. Distribution is the same process in reverse: selling into strength while the public is eager to buy.",
@@ -94,7 +95,8 @@
       "Resistance = trapped holders selling into any rally to break even.",
       "Old trading areas above the current price are supply waiting to hit you.",
       "Supply must be removed before a market can move up cleanly."
-    ]
+    ],
+    "diagram": "resistance"
   },
   "supply-and-demand": {
     "plain": "The professional's whole focus is on the state of supply and demand. He does not have better information than you. He just reads volume, price action and spread properly. This chapter names the method: Volume Spread Analysis, or VSA.",
@@ -119,7 +121,8 @@
       "Strength appears on down-bars. Weakness appears on up-bars.",
       "High volume down, then no further fall = professionals were buying.",
       "Always ask what happened on the NEXT bar. That confirms the reading."
-    ]
+    ],
+    "diagram": "weak-or-strong"
   },
   "how-to-identify-buying-and-selling": {
     "plain": "For a market to rise you need real buying, seen as an up-bar with increasing volume. But there is a limit. If volume becomes excessive on an up-bar, that extra volume is professionals selling into the buying, not more demand.",
@@ -135,7 +138,8 @@
       "No demand = up-bar + narrow spread + low volume.",
       "It means the professionals are not taking part in the rally.",
       "Never trade it alone. Check the background and wait for confirmation."
-    ]
+    ],
+    "diagram": "no-demand-vs-demand"
   },
   "testing-supply": {
     "plain": "A test is the best low-volume buy signal in the book. Price gets marked down hard during the bar, but then recovers to close near the high, on low volume. Low volume on the dip means there is no selling left to hit. A large operator does this deliberately to check the road is clear before marking prices up.",
@@ -144,7 +148,8 @@
       "Low volume on the dip proves supply has dried up.",
       "A test is only bullish with strength behind it, such as a selling climax or an uptrend.",
       "A test on HIGH volume has failed. Supply is still present."
-    ]
+    ],
+    "diagram": "test-vs-failed"
   },
   "pushing-up-through-supply": {
     "plain": "When price pushes up into an old trading range, it meets trapped sellers. To get through, professional money has to absorb that supply, which shows up as high volume. If the market keeps going after that effort, the supply has been cleared.",
@@ -152,7 +157,8 @@
       "Old trading ranges are known supply levels.",
       "Pushing through them requires high volume, which is the absorption.",
       "If price continues after the high volume, supply has been beaten."
-    ]
+    ],
+    "diagram": "supply-area"
   },
   "high-volume-on-market-tops": {
     "plain": "The media treats new highs on huge volume as proof the rally continues. The author calls this dangerous. High volume at a top, when the news is at its best, is usually professionals handing stock over to an excited public.",
@@ -160,7 +166,8 @@
       "Very high volume at new highs is a warning, not a confirmation.",
       "Good news at the top is the cover under which distribution happens.",
       "High volume alone means nothing. Look at spread and close too."
-    ]
+    ],
+    "diagram": "high-volume-top"
   },
   "effort-versus-results": {
     "plain": "This is the mental model behind everything else. Effort is volume. Results are the price movement it produces. Big effort should give a big result. When you see huge volume but the price barely moves, an opposing force is absorbing it, and that tells you who is really in control.",
@@ -178,7 +185,8 @@
       "Selling decreasing on a down-move = market wants to go up.",
       "Buying decreasing on an up-move = market wants to fall.",
       "Ask which direction has less opposition, rather than trying to predict."
-    ]
+    ],
+    "diagram": "path-of-least-resistance"
   },
   "markets-can-be-marked-up-or-down": {
     "plain": "Big moves from one price level to another happen fast, and that speed is deliberate. It is designed to lock you into a bad position or lock you out of a good one before you can react. Expect it rather than being surprised by it.",
@@ -202,7 +210,8 @@
       "An unclear daily bar often becomes obvious on an intraday chart.",
       "Lower timeframes reveal where inside the bar the activity happened.",
       "Use timeframes together, not as alternatives."
-    ]
+    ],
+    "diagram": "timeframes"
   },
   "the-relationship-between-the-cash-and-futures-price": {
     "plain": "Futures swing above and below the cash price, but the cash price sets the limits. Large houses with low costs arbitrage any gap away, which keeps the two tied together. Useful to know so you do not misread a futures move as independent.",
@@ -242,7 +251,8 @@
       "Higher lows in sequence = medium-term strength.",
       "Lower highs in sequence = medium-term weakness.",
       "Use structure as background, then read individual bars inside it."
-    ]
+    ],
+    "diagram": "trend-structure"
   },
   "trend-scaling": {
     "plain": "Trends are fractal. A chart looks jagged at every zoom level, so 'the trend' depends entirely on the timeframe you are observing from. You must fix your point of observation before the word trend means anything.",
@@ -266,7 +276,8 @@
       "Overbought/oversold is defined by position in the channel.",
       "It is relative, never an absolute number.",
       "A sideways market keeps trading in its range until effort breaks it out."
-    ]
+    ],
+    "diagram": "channel"
   },
   "perceived-value-and-trend-lines": {
     "plain": "Using three traders as an example, the author shows that different people form different ideas of what a fair price is, based on their own past trades. Those clustered opinions are what create resistance at a line.",
@@ -314,7 +325,8 @@
       "Absorption = high volume down-bar at the lower line, next bar UP.",
       "The up-bar afterwards is what proves buying was inside the volume.",
       "Without the follow-up bar, you cannot call it absorption."
-    ]
+    ],
+    "diagram": "absorption"
   },
   "what-starts-a-bull-market": {
     "plain": "Bull markets start in gloom, not optimism. Prices fall for a long time until weak holders finally give up and dump their stock. Professionals buy that panic. Once stock has moved into strong hands, there is nothing left to sell, and the market can rise.",
@@ -363,7 +375,8 @@
       "It appears after a rally, at tops, and is a sign of weakness.",
       "Its purpose is to trigger stops and trap buyers.",
       "Rarely seen in strong markets, so the background matters."
-    ]
+    ],
+    "diagram": "upthrust"
   },
   "the-selling-climax-and-professional-support": {
     "plain": "A selling climax shows ultra-wide spreads down on exceptionally high volume, closing on or near the high of the bar. Bad news makes it more bullish, not less, because the panic is what lets professionals buy heavily. A reverse up-thrust is the same idea in milder form.",
@@ -372,7 +385,8 @@
       "Bad news makes it more bullish, because that is what creates the panic.",
       "The close near the high is what proves buying came in.",
       "A reverse up-thrust is a less intense version of the same thing."
-    ]
+    ],
+    "diagram": "selling-climax"
   },
   "the-buying-climax-and-professional-selling": {
     "plain": "The mirror image, shown on the Nikkei top of 1989. Ultra-high volume on up-weeks, at the end of a long rise, and the market cannot go higher afterwards. The crucial detail: the high volume must come in on up-bars. That is where the selling hides.",
@@ -381,7 +395,8 @@
       "True weakness always appears on an up-bar.",
       "If price cannot make progress on that volume, it was distribution.",
       "This is what creates the bear market that follows."
-    ]
+    ],
+    "diagram": "buying-climax"
   },
   "a-buying-climax-in-an-individual-stock": {
     "plain": "Same pattern in a single stock: wide spreads up on very high volume, but price does not respond upward. Your judgement gets clouded by the good news and the fast mark-up. That is exactly the design.",
@@ -413,7 +428,8 @@
       "High volume down-bar closing MIDDLE or HIGH = buying absorbed the selling.",
       "High volume down-bar closing on the LOW = selling won.",
       "The close position within the bar is the deciding detail."
-    ]
+    ],
+    "diagram": "close-position"
   },
   "how-to-recognise-a-market-bottom": {
     "plain": "Worked example. A wide spread down on high volume looks bearish, but over the following days the market does not fall and in fact rises. If that volume had really been selling, the market could not have gone up. So it was buying.",
@@ -437,7 +453,8 @@
       "Shake-out = gap down, sharp fall, then the market gaps back up.",
       "Only bullish when there is NO major distribution behind it.",
       "Its purpose is to frighten out the last weak holders."
-    ]
+    ],
+    "diagram": "shakeout"
   },
   "stopping-volume": {
     "plain": "During a fall, price starts resisting further decline. You see it as a down-bar on very high volume closing on the highs. Buying must have entered for it to close there. Think of it as large buy orders acting like a brake on the down-move.",
@@ -445,7 +462,8 @@
       "Stopping volume = down-bar + very high volume + close on the HIGH.",
       "It comes from buy orders big enough to brake the fall.",
       "It marks resistance to further decline, not an instant reversal."
-    ]
+    ],
+    "diagram": "stopping-volume"
   },
   "falling-pressure": {
     "plain": "A wide spread down on LOW volume, closing on the low. It looks bad, but it shows nobody is really selling. It is not a buy signal on its own. It tells you the market is unlikely to fall much further.",
@@ -453,7 +471,8 @@
       "Falling pressure = wide spread down + LOW volume + close on the low.",
       "Low volume means determined selling is absent.",
       "Not a buy signal by itself. It only says further decline is unlikely."
-    ]
+    ],
+    "diagram": "falling-pressure"
   },
   "the-dream": {
     "plain": "An honest reality check about going full-time. Many are wiped out while learning. The people who survive are usually good at money management and handling risk, sometimes knowing very little else.",
@@ -506,7 +525,8 @@
       "Narrow spread up-bar into new highs on very high volume = weakness.",
       "High volume up-bar with no higher prices next bar = weakness.",
       "Weakness always shows itself on up-bars."
-    ]
+    ],
+    "diagram": "weakness-signatures"
   },
   "checklist-for-going-long-buying": {
     "plain": "A pre-trade checklist to run before every long. Can you see an uptrend forming, with higher lows? Is there daily support, meaning each low is higher than the last? Are you chasing the move? Is there strength in the background and no weakness overhead?",
@@ -532,7 +552,8 @@
       "Buy stocks acting STRONGER than their parent index.",
       "A stock resisting down-moves in the index is being accumulated.",
       "Never buy just because something looks cheap."
-    ]
+    ],
+    "diagram": "relative-strength"
   },
   "closing-comments": {
     "plain": "The closing message. Knowing which way prices will move is not enough on its own. Your own skill, discipline and judgement decide whether you actually profit from that knowledge.",

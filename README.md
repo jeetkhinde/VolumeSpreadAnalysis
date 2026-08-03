@@ -24,7 +24,9 @@ site/                                    Astro 5 site
   src/content/book/*.mdx                 68 chapters
   src/data/glossary.json                 61 glossary entries
   src/data/annotations.json              plain-English summaries + takeaways
-  src/components/Diagram.astro           original explanatory diagrams
+  src/data/diagrams.json                 diagram specs (data, not drawings)
+  src/components/BarDiagram.astro        renders those specs
+  src/components/Diagram.astro           dispatch + the two hand-drawn ones
   public/figures/*.webp                  82 charts
 ```
 
@@ -40,10 +42,24 @@ prose would risk quietly changing the exact bar conditions the method depends on
 away the completeness guarantee below. You get the plain version first and his
 precise wording underneath.
 
-Four diagrams were drawn for this edition — how to read a single bar, the four
-bar signatures side by side, effort versus result, and the market cycle. They are
-inline SVG, theme-aware, and labelled as not being from the book. Every takeaway
-is also collected on one **Key Points** page.
+**25 of the 68 chapters carry a diagram** drawn for this edition — every chapter
+whose idea is easier to see than to read. They are inline SVG, theme-aware, and
+labelled as not being from the book. Every takeaway is also collected on one
+**Key Points** page, which doubles as a visual cheat-sheet.
+
+Most are described as *data*, not drawn by hand. `src/data/diagrams.json` holds a
+spec per diagram — a list of bars with spread, close position and volume — and
+`BarDiagram.astro` lays it out, auto-fitting the price axis to the data and
+sharing one scale across panels so they stay comparable. Adding a diagram costs a
+few lines of JSON. Two shapes cover almost everything:
+
+- **panels** — mini charts side by side, each with a verdict
+  (*a genuine test vs a failed test*, *closes low / middle / high*)
+- **sequence** — a run of bars with optional zones, trend lines and callouts
+  (*shake-out*, *absorption at a lower trend line*, *up-thrust*)
+
+Only *how to read one price bar* and *the market cycle* are hand-drawn, because
+they are not bar-and-volume shapes.
 
 ## What was kept, and what wasn't
 
