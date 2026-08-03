@@ -1,0 +1,126 @@
+---
+/**
+ * Non-chart concept diagrams: process flows and two-sided comparisons.
+ *
+ * Rendered as HTML rather than SVG because they are text-heavy — HTML wraps,
+ * reflows on mobile and stays selectable, which SVG <text> does not.
+ */
+export interface Flow {
+  type: 'flow';
+  title: string;
+  steps: { label: string; sub?: string; tone?: 'strong' | 'weak' }[];
+  note?: string;
+}
+export interface Compare {
+  type: 'compare';
+  title: string;
+  left: { label: string; tone?: 'strong' | 'weak'; items: string[] };
+  right: { label: string; tone?: 'strong' | 'weak'; items: string[] };
+  note?: string;
+}
+
+const { spec } = Astro.props as { spec: Flow | Compare };
+---
+
+{spec.type === 'flow' && (
+  <div class="flow" data-n={spec.steps.length}>
+    {spec.steps.map((s, i) => (
+      <>
+        {i > 0 && <div class="flow__arrow" aria-hidden="true">→</div>}
+        <div class={`flow__step ${s.tone ?? ''}`}>
+          <div class="flow__label">{s.label}</div>
+          {s.sub && <div class="flow__sub">{s.sub}</div>}
+        </div>
+      </>
+    ))}
+  </div>
+)}
+
+{spec.type === 'compare' && (
+  <div class="cmp">
+    {[spec.left, spec.right].map((side) => (
+      <div class={`cmp__side ${side.tone ?? ''}`}>
+        <div class="cmp__label">{side.label}</div>
+        <ul>{side.items.map((it) => <li>{it}</li>)}</ul>
+      </div>
+    ))}
+  </div>
+)}
+
+{spec.note && <p class="dgm__note">{spec.note}</p>}
+
+<style>
+  /* ── flow ─────────────────────────────────────────────────────────── */
+  /* Up to three steps fit across; four or more stack vertically, because
+     wrapping a horizontal flow leaves an arrow pointing at nothing. */
+  .flow { display: flex; align-items: stretch; gap: .5rem; }
+  .flow[data-n="4"], .flow[data-n="5"], .flow[data-n="6"] {
+    flex-direction: column; align-items: stretch;
+  }
+  .flow[data-n="4"] .flow__arrow,
+  .flow[data-n="5"] .flow__arrow,
+  .flow[data-n="6"] .flow__arrow {
+    transform: rotate(90deg); align-self: center;
+  }
+  .flow__step {
+    flex: 1 1 0; min-width: 8.5rem;
+    border: 1px solid var(--rule); border-radius: 9px;
+    background: var(--paper);
+    padding: .8rem .85rem;
+  }
+  .flow__step.strong { border-color: color-mix(in srgb, var(--strength) 55%, var(--rule)); }
+  .flow__step.weak { border-color: color-mix(in srgb, var(--weakness) 55%, var(--rule)); }
+  .flow__label {
+    font-family: var(--sans); font-size: .95rem; font-weight: 650;
+    line-height: 1.35; color: var(--ink);
+  }
+  .flow__step.strong .flow__label { color: var(--strength); }
+  .flow__step.weak .flow__label { color: var(--weakness); }
+  .flow__sub {
+    font-family: var(--sans); font-size: .84rem; line-height: 1.5;
+    color: var(--ink-soft); margin-top: .3rem;
+  }
+  .flow__arrow {
+    align-self: center; flex: 0 0 auto;
+    font-size: 1.1rem; color: var(--ink-faint); line-height: 1;
+  }
+
+  /* ── comparison ───────────────────────────────────────────────────── */
+  .cmp { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; }
+  .cmp__side {
+    border: 1px solid var(--rule); border-radius: 9px;
+    background: var(--paper); padding: .9rem 1rem 1rem;
+  }
+  .cmp__side.strong {
+    border-color: color-mix(in srgb, var(--strength) 45%, var(--rule));
+    background: color-mix(in srgb, var(--strength) 5%, var(--paper));
+  }
+  .cmp__side.weak {
+    border-color: color-mix(in srgb, var(--weakness) 45%, var(--rule));
+    background: color-mix(in srgb, var(--weakness) 5%, var(--paper));
+  }
+  .cmp__label {
+    font-family: var(--sans); font-size: .7rem; font-weight: 700;
+    letter-spacing: .09em; text-transform: uppercase;
+    color: var(--ink-faint); margin-bottom: .55rem;
+  }
+  .cmp__side.strong .cmp__label { color: var(--strength); }
+  .cmp__side.weak .cmp__label { color: var(--weakness); }
+  .cmp ul { margin: 0; padding-left: 1.05rem; }
+  .cmp li {
+    font-family: var(--sans); font-size: .95rem; line-height: 1.55;
+    margin: .4em 0; color: var(--ink);
+  }
+  .cmp li::marker { color: var(--ink-faint); }
+
+  .dgm__note {
+    font-family: var(--sans); font-size: .92rem; line-height: 1.6;
+    color: var(--ink-soft); margin: .9rem 0 0; text-align: center;
+  }
+
+  @media (max-width: 40rem) {
+    .cmp { grid-template-columns: 1fr; }
+    .flow__arrow { transform: rotate(90deg); width: 100%; text-align: center; }
+    .flow { flex-direction: column; }
+  }
+</style>

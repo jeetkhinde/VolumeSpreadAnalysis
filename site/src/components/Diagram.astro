@@ -4,6 +4,7 @@
  * Inline SVG so they stay crisp, theme-aware and weightless.
  */
 import BarDiagram from './BarDiagram.astro';
+import ConceptDiagram from './ConceptDiagram.astro';
 import specs from '../data/diagrams.json';
 
 interface Props { name: string }
@@ -87,7 +88,8 @@ if (!spec && !BESPOKE[name]) {
         </g>
       </svg>
     )}
-    {spec && <BarDiagram spec={spec} />}
+    {spec && (spec.type === 'panels' || spec.type === 'sequence') && <BarDiagram spec={spec} />}
+    {spec && (spec.type === 'flow' || spec.type === 'compare') && <ConceptDiagram spec={spec} />}
   </div>
   <figcaption>{title} <span>· added for this edition, not from the book</span></figcaption>
 </figure>
