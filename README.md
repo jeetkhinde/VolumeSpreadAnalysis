@@ -24,8 +24,9 @@ site/                                    Astro 5 site
   src/content/book/*.mdx                 68 chapters
   src/data/glossary.json                 61 glossary entries
   src/data/annotations.json              plain-English summaries + takeaways
-  src/data/diagrams.json                 diagram specs (data, not drawings)
-  src/components/BarDiagram.astro        renders those specs
+  src/data/diagrams.json                 66 diagram specs (data, not drawings)
+  src/components/BarDiagram.astro        renders panels + sequence as SVG
+  src/components/ConceptDiagram.astro    renders flow + compare as HTML
   src/components/Diagram.astro           dispatch + the two hand-drawn ones
   public/figures/*.webp                  82 charts
 ```
@@ -42,24 +43,29 @@ prose would risk quietly changing the exact bar conditions the method depends on
 away the completeness guarantee below. You get the plain version first and his
 precise wording underneath.
 
-**25 of the 68 chapters carry a diagram** drawn for this edition — every chapter
-whose idea is easier to see than to read. They are inline SVG, theme-aware, and
-labelled as not being from the book. Every takeaway is also collected on one
-**Key Points** page, which doubles as a visual cheat-sheet.
+**All 68 chapters carry a diagram** drawn for this edition. They are theme-aware,
+labelled as not being from the book, and every takeaway is also collected on one
+**Key Points** page that doubles as a visual cheat-sheet.
 
-Most are described as *data*, not drawn by hand. `src/data/diagrams.json` holds a
-spec per diagram — a list of bars with spread, close position and volume — and
-`BarDiagram.astro` lays it out, auto-fitting the price axis to the data and
-sharing one scale across panels so they stay comparable. Adding a diagram costs a
-few lines of JSON. Two shapes cover almost everything:
+They are described as *data*, not drawn by hand. `src/data/diagrams.json` holds a
+spec per diagram and two renderers lay them out, so adding one costs a few lines
+of JSON. Four shapes cover the whole book:
 
-- **panels** — mini charts side by side, each with a verdict
-  (*a genuine test vs a failed test*, *closes low / middle / high*)
-- **sequence** — a run of bars with optional zones, trend lines and callouts
-  (*shake-out*, *absorption at a lower trend line*, *up-thrust*)
+| Shape | For | Example |
+|---|---|---|
+| `panels` | bar signatures side by side | a genuine test vs a failed test |
+| `sequence` | a run of bars with zones, trend lines, callouts | shake-out, absorption, up-thrust |
+| `flow` | a process with steps and arrows | how a campaign is run, the long checklist |
+| `compare` | two sides of an argument | what the news says vs what the volume says |
 
-Only *how to read one price bar* and *the market cycle* are hand-drawn, because
-they are not bar-and-volume shapes.
+`BarDiagram.astro` renders `panels` and `sequence` as SVG, auto-fitting the price
+axis to the data and sharing one scale across panels so they stay comparable.
+`ConceptDiagram.astro` renders `flow` and `compare` as HTML rather than SVG,
+because they are text-heavy and need to wrap and reflow on mobile. Flows of four
+or more steps stack vertically — wrapping a horizontal flow leaves an arrow
+pointing at nothing.
+
+Only *how to read one price bar* and *the market cycle* are hand-drawn.
 
 ## What was kept, and what wasn't
 
@@ -119,6 +125,7 @@ uncaptioned illustrations survive.
 
 Zero client JS for the content itself; the interactive bits are ~4 KB of vanilla script.
 
+- Body text set at 20px with 1.8 line height on a ~65-character measure
 - Full-text search across chapters and glossary (`/`), keyboard-navigable
 - Chapter nav with `←` / `→`, glossary with `g`
 - Light/dark theme, respects system preference, remembered

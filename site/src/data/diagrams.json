@@ -1,402 +1,3170 @@
 {
-  "signals": {
-    "type": "panels",
-    "title": "The four bar signatures, side by side",
-    "panels": [
-      { "label": "No demand", "verdict": "weak", "note": "narrow spread up-bar, | low volume",
-        "bars": [{ "h": 64, "l": 52, "c": 61, "v": 16, "dir": "up", "tone": "weak" }] },
-      { "label": "Test", "verdict": "strong", "note": "marked down, closes high, | low volume",
-        "bars": [{ "h": 58, "l": 20, "c": 55, "v": 18, "dir": "up", "tone": "strong" }] },
-      { "label": "Up-thrust", "verdict": "weak", "note": "pushed up, closes near low, | high volume",
-        "bars": [{ "h": 88, "l": 62, "c": 66, "v": 76, "dir": "down", "tone": "weak" }] },
-      { "label": "Stopping volume", "verdict": "strong", "note": "down-bar closes on high, | very high volume",
-        "bars": [{ "h": 38, "l": 16, "c": 35, "v": 92, "dir": "up", "tone": "strong" }] }
-    ]
-  },
-
-  "effort-result": {
-    "type": "panels",
-    "title": "Effort versus result",
-    "panels": [
-      { "label": "Effort — and a result", "note": "volume rises, price travels | the move is genuine",
-        "bars": [
-          { "h": 40, "l": 26, "c": 37, "v": 22, "dir": "up", "tone": "strong" },
-          { "h": 54, "l": 38, "c": 51, "v": 32, "dir": "up", "tone": "strong" },
-          { "h": 68, "l": 52, "c": 65, "v": 44, "dir": "up", "tone": "strong" },
-          { "h": 82, "l": 66, "c": 79, "v": 56, "dir": "up", "tone": "strong" },
-          { "h": 94, "l": 78, "c": 91, "v": 68, "dir": "up", "tone": "strong" }
-        ] },
-      { "label": "Effort — and no result", "note": "volume rises, price stalls | someone is absorbing it",
-        "bars": [
-          { "h": 72, "l": 58, "c": 68, "v": 30, "dir": "up", "tone": "weak" },
-          { "h": 74, "l": 60, "c": 63, "v": 46, "dir": "down", "tone": "weak" },
-          { "h": 72, "l": 58, "c": 69, "v": 58, "dir": "up", "tone": "weak" },
-          { "h": 75, "l": 61, "c": 64, "v": 70, "dir": "down", "tone": "weak" },
-          { "h": 73, "l": 59, "c": 70, "v": 84, "dir": "up", "tone": "weak" }
-        ] }
-    ]
-  },
-
-  "bullish-bearish-volume": {
-    "type": "panels",
-    "title": "Bullish volume and bearish volume",
-    "panels": [
-      { "label": "Bullish volume", "verdict": "strong", "note": "volume rises on up-bars | and falls on down-bars",
-        "bars": [
-          { "h": 48, "l": 30, "c": 45, "v": 28, "dir": "up", "tone": "strong" },
-          { "h": 60, "l": 42, "c": 57, "v": 44, "dir": "up", "tone": "strong" },
-          { "h": 74, "l": 56, "c": 71, "v": 60, "dir": "up", "tone": "strong" },
-          { "h": 70, "l": 58, "c": 60, "v": 24, "dir": "down" },
-          { "h": 66, "l": 54, "c": 56, "v": 14, "dir": "down" }
-        ] },
-      { "label": "Bearish volume", "verdict": "weak", "note": "volume rises on down-bars | and falls on up-bars",
-        "bars": [
-          { "h": 70, "l": 52, "c": 55, "v": 30, "dir": "down", "tone": "weak" },
-          { "h": 58, "l": 40, "c": 43, "v": 46, "dir": "down", "tone": "weak" },
-          { "h": 46, "l": 26, "c": 29, "v": 62, "dir": "down", "tone": "weak" },
-          { "h": 38, "l": 28, "c": 36, "v": 20, "dir": "up" },
-          { "h": 44, "l": 34, "c": 42, "v": 12, "dir": "up" }
-        ] }
-    ]
-  },
-
-  "weak-or-strong": {
-    "type": "panels",
-    "title": "Strength shows on down-bars, weakness on up-bars",
-    "panels": [
-      { "label": "Strength appears on a DOWN-bar", "verdict": "strong",
-        "note": "high volume down-bar closing high, | and the next bar is up",
-        "bars": [
-          { "h": 60, "l": 44, "c": 47, "v": 30, "dir": "down" },
-          { "h": 52, "l": 20, "c": 48, "v": 84, "dir": "up", "tone": "strong" },
-          { "h": 64, "l": 46, "c": 62, "v": 36, "dir": "up" }
-        ] },
-      { "label": "Weakness appears on an UP-bar", "verdict": "weak",
-        "note": "high volume, narrow spread up-bar, | and the next bar is down",
-        "bars": [
-          { "h": 60, "l": 44, "c": 57, "v": 30, "dir": "up" },
-          { "h": 74, "l": 64, "c": 71, "v": 86, "dir": "up", "tone": "weak" },
-          { "h": 68, "l": 48, "c": 50, "v": 40, "dir": "down" }
-        ] }
-    ]
-  },
-
-  "no-demand-vs-demand": {
-    "type": "panels",
-    "title": "Real demand versus no demand",
-    "panels": [
-      { "label": "Real demand", "verdict": "strong", "note": "wide spread up-bar, | volume increasing",
-        "bars": [
-          { "h": 46, "l": 32, "c": 43, "v": 24, "dir": "up" },
-          { "h": 58, "l": 42, "c": 55, "v": 32, "dir": "up" },
-          { "h": 82, "l": 56, "c": 78, "v": 56, "dir": "up", "tone": "strong" }
-        ] },
-      { "label": "No demand", "verdict": "weak", "note": "narrow spread up-bar, | low volume",
-        "bars": [
-          { "h": 46, "l": 32, "c": 43, "v": 24, "dir": "up" },
-          { "h": 58, "l": 42, "c": 55, "v": 20, "dir": "up" },
-          { "h": 64, "l": 54, "c": 61, "v": 12, "dir": "up", "tone": "weak" }
-        ] }
-    ]
-  },
-
-  "test-vs-failed": {
-    "type": "panels",
-    "title": "A genuine test versus a failed test",
-    "panels": [
-      { "label": "A genuine test", "verdict": "strong",
-        "note": "marked down, closes on the high, | LOW volume — no supply left",
-        "bars": [
-          { "h": 56, "l": 44, "c": 52, "v": 24, "dir": "up" },
-          { "h": 58, "l": 18, "c": 55, "v": 14, "dir": "up", "tone": "strong" },
-          { "h": 70, "l": 54, "c": 68, "v": 34, "dir": "up" }
-        ] },
-      { "label": "A failed test", "verdict": "weak",
-        "note": "the same shape, but HIGH volume — | supply is still there",
-        "bars": [
-          { "h": 56, "l": 44, "c": 52, "v": 24, "dir": "up" },
-          { "h": 58, "l": 18, "c": 55, "v": 78, "dir": "up", "tone": "weak" },
-          { "h": 52, "l": 30, "c": 33, "v": 46, "dir": "down" }
-        ] }
-    ]
-  },
-
-  "close-position": {
-    "type": "panels",
-    "title": "Same bar, same volume — the close decides the meaning",
-    "panels": [
-      { "label": "Closes on the LOW", "verdict": "weak", "note": "the selling won",
-        "bars": [{ "h": 62, "l": 20, "c": 23, "v": 84, "dir": "down", "tone": "weak" }] },
-      { "label": "Closes in the MIDDLE", "note": "buying is starting | to appear",
-        "bars": [{ "h": 62, "l": 20, "c": 41, "v": 84, "dir": "down" }] },
-      { "label": "Closes on the HIGH", "verdict": "strong", "note": "buying absorbed | the selling",
-        "bars": [{ "h": 62, "l": 20, "c": 59, "v": 84, "dir": "up", "tone": "strong" }] }
-    ]
-  },
-
-  "path-of-least-resistance": {
-    "type": "panels",
-    "title": "Which way is the path of least resistance?",
-    "panels": [
-      { "label": "Selling has dried up", "verdict": "strong",
-        "note": "less and less selling on the way down | → the market wants to go UP",
-        "bars": [
-          { "h": 64, "l": 48, "c": 51, "v": 58, "dir": "down" },
-          { "h": 56, "l": 40, "c": 43, "v": 34, "dir": "down" },
-          { "h": 50, "l": 36, "c": 39, "v": 16, "dir": "down", "tone": "strong" }
-        ] },
-      { "label": "Buying has dried up", "verdict": "weak",
-        "note": "less and less buying on the way up | → the market wants to FALL",
-        "bars": [
-          { "h": 52, "l": 36, "c": 49, "v": 58, "dir": "up" },
-          { "h": 62, "l": 46, "c": 59, "v": 34, "dir": "up" },
-          { "h": 70, "l": 56, "c": 67, "v": 16, "dir": "up", "tone": "weak" }
-        ] }
-    ]
-  },
-
-  "timeframes": {
-    "type": "panels",
-    "title": "The same day, on two timeframes",
-    "panels": [
-      { "label": "One daily bar", "note": "all you can see is a wide spread | closing near the high",
-        "bars": [{ "h": 80, "l": 22, "c": 74, "v": 72, "dir": "up" }] },
-      { "label": "The same day, intraday", "note": "the heavy volume came in at the low | — that was buying",
-        "bars": [
-          { "h": 52, "l": 30, "c": 34, "v": 24, "dir": "down" },
-          { "h": 38, "l": 22, "c": 26, "v": 54, "dir": "down" },
-          { "h": 44, "l": 24, "c": 42, "v": 72, "dir": "up", "tone": "strong" },
-          { "h": 62, "l": 42, "c": 60, "v": 40, "dir": "up" },
-          { "h": 76, "l": 58, "c": 73, "v": 28, "dir": "up" },
-          { "h": 80, "l": 70, "c": 76, "v": 18, "dir": "up" }
-        ] }
-    ]
-  },
-
-  "trend-structure": {
-    "type": "panels",
-    "title": "Higher lows and lower highs",
-    "panels": [
-      { "label": "Higher lows", "verdict": "strong", "note": "each low is higher | than the last one",
-        "bars": [
-          { "h": 52, "l": 28, "c": 48, "v": 30, "dir": "up", "tone": "strong" },
-          { "h": 66, "l": 40, "c": 62, "v": 34, "dir": "up", "tone": "strong" },
-          { "h": 80, "l": 52, "c": 76, "v": 38, "dir": "up", "tone": "strong" }
-        ] },
-      { "label": "Lower highs", "verdict": "weak", "note": "each high is lower | than the last one",
-        "bars": [
-          { "h": 80, "l": 52, "c": 56, "v": 30, "dir": "down", "tone": "weak" },
-          { "h": 66, "l": 40, "c": 44, "v": 34, "dir": "down", "tone": "weak" },
-          { "h": 52, "l": 28, "c": 32, "v": 38, "dir": "down", "tone": "weak" }
-        ] }
-    ]
-  },
-
-  "weakness-signatures": {
-    "type": "panels",
-    "title": "The four main signs of weakness",
-    "panels": [
-      { "label": "Buying climax", "verdict": "weak", "note": "wide spread up, huge | volume, at the top",
-        "bars": [{ "h": 92, "l": 68, "c": 88, "v": 96, "dir": "up", "tone": "weak" }] },
-      { "label": "Up-thrust", "verdict": "weak", "note": "pokes up, then closes | near its low",
-        "bars": [{ "h": 88, "l": 62, "c": 66, "v": 76, "dir": "down", "tone": "weak" }] },
-      { "label": "No demand", "verdict": "weak", "note": "narrow up-bar, | low volume",
-        "bars": [{ "h": 64, "l": 52, "c": 61, "v": 14, "dir": "up", "tone": "weak" }] },
-      { "label": "Narrow spread, high volume", "verdict": "weak", "note": "into new highs, | no progress made",
-        "bars": [{ "h": 78, "l": 68, "c": 75, "v": 90, "dir": "up", "tone": "weak" }] }
-    ]
-  },
-
-  "relative-strength": {
-    "type": "panels",
-    "title": "Picking a stock: compare it with its index",
-    "panels": [
-      { "label": "The index falls", "note": "the whole market | is going down",
-        "bars": [
-          { "h": 66, "l": 50, "c": 52, "v": 36, "dir": "down" },
-          { "h": 56, "l": 38, "c": 40, "v": 40, "dir": "down" },
-          { "h": 46, "l": 26, "c": 28, "v": 44, "dir": "down" }
-        ] },
-      { "label": "Your stock refuses to fall", "verdict": "strong",
-        "note": "someone is supporting it | — that is accumulation",
-        "bars": [
-          { "h": 60, "l": 48, "c": 57, "v": 30, "dir": "up", "tone": "strong" },
-          { "h": 63, "l": 50, "c": 59, "v": 26, "dir": "up", "tone": "strong" },
-          { "h": 66, "l": 53, "c": 63, "v": 24, "dir": "up", "tone": "strong" }
-        ] }
-    ]
-  },
-
-  "resistance": {
-    "type": "sequence",
-    "title": "Why rallies stall in the same place",
-    "zones": [{ "from": 0, "to": 5, "top": 78, "bottom": 66, "tone": "weak", "label": "buyers trapped at the old top" }],
-    "note": "Every rally stalls in the same band. | Those trapped buyers are selling just to get their money back.",
+ "signals": {
+  "type": "panels",
+  "title": "The four bar signatures, side by side",
+  "panels": [
+   {
+    "label": "No demand",
+    "verdict": "weak",
+    "note": "narrow spread up-bar, | low volume",
     "bars": [
-      { "h": 44, "l": 28, "c": 41, "v": 28, "dir": "up" },
-      { "h": 62, "l": 44, "c": 59, "v": 34, "dir": "up" },
-      { "h": 74, "l": 58, "c": 60, "v": 56, "dir": "down", "tone": "weak" },
-      { "h": 60, "l": 44, "c": 46, "v": 36, "dir": "down" },
-      { "h": 58, "l": 42, "c": 55, "v": 30, "dir": "up" },
-      { "h": 72, "l": 56, "c": 58, "v": 58, "dir": "down", "tone": "weak" }
+     {
+      "h": 64,
+      "l": 52,
+      "c": 61,
+      "v": 16,
+      "dir": "up",
+      "tone": "weak"
+     }
     ]
-  },
-
-  "supply-area": {
-    "type": "sequence",
-    "title": "Pushing up through an area of supply",
-    "zones": [{ "from": 1, "to": 3, "top": 74, "bottom": 60, "tone": "weak", "label": "old trading range = supply" }],
-    "marks": [{ "at": 4, "text": "effort to absorb the supply", "tone": "strong" }],
-    "note": "The high volume is professional money absorbing the trapped sellers. | Price keeps going afterwards, so the supply has been beaten.",
+   },
+   {
+    "label": "Test",
+    "verdict": "strong",
+    "note": "marked down, closes high, | low volume",
     "bars": [
-      { "h": 40, "l": 26, "c": 37, "v": 26, "dir": "up" },
-      { "h": 56, "l": 38, "c": 53, "v": 30, "dir": "up" },
-      { "h": 66, "l": 52, "c": 56, "v": 40, "dir": "down" },
-      { "h": 64, "l": 52, "c": 61, "v": 22, "dir": "up" },
-      { "h": 82, "l": 58, "c": 79, "v": 80, "dir": "up", "tone": "strong" },
-      { "h": 90, "l": 74, "c": 87, "v": 34, "dir": "up" }
+     {
+      "h": 58,
+      "l": 20,
+      "c": 55,
+      "v": 18,
+      "dir": "up",
+      "tone": "strong"
+     }
     ]
-  },
-
-  "high-volume-top": {
-    "type": "sequence",
-    "title": "High volume at a market top",
-    "marks": [{ "at": 3, "text": "narrow spread on record volume", "tone": "weak" }],
-    "note": "If that volume were really buying, the spread would be wide | and the price would have travelled. It did not.",
+   },
+   {
+    "label": "Up-thrust",
+    "verdict": "weak",
+    "note": "pushed up, closes near low, | high volume",
     "bars": [
-      { "h": 58, "l": 42, "c": 55, "v": 32, "dir": "up" },
-      { "h": 70, "l": 54, "c": 67, "v": 40, "dir": "up" },
-      { "h": 80, "l": 66, "c": 77, "v": 52, "dir": "up" },
-      { "h": 90, "l": 80, "c": 87, "v": 94, "dir": "up", "tone": "weak" },
-      { "h": 86, "l": 68, "c": 70, "v": 60, "dir": "down" }
+     {
+      "h": 88,
+      "l": 62,
+      "c": 66,
+      "v": 76,
+      "dir": "down",
+      "tone": "weak"
+     }
     ]
-  },
-
-  "channel": {
-    "type": "sequence",
-    "title": "Overbought and oversold are relative to the channel",
-    "lines": [
-      { "from": 0, "to": 8, "at": 88, "label": "supply line" },
-      { "from": 0, "to": 8, "at": 20, "label": "support line" }
-    ],
-    "note": "Near the top of the channel the market is overbought. | Near the bottom it is oversold. Both are relative, never absolute.",
+   },
+   {
+    "label": "Stopping volume",
+    "verdict": "strong",
+    "note": "down-bar closes on high, | very high volume",
     "bars": [
-      { "h": 44, "l": 28, "c": 40, "v": 30, "dir": "up" },
-      { "h": 60, "l": 42, "c": 57, "v": 34, "dir": "up" },
-      { "h": 80, "l": 60, "c": 76, "v": 40, "dir": "up" },
-      { "h": 82, "l": 66, "c": 68, "v": 44, "dir": "down" },
-      { "h": 70, "l": 50, "c": 52, "v": 36, "dir": "down" },
-      { "h": 54, "l": 30, "c": 32, "v": 32, "dir": "down" },
-      { "h": 44, "l": 24, "c": 40, "v": 26, "dir": "up" },
-      { "h": 60, "l": 40, "c": 57, "v": 30, "dir": "up" },
-      { "h": 78, "l": 58, "c": 74, "v": 36, "dir": "up" }
+     {
+      "h": 38,
+      "l": 16,
+      "c": 35,
+      "v": 92,
+      "dir": "up",
+      "tone": "strong"
+     }
     ]
-  },
-
-  "absorption": {
-    "type": "sequence",
-    "title": "Absorption volume at a lower trend line",
-    "lines": [{ "from": 0, "to": 5, "at": 40, "slope": -18, "label": "lower trend line" }],
-    "marks": [
-      { "at": 3, "text": "high volume — looks like selling", "above": false },
-      { "at": 4, "text": "but the next bar is UP", "tone": "strong" }
-    ],
-    "note": "If that volume had really been selling, the market could not have risen. | It contained buying.",
+   }
+  ]
+ },
+ "effort-result": {
+  "type": "panels",
+  "title": "Effort versus result",
+  "panels": [
+   {
+    "label": "Effort — and a result",
+    "note": "volume rises, price travels | the move is genuine",
     "bars": [
-      { "h": 66, "l": 52, "c": 55, "v": 28, "dir": "down" },
-      { "h": 58, "l": 44, "c": 47, "v": 32, "dir": "down" },
-      { "h": 50, "l": 34, "c": 37, "v": 36, "dir": "down" },
-      { "h": 44, "l": 22, "c": 26, "v": 86, "dir": "down", "tone": "weak" },
-      { "h": 50, "l": 30, "c": 48, "v": 54, "dir": "up", "tone": "strong" },
-      { "h": 64, "l": 46, "c": 61, "v": 40, "dir": "up" }
+     {
+      "h": 40,
+      "l": 26,
+      "c": 37,
+      "v": 22,
+      "dir": "up",
+      "tone": "strong"
+     },
+     {
+      "h": 54,
+      "l": 38,
+      "c": 51,
+      "v": 32,
+      "dir": "up",
+      "tone": "strong"
+     },
+     {
+      "h": 68,
+      "l": 52,
+      "c": 65,
+      "v": 44,
+      "dir": "up",
+      "tone": "strong"
+     },
+     {
+      "h": 82,
+      "l": 66,
+      "c": 79,
+      "v": 56,
+      "dir": "up",
+      "tone": "strong"
+     },
+     {
+      "h": 94,
+      "l": 78,
+      "c": 91,
+      "v": 68,
+      "dir": "up",
+      "tone": "strong"
+     }
     ]
-  },
-
-  "upthrust": {
-    "type": "sequence",
-    "title": "An up-thrust, bar by bar",
-    "marks": [{ "at": 3, "text": "up-thrust", "tone": "weak" }],
-    "note": "Pushed above the recent highs to trigger stops and pull buyers in, | then closed near its own low on high volume.",
+   },
+   {
+    "label": "Effort — and no result",
+    "note": "volume rises, price stalls | someone is absorbing it",
     "bars": [
-      { "h": 56, "l": 40, "c": 53, "v": 30, "dir": "up" },
-      { "h": 66, "l": 52, "c": 63, "v": 34, "dir": "up" },
-      { "h": 74, "l": 60, "c": 71, "v": 28, "dir": "up" },
-      { "h": 92, "l": 66, "c": 70, "v": 80, "dir": "down", "tone": "weak" },
-      { "h": 72, "l": 54, "c": 56, "v": 46, "dir": "down" },
-      { "h": 60, "l": 42, "c": 44, "v": 38, "dir": "down" }
+     {
+      "h": 72,
+      "l": 58,
+      "c": 68,
+      "v": 30,
+      "dir": "up",
+      "tone": "weak"
+     },
+     {
+      "h": 74,
+      "l": 60,
+      "c": 63,
+      "v": 46,
+      "dir": "down",
+      "tone": "weak"
+     },
+     {
+      "h": 72,
+      "l": 58,
+      "c": 69,
+      "v": 58,
+      "dir": "up",
+      "tone": "weak"
+     },
+     {
+      "h": 75,
+      "l": 61,
+      "c": 64,
+      "v": 70,
+      "dir": "down",
+      "tone": "weak"
+     },
+     {
+      "h": 73,
+      "l": 59,
+      "c": 70,
+      "v": 84,
+      "dir": "up",
+      "tone": "weak"
+     }
     ]
-  },
-
-  "selling-climax": {
-    "type": "sequence",
-    "title": "A selling climax",
-    "marks": [{ "at": 3, "text": "selling climax", "tone": "strong", "above": false }],
-    "note": "Ultra-wide spread down on exceptional volume — but it closes near the HIGH. | The panic is what lets professional money buy heavily.",
+   }
+  ]
+ },
+ "bullish-bearish-volume": {
+  "type": "panels",
+  "title": "Bullish volume and bearish volume",
+  "panels": [
+   {
+    "label": "Bullish volume",
+    "verdict": "strong",
+    "note": "volume rises on up-bars | and falls on down-bars",
     "bars": [
-      { "h": 62, "l": 48, "c": 50, "v": 36, "dir": "down" },
-      { "h": 52, "l": 36, "c": 38, "v": 44, "dir": "down" },
-      { "h": 42, "l": 24, "c": 26, "v": 58, "dir": "down" },
-      { "h": 34, "l": 4, "c": 30, "v": 98, "dir": "up", "tone": "strong" },
-      { "h": 46, "l": 28, "c": 44, "v": 54, "dir": "up" },
-      { "h": 60, "l": 40, "c": 57, "v": 42, "dir": "up" }
+     {
+      "h": 48,
+      "l": 30,
+      "c": 45,
+      "v": 28,
+      "dir": "up",
+      "tone": "strong"
+     },
+     {
+      "h": 60,
+      "l": 42,
+      "c": 57,
+      "v": 44,
+      "dir": "up",
+      "tone": "strong"
+     },
+     {
+      "h": 74,
+      "l": 56,
+      "c": 71,
+      "v": 60,
+      "dir": "up",
+      "tone": "strong"
+     },
+     {
+      "h": 70,
+      "l": 58,
+      "c": 60,
+      "v": 24,
+      "dir": "down"
+     },
+     {
+      "h": 66,
+      "l": 54,
+      "c": 56,
+      "v": 14,
+      "dir": "down"
+     }
     ]
-  },
-
-  "buying-climax": {
-    "type": "sequence",
-    "title": "A buying climax",
-    "marks": [{ "at": 3, "text": "buying climax", "tone": "weak" }],
-    "note": "The heaviest volume of the entire move arrives on UP-bars at the top. | That is professional selling into an eager public.",
+   },
+   {
+    "label": "Bearish volume",
+    "verdict": "weak",
+    "note": "volume rises on down-bars | and falls on up-bars",
     "bars": [
-      { "h": 50, "l": 34, "c": 47, "v": 32, "dir": "up" },
-      { "h": 62, "l": 46, "c": 59, "v": 38, "dir": "up" },
-      { "h": 76, "l": 58, "c": 73, "v": 52, "dir": "up" },
-      { "h": 94, "l": 70, "c": 90, "v": 98, "dir": "up", "tone": "weak" },
-      { "h": 92, "l": 76, "c": 78, "v": 72, "dir": "down" },
-      { "h": 82, "l": 62, "c": 64, "v": 58, "dir": "down" }
+     {
+      "h": 70,
+      "l": 52,
+      "c": 55,
+      "v": 30,
+      "dir": "down",
+      "tone": "weak"
+     },
+     {
+      "h": 58,
+      "l": 40,
+      "c": 43,
+      "v": 46,
+      "dir": "down",
+      "tone": "weak"
+     },
+     {
+      "h": 46,
+      "l": 26,
+      "c": 29,
+      "v": 62,
+      "dir": "down",
+      "tone": "weak"
+     },
+     {
+      "h": 38,
+      "l": 28,
+      "c": 36,
+      "v": 20,
+      "dir": "up"
+     },
+     {
+      "h": 44,
+      "l": 34,
+      "c": 42,
+      "v": 12,
+      "dir": "up"
+     }
     ]
-  },
-
-  "shakeout": {
-    "type": "sequence",
-    "title": "A shake-out",
-    "marks": [
-      { "at": 2, "text": "gaps down and falls hard", "above": false },
-      { "at": 3, "text": "gaps straight back up", "tone": "strong" }
-    ],
-    "note": "The last weak holders are frightened out, then the market gaps back up. | Only bullish when there is no distribution behind it.",
+   }
+  ]
+ },
+ "weak-or-strong": {
+  "type": "panels",
+  "title": "Strength shows on down-bars, weakness on up-bars",
+  "panels": [
+   {
+    "label": "Strength appears on a DOWN-bar",
+    "verdict": "strong",
+    "note": "high volume down-bar closing high, | and the next bar is up",
     "bars": [
-      { "h": 58, "l": 44, "c": 47, "v": 30, "dir": "down" },
-      { "h": 50, "l": 36, "c": 38, "v": 34, "dir": "down" },
-      { "h": 30, "l": 8, "c": 12, "v": 78, "dir": "down", "tone": "weak", "gapBefore": 0.5 },
-      { "h": 44, "l": 28, "c": 41, "v": 62, "dir": "up", "tone": "strong", "gapBefore": 0.5 },
-      { "h": 58, "l": 40, "c": 55, "v": 44, "dir": "up" }
+     {
+      "h": 60,
+      "l": 44,
+      "c": 47,
+      "v": 30,
+      "dir": "down"
+     },
+     {
+      "h": 52,
+      "l": 20,
+      "c": 48,
+      "v": 84,
+      "dir": "up",
+      "tone": "strong"
+     },
+     {
+      "h": 64,
+      "l": 46,
+      "c": 62,
+      "v": 36,
+      "dir": "up"
+     }
     ]
-  },
-
-  "stopping-volume": {
-    "type": "sequence",
-    "title": "Stopping volume",
-    "marks": [{ "at": 3, "text": "stopping volume", "tone": "strong" }],
-    "note": "A down-bar on very high volume that closes on its high — | buy orders large enough to act as a brake on the fall.",
+   },
+   {
+    "label": "Weakness appears on an UP-bar",
+    "verdict": "weak",
+    "note": "high volume, narrow spread up-bar, | and the next bar is down",
     "bars": [
-      { "h": 66, "l": 52, "c": 54, "v": 30, "dir": "down" },
-      { "h": 58, "l": 42, "c": 44, "v": 38, "dir": "down" },
-      { "h": 48, "l": 30, "c": 32, "v": 48, "dir": "down" },
-      { "h": 40, "l": 14, "c": 37, "v": 94, "dir": "up", "tone": "strong" },
-      { "h": 48, "l": 34, "c": 46, "v": 52, "dir": "up" }
+     {
+      "h": 60,
+      "l": 44,
+      "c": 57,
+      "v": 30,
+      "dir": "up"
+     },
+     {
+      "h": 74,
+      "l": 64,
+      "c": 71,
+      "v": 86,
+      "dir": "up",
+      "tone": "weak"
+     },
+     {
+      "h": 68,
+      "l": 48,
+      "c": 50,
+      "v": 40,
+      "dir": "down"
+     }
     ]
-  },
-
-  "falling-pressure": {
-    "type": "sequence",
-    "title": "Falling pressure",
-    "marks": [{ "at": 2, "text": "wide spread, almost no volume", "above": false }],
-    "note": "Prices are falling, but nobody is really selling. | Not a buy signal — it only says the fall is unlikely to go much further.",
+   }
+  ]
+ },
+ "no-demand-vs-demand": {
+  "type": "panels",
+  "title": "Real demand versus no demand",
+  "panels": [
+   {
+    "label": "Real demand",
+    "verdict": "strong",
+    "note": "wide spread up-bar, | volume increasing",
     "bars": [
-      { "h": 74, "l": 52, "c": 54, "v": 22, "dir": "down" },
-      { "h": 58, "l": 34, "c": 36, "v": 16, "dir": "down" },
-      { "h": 42, "l": 16, "c": 18, "v": 11, "dir": "down" }
+     {
+      "h": 46,
+      "l": 32,
+      "c": 43,
+      "v": 24,
+      "dir": "up"
+     },
+     {
+      "h": 58,
+      "l": 42,
+      "c": 55,
+      "v": 32,
+      "dir": "up"
+     },
+     {
+      "h": 82,
+      "l": 56,
+      "c": 78,
+      "v": 56,
+      "dir": "up",
+      "tone": "strong"
+     }
     ]
+   },
+   {
+    "label": "No demand",
+    "verdict": "weak",
+    "note": "narrow spread up-bar, | low volume",
+    "bars": [
+     {
+      "h": 46,
+      "l": 32,
+      "c": 43,
+      "v": 24,
+      "dir": "up"
+     },
+     {
+      "h": 58,
+      "l": 42,
+      "c": 55,
+      "v": 20,
+      "dir": "up"
+     },
+     {
+      "h": 64,
+      "l": 54,
+      "c": 61,
+      "v": 12,
+      "dir": "up",
+      "tone": "weak"
+     }
+    ]
+   }
+  ]
+ },
+ "test-vs-failed": {
+  "type": "panels",
+  "title": "A genuine test versus a failed test",
+  "panels": [
+   {
+    "label": "A genuine test",
+    "verdict": "strong",
+    "note": "marked down, closes on the high, | LOW volume — no supply left",
+    "bars": [
+     {
+      "h": 56,
+      "l": 44,
+      "c": 52,
+      "v": 24,
+      "dir": "up"
+     },
+     {
+      "h": 58,
+      "l": 18,
+      "c": 55,
+      "v": 14,
+      "dir": "up",
+      "tone": "strong"
+     },
+     {
+      "h": 70,
+      "l": 54,
+      "c": 68,
+      "v": 34,
+      "dir": "up"
+     }
+    ]
+   },
+   {
+    "label": "A failed test",
+    "verdict": "weak",
+    "note": "the same shape, but HIGH volume — | supply is still there",
+    "bars": [
+     {
+      "h": 56,
+      "l": 44,
+      "c": 52,
+      "v": 24,
+      "dir": "up"
+     },
+     {
+      "h": 58,
+      "l": 18,
+      "c": 55,
+      "v": 78,
+      "dir": "up",
+      "tone": "weak"
+     },
+     {
+      "h": 52,
+      "l": 30,
+      "c": 33,
+      "v": 46,
+      "dir": "down"
+     }
+    ]
+   }
+  ]
+ },
+ "close-position": {
+  "type": "panels",
+  "title": "Same bar, same volume — the close decides the meaning",
+  "panels": [
+   {
+    "label": "Closes on the LOW",
+    "verdict": "weak",
+    "note": "the selling won",
+    "bars": [
+     {
+      "h": 62,
+      "l": 20,
+      "c": 23,
+      "v": 84,
+      "dir": "down",
+      "tone": "weak"
+     }
+    ]
+   },
+   {
+    "label": "Closes in the MIDDLE",
+    "note": "buying is starting | to appear",
+    "bars": [
+     {
+      "h": 62,
+      "l": 20,
+      "c": 41,
+      "v": 84,
+      "dir": "down"
+     }
+    ]
+   },
+   {
+    "label": "Closes on the HIGH",
+    "verdict": "strong",
+    "note": "buying absorbed | the selling",
+    "bars": [
+     {
+      "h": 62,
+      "l": 20,
+      "c": 59,
+      "v": 84,
+      "dir": "up",
+      "tone": "strong"
+     }
+    ]
+   }
+  ]
+ },
+ "path-of-least-resistance": {
+  "type": "panels",
+  "title": "Which way is the path of least resistance?",
+  "panels": [
+   {
+    "label": "Selling has dried up",
+    "verdict": "strong",
+    "note": "less and less selling on the way down | → the market wants to go UP",
+    "bars": [
+     {
+      "h": 64,
+      "l": 48,
+      "c": 51,
+      "v": 58,
+      "dir": "down"
+     },
+     {
+      "h": 56,
+      "l": 40,
+      "c": 43,
+      "v": 34,
+      "dir": "down"
+     },
+     {
+      "h": 50,
+      "l": 36,
+      "c": 39,
+      "v": 16,
+      "dir": "down",
+      "tone": "strong"
+     }
+    ]
+   },
+   {
+    "label": "Buying has dried up",
+    "verdict": "weak",
+    "note": "less and less buying on the way up | → the market wants to FALL",
+    "bars": [
+     {
+      "h": 52,
+      "l": 36,
+      "c": 49,
+      "v": 58,
+      "dir": "up"
+     },
+     {
+      "h": 62,
+      "l": 46,
+      "c": 59,
+      "v": 34,
+      "dir": "up"
+     },
+     {
+      "h": 70,
+      "l": 56,
+      "c": 67,
+      "v": 16,
+      "dir": "up",
+      "tone": "weak"
+     }
+    ]
+   }
+  ]
+ },
+ "timeframes": {
+  "type": "panels",
+  "title": "The same day, on two timeframes",
+  "panels": [
+   {
+    "label": "One daily bar",
+    "note": "all you can see is a wide spread | closing near the high",
+    "bars": [
+     {
+      "h": 80,
+      "l": 22,
+      "c": 74,
+      "v": 72,
+      "dir": "up"
+     }
+    ]
+   },
+   {
+    "label": "The same day, intraday",
+    "note": "the heavy volume came in at the low | — that was buying",
+    "bars": [
+     {
+      "h": 52,
+      "l": 30,
+      "c": 34,
+      "v": 24,
+      "dir": "down"
+     },
+     {
+      "h": 38,
+      "l": 22,
+      "c": 26,
+      "v": 54,
+      "dir": "down"
+     },
+     {
+      "h": 44,
+      "l": 24,
+      "c": 42,
+      "v": 72,
+      "dir": "up",
+      "tone": "strong"
+     },
+     {
+      "h": 62,
+      "l": 42,
+      "c": 60,
+      "v": 40,
+      "dir": "up"
+     },
+     {
+      "h": 76,
+      "l": 58,
+      "c": 73,
+      "v": 28,
+      "dir": "up"
+     },
+     {
+      "h": 80,
+      "l": 70,
+      "c": 76,
+      "v": 18,
+      "dir": "up"
+     }
+    ]
+   }
+  ]
+ },
+ "trend-structure": {
+  "type": "panels",
+  "title": "Higher lows and lower highs",
+  "panels": [
+   {
+    "label": "Higher lows",
+    "verdict": "strong",
+    "note": "each low is higher | than the last one",
+    "bars": [
+     {
+      "h": 52,
+      "l": 28,
+      "c": 48,
+      "v": 30,
+      "dir": "up",
+      "tone": "strong"
+     },
+     {
+      "h": 66,
+      "l": 40,
+      "c": 62,
+      "v": 34,
+      "dir": "up",
+      "tone": "strong"
+     },
+     {
+      "h": 80,
+      "l": 52,
+      "c": 76,
+      "v": 38,
+      "dir": "up",
+      "tone": "strong"
+     }
+    ]
+   },
+   {
+    "label": "Lower highs",
+    "verdict": "weak",
+    "note": "each high is lower | than the last one",
+    "bars": [
+     {
+      "h": 80,
+      "l": 52,
+      "c": 56,
+      "v": 30,
+      "dir": "down",
+      "tone": "weak"
+     },
+     {
+      "h": 66,
+      "l": 40,
+      "c": 44,
+      "v": 34,
+      "dir": "down",
+      "tone": "weak"
+     },
+     {
+      "h": 52,
+      "l": 28,
+      "c": 32,
+      "v": 38,
+      "dir": "down",
+      "tone": "weak"
+     }
+    ]
+   }
+  ]
+ },
+ "weakness-signatures": {
+  "type": "panels",
+  "title": "The four main signs of weakness",
+  "panels": [
+   {
+    "label": "Buying climax",
+    "verdict": "weak",
+    "note": "wide spread up, huge | volume, at the top",
+    "bars": [
+     {
+      "h": 92,
+      "l": 68,
+      "c": 88,
+      "v": 96,
+      "dir": "up",
+      "tone": "weak"
+     }
+    ]
+   },
+   {
+    "label": "Up-thrust",
+    "verdict": "weak",
+    "note": "pokes up, then closes | near its low",
+    "bars": [
+     {
+      "h": 88,
+      "l": 62,
+      "c": 66,
+      "v": 76,
+      "dir": "down",
+      "tone": "weak"
+     }
+    ]
+   },
+   {
+    "label": "No demand",
+    "verdict": "weak",
+    "note": "narrow up-bar, | low volume",
+    "bars": [
+     {
+      "h": 64,
+      "l": 52,
+      "c": 61,
+      "v": 14,
+      "dir": "up",
+      "tone": "weak"
+     }
+    ]
+   },
+   {
+    "label": "Narrow spread, high volume",
+    "verdict": "weak",
+    "note": "into new highs, | no progress made",
+    "bars": [
+     {
+      "h": 78,
+      "l": 68,
+      "c": 75,
+      "v": 90,
+      "dir": "up",
+      "tone": "weak"
+     }
+    ]
+   }
+  ]
+ },
+ "relative-strength": {
+  "type": "panels",
+  "title": "Picking a stock: compare it with its index",
+  "panels": [
+   {
+    "label": "The index falls",
+    "note": "the whole market | is going down",
+    "bars": [
+     {
+      "h": 66,
+      "l": 50,
+      "c": 52,
+      "v": 36,
+      "dir": "down"
+     },
+     {
+      "h": 56,
+      "l": 38,
+      "c": 40,
+      "v": 40,
+      "dir": "down"
+     },
+     {
+      "h": 46,
+      "l": 26,
+      "c": 28,
+      "v": 44,
+      "dir": "down"
+     }
+    ]
+   },
+   {
+    "label": "Your stock refuses to fall",
+    "verdict": "strong",
+    "note": "someone is supporting it | — that is accumulation",
+    "bars": [
+     {
+      "h": 60,
+      "l": 48,
+      "c": 57,
+      "v": 30,
+      "dir": "up",
+      "tone": "strong"
+     },
+     {
+      "h": 63,
+      "l": 50,
+      "c": 59,
+      "v": 26,
+      "dir": "up",
+      "tone": "strong"
+     },
+     {
+      "h": 66,
+      "l": 53,
+      "c": 63,
+      "v": 24,
+      "dir": "up",
+      "tone": "strong"
+     }
+    ]
+   }
+  ]
+ },
+ "resistance": {
+  "type": "sequence",
+  "title": "Why rallies stall in the same place",
+  "zones": [
+   {
+    "from": 0,
+    "to": 5,
+    "top": 78,
+    "bottom": 66,
+    "tone": "weak",
+    "label": "buyers trapped at the old top"
+   }
+  ],
+  "note": "Every rally stalls in the same band. | Those trapped buyers are selling just to get their money back.",
+  "bars": [
+   {
+    "h": 44,
+    "l": 28,
+    "c": 41,
+    "v": 28,
+    "dir": "up"
+   },
+   {
+    "h": 62,
+    "l": 44,
+    "c": 59,
+    "v": 34,
+    "dir": "up"
+   },
+   {
+    "h": 74,
+    "l": 58,
+    "c": 60,
+    "v": 56,
+    "dir": "down",
+    "tone": "weak"
+   },
+   {
+    "h": 60,
+    "l": 44,
+    "c": 46,
+    "v": 36,
+    "dir": "down"
+   },
+   {
+    "h": 58,
+    "l": 42,
+    "c": 55,
+    "v": 30,
+    "dir": "up"
+   },
+   {
+    "h": 72,
+    "l": 56,
+    "c": 58,
+    "v": 58,
+    "dir": "down",
+    "tone": "weak"
+   }
+  ]
+ },
+ "supply-area": {
+  "type": "sequence",
+  "title": "Pushing up through an area of supply",
+  "zones": [
+   {
+    "from": 1,
+    "to": 3,
+    "top": 74,
+    "bottom": 60,
+    "tone": "weak",
+    "label": "old trading range = supply"
+   }
+  ],
+  "marks": [
+   {
+    "at": 4,
+    "text": "effort to absorb the supply",
+    "tone": "strong"
+   }
+  ],
+  "note": "The high volume is professional money absorbing the trapped sellers. | Price keeps going afterwards, so the supply has been beaten.",
+  "bars": [
+   {
+    "h": 40,
+    "l": 26,
+    "c": 37,
+    "v": 26,
+    "dir": "up"
+   },
+   {
+    "h": 56,
+    "l": 38,
+    "c": 53,
+    "v": 30,
+    "dir": "up"
+   },
+   {
+    "h": 66,
+    "l": 52,
+    "c": 56,
+    "v": 40,
+    "dir": "down"
+   },
+   {
+    "h": 64,
+    "l": 52,
+    "c": 61,
+    "v": 22,
+    "dir": "up"
+   },
+   {
+    "h": 82,
+    "l": 58,
+    "c": 79,
+    "v": 80,
+    "dir": "up",
+    "tone": "strong"
+   },
+   {
+    "h": 90,
+    "l": 74,
+    "c": 87,
+    "v": 34,
+    "dir": "up"
+   }
+  ]
+ },
+ "high-volume-top": {
+  "type": "sequence",
+  "title": "High volume at a market top",
+  "marks": [
+   {
+    "at": 3,
+    "text": "narrow spread on record volume",
+    "tone": "weak"
+   }
+  ],
+  "note": "If that volume were really buying, the spread would be wide | and the price would have travelled. It did not.",
+  "bars": [
+   {
+    "h": 58,
+    "l": 42,
+    "c": 55,
+    "v": 32,
+    "dir": "up"
+   },
+   {
+    "h": 70,
+    "l": 54,
+    "c": 67,
+    "v": 40,
+    "dir": "up"
+   },
+   {
+    "h": 80,
+    "l": 66,
+    "c": 77,
+    "v": 52,
+    "dir": "up"
+   },
+   {
+    "h": 90,
+    "l": 80,
+    "c": 87,
+    "v": 94,
+    "dir": "up",
+    "tone": "weak"
+   },
+   {
+    "h": 86,
+    "l": 68,
+    "c": 70,
+    "v": 60,
+    "dir": "down"
+   }
+  ]
+ },
+ "channel": {
+  "type": "sequence",
+  "title": "Overbought and oversold are relative to the channel",
+  "lines": [
+   {
+    "from": 0,
+    "to": 8,
+    "at": 88,
+    "label": "supply line"
+   },
+   {
+    "from": 0,
+    "to": 8,
+    "at": 20,
+    "label": "support line"
+   }
+  ],
+  "note": "Near the top of the channel the market is overbought. | Near the bottom it is oversold. Both are relative, never absolute.",
+  "bars": [
+   {
+    "h": 44,
+    "l": 28,
+    "c": 40,
+    "v": 30,
+    "dir": "up"
+   },
+   {
+    "h": 60,
+    "l": 42,
+    "c": 57,
+    "v": 34,
+    "dir": "up"
+   },
+   {
+    "h": 80,
+    "l": 60,
+    "c": 76,
+    "v": 40,
+    "dir": "up"
+   },
+   {
+    "h": 82,
+    "l": 66,
+    "c": 68,
+    "v": 44,
+    "dir": "down"
+   },
+   {
+    "h": 70,
+    "l": 50,
+    "c": 52,
+    "v": 36,
+    "dir": "down"
+   },
+   {
+    "h": 54,
+    "l": 30,
+    "c": 32,
+    "v": 32,
+    "dir": "down"
+   },
+   {
+    "h": 44,
+    "l": 24,
+    "c": 40,
+    "v": 26,
+    "dir": "up"
+   },
+   {
+    "h": 60,
+    "l": 40,
+    "c": 57,
+    "v": 30,
+    "dir": "up"
+   },
+   {
+    "h": 78,
+    "l": 58,
+    "c": 74,
+    "v": 36,
+    "dir": "up"
+   }
+  ]
+ },
+ "absorption": {
+  "type": "sequence",
+  "title": "Absorption volume at a lower trend line",
+  "lines": [
+   {
+    "from": 0,
+    "to": 5,
+    "at": 40,
+    "slope": -18,
+    "label": "lower trend line"
+   }
+  ],
+  "marks": [
+   {
+    "at": 3,
+    "text": "high volume — looks like selling",
+    "above": false
+   },
+   {
+    "at": 4,
+    "text": "but the next bar is UP",
+    "tone": "strong"
+   }
+  ],
+  "note": "If that volume had really been selling, the market could not have risen. | It contained buying.",
+  "bars": [
+   {
+    "h": 66,
+    "l": 52,
+    "c": 55,
+    "v": 28,
+    "dir": "down"
+   },
+   {
+    "h": 58,
+    "l": 44,
+    "c": 47,
+    "v": 32,
+    "dir": "down"
+   },
+   {
+    "h": 50,
+    "l": 34,
+    "c": 37,
+    "v": 36,
+    "dir": "down"
+   },
+   {
+    "h": 44,
+    "l": 22,
+    "c": 26,
+    "v": 86,
+    "dir": "down",
+    "tone": "weak"
+   },
+   {
+    "h": 50,
+    "l": 30,
+    "c": 48,
+    "v": 54,
+    "dir": "up",
+    "tone": "strong"
+   },
+   {
+    "h": 64,
+    "l": 46,
+    "c": 61,
+    "v": 40,
+    "dir": "up"
+   }
+  ]
+ },
+ "upthrust": {
+  "type": "sequence",
+  "title": "An up-thrust, bar by bar",
+  "marks": [
+   {
+    "at": 3,
+    "text": "up-thrust",
+    "tone": "weak"
+   }
+  ],
+  "note": "Pushed above the recent highs to trigger stops and pull buyers in, | then closed near its own low on high volume.",
+  "bars": [
+   {
+    "h": 56,
+    "l": 40,
+    "c": 53,
+    "v": 30,
+    "dir": "up"
+   },
+   {
+    "h": 66,
+    "l": 52,
+    "c": 63,
+    "v": 34,
+    "dir": "up"
+   },
+   {
+    "h": 74,
+    "l": 60,
+    "c": 71,
+    "v": 28,
+    "dir": "up"
+   },
+   {
+    "h": 92,
+    "l": 66,
+    "c": 70,
+    "v": 80,
+    "dir": "down",
+    "tone": "weak"
+   },
+   {
+    "h": 72,
+    "l": 54,
+    "c": 56,
+    "v": 46,
+    "dir": "down"
+   },
+   {
+    "h": 60,
+    "l": 42,
+    "c": 44,
+    "v": 38,
+    "dir": "down"
+   }
+  ]
+ },
+ "selling-climax": {
+  "type": "sequence",
+  "title": "A selling climax",
+  "marks": [
+   {
+    "at": 3,
+    "text": "selling climax",
+    "tone": "strong",
+    "above": false
+   }
+  ],
+  "note": "Ultra-wide spread down on exceptional volume — but it closes near the HIGH. | The panic is what lets professional money buy heavily.",
+  "bars": [
+   {
+    "h": 62,
+    "l": 48,
+    "c": 50,
+    "v": 36,
+    "dir": "down"
+   },
+   {
+    "h": 52,
+    "l": 36,
+    "c": 38,
+    "v": 44,
+    "dir": "down"
+   },
+   {
+    "h": 42,
+    "l": 24,
+    "c": 26,
+    "v": 58,
+    "dir": "down"
+   },
+   {
+    "h": 34,
+    "l": 4,
+    "c": 30,
+    "v": 98,
+    "dir": "up",
+    "tone": "strong"
+   },
+   {
+    "h": 46,
+    "l": 28,
+    "c": 44,
+    "v": 54,
+    "dir": "up"
+   },
+   {
+    "h": 60,
+    "l": 40,
+    "c": 57,
+    "v": 42,
+    "dir": "up"
+   }
+  ]
+ },
+ "buying-climax": {
+  "type": "sequence",
+  "title": "A buying climax",
+  "marks": [
+   {
+    "at": 3,
+    "text": "buying climax",
+    "tone": "weak"
+   }
+  ],
+  "note": "The heaviest volume of the entire move arrives on UP-bars at the top. | That is professional selling into an eager public.",
+  "bars": [
+   {
+    "h": 50,
+    "l": 34,
+    "c": 47,
+    "v": 32,
+    "dir": "up"
+   },
+   {
+    "h": 62,
+    "l": 46,
+    "c": 59,
+    "v": 38,
+    "dir": "up"
+   },
+   {
+    "h": 76,
+    "l": 58,
+    "c": 73,
+    "v": 52,
+    "dir": "up"
+   },
+   {
+    "h": 94,
+    "l": 70,
+    "c": 90,
+    "v": 98,
+    "dir": "up",
+    "tone": "weak"
+   },
+   {
+    "h": 92,
+    "l": 76,
+    "c": 78,
+    "v": 72,
+    "dir": "down"
+   },
+   {
+    "h": 82,
+    "l": 62,
+    "c": 64,
+    "v": 58,
+    "dir": "down"
+   }
+  ]
+ },
+ "shakeout": {
+  "type": "sequence",
+  "title": "A shake-out",
+  "marks": [
+   {
+    "at": 2,
+    "text": "gaps down and falls hard",
+    "above": false
+   },
+   {
+    "at": 3,
+    "text": "gaps straight back up",
+    "tone": "strong"
+   }
+  ],
+  "note": "The last weak holders are frightened out, then the market gaps back up. | Only bullish when there is no distribution behind it.",
+  "bars": [
+   {
+    "h": 58,
+    "l": 44,
+    "c": 47,
+    "v": 30,
+    "dir": "down"
+   },
+   {
+    "h": 50,
+    "l": 36,
+    "c": 38,
+    "v": 34,
+    "dir": "down"
+   },
+   {
+    "h": 30,
+    "l": 8,
+    "c": 12,
+    "v": 78,
+    "dir": "down",
+    "tone": "weak",
+    "gapBefore": 0.5
+   },
+   {
+    "h": 44,
+    "l": 28,
+    "c": 41,
+    "v": 62,
+    "dir": "up",
+    "tone": "strong",
+    "gapBefore": 0.5
+   },
+   {
+    "h": 58,
+    "l": 40,
+    "c": 55,
+    "v": 44,
+    "dir": "up"
+   }
+  ]
+ },
+ "stopping-volume": {
+  "type": "sequence",
+  "title": "Stopping volume",
+  "marks": [
+   {
+    "at": 3,
+    "text": "stopping volume",
+    "tone": "strong"
+   }
+  ],
+  "note": "A down-bar on very high volume that closes on its high — | buy orders large enough to act as a brake on the fall.",
+  "bars": [
+   {
+    "h": 66,
+    "l": 52,
+    "c": 54,
+    "v": 30,
+    "dir": "down"
+   },
+   {
+    "h": 58,
+    "l": 42,
+    "c": 44,
+    "v": 38,
+    "dir": "down"
+   },
+   {
+    "h": 48,
+    "l": 30,
+    "c": 32,
+    "v": 48,
+    "dir": "down"
+   },
+   {
+    "h": 40,
+    "l": 14,
+    "c": 37,
+    "v": 94,
+    "dir": "up",
+    "tone": "strong"
+   },
+   {
+    "h": 48,
+    "l": 34,
+    "c": 46,
+    "v": 52,
+    "dir": "up"
+   }
+  ]
+ },
+ "falling-pressure": {
+  "type": "sequence",
+  "title": "Falling pressure",
+  "marks": [
+   {
+    "at": 2,
+    "text": "wide spread, almost no volume",
+    "above": false
+   }
+  ],
+  "note": "Prices are falling, but nobody is really selling. | Not a buy signal — it only says the fall is unlikely to go much further.",
+  "bars": [
+   {
+    "h": 74,
+    "l": 52,
+    "c": 54,
+    "v": 22,
+    "dir": "down"
+   },
+   {
+    "h": 58,
+    "l": 34,
+    "c": 36,
+    "v": 16,
+    "dir": "down"
+   },
+   {
+    "h": 42,
+    "l": 16,
+    "c": 18,
+    "v": 11,
+    "dir": "down"
+   }
+  ]
+ },
+ "buying-and-selling": {
+  "type": "panels",
+  "title": "Healthy buying, and buying with supply hidden in it",
+  "panels": [
+   {
+    "label": "Healthy buying",
+    "verdict": "strong",
+    "note": "up-bars, volume increasing | but not excessive",
+    "bars": [
+     {
+      "h": 46,
+      "l": 32,
+      "c": 43,
+      "v": 26,
+      "dir": "up",
+      "tone": "strong"
+     },
+     {
+      "h": 60,
+      "l": 44,
+      "c": 57,
+      "v": 36,
+      "dir": "up",
+      "tone": "strong"
+     },
+     {
+      "h": 76,
+      "l": 58,
+      "c": 73,
+      "v": 48,
+      "dir": "up",
+      "tone": "strong"
+     }
+    ]
+   },
+   {
+    "label": "Too much volume on an up-bar",
+    "verdict": "weak",
+    "note": "excessive volume means supply | is meeting the buying",
+    "bars": [
+     {
+      "h": 46,
+      "l": 32,
+      "c": 43,
+      "v": 26,
+      "dir": "up"
+     },
+     {
+      "h": 60,
+      "l": 44,
+      "c": 57,
+      "v": 36,
+      "dir": "up"
+     },
+     {
+      "h": 70,
+      "l": 58,
+      "c": 63,
+      "v": 92,
+      "dir": "down",
+      "tone": "weak"
+     }
+    ]
+   }
+  ]
+ },
+ "mark-up": {
+  "type": "sequence",
+  "title": "Why big moves happen so fast",
+  "marks": [
+   {
+    "at": 3,
+    "text": "marked up in a single bar",
+    "tone": "weak"
+   }
+  ],
+  "note": "The speed is deliberate. It locks you out of a good trade, or into a bad one, | before you have time to react.",
+  "bars": [
+   {
+    "h": 42,
+    "l": 34,
+    "c": 38,
+    "v": 16,
+    "dir": "down"
+   },
+   {
+    "h": 44,
+    "l": 36,
+    "c": 41,
+    "v": 14,
+    "dir": "up"
+   },
+   {
+    "h": 43,
+    "l": 35,
+    "c": 39,
+    "v": 12,
+    "dir": "down"
+   },
+   {
+    "h": 78,
+    "l": 50,
+    "c": 75,
+    "v": 86,
+    "dir": "up",
+    "tone": "weak"
+   },
+   {
+    "h": 82,
+    "l": 70,
+    "c": 78,
+    "v": 44,
+    "dir": "up"
+   },
+   {
+    "h": 84,
+    "l": 74,
+    "c": 80,
+    "v": 26,
+    "dir": "up"
+   }
+  ]
+ },
+ "trend-lines": {
+  "type": "sequence",
+  "title": "Drawing the two trend lines",
+  "lines": [
+   {
+    "from": 0,
+    "to": 6,
+    "at": 60,
+    "slope": 30,
+    "label": "supply line"
+   },
+   {
+    "from": 0,
+    "to": 6,
+    "at": 26,
+    "slope": 30,
+    "label": "support line"
+   }
+  ],
+  "note": "One line along the highs, one along the lows. | Old lines from far back in the chart still act as support and resistance.",
+  "bars": [
+   {
+    "h": 52,
+    "l": 32,
+    "c": 48,
+    "v": 28,
+    "dir": "up"
+   },
+   {
+    "h": 46,
+    "l": 30,
+    "c": 43,
+    "v": 22,
+    "dir": "up"
+   },
+   {
+    "h": 62,
+    "l": 44,
+    "c": 58,
+    "v": 32,
+    "dir": "up"
+   },
+   {
+    "h": 58,
+    "l": 42,
+    "c": 46,
+    "v": 26,
+    "dir": "down"
+   },
+   {
+    "h": 74,
+    "l": 56,
+    "c": 70,
+    "v": 36,
+    "dir": "up"
+   },
+   {
+    "h": 70,
+    "l": 54,
+    "c": 58,
+    "v": 30,
+    "dir": "down"
+   },
+   {
+    "h": 86,
+    "l": 68,
+    "c": 82,
+    "v": 38,
+    "dir": "up"
+   }
+  ]
+ },
+ "trend-scaling": {
+  "type": "panels",
+  "title": "The same market at two zoom levels",
+  "panels": [
+   {
+    "label": "Zoomed out",
+    "note": "one smooth-looking trend",
+    "bars": [
+     {
+      "h": 34,
+      "l": 20,
+      "c": 30,
+      "v": 26,
+      "dir": "up"
+     },
+     {
+      "h": 50,
+      "l": 32,
+      "c": 46,
+      "v": 30,
+      "dir": "up"
+     },
+     {
+      "h": 66,
+      "l": 48,
+      "c": 62,
+      "v": 34,
+      "dir": "up"
+     },
+     {
+      "h": 84,
+      "l": 64,
+      "c": 80,
+      "v": 38,
+      "dir": "up"
+     }
+    ]
+   },
+   {
+    "label": "Zoomed in",
+    "note": "the same move is jagged | at a smaller scale",
+    "bars": [
+     {
+      "h": 38,
+      "l": 26,
+      "c": 34,
+      "v": 24,
+      "dir": "up"
+     },
+     {
+      "h": 36,
+      "l": 24,
+      "c": 26,
+      "v": 20,
+      "dir": "down"
+     },
+     {
+      "h": 46,
+      "l": 30,
+      "c": 43,
+      "v": 28,
+      "dir": "up"
+     },
+     {
+      "h": 44,
+      "l": 32,
+      "c": 35,
+      "v": 22,
+      "dir": "down"
+     },
+     {
+      "h": 58,
+      "l": 40,
+      "c": 55,
+      "v": 30,
+      "dir": "up"
+     },
+     {
+      "h": 56,
+      "l": 44,
+      "c": 47,
+      "v": 24,
+      "dir": "down"
+     },
+     {
+      "h": 70,
+      "l": 52,
+      "c": 67,
+      "v": 32,
+      "dir": "up"
+     }
+    ]
+   }
+  ]
+ },
+ "trend-clusters": {
+  "type": "sequence",
+  "title": "How a trend cluster forms",
+  "lines": [
+   {
+    "from": 0,
+    "to": 6,
+    "at": 30,
+    "slope": 44,
+    "label": ""
+   },
+   {
+    "from": 0,
+    "to": 6,
+    "at": 88,
+    "slope": -18,
+    "label": ""
+   },
+   {
+    "from": 0,
+    "to": 6,
+    "at": 56,
+    "slope": 16,
+    "label": "old trend lines"
+   }
+  ],
+  "zones": [
+   {
+    "from": 4,
+    "to": 6,
+    "top": 78,
+    "bottom": 62,
+    "tone": "weak",
+    "label": "cluster"
+   }
+  ],
+  "note": "Where several old trend lines happen to intersect, price tends to react. | Only lines starting before the current view are used.",
+  "bars": [
+   {
+    "h": 34,
+    "l": 20,
+    "c": 30,
+    "v": 24,
+    "dir": "up"
+   },
+   {
+    "h": 46,
+    "l": 30,
+    "c": 42,
+    "v": 28,
+    "dir": "up"
+   },
+   {
+    "h": 56,
+    "l": 40,
+    "c": 52,
+    "v": 30,
+    "dir": "up"
+   },
+   {
+    "h": 66,
+    "l": 50,
+    "c": 62,
+    "v": 32,
+    "dir": "up"
+   },
+   {
+    "h": 74,
+    "l": 60,
+    "c": 64,
+    "v": 44,
+    "dir": "down",
+    "tone": "weak"
+   },
+   {
+    "h": 70,
+    "l": 56,
+    "c": 66,
+    "v": 30,
+    "dir": "up"
+   },
+   {
+    "h": 72,
+    "l": 58,
+    "c": 60,
+    "v": 46,
+    "dir": "down",
+    "tone": "weak"
+   }
+  ]
+ },
+ "using-clusters": {
+  "type": "sequence",
+  "title": "Reading trend clusters correctly",
+  "zones": [
+   {
+    "from": 1,
+    "to": 3,
+    "top": 76,
+    "bottom": 62,
+    "tone": "weak",
+    "label": "cluster — trends converging"
+   }
+  ],
+  "marks": [
+   {
+    "at": 4,
+    "text": "do not extend it past here",
+    "above": false
+   }
+  ],
+  "note": "Beyond the end of the cluster the trends are diverging, so it means nothing. | A cluster only matters when price is actually close to it.",
+  "bars": [
+   {
+    "h": 40,
+    "l": 26,
+    "c": 36,
+    "v": 26,
+    "dir": "up"
+   },
+   {
+    "h": 58,
+    "l": 42,
+    "c": 54,
+    "v": 30,
+    "dir": "up"
+   },
+   {
+    "h": 70,
+    "l": 58,
+    "c": 62,
+    "v": 44,
+    "dir": "down",
+    "tone": "weak"
+   },
+   {
+    "h": 66,
+    "l": 52,
+    "c": 56,
+    "v": 34,
+    "dir": "down"
+   },
+   {
+    "h": 54,
+    "l": 40,
+    "c": 44,
+    "v": 28,
+    "dir": "down"
+   },
+   {
+    "h": 46,
+    "l": 32,
+    "c": 42,
+    "v": 24,
+    "dir": "up"
+   }
+  ]
+ },
+ "volume-near-line": {
+  "type": "sequence",
+  "title": "Where effort shows up near a trend line",
+  "lines": [
+   {
+    "from": 0,
+    "to": 5,
+    "at": 80,
+    "label": "supply line"
+   }
+  ],
+  "marks": [
+   {
+    "at": 3,
+    "text": "effort appears BEFORE the line",
+    "tone": "strong"
+   }
+  ],
+  "note": "Changing a trend costs money. You see that effort as price approaches the line, | not once it is sitting on it.",
+  "bars": [
+   {
+    "h": 46,
+    "l": 32,
+    "c": 43,
+    "v": 24,
+    "dir": "up"
+   },
+   {
+    "h": 58,
+    "l": 44,
+    "c": 55,
+    "v": 30,
+    "dir": "up"
+   },
+   {
+    "h": 66,
+    "l": 52,
+    "c": 63,
+    "v": 38,
+    "dir": "up"
+   },
+   {
+    "h": 78,
+    "l": 60,
+    "c": 75,
+    "v": 72,
+    "dir": "up",
+    "tone": "strong"
+   },
+   {
+    "h": 84,
+    "l": 70,
+    "c": 81,
+    "v": 50,
+    "dir": "up"
+   },
+   {
+    "h": 88,
+    "l": 76,
+    "c": 85,
+    "v": 34,
+    "dir": "up"
+   }
+  ]
+ },
+ "breakout-test": {
+  "type": "sequence",
+  "title": "Breaking through the top of a channel",
+  "lines": [
+   {
+    "from": 0,
+    "to": 5,
+    "at": 70,
+    "label": "supply line"
+   }
+  ],
+  "marks": [
+   {
+    "at": 3,
+    "text": "wide spread, high volume, through the line",
+    "tone": "strong"
+   },
+   {
+    "at": 4,
+    "text": "low-volume test confirms it",
+    "above": false
+   }
+  ],
+  "note": "The push through must be on high volume, and the next bar must hold. | A low-volume down-bar afterwards is the confirmation.",
+  "bars": [
+   {
+    "h": 52,
+    "l": 38,
+    "c": 48,
+    "v": 26,
+    "dir": "up"
+   },
+   {
+    "h": 62,
+    "l": 48,
+    "c": 58,
+    "v": 30,
+    "dir": "up"
+   },
+   {
+    "h": 68,
+    "l": 56,
+    "c": 64,
+    "v": 34,
+    "dir": "up"
+   },
+   {
+    "h": 86,
+    "l": 64,
+    "c": 83,
+    "v": 84,
+    "dir": "up",
+    "tone": "strong"
+   },
+   {
+    "h": 84,
+    "l": 72,
+    "c": 81,
+    "v": 18,
+    "dir": "down",
+    "tone": "strong"
+   },
+   {
+    "h": 94,
+    "l": 80,
+    "c": 91,
+    "v": 44,
+    "dir": "up"
+   }
+  ]
+ },
+ "bull-start": {
+  "type": "sequence",
+  "title": "How a bull market begins",
+  "marks": [
+   {
+    "at": 3,
+    "text": "weak holders give up",
+    "tone": "weak"
+   },
+   {
+    "at": 5,
+    "text": "nothing left to sell",
+    "tone": "strong",
+    "above": false
+   }
+  ],
+  "note": "Bull markets start in gloom. Once the stock has passed to strong hands, | the market can rise on very little buying.",
+  "bars": [
+   {
+    "h": 70,
+    "l": 54,
+    "c": 56,
+    "v": 34,
+    "dir": "down"
+   },
+   {
+    "h": 58,
+    "l": 40,
+    "c": 42,
+    "v": 42,
+    "dir": "down"
+   },
+   {
+    "h": 46,
+    "l": 26,
+    "c": 28,
+    "v": 52,
+    "dir": "down"
+   },
+   {
+    "h": 32,
+    "l": 6,
+    "c": 28,
+    "v": 96,
+    "dir": "up",
+    "tone": "strong"
+   },
+   {
+    "h": 38,
+    "l": 24,
+    "c": 34,
+    "v": 44,
+    "dir": "up"
+   },
+   {
+    "h": 40,
+    "l": 30,
+    "c": 38,
+    "v": 14,
+    "dir": "up",
+    "tone": "strong"
+   },
+   {
+    "h": 56,
+    "l": 36,
+    "c": 53,
+    "v": 40,
+    "dir": "up"
+   }
+  ]
+ },
+ "market-top": {
+  "type": "sequence",
+  "title": "Recognising a likely market top",
+  "lines": [
+   {
+    "from": 0,
+    "to": 5,
+    "at": 74,
+    "label": "old high"
+   }
+  ],
+  "marks": [
+   {
+    "at": 3,
+    "text": "new high ground, narrow spread, huge volume",
+    "tone": "weak"
+   }
+  ],
+  "note": "Into new high ground there is nothing to the left on the chart. | If that volume were buying, the spread would be wide.",
+  "bars": [
+   {
+    "h": 60,
+    "l": 44,
+    "c": 57,
+    "v": 30,
+    "dir": "up"
+   },
+   {
+    "h": 70,
+    "l": 56,
+    "c": 67,
+    "v": 38,
+    "dir": "up"
+   },
+   {
+    "h": 76,
+    "l": 64,
+    "c": 73,
+    "v": 46,
+    "dir": "up"
+   },
+   {
+    "h": 88,
+    "l": 78,
+    "c": 85,
+    "v": 96,
+    "dir": "up",
+    "tone": "weak"
+   },
+   {
+    "h": 84,
+    "l": 66,
+    "c": 68,
+    "v": 58,
+    "dir": "down"
+   },
+   {
+    "h": 74,
+    "l": 56,
+    "c": 58,
+    "v": 44,
+    "dir": "down"
+   }
+  ]
+ },
+ "end-of-rally": {
+  "type": "panels",
+  "title": "The five signs that stop an up-move",
+  "panels": [
+   {
+    "label": "Buying climax",
+    "verdict": "weak",
+    "note": "huge volume | on an up-bar",
+    "bars": [
+     {
+      "h": 92,
+      "l": 68,
+      "c": 88,
+      "v": 96,
+      "dir": "up",
+      "tone": "weak"
+     }
+    ]
+   },
+   {
+    "label": "Failed test",
+    "verdict": "weak",
+    "note": "test shape, but | volume is high",
+    "bars": [
+     {
+      "h": 58,
+      "l": 18,
+      "c": 55,
+      "v": 80,
+      "dir": "up",
+      "tone": "weak"
+     }
+    ]
+   },
+   {
+    "label": "Narrow spread, high volume",
+    "verdict": "weak",
+    "note": "no progress | on big effort",
+    "bars": [
+     {
+      "h": 78,
+      "l": 68,
+      "c": 75,
+      "v": 90,
+      "dir": "up",
+      "tone": "weak"
+     }
+    ]
+   },
+   {
+    "label": "Up-thrust",
+    "verdict": "weak",
+    "note": "closes near | its own low",
+    "bars": [
+     {
+      "h": 88,
+      "l": 62,
+      "c": 66,
+      "v": 76,
+      "dir": "down",
+      "tone": "weak"
+     }
+    ]
+   },
+   {
+    "label": "No demand",
+    "verdict": "weak",
+    "note": "narrow up-bar, | low volume",
+    "bars": [
+     {
+      "h": 64,
+      "l": 52,
+      "c": 61,
+      "v": 14,
+      "dir": "up",
+      "tone": "weak"
+     }
+    ]
+   }
+  ]
+ },
+ "stock-climax": {
+  "type": "sequence",
+  "title": "A buying climax in a single stock",
+  "marks": [
+   {
+    "at": 3,
+    "text": "wide spread up, huge volume, no response",
+    "tone": "weak"
+   }
+  ],
+  "note": "The rapid mark-up and the good news cloud your judgement. | That is exactly what it is designed to do.",
+  "bars": [
+   {
+    "h": 44,
+    "l": 30,
+    "c": 41,
+    "v": 30,
+    "dir": "up"
+   },
+   {
+    "h": 60,
+    "l": 42,
+    "c": 57,
+    "v": 44,
+    "dir": "up"
+   },
+   {
+    "h": 78,
+    "l": 58,
+    "c": 75,
+    "v": 64,
+    "dir": "up"
+   },
+   {
+    "h": 94,
+    "l": 72,
+    "c": 90,
+    "v": 98,
+    "dir": "up",
+    "tone": "weak"
+   },
+   {
+    "h": 92,
+    "l": 78,
+    "c": 80,
+    "v": 66,
+    "dir": "down"
+   },
+   {
+    "h": 84,
+    "l": 64,
+    "c": 66,
+    "v": 52,
+    "dir": "down"
+   }
+  ]
+ },
+ "bear-rally": {
+  "type": "sequence",
+  "title": "Rallies inside a bear market",
+  "marks": [
+   {
+    "at": 3,
+    "text": "low volume rally = weakness",
+    "tone": "weak"
+   }
+  ],
+  "note": "In a bear market any low-volume up-move is weakness, not recovery. | The professionals are simply not taking part.",
+  "bars": [
+   {
+    "h": 72,
+    "l": 56,
+    "c": 58,
+    "v": 40,
+    "dir": "down"
+   },
+   {
+    "h": 62,
+    "l": 46,
+    "c": 48,
+    "v": 44,
+    "dir": "down"
+   },
+   {
+    "h": 54,
+    "l": 40,
+    "c": 51,
+    "v": 18,
+    "dir": "up"
+   },
+   {
+    "h": 60,
+    "l": 48,
+    "c": 57,
+    "v": 12,
+    "dir": "up",
+    "tone": "weak"
+   },
+   {
+    "h": 58,
+    "l": 44,
+    "c": 46,
+    "v": 48,
+    "dir": "down"
+   },
+   {
+    "h": 48,
+    "l": 32,
+    "c": 34,
+    "v": 52,
+    "dir": "down"
+   }
+  ]
+ },
+ "market-bottom": {
+  "type": "sequence",
+  "title": "Recognising a market bottom",
+  "marks": [
+   {
+    "at": 2,
+    "text": "wide spread down, high volume",
+    "above": false
+   },
+   {
+    "at": 4,
+    "text": "but the market does not fall",
+    "tone": "strong"
+   }
+  ],
+  "note": "If the volume at (a) had really been selling, the market could not be higher | a few bars later. So it was buying.",
+  "bars": [
+   {
+    "h": 70,
+    "l": 54,
+    "c": 56,
+    "v": 36,
+    "dir": "down"
+   },
+   {
+    "h": 60,
+    "l": 44,
+    "c": 46,
+    "v": 44,
+    "dir": "down"
+   },
+   {
+    "h": 50,
+    "l": 24,
+    "c": 28,
+    "v": 90,
+    "dir": "down",
+    "tone": "weak"
+   },
+   {
+    "h": 40,
+    "l": 28,
+    "c": 37,
+    "v": 40,
+    "dir": "up"
+   },
+   {
+    "h": 48,
+    "l": 32,
+    "c": 46,
+    "v": 34,
+    "dir": "up",
+    "tone": "strong"
+   },
+   {
+    "h": 60,
+    "l": 42,
+    "c": 57,
+    "v": 38,
+    "dir": "up"
+   }
+  ]
+ },
+ "professional-support": {
+  "type": "sequence",
+  "title": "What professional support looks like",
+  "marks": [
+   {
+    "at": 3,
+    "text": "closes in the middle on very high volume",
+    "tone": "strong"
+   }
+  ],
+  "note": "In a downtrend, a high-volume down-bar closing middle or high, | followed by an up-bar, says demand has overcome supply.",
+  "bars": [
+   {
+    "h": 72,
+    "l": 58,
+    "c": 60,
+    "v": 32,
+    "dir": "down"
+   },
+   {
+    "h": 64,
+    "l": 48,
+    "c": 50,
+    "v": 38,
+    "dir": "down"
+   },
+   {
+    "h": 56,
+    "l": 40,
+    "c": 42,
+    "v": 44,
+    "dir": "down"
+   },
+   {
+    "h": 48,
+    "l": 22,
+    "c": 36,
+    "v": 92,
+    "dir": "down",
+    "tone": "strong"
+   },
+   {
+    "h": 54,
+    "l": 38,
+    "c": 52,
+    "v": 50,
+    "dir": "up",
+    "tone": "strong"
+   },
+   {
+    "h": 64,
+    "l": 48,
+    "c": 61,
+    "v": 40,
+    "dir": "up"
+   }
+  ]
+ },
+ "stops": {
+  "type": "sequence",
+  "title": "Where to put a stop",
+  "lines": [
+   {
+    "from": 0,
+    "to": 5,
+    "at": 34,
+    "label": "last reaction low"
+   }
+  ],
+  "marks": [
+   {
+    "at": 2,
+    "text": "reaction low",
+    "above": false
+   }
+  ],
+  "note": "Place stops below the last reaction low, not at an arbitrary distance — | and on odd numbers, because the crowd uses round ones.",
+  "bars": [
+   {
+    "h": 52,
+    "l": 38,
+    "c": 48,
+    "v": 28,
+    "dir": "up"
+   },
+   {
+    "h": 58,
+    "l": 44,
+    "c": 54,
+    "v": 26,
+    "dir": "up"
+   },
+   {
+    "h": 50,
+    "l": 36,
+    "c": 40,
+    "v": 34,
+    "dir": "down"
+   },
+   {
+    "h": 60,
+    "l": 44,
+    "c": 57,
+    "v": 30,
+    "dir": "up"
+   },
+   {
+    "h": 72,
+    "l": 56,
+    "c": 69,
+    "v": 36,
+    "dir": "up"
+   },
+   {
+    "h": 80,
+    "l": 66,
+    "c": 77,
+    "v": 32,
+    "dir": "up"
+   }
+  ]
+ },
+ "reading-a-bar": {
+  "type": "flow",
+  "title": "What you read on every single bar",
+  "steps": [
+   {
+    "label": "Volume",
+    "sub": "how much activity took place"
+   },
+   {
+    "label": "Spread",
+    "sub": "what that activity achieved"
+   },
+   {
+    "label": "The close",
+    "sub": "who won the bar"
+   },
+   {
+    "label": "The conclusion",
+    "sub": "what professional money was doing",
+    "tone": "strong"
+   }
+  ],
+  "note": "Any one of them on its own will mislead you. They are only meaningful together."
+ },
+ "market-maker-loop": {
+  "type": "flow",
+  "title": "Why a market-maker marks prices down",
+  "steps": [
+   {
+    "label": "He needs stock to trade with"
+   },
+   {
+    "label": "So he marks the price down",
+    "sub": "a sharp fall appears on your chart"
+   },
+   {
+    "label": "Weak holders panic out",
+    "sub": "and supply him the stock",
+    "tone": "weak"
+   },
+   {
+    "label": "Now he has inventory",
+    "sub": "and the fall stops",
+    "tone": "strong"
+   }
+  ],
+  "note": "He is responding to conditions and taking the opportunity — not dictating the market."
+ },
+ "volume-plus-spread": {
+  "type": "flow",
+  "title": "How volume becomes information",
+  "steps": [
+   {
+    "label": "Volume on its own",
+    "sub": "just a number"
+   },
+   {
+    "label": "Related to the spread",
+    "sub": "effort against result"
+   },
+   {
+    "label": "And to the close",
+    "sub": "where the bar finished"
+   },
+   {
+    "label": "Now it is a fact",
+    "sub": "not a story about the news",
+    "tone": "strong"
+   }
+  ]
+ },
+ "holders": {
+  "type": "flow",
+  "title": "Stock moves from weak hands to strong, and back",
+  "steps": [
+   {
+    "label": "Weak holders",
+    "sub": "no plan, frightened out at the bottom",
+    "tone": "weak"
+   },
+   {
+    "label": "Panic selling is absorbed",
+    "sub": "quietly, over time"
+   },
+   {
+    "label": "Strong holders",
+    "sub": "capital, patience, a plan",
+    "tone": "strong"
+   },
+   {
+    "label": "Sold back at the top",
+    "sub": "into good news, to a new set of weak holders",
+    "tone": "weak"
+   }
+  ],
+  "note": "A sustained rise cannot begin until the stock has moved into strong hands."
+ },
+ "what-is-vsa": {
+  "type": "flow",
+  "title": "Where the method gets its name",
+  "steps": [
+   {
+    "label": "He has no better information",
+    "sub": "the same screen you have"
+   },
+   {
+    "label": "He reads it properly",
+    "sub": "volume with spread and close"
+   },
+   {
+    "label": "He sees the imbalance",
+    "sub": "supply against demand",
+    "tone": "strong"
+   },
+   {
+    "label": "Volume Spread Analysis"
+   }
+  ]
+ },
+ "related-markets": {
+  "type": "flow",
+  "title": "Why related markets warn you first",
+  "steps": [
+   {
+    "label": "Strength appears in the cash market"
+   },
+   {
+    "label": "Professionals act at once",
+    "sub": "in options and futures"
+   },
+   {
+    "label": "Volume surges there first",
+    "sub": "before your chart moves",
+    "tone": "strong"
+   }
+  ]
+ },
+ "cash-futures": {
+  "type": "flow",
+  "title": "How the futures price is tied to the cash price",
+  "steps": [
+   {
+    "label": "The cash price",
+    "sub": "sets the limits of the move"
+   },
+   {
+    "label": "Futures swing above and below it"
+   },
+   {
+    "label": "Arbitrage pulls them back",
+    "sub": "large houses with low dealing costs",
+    "tone": "strong"
+   }
+  ],
+  "note": "So a futures divergence is not a signal in itself."
+ },
+ "trend-first": {
+  "type": "flow",
+  "title": "The order to read a chart in",
+  "steps": [
+   {
+    "label": "Find the trend",
+    "sub": "which way is the consensus?"
+   },
+   {
+    "label": "Read the bars inside it",
+    "sub": "volume, spread, close"
+   },
+   {
+    "label": "Trade with it",
+    "sub": "never against professional opinion",
+    "tone": "strong"
+   }
+  ]
+ },
+ "why-lines-work": {
+  "type": "flow",
+  "title": "Why a trend line seems to hold",
+  "steps": [
+   {
+    "label": "Traders remember their own prices"
+   },
+   {
+    "label": "Those opinions cluster at the same level"
+   },
+   {
+    "label": "They act there again",
+    "sub": "buying or selling into the line",
+    "tone": "strong"
+   }
+  ],
+  "note": "The author is explicit that this is an observation, not a proof."
+ },
+ "perceived-value": {
+  "type": "flow",
+  "title": "Three traders, one resistance level",
+  "steps": [
+   {
+    "label": "Trader A",
+    "sub": "sold at a small profit — wants back in cheaper"
+   },
+   {
+    "label": "Trader B",
+    "sub": "was stopped out — waiting to be proved right"
+   },
+   {
+    "label": "Trader C",
+    "sub": "still holding — wants to break even"
+   },
+   {
+    "label": "All three act at the same price",
+    "sub": "and that is resistance",
+    "tone": "weak"
+   }
+  ]
+ },
+ "campaign": {
+  "type": "flow",
+  "title": "A campaign, step by step",
+  "steps": [
+   {
+    "label": "Plan",
+    "sub": "decide which stock is worth having"
+   },
+   {
+    "label": "Accumulate",
+    "sub": "buy quietly whenever selling appears",
+    "tone": "strong"
+   },
+   {
+    "label": "Test",
+    "sub": "check that no supply is left"
+   },
+   {
+    "label": "Mark up",
+    "sub": "now the price can travel"
+   }
+  ],
+  "note": "A stock that refuses to fall while the index falls is being accumulated."
+ },
+ "system": {
+  "type": "flow",
+  "title": "What makes a system worth having",
+  "steps": [
+   {
+    "label": "Sound reasoning",
+    "sub": "not a formula fitted to old data"
+   },
+   {
+    "label": "Written down",
+    "sub": "decided before the pressure arrives"
+   },
+   {
+    "label": "Actually followed",
+    "sub": "especially when it hurts",
+    "tone": "strong"
+   }
+  ],
+  "note": "No system is perfect, because a human being has to follow it."
+ },
+ "long-checklist": {
+  "type": "flow",
+  "title": "The long checklist, in order",
+  "steps": [
+   {
+    "label": "Uptrend forming?",
+    "sub": "higher lows"
+   },
+   {
+    "label": "Daily support?",
+    "sub": "each low above the last"
+   },
+   {
+    "label": "Strength behind you?",
+    "sub": "a test, shake-out or stopping volume",
+    "tone": "strong"
+   },
+   {
+    "label": "Weakness above you?",
+    "sub": "if yes, be cautious",
+    "tone": "weak"
+   },
+   {
+    "label": "Buy on a low-volume reaction",
+    "sub": "never chase the move"
+   }
+  ]
+ },
+ "short-checklist": {
+  "type": "flow",
+  "title": "The short checklist, in order",
+  "steps": [
+   {
+    "label": "Downtrend forming?",
+    "sub": "lower highs"
+   },
+   {
+    "label": "No support appearing?",
+    "sub": "each low below the last"
+   },
+   {
+    "label": "Weakness behind you?",
+    "sub": "an up-thrust, no demand or a climax",
+    "tone": "weak"
+   },
+   {
+    "label": "Strength below you?",
+    "sub": "if yes, be cautious",
+    "tone": "strong"
+   },
+   {
+    "label": "Sell into a rally that shows no demand"
+   }
+  ]
+ },
+ "two-halves": {
+  "type": "flow",
+  "title": "Reading the market is only half the job",
+  "steps": [
+   {
+    "label": "Read the market correctly"
+   },
+   {
+    "label": "Add trading skill and discipline"
+   },
+   {
+    "label": "Consistent profit",
+    "tone": "strong"
+   }
+  ],
+  "note": "Knowing which way prices will move tomorrow is not, on its own, enough."
+ },
+ "lineage": {
+  "type": "flow",
+  "title": "Where this method comes from",
+  "steps": [
+   {
+    "label": "Richard Wyckoff",
+    "sub": "tape reading, 1900s–1930s"
+   },
+   {
+    "label": "Humphrey Neill",
+    "sub": "Tape Reading & Market Tactics"
+   },
+   {
+    "label": "Tom Williams",
+    "sub": "Volume Spread Analysis",
+    "tone": "strong"
+   }
+  ],
+  "note": "Several titles on the reading list are Wyckoff's. VSA is his method, systematised."
+ },
+ "what-moves-price": {
+  "type": "compare",
+  "title": "What most traders watch, and what actually moves price",
+  "left": {
+   "label": "What most traders watch",
+   "tone": "weak",
+   "items": [
+    "Headlines and tips",
+    "Opinions about what a share is worth",
+    "What the price ought to do"
+   ]
+  },
+  "right": {
+   "label": "What actually moves price",
+   "tone": "strong",
+   "items": [
+    "Supply and demand going out of balance",
+    "Large operators building or unloading positions",
+    "The footprints they leave in volume and spread"
+   ]
   }
+ },
+ "looks-random": {
+  "type": "compare",
+  "title": "Why the market looks random, and why it is not",
+  "left": {
+   "label": "Why it looks random",
+   "tone": "weak",
+   "items": [
+    "Moves ignore the news",
+    "Bear markets arrive in good times",
+    "The market does the opposite of your gut feeling"
+   ]
+  },
+  "right": {
+   "label": "Why it is not",
+   "tone": "strong",
+   "items": [
+    "Somebody large has to buy before a rise",
+    "That buying is recorded as volume",
+    "The spread tells you what the volume achieved"
+   ]
+  }
+ },
+ "investing-vs-trading": {
+  "type": "compare",
+  "title": "Investing and trading are two different jobs",
+  "left": {
+   "label": "Investing",
+   "items": [
+    "Cares what the company is worth",
+    "Earnings, results, products",
+    "Holds through the cycle"
+   ]
+  },
+  "right": {
+   "label": "Trading",
+   "tone": "strong",
+   "items": [
+    "Cares only what the price is doing",
+    "Volume, spread, close",
+    "Follows the professional money"
+   ]
+  },
+  "note": "For trading, forget intrinsic value. It is not what moves the price this week."
+ },
+ "who-is-professional": {
+  "type": "compare",
+  "title": "Who Williams means by 'professional'",
+  "left": {
+   "label": "Not the smart money",
+   "tone": "weak",
+   "items": [
+    "Your fund manager",
+    "Pension companies",
+    "A broker selling you a view"
+   ]
+  },
+  "right": {
+   "label": "The operators he means",
+   "tone": "strong",
+   "items": [
+    "Syndicate traders",
+    "Market-makers and specialists",
+    "Floor traders — people who live off the price difference"
+   ]
+  }
+ },
+ "news-vs-volume": {
+  "type": "compare",
+  "title": "News against volume",
+  "left": {
+   "label": "News",
+   "tone": "weak",
+   "items": [
+    "Written for an audience",
+    "Usually arrives after the move",
+    "Can be used to improve someone else's position"
+   ]
+  },
+  "right": {
+   "label": "Volume",
+   "tone": "strong",
+   "items": [
+    "A record of trades that actually happened",
+    "Arrives with the move",
+    "Cannot be talked up or down"
+   ]
+  }
+ },
+ "incomplete-tape": {
+  "type": "compare",
+  "title": "Your volume data is not the whole picture",
+  "left": {
+   "label": "What you can see",
+   "items": [
+    "The tape as it is reported",
+    "Price and volume on your chart"
+   ]
+  },
+  "right": {
+   "label": "What can be withheld",
+   "tone": "weak",
+   "items": [
+    "Large deals reported up to ninety minutes late",
+    "Any deal three times the average size",
+    "So expect manipulation rather than being surprised by it"
+   ]
+  }
+ },
+ "who-is-buying": {
+  "type": "compare",
+  "title": "'More buyers than sellers' is the wrong question",
+  "left": {
+   "label": "The easy answer",
+   "tone": "weak",
+   "items": [
+    "“More buying than selling pushes it up”",
+    "But every trade has a buyer and a seller",
+    "So counting them means nothing"
+   ]
+  },
+  "right": {
+   "label": "The real question",
+   "tone": "strong",
+   "items": [
+    "WHO is on each side?",
+    "Professional buying supports a move",
+    "Public buying, on its own, does not"
+   ]
+  }
+ },
+ "japan-vs-dow": {
+  "type": "compare",
+  "title": "Two markets, opposite outcomes, same logic",
+  "left": {
+   "label": "Japan, from late 1989",
+   "tone": "weak",
+   "items": [
+    "A buying climax on ultra-high volume",
+    "Years of bear market followed"
+   ]
+  },
+  "right": {
+   "label": "The Dow, over the same years",
+   "tone": "strong",
+   "items": [
+    "Accumulation at the lows",
+    "A long bull market followed"
+   ]
+  },
+  "note": "Written in the early 1990s — read the examples as history, the principle as current."
+ },
+ "dream-vs-reality": {
+  "type": "compare",
+  "title": "The dream, and the reality",
+  "left": {
+   "label": "The dream",
+   "items": [
+    "Leave the job",
+    "Trade from anywhere",
+    "Compound forever"
+   ]
+  },
+  "right": {
+   "label": "The reality",
+   "tone": "weak",
+   "items": [
+    "Most people are wiped out while learning",
+    "The survivors are good at money management",
+    "Risk control matters more than clever analysis"
+   ]
+  }
+ },
+ "news-says": {
+  "type": "compare",
+  "title": "What the news says against what the volume says",
+  "left": {
+   "label": "The news says",
+   "tone": "weak",
+   "items": [
+    "Record highs, strong outlook, buy now",
+    "Panic and crisis, get out"
+   ]
+  },
+  "right": {
+   "label": "The volume says",
+   "tone": "strong",
+   "items": [
+    "Huge volume on up-bars at the top = distribution",
+    "Huge volume on a down-bar closing high = accumulation"
+   ]
+  },
+  "note": "Most news is hype, and it is not published for your benefit."
+ },
+ "the-odds": {
+  "type": "compare",
+  "title": "The odds, and what the winners actually use",
+  "left": {
+   "label": "The odds as they are",
+   "tone": "weak",
+   "items": [
+    "Around 90% of traders lose money",
+    "85% of traded options are never exercised"
+   ]
+  },
+  "right": {
+   "label": "What the winners use",
+   "tone": "strong",
+   "items": [
+    "Supply and demand drive every market",
+    "Smart money decides from changes in volume and price",
+    "Not from the news"
+   ]
+  }
+ }
 }
