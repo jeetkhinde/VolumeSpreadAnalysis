@@ -1,0 +1,216 @@
+# Master the Markets — Glossary of Terms
+All 61 entries from the back of the 4th edition, verbatim.
+
+## Accumulation
+Professional money is buying stock. ‘Smart money’ cannot just go into the market and start buying stock in huge quantities. This action will only put the price up against themselves, so they have to accumulate stock over a period of time, buying when bouts of selling come onto the market. Having bought in the morning, they may have to depress the price by selling enough stock quickly to bring the price back down, but overall they are buying more than they are selling. This is accumulation and is the exact opposite to distribution.
+
+## Arbitrage
+Simultaneously buying in one market and selling in another for short-term gains.
+
+## Bag Holding
+As with the accumulation phase, professional money cannot just go into the market and buy just when they feel like it. This would simply put the price up against their own buying – market-makers would see the professional buying and rapidly mark the price up against them. If an opportunity arrives, which allows quick and advantageous involvement (to profit), the ‘smart money’ will seize the chance with vigour.
+Bag-holding is the term used for one such opportunity. Traders who are on the wrong side of the market are selling in large amounts, usually under panic conditions. The professional money has become bullish, so they are now prepared to buy all of the stock that is being rapidly sold. As they are buying (or absorbing) all of the stock on offer, this prevents substantial down-moves during the day's trading (despite all the frantic selling) and finishes up with a narrow spread on a down-day. If the professional money had not been bullish, they would refuse to buy stocks on offer, which means that the spread would then be wide and down for the day.
+In this situation, you would expect to see an immediate positive response the very next trading day (or bar), with the bar closing up. Buying has now overcome the supply. Conversely, if the market is not up the next day, this indicates that there was some residual buying, but more positive indications (green indicators) will be needed for the market to turn.
+Generally, Bag Holding is seen after substantial declines have already taken place. Bad news will almost certainly be circulating, which creates panic selling. Those traders that have already seen losses will panic sell, to guard against losing more money. It is this panic selling that is rapidly absorbed, which accounts for the narrow spread.
+
+## Buying Climax
+A buying climax marks the end of a bull market. It is hallmarked by rapid price rises after a substantial bull market has already taken place. The volume is always high: The higher the volume, the more likely it is to be a buying climax. The spreads will be very wide, closing higher than previous bars, and the ‘news’ will be good. If prices are into all-time new high ground, this will mark the top of the market.
+Note: The volume must be extremely high.
+
+## Cash Market
+Stocks and shares is one cash market and the Interbank currencies is another. A future is known as a derivative, because the real value lies in the cash market, where actual stocks are bought and sold for cash, or one currency is bought with another.
+
+## Cause & Effect
+The significance of the interaction between strong and weak holders combined with the impact of professional money cannot be over-emphasised. A sustained Bull move cannot take place until there has been a more or less complete transfer of available stock from weak holders to strong holders during a phase of accumulation. A sustained Bear move is an inevitable consequence of the re-transfer of stock from strong holders to potential weak holders via the process of distribution. Both types of move may be interrupted by periods of re-accumulation or re-distribution as different groups move into or out of the market.
+
+## Consensus of Opinion
+Where a majority of professionals have roughly similar views and will back that view with their money. (This can mean buying, selling or withdrawing from the market.)
+
+## Distribution
+This means the selling of large lines of stock bought at lower prices to potentially weak holders. Once these lines have been transferred, a bear move will take place. As a market rallies, a level will be reached at some time where those traders who have missed out on all the up-moves, or have sold out prematurely, or have been waiting for a reaction to buy into the market, cannot stand the constant rises, so are liable to buy into the market. This can easily include fund managers, pension funds, the public, banks etc. A recent survey shows that the average fund manager has difficulty in out-performing the Index. Selling large lines of stocks bought in the lower parts of the trading range cannot be done overnight. The professional traders cannot just sell, at will – they have to distribute. Once they decide to start taking profits, they can only sell on surges of buying from outsiders. They will then have to take advantage of opportunities that arise, such as good news, or the excitement of crowd behaviour after a long bull move (a bull move that apParently will never stop).
+
+## Effort
+A wide price spread, either up or down, represents professional effort. The associated volume will show you the amount of activity during this period of effort.
+- “Effort to Rise” will normally close on the high, usually above resistance, or a previous high
+volume area.
+- “Effort to Fall” will normally close on the low, usually below support, or a previous high volume
+area.
+
+## Effort to Rise Failed
+If effort is put into something, you would expect a result in accordance with that effort. Failure to see any result will warn you of problems if you persist. This sort of thing is seen in the market frequently. If, for example, there is a wide spread up-day on high volume, while the next day has reversed down on a wide spread also on high volume, this now shows a serious sign of weakness.
+A wide spread up on high volume shows effort to go up. If the next day is down, this demonstrates that within the high volume seen on the day before, selling overcame the demand, otherwise, prices could not possibly have fallen the next day. Exercise caution in this situation. It is the second down-day that is important. If the second day falls on low volume, this can show that the selling has now stopped. Moreover, if the selling has stopped, then expect the market to go up.
+
+## Failed Attempt to Push Prices Lower
+If, after observing a substantial down-move, the market goes into an area of recent new low ground, with a wide spread down, accompanied by high volume, while the next day is an up-day, this is a failed down￾move. Exercise caution in a bear market: This might be buying! To stop a bear market, you will need to
+see buying spread over an accumulation phase – this can take time. Keep in mind that professionals will accumulate in a falling market, and you will occasionally see evidence of this on your TradeGuider charts (i.e. intermittent green indicators appearing during a down-move).
+
+## Failed Down-Move
+A rapid price move on wide spreads down, on high volume (especially if closing low), is a sign of weakness (i.e. Effort to go down). However, this type of action causes the market to become rapidly oversold and vulnerable to up-moves. If the next day (or hour) is up, it must show that there was buying as well as selling contained in the high volume down-move (no results from the effort). This shows that the brakes are being applied to the falls at that moment.
+
+## Heavy Supply has Entered the Markets
+When supply hits the market, professional money is taking the opportunity to take profits. The market may then go sideways, or you may see a small reaction. If the professionals still have stock on their hands, the market will be supported to sell more at higher prices.
+
+## Likely End to a Rising Market
+In this situation, you will have already seen a substantial rise in the market. The likely end of a rising market is hallmarked by a narrow spread, on an up-day (or bar), accompanied by very high volume. Ideally, the market should close on the high – this ‘capping’ action adds extra significance to the weakness and the price should fall immediately in this situation.
+If the prices are into new high ground, this will usually mark a top. The professional money has taken the opportunity to transfer stock bought at lower levels to potential weak holders. How do we know this? Well, if the professional money had been bullish (there is no way they are going to give you a good deal), the spread of the day would have been wide and up. The spread is narrow because they are selling into a surge of buy orders, which prevents the price from rising too much. The market-makers are giving the buying public a good price because they have detected overall weakness and are taking profits.
+NOTE: You will sometimes see a “Likely End of a Rising Market” indicator as a market is trending upwards on one of the waves up – the market frequently rests and goes sideways (or falls slightly) when trending upwards. However, if the market is strong, prices will resume their upward course.
+
+## Liquid Market
+One acceptable definition of a liquid market is any market in which large positions can be taken without significantly affecting the price at the time of the transaction.
+
+## Long-Term Test of Supply
+Frequently, if professional money is bullish, they will be prepared to absorb heavy supply (selling). If a rally starts, professionals will want to know if all the selling had been absorbed at the lower price level, as they do not want selling dumped on them at higher prices. Therefore, they will drive the market down to test the previous areas of selling (supply). This principle is the same as a short-term test, but over a longer period. High volume always shows supply: In this case, the professional money 'absorbed' the selling. The market does not like supply, and because of this dislike, the market will be brought back down into the same area for the test (probe). To witness low volume is a clear indication that the market is going up (i.e. there is no selling).
+
+## Low Volume Test in a Weak Market
+Low volume tests can occur in both weak and strong markets. You will have witnessed a bear move, accompanied by wide spreads down. You will frequently see what appears to be a test, which is normally a sign of strength. If the test is genuine, and it represents the possibility of a true turn in a bear market, you will see an immediate positive response from professional money – the price will quickly move up.
+If the response to the test is sluggish, or the market fails to respond over several days (or bars), perhaps going sideways or even falling off slightly, this now represents a sign of further weakness. The lack of demand after the test shows that the market-makers, or specialists, are not interested in the up-side potential at that moment, they are still bearish.
+A sluggish response to a “Test in a Weak Market” can be likened to the analogy of a man dying of thirst in the desert – when offered a cup of water, he is too weak to sit up and drink. This is effectively what you are seeing in the chart below.
+
+## Major Up-thrust
+Up-thrusts are moneymaking traps that are designed to catch stops – they usually represent signs of weakness. If you have a distribution area directly behind you (to the left of your chart), and you see an up￾thrust, this becomes a very strong indication of weakness. A sharp move down the next day (bar) will
+confirm the weakness.
+Why have up-thrusts? In any market, there will be stop-loss orders above the price action. As traders collectively think the same way, these stops will be within a close price band above the market. This is a little like putting Dracula in charge of the blood bank – if professional operators have an opportunity to trigger your stops, by marking prices up with little cost to themselves, they will most definitely do it!
+
+## Market Maker
+An Exchange member firm that is obliged to create a continuous two-way price, that is to offer to buy and sell Securities at a published price and in a given volume. (The specialist has a similar role).
+
+## Market Rotation
+The markets are so big; there is not enough money in the hands of the professionals, who accumulate stocks, to move all the stocks at the same time. Therefore, they rotate their trading, using different stocks at different times. This is one of the reasons why you get stronger or weaker stocks in relation to the Parent index. Professional traders will, in the early stages of accumulation, invest in stocks that, in their opinion, will show the most profit – these stocks are usually blue chips (like Microsoft or Cisco).
+Once a stock has been accumulated and most of the available supply has been removed from the market, a bull move is guaranteed in that targeted stock when overall market conditions are right. Once the maximum amount of profit has been taken from a particular group (e.g. The Technology Sector), by distribution at high prices at the top of the market, they turn their attention to a second group of stocks that have been under-performing the market, and so the rotation goes on. This is also a reason why bull markets always run longer than you think they will and why many markets appear to be 'chaotic’.
+
+## Money Management
+Money management is a broad term that is used to explain the management of profit, with the objective of generating more profit. For instance, if you buy a stock (or commodity) and the market moves up, you may decide to leverage your position by purchasing more shares or contracts. Conversely, if the market has been moving upwards and is reaching an old resistance area, or is showing weakness, now would be a good time to ‘fade out’ of your position.
+
+## Negative Action
+If you observe a positive indication (any green signal from TradeGuider), but you do not observe the expected results, then we refer to this as ‘negative action’. The classic example is when you see a successful test (see Glossary), but you do not get the expected up-move during the next two or three days (or bars). This has now become ‘negative action’ and is a sign of weakness. Why? Because the market￾makers or specialists would have also seen the lack of selling during the test day (normally a sign of
+strength), but they do not appear interested, owing to their continued bearishness.
+
+## No Demand
+In a ‘no demand’ situation, professional traders will not support a rally (or an attempt to rally) if they observe background weakness.
+For any market to rally, there needs to be increasing volume on up-days (never excessive volume). If the volume is low on any up-day, this shows no demand from the professional operators. They are not interested in the up-side! Professional operators are quite capable of marking the market up when they are not bullish, so as to trap you into a poor trading position. However, the volume of trading will not back the move up, which in turn produces low volume. This is one thing that professional money cannot hide. Professional trading creates any noticeable volume changes (or lack of it). The reason the professionals are not buying is because, at this moment, they are not bullish (or not quite sure of the market).
+At TradeGuider Systems, we define a “No demand” situation as a narrow spread bar, on low volume, that closes in the middle or low.
+
+## No Demand Up-Bar
+This principle is seen after a sign of weakness. You may not have seen the weakness in the market, but the professional floor traders and market-makers have. Any decrease in trading volume as a stock or Index attempts to go up is a sign of weakness. Professional operators know that the market is weak and are not participating in the current up-move. This action will also confirm any other signs of weakness in the background (i.e. red signals from TradeGuider).
+
+## No Progress on High Volume
+If a market is moving upwards on wide spreads, accompanied high volume and no progress is seen on the next day, this shows the volume contains more selling than buying. However, if the market is still bullish, you will frequently see a test on low volume (a sign of strength). If you do see a test, you know immediately that you must have witnessed 'absorption volume’. At the worst, the market should now go sideways.
+
+## No Results from Test
+No immediate results from a previous test (i.e. no upward movement) can show weakness is present in a bear market. However, you should remain observant for a second test in stronger markets. If you can see what appears to be a successful test, the market-makers or specialists will also have seen this indication. If there is not an immediate up-move, or the up-move fails over several days (or bars, if on a shorter timeframe), this now becomes a sign of weakness. The professional money has not responded because at that moment they are still bearish.
+
+## No Selling Pressure
+If there is no selling pressure, it shows that there is limited evidence of downside pressure on the market – the market is effectively falling on low volume (no selling).
+
+## Perceived Value
+It does not matter how good your fundamental analysis is. What is important is its perceived value to professional traders (see stocks acting stronger or weaker than the Parent Index).
+
+## Phases
+The stock market cannot simply just go up or down. A cause has to be established first. Every move seen in the stock market is preceded by an area where stock is transferred either from weak holders to strong, or from strong holders to weak. This then creates a 'cause' for the next move. The time taken and the intensity of trading to create a move vary under different market conditions. A study of point and figure charts will confirm this.
+
+## Possible Failed Test
+Generally, a potential failed test will be accompanied by high volume, which indicates that supply is still present. However, there a many different types of tests, and, under some conditions, such as in a bull move, high volume is a valid indicator of strength.
+All testing (i.e. Down during the day to close on the highs, on low volume) is usually a sign of strength. If the volume is not low, then it shows us that there is usually some selling (supply) present. Rarely will a market go far with supply in the background. However, you can expect high volume testing in a non-cash market, such as a future, to show strength. The high volume in this context represents the activity of professional traders who are taking positions for a move.
+
+## Possible Test
+Testing is a very frequent signal and a very good one for going long on. It is seen when you already have signs of strength in the background. If a market is down during the day and comes back to close on the highs, on low volume, then we have witnessed a potential test. We would now be expecting to see an immediate response in the form of an up-move.
+If the market drifts sideways and does not respond to the sign of strength, then we must assume the market is still showing residual weakness. A successful test is a sign of strength that shows that selling (supply) has disappeared from the market.
+
+## Price Support
+If professional traders are on the bullish side of the market, they will support the low of each day. This requires them to buy all sell orders at the lower part of the day's trading range, to prevent the low of the day falling below the low of the previous day. This is known as daily price support. Supporting the lows of each day helps to keep the bull move going and is a bullish sign.
+This principle, as with all principles in this glossary, can be applied to real-time markets as well.
+
+## Professional Money
+From a practical point of view, professional money has three major states, or areas of activity:
+1. Trades are made (bullish or bearish) which are large enough to actually change the trend direction. These trades may take place over several days, or even longer, creating a phase for the next move.
+2. Periods occur when professional money is not trading (low volume of activity). This is just as important as their active trading. You have to ask yourself, "Why are they not active?” Low activity on any move up is a sign of weakness. Conversely, low activity on a down-move indicates potential strength.
+3. Finally, professional money may be engaged in the accumulation or distribution of the underlying stock. If professionals are buying (accumulating), remember that they will also be selling just enough stock to bring any small rally back down for more buying, but at the end of the day’s trading, they will have bought more stock than they have sold. When market conditions appear right, all selling stops and a bull move takes place. Conversely, if professionals are selling (distributing), they will also have to buy to support prices on any reaction in preparation for more selling on the next wave up.
+Note: We are not concerned with what is going on with the news feeds, because the end result of all this activity, either true or false, has been condensed down into a view, which we can see within the price spread and the volume. It is the view taken by the market-makers and specialists, who are in the privileged position of being able to see both sides of the market, which you should concentrate on.
+
+## Pushing Up Through Supply
+As an Index or stock rallies upwards, some point will be reached when profit-taking is seen (high volume up-bars). When this supply hits the market, it will usually rest by going sideways in some sort of trading range, or testing may occur. However, if this profit taking makes the market fall, any future rally back up into this old resistance area will now need effort to go up through this area. Effort, in this context, will show itself as wide spreads with high volume.
+
+## Random Walks
+People, even professors of mathematics, may believe that the markets cannot be analysed because they move at random. Periods of trending are supposedly interspersed with periods of random movement, which cannot be predicted. The proprietary VSA technology, as implemented in the TradeGuider software, demonstrates that the markets are indeed logical and can be predicted. All moves, even minor ones, can be explained by imbalances of supply and demand.
+
+## Reduction in Selling Pressure
+Reduction in selling pressure is seen as low volume on any down-move. If you were short, it would be wise to close up your stops. The market needs continuous selling to go down substantially. This observation shows lack of selling as the market drops at this moment, warning you to be alert for position taking.
+
+## Resistance Area
+A resistance area is usually seen around the area of old lows, or highs, or a trading channel to the left. Effort will be needed to cross over all of these areas, which normally manifests itself as a wide spread (up or down), with high volume.
+A trend line is also a resistance area. The more established the trend line, the higher the resistance. A past trading level is a resistance area. A trading price level that persists for several weeks will give a higher resistance than a similar looking level that lasts one week. Any past trading area will be a resistance level. All these areas are very important to the current action because it shows how the professional money is acting (they know that there are locked-in traders at these old levels).
+
+## Risk Management
+Risk management is loss management. You must expect losses, so you must plan for possible losses even before placing a trade. Risk management techniques are designed to limit these losses. The most important part of risk management is the setting of stops, which must be placed and acted upon. The perceived amount of risk associated with a position varies tremendously amongst different traders and the placement of your stops will reflect your own personal ‘comfort zone’.
+
+## Selling Climax
+After substantial falls have already taken place (bear market), the market may open with wide spreads down, on very high volume. There will be panic amongst the herd! However, the next day (or bar) is up. This action represents a rapid transfer of stock, generated from panic selling to professional money (news will be doom and gloom to help this transfer of stock). This is known as a selling climax.
+
+## Selling Pressure
+For a market to drop, selling pressure needs to be evident, which normally shows itself as wide spreads down on high volume. If the next day is down this usually confirms that the volume seen on the day (bar) before was genuine selling. However, if the next day is up then it shows that there was selling going on, but the professional money was prepared to buy and support the market as well. You would now be expecting testing at some time, as a check is made on the level of latent supply.
+
+## Shake-Out
+A shake-out is hallmarked by a wide spread down, which then reverses to close on the highs, accompanied by high volume. This dramatic manoeuvre is usually carried out on ‘bad news‘. This is a moneymaking move to catch stops. Those who are long in the market are forced to cover. Those traders who were thinking bullish are now fearful to enter the market. Those who shorted the market will be forced to buy back later. For the market to close on, or near, the highs, shows that the professional money is covering short positions (buying), and absorbing the panic sellers who are being shaken-out by the drastic fall in price. If the professional money had refused to do this, it is unlikely that the price would close on the highs, with high volume. Shake-outs occur when the market has been bullish – however, residual supply will be present, which has caused problems by making the market sluggish, stopping higher prices. As the professional operators are bullish, they have to remove the latent supply, so they shake the market out on bad news, which then allows for higher prices.
+
+## Split Stocks
+Stocks that became too expensive and were not attracting buying at the old high level are liable to be split. Splitting a stock can be a strategy to encourage you to buy a stock that was getting difficult to sell at the higher price. If the professional money does not want them, why would you? Although splitting a stock is not a sign of weakness, it is recommended not to trade these stocks for at least a year after the split, unless of course you are already holding them!
+
+## Spread
+The spread is simply the area between the highest price and the lowest price during a day’s trading (or whatever other time period is being used).
+
+## Stopping Volume
+Stopping volume is another indicator variant that shows when buying is overcoming selling.
+A high volume down-move, on a wide spread would normally indicate selling. However, if the next day (or bar) is up, closing on the high, then this shows that absorption buying occurred on the previous day (or bar). Only professional money can do this and it is therefore a good indication of strength.
+
+## Strong Holders
+This term is used to cover any trader that is on the right side of the market, who has not been put under emotional pressure by adverse price movements.
+
+## Strong Stock
+A stock that is reluctant to fall while the Index is falling is referred to as a ‘strong stock’. The stock scanner facility within TradeGuider uses this principle to select the strongest stocks for your portfolio.
+
+## Supply & Demand
+At the very lowest level, when there is an imbalance between those wishing to sell and those wishing to buy, there will be a change in price as a consequence, so that the equilibrium is addressed. Due to the huge number of potential buyers and sellers, one can imagine that the interactions between buyers and sellers are complex, but ultimately, the sum total of all these subtle changes will inevitably result in a noticeable event, which TradeGuider is designed to detect.
+
+## Supply has Entered the Market
+High volume on up-moves, with prices reluctant to go up on the following day (or bar) shows that there is now supply in the market – as a result, prices might even fall. The high volume up-move must have contained more selling than buying for the market to drop off. This will not happen in a bullish market, but this does not immediately indicate that we are witnessing a bear move either, as the market may be ‘resting’ before the next move up. More information is usually needed to confirm this sign of weakness.
+
+## Supply Line
+The top parallel line in a trading channel represents the ‘supply line’. This top line acts as a resistance to higher prices and once broken, the market is then said to be overbought.
+
+## Supply to the Left & Gapping Up
+This phenomenon occurs in areas where, in the past, traders have bought stock and have been locked-into poor trading positions. These locked-in traders would like to sell at or near the price they paid in the first place. This creates a resistance area to higher prices, caused by these traders selling into any attempt to rally up and through the area. However if higher prices are anticipated by the market-makers or specialists, they will gap up through these areas very quickly by marking the prices up rapidly to encourage these locked-in traders not to sell.
+
+## Support Coming into the Market
+High volume on any down-day (or bar) is normally a sign of weakness. However, if the market stops going down the next day (or bar), or you observe a move up in price, this would indicate that buying overcame the selling.
+
+## Support Line
+The bottom parallel line in a trading channel represents the ‘support line’. This bottom line acts as a resistance to lower prices and once broken, the market is then said to be oversold.
+
+## The Butterfly Effect
+Fractal Geometry is a relatively new science that is now beginning to help us understand cause and effect in very complex systems. The techniques can, in theory, be extended to real-life situations, where apParently unimportant events snowball to create a very large effect. In the markets, these very tiny causes and effects are impossible to detect until they snowball into a significant event. We cannot determine the reason why a particular trader buys or sells, but we can determine how the markets are reacting to the complex interactions by observing the responses of the market-makers or specialists. As these professionals trade, they cannot hide the trading volume and price spreads. We can analyse these factors, in combination with other important influences, and make predictions about how prices will respond in the future.
+The term "Butterfly Effect" refers to an analogy used by one of the leading proponents of fractal geometry, in which a butterfly beating its wings in a mountain valley in Tibet might lead to a hurricane in the Gulf of Mexico.
+
+## Trading the Trend
+Once a move or a trend is in progress, the indications are less clear, because the main indications are seen at the top or bottom of a market. Minor moves against the main trend are caused mainly by intraday traders, market-makers, and the constant flow of orders. The trend will have been set either by distribution at the tops or accumulation at the bottoms. This is why you are always advised to trade the trend and never try to pick the turns right in the middle of a trading range. The stock market always seems to go further than you ever expected. There always seems to be one last leg down or one last leg up.
+
+## Trend Channel
+Two parallel lines marking the upper and lower limits of a trend. Trend lines will mark future areas of resistance, if and when, prices arrive near a line. In an uptrend (higher bottoms), these lines are drawn through the first two support points and through the first intervening high. In a downtrend, the lines are drawn through the first two points of supply (tops) and the first intervening point of support. This is not necessarily the only way to draw trend lines, but it is the traditional way. TradeGuider has an automatic trend channel feature to help you draw these lines.
+
+## Trend Clusters
+When old trend lines intersect, or converge, we call this a ‘cluster’. Trend clusters are used to show areas of potential support or resistance on a chart. TradeGuider will show these areas automatically for you. Trend clusters are only significant when in the vicinity of the price action.
+
+## Up-Thrust
+An up-thrust shows that the market is becoming weaker.
+Prices will go up during the day (or bar) on a wide spread and come back to close on the low of the day on high volume. All up-thrusts are usually signs of weakness as long as you have an up-move behind you or signs of distribution in the background. They arrive in varying degrees of intensities at market tops and are moneymaking manoeuvres that are designed to catch out traders.
+
+## Volume Spread Analysis
+Volume Spread Analysis (VSA) is a proprietary market analysis method that was conceived by Tom Williams (Chairman of TradeGuider Systems). VSA is utilised in the TradeGuider software to analyse a market by observing the interrelationship between volume, price and spread. This method is particularly good at highlighting imbalances of supply and demand.
+
+## Weak Holders
+Weak holders are traders who are on the wrong side of the market, and have become influenced by emotion, allowing themselves to become exposed to poor positions. They cannot afford losses so are immediately under pressure (stress) if the market turns against them.
+
+## Weak Stock
+A weak stock is defined as a stock that falls easily when the Index is reacting and is reluctant to move up when the Index rallies. A weak stock rarely out-performs a strong stock, once the Parent Index is ready to move up. TradeGuider has a built-in stock scanner that will list the weakest stocks automatically.
+
+## Weighted Move
+If you toss a coin many times and trend the results above or below a base line, the average value of heads against tails will go up and down, meandering around the base line itself, showing a 50/50 chance of a head or tail on the next toss. If the coin is slightly weighted on one side, a clear trend will develop that shows which side of the coin has been weighted. The market is also 'weighted' in a similar way by the amount of accumulation or distribution that has, or has not, taken place.
