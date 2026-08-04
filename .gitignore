@@ -9,3 +9,6 @@ site/dist/
 site/.astro/
 .DS_Store
 .wrangler/
+
+# generated pack caches
+gpt/knowledge/__pycache__/
