@@ -1,0 +1,47 @@
+---
+import Diagram from './Diagram.astro';
+import { annotations, bySection, toc } from '../lib/book';
+import { href, t, type Lang } from '../lib/i18n';
+
+const { lang } = Astro.props as { lang: Lang };
+
+const rows = await toc(lang);
+const sections = bySection(rows);
+const notes = annotations(lang);
+const total = Object.values(notes).reduce((n, v) => n + v.remember.length, 0);
+---
+
+<div class="kp">
+  <div class="eyebrow">{t(lang, 'keyPointsEyebrow')}</div>
+  <h1>{t(lang, 'keyPointsTitle')}</h1>
+  <p style="color:var(--ink-soft);margin:.6rem 0 0;font-size:1.08rem">
+    {t(lang, 'keyPointsIntro', { total, n: rows.length })}
+  </p>
+
+  <Diagram name="bar-anatomy" lang={lang} />
+  <Diagram name="signals" lang={lang} />
+  <Diagram name="weakness-signatures" lang={lang} />
+  <Diagram name="close-position" lang={lang} />
+  <Diagram name="cycle" lang={lang} />
+
+  {sections.map((s) => (
+    <section>
+      <div class="kp__sec">{s.name}</div>
+      {s.items.map((ch) => notes[ch.slug] && (
+        <div class="kp__ch">
+          <h2 class="kp__t">
+            <span class="kp__n">{ch.order}</span>
+            <a href={href(lang, `/read/${ch.slug}/`)}>{ch.title}</a>
+          </h2>
+          <ul>
+            {notes[ch.slug].remember.map((r) => <li>{r}</li>)}
+          </ul>
+        </div>
+      ))}
+    </section>
+  ))}
+
+  <p style="margin-top:3.5rem;font-family:var(--sans);font-size:.78rem;color:var(--ink-faint);line-height:1.6">
+    {t(lang, 'keyPointsFoot')}
+  </p>
+</div>

@@ -1,13 +1,13 @@
 ---
-import Base from '../../layouts/Base.astro';
-import ChapterArticle from '../../components/ChapterArticle.astro';
-import { annotations, chapters } from '../../lib/book';
-import { href, pageTitle, type Lang } from '../../lib/i18n';
+import Base from '../../../layouts/Base.astro';
+import ChapterArticle from '../../../components/ChapterArticle.astro';
+import { annotations, chapters } from '../../../lib/book';
+import { href, pageTitle, type Lang } from '../../../lib/i18n';
 
-const LANG: Lang = 'en';
+const LANG: Lang = 'pa';
 
 export async function getStaticPaths() {
-  const all = await chapters('en');
+  const all = await chapters('pa');
   return all.map((c, i) => ({
     params: { slug: c.slug },
     props: { chapter: c, prev: all[i - 1] ?? null, next: all[i + 1] ?? null, total: all.length },

@@ -1,8 +1,8 @@
 ---
-import Base from '../layouts/Base.astro';
-import HomeBody from '../components/HomeBody.astro';
-import { t } from '../lib/i18n';
-const lang = 'en';
+import Base from '../../layouts/Base.astro';
+import HomeBody from '../../components/HomeBody.astro';
+import { t } from '../../lib/i18n';
+const lang = 'pa';
 ---
 
 <Base lang={lang} title={`${t(lang, 'bookTitle')} — ${t(lang, 'author')}`} crumb={t(lang, 'contents')} description={t(lang, 'homeDesc')} altPath="/">

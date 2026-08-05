@@ -1,21 +1,15 @@
 ---
-import manifest from '../data/manifest.json';
+import { bySection, toc } from '../lib/book';
+import { href, t, type Lang } from '../lib/i18n';
 
-const { current } = Astro.props as { current?: string };
-
-const sections: { name: string; items: typeof manifest }[] = [];
-for (const ch of manifest) {
-  let s = sections.find((x) => x.name === ch.section);
-  if (!s) sections.push((s = { name: ch.section, items: [] }));
-  s.items.push(ch);
-}
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const { current, lang = 'en' } = Astro.props as { current?: string; lang?: Lang };
+const sections = bySection(await toc(lang));
 ---
 
-<nav class="sidebar" id="sidebar" aria-label="Table of contents">
-  <a class="sidebar__brand" href={`${base}/`}>
-    <div class="sidebar__title">Master the Markets</div>
-    <div class="sidebar__author">Tom Williams</div>
+<nav class="sidebar" id="sidebar" aria-label={t(lang, 'toc')}>
+  <a class="sidebar__brand" href={href(lang, '/')}>
+    <div class="sidebar__title">{t(lang, 'bookTitle')}</div>
+    <div class="sidebar__author">{t(lang, 'author')}</div>
   </a>
 
   {sections.map((s) => (
@@ -24,7 +18,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       {s.items.map((ch) => (
         <a
           class="sidebar__link"
-          href={`${base}/read/${ch.slug}/`}
+          href={href(lang, `/read/${ch.slug}/`)}
           aria-current={ch.slug === current ? 'page' : undefined}
         >
           <span class="sidebar__num">{ch.order}</span>
@@ -34,12 +28,12 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </div>
   ))}
 
-  <div class="sidebar__section">Reference</div>
-  <a class="sidebar__link" href={`${base}/key-points/`} aria-current={current === 'key-points' ? 'page' : undefined}>
-    <span class="sidebar__num">★</span><span>Key Points</span>
+  <div class="sidebar__section">{t(lang, 'reference')}</div>
+  <a class="sidebar__link" href={href(lang, '/key-points/')} aria-current={current === 'key-points' ? 'page' : undefined}>
+    <span class="sidebar__num">★</span><span>{t(lang, 'keyPoints')}</span>
   </a>
-  <a class="sidebar__link" href={`${base}/glossary/`} aria-current={current === 'glossary' ? 'page' : undefined}>
-    <span class="sidebar__num">§</span><span>Glossary of Terms</span>
+  <a class="sidebar__link" href={href(lang, '/glossary/')} aria-current={current === 'glossary' ? 'page' : undefined}>
+    <span class="sidebar__num">§</span><span>{t(lang, 'glossary')}</span>
   </a>
 </nav>
 <div class="scrim" id="scrim"></div>
