@@ -1,21 +1,31 @@
 ---
 import Sidebar from '../components/Sidebar.astro';
+import { href, LANG_META, otherLang, t, type Lang } from '../lib/i18n';
 import '../styles/global.css';
 
 interface Props {
   title: string;
+  lang?: Lang;
   current?: string;
   crumb?: string;
   description?: string;
   prevHref?: string;
   nextHref?: string;
+  /** the same page in the other language — the language switcher's target */
+  altPath?: string;
 }
-const { title, current, crumb, description, prevHref, nextHref } = Astro.props;
+const {
+  title, lang = 'en', current, crumb, description, prevHref, nextHref, altPath = '/',
+} = Astro.props;
+
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const other = otherLang(lang);
+const altHref = href(other, altPath);
+const searchUrl = href(lang, '/search-index.json');
 ---
 
 <!doctype html>
-<html lang="en" data-theme="">
+<html lang={LANG_META[lang].tag} data-theme="">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,6 +33,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     {description && <meta name="description" content={description} />}
     <meta name="color-scheme" content="light dark" />
     <meta name="robots" content="noindex, nofollow" />
+    <link rel="alternate" hreflang={LANG_META[lang].tag} href={href(lang, altPath)} />
+    <link rel="alternate" hreflang={LANG_META[other].tag} href={altHref} />
     {prevHref && <link rel="prev" href={prevHref} />}
     {nextHref && <link rel="next" href={nextHref} />}
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%93%8A%3C/text%3E%3C/svg%3E" />
@@ -36,21 +48,33 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </script>
   </head>
 
-  <body data-slug={current}>
+  <body data-slug={current} data-lang={lang}>
     <div class="progress" id="progress"></div>
 
     <div class="shell">
-      <Sidebar current={current} />
+      <Sidebar lang={lang} current={current} />
 
       <div class="main">
         <header class="topbar">
-          <button class="iconbtn menubtn" id="menubtn" aria-label="Open table of contents">☰</button>
-          <span class="topbar__crumb">{crumb ?? 'Master the Markets'}</span>
+          <button class="iconbtn menubtn" id="menubtn" aria-label={t(lang, 'openToc')}>☰</button>
+          <span class="topbar__crumb">{crumb ?? t(lang, 'bookTitle')}</span>
           <span class="topbar__spacer"></span>
-          <button class="iconbtn" id="searchbtn" aria-label="Search the book">
-            <span aria-hidden="true">⌕</span><span class="only-wide">Search</span><kbd>/</kbd>
+          <a
+            class="iconbtn langbtn"
+            id="langbtn"
+            href={altHref}
+            lang={LANG_META[other].tag}
+            hreflang={LANG_META[other].tag}
+            data-lang={other}
+            title={t(other, 'readInThis')}
+            aria-label={t(other, 'readInThis')}
+          >
+            <span aria-hidden="true">🌐</span><span class="only-wide">{LANG_META[other].native}</span>
+          </a>
+          <button class="iconbtn" id="searchbtn" aria-label={t(lang, 'searchBook')}>
+            <span aria-hidden="true">⌕</span><span class="only-wide">{t(lang, 'search')}</span><kbd>/</kbd>
           </button>
-          <button class="iconbtn" id="themebtn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <button class="iconbtn" id="themebtn" aria-label={t(lang, 'toggleTheme')} title={t(lang, 'toggleTheme')}>
             <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true">
               <circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.4" />
               <path d="M8 1.75A6.25 6.25 0 0 1 8 14.25Z" fill="currentColor" />
@@ -63,28 +87,31 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </div>
 
     <!-- search -->
-    <div class="search" id="search" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="search" id="search" role="dialog" aria-modal="true" aria-label={t(lang, 'searchLabel')}>
       <div class="search__scrim" data-close></div>
       <div class="search__panel">
         <input
           class="search__input"
           id="searchinput"
           type="search"
-          placeholder="Search the book…"
+          placeholder={t(lang, 'searchPlaceholder')}
           autocomplete="off"
           spellcheck="false"
         />
         <div class="search__results" id="searchresults"></div>
-        <div class="search__hint">↑↓ to move · ↵ to open · esc to close</div>
+        <div class="search__hint">{t(lang, 'searchHint')}</div>
       </div>
     </div>
 
     <!-- figure lightbox -->
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged chart">
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label={t(lang, 'lightbox')}>
       <img id="lightboximg" src="" alt="" />
     </div>
 
-    <script is:inline define:vars={{ base }}>
+    <script
+      is:inline
+      define:vars={{ base, lang, searchUrl, noMatches: t(lang, 'searchNone'), glossaryHref: href(lang, '/glossary/') }}
+    >
       // ── theme ─────────────────────────────────────────────────────
       const root = document.documentElement;
       document.getElementById('themebtn')?.addEventListener('click', () => {
@@ -94,6 +121,15 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         const next = now === 'dark' ? 'light' : 'dark';
         root.setAttribute('data-theme', next);
         try { localStorage.setItem('mtm-theme', next); } catch (e) {}
+      });
+
+      // ── reading language ──────────────────────────────────────────
+      // Remembered so the contents page can point "continue reading" at the
+      // edition you were actually reading. Switching is always an explicit
+      // click — a URL you were given never redirects itself out from under you.
+      try { localStorage.setItem('mtm-lang', lang); } catch (e) {}
+      document.getElementById('langbtn')?.addEventListener('click', (e) => {
+        try { localStorage.setItem('mtm-lang', e.currentTarget.dataset.lang); } catch (err) {}
       });
 
       // ── mobile drawer ─────────────────────────────────────────────
@@ -136,7 +172,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
       async function loadIndex() {
         if (index) return index;
-        const r = await fetch(base + '/search-index.json');
+        const r = await fetch(searchUrl);
         index = await r.json();
         return index;
       }
@@ -155,8 +191,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
       // The book hyphenates its own vocabulary ("up-thrust", "shake-out",
       // "no-demand"), so match on a punctuation- and space-free form and keep an
-      // index map back into the original text for highlighting.
-      const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '');
+      // index map back into the original text for highlighting. Letters are
+      // matched by Unicode property, not a-z, so Gurmukhi searches the same way
+      // — and so a Punjabi page still finds the English terms kept inside it.
+      const LETTER = /[\p{L}\p{N}\p{M}]/u;
+      const norm = (s) => [...s.toLowerCase()].filter((c) => LETTER.test(c)).join('');
 
       function prep(d) {
         if (d._n !== undefined) return d;
@@ -165,7 +204,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         const t = d.text;
         for (let i = 0; i < t.length; i++) {
           const c = t[i].toLowerCase();
-          if (c >= 'a' && c <= 'z' || c >= '0' && c <= '9') { n += c; map.push(i); }
+          if (LETTER.test(c)) { n += c; map.push(i); }
         }
         d._n = n;
         d._m = map;
@@ -206,7 +245,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
             <div class="search__hit-s">${esc(h.d.section)}</div>
             <div class="search__hit-x">${snippet(h.d, nq)}</div>
           </a>`).join('') ||
-          '<div class="search__hint" style="border:0">No matches.</div>';
+          `<div class="search__hint" style="border:0">${noMatches}</div>`;
       }
 
       input?.addEventListener('input', async () => { await loadIndex(); render(input.value.trim()); });
@@ -243,7 +282,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         }
         if (typing) return;
         if (e.key === '/') { e.preventDefault(); openSearch(); return; }
-        if (e.key === 'g') { location.href = base + '/glossary/'; return; }
+        if (e.key === 'g') { location.href = glossaryHref; return; }
 
         const prev = document.querySelector('link[rel="prev"]');
         const next = document.querySelector('link[rel="next"]');

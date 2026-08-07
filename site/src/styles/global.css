@@ -22,6 +22,30 @@
   --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 }
 
+/* ── Punjabi ───────────────────────────────────────────────────────────
+   The Latin faces stay first in the stack: the market vocabulary is kept in
+   English throughout the translation, so it should still look like the English
+   edition. Gurmukhi has no glyphs in Iowan or Palatino, so those runs fall
+   through to the Gurmukhi faces listed after them — no webfont, no download,
+   every desktop and phone platform ships at least one of these.
+   Gurmukhi also sits taller than Latin, so the measure and leading open up. */
+html[lang="pa"] {
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+           "Noto Serif Gurmukhi", "Noto Sans Gurmukhi", "Gurmukhi MN",
+           "Gurmukhi Sangam MN", "Mukta Mahee", Raavi, "Nirmala UI",
+           "Lohit Gurmukhi", serif;
+  --sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans Gurmukhi", "Mukta Mahee", Raavi,
+          "Nirmala UI", "Lohit Gurmukhi", sans-serif;
+}
+html[lang="pa"] body { line-height: 1.95; }
+html[lang="pa"] h1, html[lang="pa"] h2 { line-height: 1.35; letter-spacing: 0; }
+/* Gurmukhi matras sit above and below the line — tracked-out capitals pull
+   them away from their base letter, so the uppercase labels relax. */
+html[lang="pa"] .eyebrow, html[lang="pa"] .toc__h, html[lang="pa"] .kp__sec {
+  letter-spacing: .04em;
+}
+
 :root[data-theme="dark"] {
   --paper:      #16171a;
   --paper-2:    #1e2024;
@@ -448,3 +472,36 @@ figure.fig figcaption b { color: var(--accent); font-weight: 650; }
 .kp__ch ul { margin: 0; padding-left: 1.1rem; }
 .kp__ch li { margin: .45em 0; font-size: 1.05rem; line-height: 1.65; color: var(--ink-soft); }
 .kp__ch li::marker { color: var(--rule); }
+
+/* ── language ──────────────────────────────────────────────────────────
+   The switcher is an <a> so the other edition is a real, linkable URL:
+   right-click, open in a new tab and share all work. */
+.langbtn { text-decoration: none; }
+.langbtn:hover { color: var(--ink); }
+
+.home__lang {
+  font-family: var(--sans); font-size: .82rem; color: var(--ink-faint);
+  display: flex; align-items: baseline; gap: .55rem; flex-wrap: wrap;
+  margin: 1.8rem 0 0;
+}
+.home__lang strong {
+  color: var(--ink); font-weight: 600;
+  border-bottom: 2px solid var(--accent); padding-bottom: .1rem;
+}
+.home__lang a { color: var(--accent); }
+
+.home__transnote {
+  font-family: var(--sans); font-size: .84rem; line-height: 1.7;
+  color: var(--ink-soft); background: var(--paper-2);
+  border: 1px solid var(--rule-soft); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; padding: .8rem 1rem; margin: 1.4rem 0 0;
+}
+
+/* Shown only if a chapter's translation is missing and the English text is
+   standing in — so a partial translation degrades visibly, never silently. */
+.fallback {
+  font-family: var(--sans); font-size: .86rem; line-height: 1.65;
+  color: var(--ink-soft); background: var(--paper-2);
+  border: 1px dashed var(--rule); border-radius: 8px;
+  padding: .75rem .95rem; margin: 0 0 1.8rem;
+}

@@ -5,20 +5,60 @@
  */
 import BarDiagram from './BarDiagram.astro';
 import ConceptDiagram from './ConceptDiagram.astro';
-import specs from '../data/diagrams.json';
+import { diagram } from '../lib/book';
+import { t, type Lang } from '../lib/i18n';
 
-interface Props { name: string }
-const { name } = Astro.props;
+interface Props { name: string; lang?: Lang }
+const { name, lang = 'en' } = Astro.props;
 
 // Two hand-drawn diagrams that don't fit the bar/volume grammar; everything
 // else is described as data in diagrams.json and laid out by BarDiagram.
-const BESPOKE: Record<string, string> = {
-  'bar-anatomy': 'How to read one price bar',
-  'cycle': 'The four phases of a market cycle',
+// Their few words live here rather than in the JSON, keyed by language —
+// the market vocabulary on the axes (High, Close, Low, Spread, ACCUMULATION,
+// MARK-UP) is the same in both editions, only the prose around it changes.
+const BESPOKE: Record<string, Record<Lang, string>> = {
+  'bar-anatomy': {
+    en: 'How to read one price bar',
+    pa: 'ਇੱਕ price bar ਕਿਵੇਂ ਪੜ੍ਹੀਏ',
+  },
+  'cycle': {
+    en: 'The four phases of a market cycle',
+    pa: 'market cycle ਦੇ ਚਾਰ ਪੜਾਅ',
+  },
 };
 
-const spec = (specs as Record<string, any>)[name];
-const title = BESPOKE[name] ?? spec?.title ?? '';
+const WORDS: Record<Lang, Record<string, string>> = {
+  en: {
+    singleBar: 'A SINGLE BAR',
+    closeDecides: 'WHERE IT CLOSES DECIDES THE MEANING',
+    barAlt: 'Anatomy of a price bar: high, low, close and spread, plus the three closing positions',
+    cycleAlt: 'Market cycle: accumulation, mark-up, distribution and mark-down',
+    quietBuying: 'Quiet buying, bad news,',
+    weakSell: 'weak holders sell out',
+    priceTravels: 'price travels',
+    quietSelling: 'Quiet selling, good news,',
+    publicBuys: 'the public buys in',
+    priceFalls: 'price falls',
+    neutral: 'neutral',
+  },
+  pa: {
+    singleBar: 'ਇਕੱਲਾ BAR',
+    closeDecides: 'ਮਤਲਬ CLOSE ਦੀ ਥਾਂ ਤੋਂ ਤੈਅ ਹੁੰਦਾ ਹੈ',
+    barAlt: 'ਇੱਕ price bar ਦੀ ਬਣਤਰ: high, low, close ਤੇ spread, ਨਾਲ ਤਿੰਨ closing positions',
+    cycleAlt: 'Market cycle: accumulation, mark-up, distribution ਅਤੇ mark-down',
+    quietBuying: 'ਚੁੱਪ-ਚਾਪ buying, ਮਾੜੀ news,',
+    weakSell: 'weak holders ਵੇਚ ਕੇ ਨਿਕਲਦੇ ਹਨ',
+    priceTravels: 'price ਤੁਰਦਾ ਹੈ',
+    quietSelling: 'ਚੁੱਪ-ਚਾਪ selling, ਚੰਗੀ news,',
+    publicBuys: 'ਆਮ ਲੋਕ ਖ਼ਰੀਦਦੇ ਹਨ',
+    priceFalls: 'price ਡਿੱਗਦਾ ਹੈ',
+    neutral: 'ਸਾਧਾਰਨ',
+  },
+};
+
+const w = WORDS[lang];
+const spec = diagram(name, lang);
+const title = BESPOKE[name]?.[lang] ?? spec?.title ?? '';
 if (!spec && !BESPOKE[name]) {
   throw new Error(`Unknown diagram "${name}" — add it to src/data/diagrams.json`);
 }
@@ -27,9 +67,9 @@ if (!spec && !BESPOKE[name]) {
 <figure class="dgm">
   <div class="dgm__box">
     {name === 'bar-anatomy' && (
-      <svg viewBox="0 0 640 280" role="img" aria-label="Anatomy of a price bar: high, low, close and spread, plus the three closing positions">
+      <svg viewBox="0 0 640 280" role="img" aria-label={w.barAlt}>
         <g class="ink">
-          <text x="0" y="14" class="cap">A SINGLE BAR</text>
+          <text x="0" y="14" class="cap">{w.singleBar}</text>
           <line x1="90" y1="60" x2="90" y2="210" class="bar" />
           <line x1="90" y1="130" x2="112" y2="130" class="bar" />
           <line x1="68" y1="60" x2="90" y2="60" class="tick" />
@@ -40,7 +80,7 @@ if (!spec && !BESPOKE[name]) {
           <path d="M42 60 L30 60 L30 210 L42 210" class="brace" />
           <text x="0" y="139" class="lbl">Spread</text>
 
-          <text x="250" y="14" class="cap">WHERE IT CLOSES DECIDES THE MEANING</text>
+          <text x="250" y="14" class="cap">{w.closeDecides}</text>
           <g transform="translate(280,0)">
             <line x1="0" y1="60" x2="0" y2="210" class="bar" />
             <line x1="0" y1="76" x2="20" y2="76" class="bar up" />
@@ -51,7 +91,7 @@ if (!spec && !BESPOKE[name]) {
             <line x1="0" y1="60" x2="0" y2="210" class="bar" />
             <line x1="0" y1="135" x2="20" y2="135" class="bar" />
             <text x="-30" y="238" class="lbl sm">Close middle</text>
-            <text x="-22" y="256" class="lbl sm">neutral</text>
+            <text x="-22" y="256" class="lbl sm">{w.neutral}</text>
           </g>
           <g transform="translate(520,0)">
             <line x1="0" y1="60" x2="0" y2="210" class="bar" />
@@ -64,7 +104,7 @@ if (!spec && !BESPOKE[name]) {
     )}
 
     {name === 'cycle' && (
-      <svg viewBox="0 0 640 260" role="img" aria-label="Market cycle: accumulation, mark-up, distribution and mark-down">
+      <svg viewBox="0 0 640 260" role="img" aria-label={w.cycleAlt}>
         <g class="ink">
           <path d="M20 190 C 70 190, 110 186, 150 188 C 230 188, 280 90, 340 66 C 390 52, 430 66, 470 62 C 530 62, 570 150, 620 194"
                 class="curve" />
@@ -73,25 +113,25 @@ if (!spec && !BESPOKE[name]) {
             <rect x="330" y="40" width="140" height="170" class="band weakband" />
           </g>
           <text x="85" y="32" class="cap mid strong">ACCUMULATION</text>
-          <text x="85" y="228" class="lbl xs mid">Quiet buying, bad news,</text>
-          <text x="85" y="243" class="lbl xs mid">weak holders sell out</text>
+          <text x="85" y="228" class="lbl xs mid">{w.quietBuying}</text>
+          <text x="85" y="243" class="lbl xs mid">{w.weakSell}</text>
 
           <text x="245" y="120" class="cap mid">MARK-UP</text>
-          <text x="245" y="140" class="lbl xs mid">price travels</text>
+          <text x="245" y="140" class="lbl xs mid">{w.priceTravels}</text>
 
           <text x="400" y="32" class="cap mid weak">DISTRIBUTION</text>
-          <text x="400" y="228" class="lbl xs mid">Quiet selling, good news,</text>
-          <text x="400" y="243" class="lbl xs mid">the public buys in</text>
+          <text x="400" y="228" class="lbl xs mid">{w.quietSelling}</text>
+          <text x="400" y="243" class="lbl xs mid">{w.publicBuys}</text>
 
           <text x="556" y="120" class="cap mid">MARK-DOWN</text>
-          <text x="556" y="140" class="lbl xs mid">price falls</text>
+          <text x="556" y="140" class="lbl xs mid">{w.priceFalls}</text>
         </g>
       </svg>
     )}
     {spec && (spec.type === 'panels' || spec.type === 'sequence') && <BarDiagram spec={spec} />}
     {spec && (spec.type === 'flow' || spec.type === 'compare') && <ConceptDiagram spec={spec} />}
   </div>
-  <figcaption>{title} <span>· added for this edition, not from the book</span></figcaption>
+  <figcaption>{title} <span>{t(lang, 'diagramNote')}</span></figcaption>
 </figure>
 
 <style>
@@ -125,6 +165,8 @@ if (!spec && !BESPOKE[name]) {
 
   text { font-family: var(--sans); fill: var(--ink); }
   .cap { font-size: 11px; font-weight: 700; letter-spacing: .08em; fill: var(--ink-faint); }
+  /* tracking that suits Latin capitals detaches Gurmukhi matras */
+  :global(html[lang="pa"]) .cap { letter-spacing: .02em; }
   .lbl { font-size: 13px; }
   .lbl.sm { font-size: 11.5px; }
   .lbl.xs { font-size: 10.5px; fill: var(--ink-soft); }

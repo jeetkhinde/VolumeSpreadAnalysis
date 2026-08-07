@@ -1,0 +1,92 @@
+---
+import { bySection, glossary, toc } from '../lib/book';
+import { href, LANG_META, otherLang, num, pageLabel, t, type Lang } from '../lib/i18n';
+
+const { lang } = Astro.props as { lang: Lang };
+
+const rows = await toc(lang);
+const sections = bySection(rows);
+const gl = glossary(lang);
+const words = rows.reduce((n, c) => n + c.words, 0);
+const charts =
+  rows.reduce((n, c) => n + c.figures, 0) +
+  gl.reduce((n, e) => n + e.blocks.filter((b) => b.t === 'figure').length, 0);
+const first = rows[0];
+const other = otherLang(lang);
+const note = t(lang, 'translationNote');
+---
+
+<div class="home">
+  <div class="home__hero">
+    <div class="eyebrow">{t(lang, 'eyebrow')}</div>
+    <h1>{t(lang, 'bookTitle')}</h1>
+    <p class="home__sub">{t(lang, 'homeSub')}</p>
+
+    <div class="home__meta">
+      <span>{t(lang, 'nChapters', { n: rows.length })}</span>
+      <span>{t(lang, 'nWords', { n: num(lang, words) })}</span>
+      <span>{t(lang, 'nCharts', { n: charts })}</span>
+      <span>{t(lang, 'nGlossary', { n: gl.length })}</span>
+      <span>{t(lang, 'edition')}</span>
+    </div>
+
+    <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+      <a class="cta" href={href(lang, `/read/${first.slug}/`)}>{t(lang, 'startReading')}</a>
+      <a class="cta cta--ghost" id="resume" href={href(lang, `/read/${first.slug}/`)} hidden>
+        {t(lang, 'resume')}
+      </a>
+    </div>
+
+    <p class="home__lang">
+      <span>{t(lang, 'language')}:</span>
+      <strong lang={LANG_META[lang].tag}>{LANG_META[lang].native}</strong>
+      <a href={href(other, '/')} lang={LANG_META[other].tag} hreflang={LANG_META[other].tag} data-lang={other}>
+        {LANG_META[other].native}
+      </a>
+    </p>
+
+    {note && <p class="home__transnote">{note}</p>}
+  </div>
+
+  {sections.map((s) => (
+    <section class="toc__section">
+      <div class="toc__h">{s.name}</div>
+      {s.items.map((ch) => (
+        <a class="toc__row" href={href(lang, `/read/${ch.slug}/`)}>
+          <span class="toc__n">{ch.order}</span>
+          <span class="toc__t">{ch.title}</span>
+          <span class="toc__p">{pageLabel(lang, ch.printedStart, ch.printedEnd)}</span>
+        </a>
+      ))}
+    </section>
+  ))}
+
+  <section class="toc__section">
+    <div class="toc__h">{t(lang, 'reference')}</div>
+    <a class="toc__row" href={href(lang, '/key-points/')}>
+      <span class="toc__n">★</span>
+      <span class="toc__t">{t(lang, 'keyPointsRow')}</span>
+      <span class="toc__p">{t(lang, 'keyPointsSummary')}</span>
+    </a>
+    <a class="toc__row" href={href(lang, '/glossary/')}>
+      <span class="toc__n">§</span>
+      <span class="toc__t">{t(lang, 'glossary')}</span>
+      <span class="toc__p">{t(lang, 'nEntries', { n: gl.length })}</span>
+    </a>
+  </section>
+
+  <p style="margin-top:3rem;font-family:var(--sans);font-size:.78rem;color:var(--ink-faint);line-height:1.6">
+    {t(lang, 'homeFoot')}
+  </p>
+</div>
+
+<script is:inline define:vars={{ readRoot: href(lang, '/read/') }}>
+  try {
+    const last = localStorage.getItem('mtm-last');
+    if (last) {
+      const a = document.getElementById('resume');
+      a.href = readRoot + last + '/';
+      a.hidden = false;
+    }
+  } catch (e) {}
+</script>

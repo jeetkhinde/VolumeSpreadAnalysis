@@ -1,0 +1,72 @@
+---
+import { render } from 'astro:content';
+import Figure from './Figure.astro';
+import Diagram from './Diagram.astro';
+import type { BookEntry, Note } from '../lib/book';
+import { href, pageLabel, t, type Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+  entry: BookEntry;
+  /** false when the translation is missing and the English text is standing in */
+  translated: boolean;
+  prev: { slug: string; title: string } | null;
+  next: { slug: string; title: string } | null;
+  total: number;
+  note?: Note;
+}
+const { lang, entry, translated, prev, next, total, note } = Astro.props;
+
+const { Content } = await render(entry as any);
+const d = entry.data;
+const pages = pageLabel(lang, d.printedStart, d.printedEnd);
+const charts =
+  d.figures === 0 ? '' : d.figures === 1 ? t(lang, 'chapterChart') : t(lang, 'chapterCharts', { n: d.figures });
+---
+
+<article class="article">
+  <div class="article__inner">
+    <div class="eyebrow">{d.section}</div>
+    <h1>{d.title}</h1>
+    <div class="pageref">{t(lang, 'chapterOf', { n: d.order, total, pages })}{charts}</div>
+
+    {!translated && <p class="fallback">{t(lang, 'untranslated')}</p>}
+
+    {note && (
+      <aside class="plain">
+        <div class="plain__h">{t(lang, 'plain')}</div>
+        <p>{note.plain}</p>
+      </aside>
+    )}
+
+    {note?.diagram && <Diagram name={note.diagram} lang={lang} />}
+
+    <div class="prose">
+      <Content components={{ Figure }} />
+    </div>
+
+    {note && note.remember.length > 0 && (
+      <aside class="recall">
+        <div class="recall__h">{t(lang, 'remember')}</div>
+        <ul>
+          {note.remember.map((r) => <li>{r}</li>)}
+        </ul>
+      </aside>
+    )}
+  </div>
+
+  <nav class="chapnav">
+    {prev && (
+      <a class="prev" href={href(lang, `/read/${prev.slug}/`)} rel="prev">
+        <span class="chapnav__dir">{t(lang, 'prev')}</span>
+        <span class="chapnav__t">{prev.title}</span>
+      </a>
+    )}
+    {next && (
+      <a class="next" href={href(lang, `/read/${next.slug}/`)} rel="next">
+        <span class="chapnav__dir">{t(lang, 'next')}</span>
+        <span class="chapnav__t">{next.title}</span>
+      </a>
+    )}
+  </nav>
+</article>

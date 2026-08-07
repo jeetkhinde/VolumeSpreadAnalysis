@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node ../tools/check-translation.mjs && astro build",
+    "check:translation": "node ../tools/check-translation.mjs",
     "preview": "astro preview",
     "extract": "python3 ../tools/run.py",
     "deploy": "npm run build && npx wrangler pages deploy dist"

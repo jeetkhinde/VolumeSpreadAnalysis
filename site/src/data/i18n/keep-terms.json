@@ -1,0 +1,59 @@
+{
+  "note": "Market vocabulary that stays in English (Latin script) inside every translation. These are the words a trader reads on a chart and hears in the market; translating them would invent a private vocabulary and quietly change what the method says. Punjabi prose is written around them.",
+
+  "requested": [
+    "market", "price", "trend", "uptrend", "downtrend", "up-thrust", "volume",
+    "timeframe", "timeframes", "high", "highs", "low", "lows", "higher", "lower",
+    "professional", "professionals", "market-maker", "market-makers",
+    "bar", "bars", "high bar", "spread"
+  ],
+
+  "instruments": [
+    "stock", "stocks", "share", "shares", "index", "indices", "future", "futures",
+    "option", "options", "commodity", "commodities", "cash market", "exchange",
+    "portfolio", "instrument", "equity", "bond", "DJIA", "FTSE100", "S&P"
+  ],
+
+  "chart": [
+    "chart", "charts", "candle", "candles", "open", "close", "closing price",
+    "gap", "tick", "point", "bar chart", "price bar", "up-bar", "down-bar",
+    "narrow spread", "wide spread", "range", "level", "average", "moving average"
+  ],
+
+  "method": [
+    "Volume Spread Analysis", "VSA", "supply", "demand", "supply and demand",
+    "accumulation", "distribution", "re-accumulation", "re-distribution",
+    "mark-up", "mark-down", "test", "testing", "no demand", "no supply",
+    "shake-out", "buying climax", "selling climax", "stopping volume",
+    "topping out volume", "absorption volume", "effort", "effort versus result",
+    "background", "strength", "weakness", "sign of strength", "sign of weakness",
+    "support", "resistance", "trend line", "trend lines", "trend channel",
+    "trend cluster", "trend clusters", "overbought", "oversold",
+    "squat", "pushing up through supply", "bag holding", "end of a rising market",
+    "reverse up-thrust", "false breakout", "breakout"
+  ],
+
+  "players": [
+    "smart money", "insiders", "specialist", "specialists", "syndicate",
+    "operator", "operators", "trader", "traders", "investor", "investors",
+    "strong holders", "weak holders", "the herd", "the public", "broker", "brokers",
+    "composite operator", "floor trader"
+  ],
+
+  "action": [
+    "trading", "trade", "trades", "buying", "selling", "long", "short",
+    "going long", "going short", "stop", "stops", "stop-loss", "position",
+    "entry", "exit", "rally", "reaction", "sideways market", "bull market",
+    "bear market", "bullish", "bearish", "bid", "offer", "liquidity", "news",
+    "profit", "loss", "risk", "money management", "day trading", "intra-day",
+    "end-of-day", "real-time", "spike", "reversal", "correction", "consolidation"
+  ],
+
+  "usage": [
+    "Keep the English spelling and hyphenation the book uses — up-thrust, shake-out, no demand, market-maker.",
+    "Inflect around the term in Punjabi rather than inside it: 'volume ਵੱਧ ਹੈ', not a Gurmukhi transliteration of volume.",
+    "Punjabi grammar carries the sentence: postpositions, verbs and connectives are always Punjabi.",
+    "Ordinary English words that are not market vocabulary (danger, patience, mistake, newspaper) are translated normally.",
+    "Proper names — Tom Williams, Wyckoff, TradeGuider, Dow Jones — are transliterated on first mention where it reads naturally, otherwise kept as-is."
+  ]
+}

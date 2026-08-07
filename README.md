@@ -3,6 +3,7 @@
 Tom Williams' *Master the Markets* (4th edition, 2009, TradeGuider Systems) rebuilt
 as a modern, responsive web reader — the full method text and every chart, with the
 product marketing stripped out, plus a plain-English layer written for this edition.
+Readable in English or Punjabi.
 
 ```bash
 pip install -r tools/requirements.txt
@@ -22,13 +23,20 @@ tools/                                   PDF extraction pipeline
   run.py        runs all three
 site/                                    Astro 5 site
   src/content/book/*.mdx                 68 chapters
+  src/content/book-pa/*.mdx              the same 68, in Punjabi
   src/data/glossary.json                 61 glossary entries
   src/data/annotations.json              plain-English summaries + takeaways
   src/data/diagrams.json                 66 diagram specs (data, not drawings)
+  src/data/pa/*.json                     Punjabi overrides for the three above
+  src/data/i18n/ui.json                  interface strings, en + pa
+  src/data/i18n/keep-terms.json          market vocabulary that stays in English
+  src/lib/i18n.ts                        language registry, URL + string helpers
+  src/lib/book.ts                        language-aware content access
   src/components/BarDiagram.astro        renders panels + sequence as SVG
   src/components/ConceptDiagram.astro    renders flow + compare as HTML
   src/components/Diagram.astro           dispatch + the two hand-drawn ones
   public/figures/*.webp                  82 charts
+tools/check-translation.mjs              build-time parity guard
 ```
 
 ## The plain-English layer
@@ -66,6 +74,46 @@ or more steps stack vertically — wrapping a horizontal flow leaves an arrow
 pointing at nothing.
 
 Only *how to read one price bar* and *the market cycle* are hand-drawn.
+
+## The Punjabi edition
+
+The whole book is also readable in Punjabi. English stays at its existing URLs;
+Punjabi lives under `/pa/`, and the 🌐 switcher in the header is a real link to
+the same page in the other language, so either version can be bookmarked or
+shared. The choice is remembered, but nothing is ever auto-redirected — landing
+on an English URL gives you English.
+
+**Market vocabulary is not translated.** *Market, price, trend, uptrend,
+downtrend, up-thrust, volume, spread, bar, high, low, timeframe, professional,
+market-maker, supply, demand, accumulation, distribution, test, shake-out* and
+the rest of the method's terms stay in Latin script. They are what you will see
+on a chart, in a broker's platform and in every other book on the subject;
+inventing Punjabi equivalents would make the text unsearchable and teach names
+nobody else uses. `src/data/i18n/keep-terms.json` is the list. Punjabi grammar
+carries the sentence and inflects *around* those terms, never inside them —
+"volume ਉੱਚਾ ਹੈ", not a transliterated stem with a case ending glued on.
+
+Translated: 68 chapters, the plain-English layer for all 68 (now plain
+Punjabi), 61 glossary entries, 66 diagrams and the interface itself.
+
+English is the structural source of truth. Chapters, annotations, glossary
+entries and diagrams are all looked up by their English key, and anything
+without a translation falls back to English *visibly*, with a notice, rather
+than vanishing. Diagram translations are an index-wise overlay onto the English
+spec — only the labels are duplicated, never the geometry, so a diagram cannot
+drift between the two languages.
+
+`tools/check-translation.mjs` runs before the build and fails it on: a missing
+or extra chapter; a changed `order`, printed page range or figure count; figures
+in a different order or pointing at different files; one English section mapped
+to two Punjabi names; a missing annotation, glossary or diagram key; a glossary
+entry whose block structure or figure sources drifted; and a spot check that the
+keep-terms really did survive translation.
+
+Search is per-language and normalises Unicode properly (`\p{L}\p{N}\p{M}`), so
+Gurmukhi matras don't break matching. `html[lang="pa"]` relaxes line height and
+letter spacing, and the font stack puts Latin faces first so the untranslated
+market terms keep their shape.
 
 ## What was kept, and what wasn't
 
@@ -126,6 +174,7 @@ uncaptioned illustrations survive.
 Zero client JS for the content itself; the interactive bits are ~4 KB of vanilla script.
 
 - Body text set at 20px with 1.8 line height on a ~65-character measure
+- English and Punjabi, switchable from any page (🌐), remembered
 - Full-text search across chapters and glossary (`/`), keyboard-navigable
 - Chapter nav with `←` / `→`, glossary with `g`
 - Light/dark theme, respects system preference, remembered

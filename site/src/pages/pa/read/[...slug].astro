@@ -1,0 +1,40 @@
+---
+import Base from '../../../layouts/Base.astro';
+import ChapterArticle from '../../../components/ChapterArticle.astro';
+import { annotations, chapters } from '../../../lib/book';
+import { href, pageTitle, type Lang } from '../../../lib/i18n';
+
+const LANG: Lang = 'pa';
+
+export async function getStaticPaths() {
+  const all = await chapters('pa');
+  return all.map((c, i) => ({
+    params: { slug: c.slug },
+    props: { chapter: c, prev: all[i - 1] ?? null, next: all[i + 1] ?? null, total: all.length },
+  }));
+}
+
+const { chapter, prev, next, total } = Astro.props;
+const note = annotations(LANG)[chapter.slug];
+const d = chapter.entry.data;
+---
+
+<Base
+  lang={LANG}
+  title={pageTitle(LANG, d.title)}
+  current={chapter.slug}
+  crumb={d.section}
+  prevHref={prev ? href(LANG, `/read/${prev.slug}/`) : undefined}
+  nextHref={next ? href(LANG, `/read/${next.slug}/`) : undefined}
+  altPath={`/read/${chapter.slug}/`}
+>
+  <ChapterArticle
+    lang={LANG}
+    entry={chapter.entry}
+    translated={chapter.translated}
+    prev={prev && { slug: prev.slug, title: prev.entry.data.title }}
+    next={next && { slug: next.slug, title: next.entry.data.title }}
+    total={total}
+    note={note}
+  />
+</Base>
