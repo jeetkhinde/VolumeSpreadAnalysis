@@ -621,5 +621,13 @@
       "Smart money decides from volume and price, not from news."
     ],
     "diagram": "the-odds"
+  },
+  "bullish-candlestick-patterns": {
+    "plain": "Bullish Candlestick Patterns with VSA",
+    "remember": []
+  },
+  "bearish-candlestick-patterns": {
+    "plain": "Bearish Candlestick Patterns with VSA",
+    "remember": []
   }
 }

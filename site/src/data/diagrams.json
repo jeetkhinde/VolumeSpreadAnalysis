@@ -3166,5 +3166,206 @@
     "Not from the news"
    ]
   }
+ },
+ "candlestick-hammer": {
+  "type": "panels",
+  "title": "Hammer (Selling Climax / Test)",
+  "panels": [
+   {
+    "label": "Hammer / Selling Climax",
+    "verdict": "strong",
+    "note": "marked down, closes high, | ULTRA-HIGH volume",
+    "bars": [
+     {
+      "h": 70,
+      "l": 20,
+      "c": 65,
+      "v": 90,
+      "dir": "down",
+      "tone": "strong"
+     }
+    ]
+   },
+   {
+    "label": "Hammer / Test",
+    "verdict": "strong",
+    "note": "marked down, closes high, | LOW volume (no supply left)",
+    "bars": [
+     {
+      "h": 70,
+      "l": 20,
+      "c": 65,
+      "v": 20,
+      "dir": "up",
+      "tone": "strong"
+     }
+    ]
+   }
+  ]
+ },
+ "candlestick-engulfing-bull": {
+  "type": "panels",
+  "title": "Bullish Engulfing (Absorption / Reversal)",
+  "panels": [
+   {
+    "label": "Genuine Bullish Engulfing",
+    "verdict": "strong",
+    "note": "strong up-bar engulfs previous, | rising healthy volume",
+    "bars": [
+     {
+      "h": 50,
+      "l": 30,
+      "c": 35,
+      "v": 40,
+      "dir": "down"
+     },
+     {
+      "h": 60,
+      "l": 20,
+      "c": 55,
+      "v": 70,
+      "dir": "up",
+      "tone": "strong"
+     }
+    ]
+   }
+  ]
+ },
+ "candlestick-shooting-star": {
+  "type": "panels",
+  "title": "Shooting Star (Up-Thrust)",
+  "panels": [
+   {
+    "label": "Shooting Star / Up-Thrust",
+    "verdict": "weak",
+    "note": "pushed up, closes near low, | HIGH volume",
+    "bars": [
+     {
+      "h": 85,
+      "l": 40,
+      "c": 45,
+      "v": 85,
+      "dir": "up",
+      "tone": "weak"
+     }
+    ]
+   }
+  ]
+ },
+ "candlestick-engulfing-bear": {
+  "type": "panels",
+  "title": "Bearish Engulfing (Buying Climax / Supply)",
+  "panels": [
+   {
+    "label": "Genuine Bearish Engulfing",
+    "verdict": "weak",
+    "note": "strong down-bar engulfs previous, | high volume (supply overcomes demand)",
+    "bars": [
+     {
+      "h": 70,
+      "l": 50,
+      "c": 65,
+      "v": 40,
+      "dir": "up"
+     },
+     {
+      "h": 80,
+      "l": 40,
+      "c": 45,
+      "v": 75,
+      "dir": "down",
+      "tone": "weak"
+     }
+    ]
+   }
+  ]
+ },
+ "candlestick-morning-star": {
+  "type": "sequence",
+  "title": "Morning Star (Stopping Volume & Test)",
+  "note": "Down-move brakes with narrow spread | Next bar confirms upward strength",
+  "bars": [
+   {
+    "h": 70,
+    "l": 40,
+    "c": 45,
+    "v": 60,
+    "dir": "down"
+   },
+   {
+    "h": 45,
+    "l": 30,
+    "c": 37,
+    "v": 80,
+    "dir": "down",
+    "tone": "strong"
+   },
+   {
+    "h": 60,
+    "l": 35,
+    "c": 55,
+    "v": 55,
+    "dir": "up",
+    "tone": "strong"
+   }
+  ],
+  "marks": [
+   {
+    "at": 1,
+    "text": "Stopping Volume",
+    "tone": "strong",
+    "above": false
+   },
+   {
+    "at": 2,
+    "text": "Confirmation",
+    "tone": "strong",
+    "above": true
+   }
+  ]
+ },
+ "candlestick-evening-star": {
+  "type": "sequence",
+  "title": "Evening Star (No Demand)",
+  "note": "Up-move stalls with narrow spread & low volume | Next bar confirms downward weakness",
+  "bars": [
+   {
+    "h": 50,
+    "l": 30,
+    "c": 45,
+    "v": 60,
+    "dir": "up"
+   },
+   {
+    "h": 55,
+    "l": 45,
+    "c": 50,
+    "v": 20,
+    "dir": "up",
+    "tone": "weak"
+   },
+   {
+    "h": 45,
+    "l": 25,
+    "c": 30,
+    "v": 65,
+    "dir": "down",
+    "tone": "weak"
+   }
+  ],
+  "marks": [
+   {
+    "at": 1,
+    "text": "No Demand",
+    "tone": "weak",
+    "above": true
+   },
+   {
+    "at": 2,
+    "text": "Supply Entering",
+    "tone": "weak",
+    "above": false
+   }
+  ]
  }
 }

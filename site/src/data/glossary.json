@@ -16,14 +16,7 @@
    {
     "t": "para",
     "text": "Simultaneously buying in one market and selling in another for short-term gains."
-   }
-  ],
-  "page": 142,
-  "slug": "arbitrage"
- },
- {
-  "term": "Bag Holding",
-  "blocks": [
+   },
    {
     "t": "para",
     "text": "As with the accumulation phase, professional money cannot just go into the market and buy just when they feel like it. This would simply put the price up against their own buying – market-makers would see the professional buying and rapidly mark the price up against them. If an opportunity arrives, which allows quick and advantageous involvement (to profit), the ‘smart money’ will seize the chance with vigour."
@@ -42,7 +35,7 @@
    }
   ],
   "page": 142,
-  "slug": "bag-holding"
+  "slug": "arbitrage"
  },
  {
   "term": "The Butterfly Effect",
@@ -616,14 +609,7 @@
    {
     "t": "para",
     "text": "Note: We are not concerned with what is going on with the news feeds, because the end result of all this activity, either true or false, has been condensed down into a view, which we can see within the price spread and the volume. It is the view taken by the market-makers and specialists, who are in the privileged position of being able to see both sides of the market, which you should concentrate on."
-   }
-  ],
-  "page": 161,
-  "slug": "professional-money"
- },
- {
-  "term": "Pushing Up Through Supply",
-  "blocks": [
+   },
    {
     "t": "para",
     "text": "As an Index or stock rallies upwards, some point will be reached when profit-taking is seen (high volume up-bars). When this supply hits the market, it will usually rest by going sideways in some sort of trading range, or testing may occur. However, if this profit taking makes the market fall, any future rally back up into this old resistance area will now need effort to go up through this area. Effort, in this context, will show itself as wide spreads with high volume."
@@ -637,8 +623,8 @@
     "caption": null
    }
   ],
-  "page": 162,
-  "slug": "pushing-up-through-supply"
+  "page": 161,
+  "slug": "professional-money"
  },
  {
   "term": "Random Walks",
@@ -699,14 +685,7 @@
    {
     "t": "para",
     "text": "Risk management is loss management. You must expect losses, so you must plan for possible losses even before placing a trade. Risk management techniques are designed to limit these losses. The most important part of risk management is the setting of stops, which must be placed and acted upon. The perceived amount of risk associated with a position varies tremendously amongst different traders and the placement of your stops will reflect your own personal ‘comfort zone’."
-   }
-  ],
-  "page": 164,
-  "slug": "risk-management"
- },
- {
-  "term": "Selling Climax",
-  "blocks": [
+   },
    {
     "t": "para",
     "text": "After substantial falls have already taken place (bear market), the market may open with wide spreads down, on very high volume. There will be panic amongst the herd! However, the next day (or bar) is up. This action represents a rapid transfer of stock, generated from panic selling to professional money (news will be doom and gloom to help this transfer of stock). This is known as a selling climax."
@@ -720,8 +699,8 @@
     "caption": null
    }
   ],
-  "page": 165,
-  "slug": "selling-climax"
+  "page": 164,
+  "slug": "risk-management"
  },
  {
   "term": "Selling Pressure",
@@ -756,32 +735,18 @@
     "h": 1019,
     "label": null,
     "caption": null
-   }
-  ],
-  "page": 167,
-  "slug": "shake-out"
- },
- {
-  "term": "Split Stocks",
-  "blocks": [
+   },
    {
     "t": "para",
     "text": "Stocks that became too expensive and were not attracting buying at the old high level are liable to be split. Splitting a stock can be a strategy to encourage you to buy a stock that was getting difficult to sell at the higher price. If the professional money does not want them, why would you? Although splitting a stock is not a sign of weakness, it is recommended not to trade these stocks for at least a year after the split, unless of course you are already holding them!"
-   }
-  ],
-  "page": 168,
-  "slug": "split-stocks"
- },
- {
-  "term": "Spread",
-  "blocks": [
+   },
    {
     "t": "para",
     "text": "The spread is simply the area between the highest price and the lowest price during a day’s trading (or whatever other time period is being used)."
    }
   ],
-  "page": 168,
-  "slug": "spread"
+  "page": 167,
+  "slug": "shake-out"
  },
  {
   "term": "Stopping Volume",
@@ -880,14 +845,7 @@
     "h": 1019,
     "label": null,
     "caption": null
-   }
-  ],
-  "page": 171,
-  "slug": "supply-has-entered-the-market"
- },
- {
-  "term": "Supply Line",
-  "blocks": [
+   },
    {
     "t": "para",
     "text": "The top parallel line in a trading channel represents the ‘supply line’. This top line acts as a resistance to higher prices and once broken, the market is then said to be overbought."
@@ -901,8 +859,8 @@
     "caption": null
    }
   ],
-  "page": 172,
-  "slug": "supply-line"
+  "page": 171,
+  "slug": "supply-has-entered-the-market"
  },
  {
   "term": "Support Line",
@@ -918,14 +876,7 @@
     "h": 1019,
     "label": null,
     "caption": null
-   }
-  ],
-  "page": 173,
-  "slug": "support-line"
- },
- {
-  "term": "Supply to the Left & Gapping Up",
-  "blocks": [
+   },
    {
     "t": "para",
     "text": "This phenomenon occurs in areas where, in the past, traders have bought stock and have been locked-into poor trading positions. These locked-in traders would like to sell at or near the price they paid in the first place. This creates a resistance area to higher prices, caused by these traders selling into any attempt to rally up and through the area. However if higher prices are anticipated by the market-makers or specialists, they will gap up through these areas very quickly by marking the prices up rapidly to encourage these locked-in traders not to sell."
@@ -939,8 +890,8 @@
     "caption": null
    }
   ],
-  "page": 174,
-  "slug": "supply-to-the-left-and-gapping-up"
+  "page": 173,
+  "slug": "support-line"
  },
  {
   "term": "Trading the Trend",

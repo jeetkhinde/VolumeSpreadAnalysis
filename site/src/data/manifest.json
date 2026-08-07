@@ -597,7 +597,7 @@
   "printedEnd": 109,
   "figures": 0,
   "slug": "trading-hints-and-tips",
-  "words": 2185
+  "words": 2182
  },
  {
   "title": "What are the Main Signs of Strength?",
@@ -660,9 +660,29 @@
   "words": 395
  },
  {
+  "title": "Bullish Candlestick Patterns",
+  "section": "Candlestick Patterns",
+  "order": 67,
+  "printedStart": 120,
+  "printedEnd": 120,
+  "figures": 0,
+  "slug": "bullish-candlestick-patterns",
+  "words": 613
+ },
+ {
+  "title": "Bearish Candlestick Patterns",
+  "section": "Candlestick Patterns",
+  "order": 68,
+  "printedStart": 120,
+  "printedEnd": 120,
+  "figures": 0,
+  "slug": "bearish-candlestick-patterns",
+  "words": 491
+ },
+ {
   "title": "Suggested Reading List",
   "section": "Appendix",
-  "order": 67,
+  "order": 69,
   "printedStart": 138,
   "printedEnd": 138,
   "figures": 0,
@@ -672,11 +692,11 @@
  {
   "title": "Do Not Ignore These Trading Facts!",
   "section": "Appendix",
-  "order": 68,
+  "order": 70,
   "printedStart": 140,
   "printedEnd": 140,
   "figures": 0,
   "slug": "do-not-ignore-these-trading-facts",
-  "words": 56
+  "words": 92
  }
 ]

@@ -258,8 +258,8 @@ def collect_glossary():
 
 
 def main():
-    if os.path.exists(OUT):
-        shutil.rmtree(OUT)
+    if os.path.exists(f'{OUT}/book'):
+        shutil.rmtree(f'{OUT}/book')
     os.makedirs(f'{OUT}/book', exist_ok=True)
     if os.path.exists(FIGS_OUT):
         shutil.rmtree(FIGS_OUT)
@@ -272,9 +272,23 @@ def main():
     def emit(title, section, start, end):
         nonlocal order
         order += 1
+        print(f"Emitting {order} {title} {start} {end}")
+        slug = slugify(title)
+
+        if start == 'custom':
+            body = open(f'tools/custom/{slug}.mdx').read()
+            fm = {'title': title, 'section': section, 'order': order,
+                  'printedStart': 120, 'printedEnd': 120,
+                  'figures': body.count('<Figure')}
+            front = '---\n' + '\n'.join(
+                f'{k}: {json.dumps(v, ensure_ascii=False)}' for k, v in fm.items()
+            ) + '\n---\n\n'
+            open(f'{OUT}/book/{order:03d}-{slug}.mdx', 'w').write(front + body + '\n')
+            manifest.append({**fm, 'slug': slug, 'words': len(body.split())})
+            return
+
         pages = [toc.printed_to_pdf(p) for p in range(start, end + 1)]
         blocks = merge_page_breaks(blocks_for_pages(pages))
-        slug = slugify(title)
         # drop a sub-heading that merely repeats the chapter title
         while blocks and blocks[0]['t'] == 'subhead' and \
                 blocks[0]['text'].rstrip('!?.').lower() == title.rstrip('!?.').lower():
@@ -295,7 +309,10 @@ def main():
     emit('Introduction', 'Front Matter', 9, 10)
     for sec_title, divider, topics, sec_end in toc.SECTIONS:
         for i, (t, start) in enumerate(topics):
-            end = topics[i + 1][1] - 1 if i + 1 < len(topics) else sec_end
+            if start == 'custom':
+                end = 'custom'
+            else:
+                end = topics[i + 1][1] - 1 if i + 1 < len(topics) else sec_end
             emit(t, sec_title, start, end)
     for title, s, e in toc.APPENDIX:
         emit(title, 'Appendix', s, e)

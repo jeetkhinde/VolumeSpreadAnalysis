@@ -42,7 +42,7 @@ const charts =
     {note?.diagram && <Diagram name={note.diagram} lang={lang} />}
 
     <div class="prose">
-      <Content components={{ Figure }} />
+      <Content components={{ Figure, Diagram }} />
     </div>
 
     {note && note.remember.length > 0 && (

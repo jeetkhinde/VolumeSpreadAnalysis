@@ -78,6 +78,10 @@ SECTIONS = [
         ("How to Select a Stock the Easy Way", 116),
         ("Closing Comments", 119),
     ], 120),
+    ("Candlestick Patterns", "custom", [
+        ("Bullish Candlestick Patterns", "custom"),
+        ("Bearish Candlestick Patterns", "custom"),
+    ], "custom"),
 ]
 
 # Kept out of the dropped Section 5 brochure because they are substantive.
