@@ -1,1 +1,276 @@
-{}
+{
+ "preamble": {
+  "plain": "ਇਹ ਸ਼ੁਰੂਆਤੀ ਨੋਟ ਹੈ। ਇਹ ਦੱਸਦਾ ਹੈ ਕਿ charts ਲਿਖਾਰੀ ਦੇ ਆਪਣੇ software ਵਿੱਚੋਂ ਹਨ, ਤੇ ਉਹ ਇੱਕੋ ਗੱਲ ਦੱਸਦਾ ਹੈ ਜਿਸ ਉੱਤੇ ਸਾਰੀ ਕਿਤਾਬ ਟਿਕੀ ਹੋਈ ਹੈ: volume ਦੱਸਦਾ ਹੈ ਕਿ ਕਿੰਨੀ ਹਿਲਜੁਲ ਹੋਈ, ਤੇ price spread ਦੱਸਦਾ ਹੈ ਕਿ ਉਸ ਹਿਲਜੁਲ ਨੇ ਕੀਤਾ ਕੀ। ਦੋਵੇਂ ਇਕੱਠੇ ਚਾਹੀਦੇ ਹਨ। ਇਕੱਲਾ ਕੋਈ ਵੀ ਵੇਖੋਗੇ ਤਾਂ ਧੋਖਾ ਖਾਓਗੇ।",
+  "remember": [
+   "Volume = ਕਿੰਨੀ ਹਿਲਜੁਲ। Spread = ਉਸ ਹਿਲਜੁਲ ਨੇ ਕੀ ਕੀਤਾ।",
+   "ਇਕੱਲਾ ਕੋਈ ਵੀ ਅੰਕੜਾ ਬੇਮਤਲਬ ਹੈ। ਦੋਵੇਂ ਹਮੇਸ਼ਾ ਜੋੜੀ ਵਾਂਗ ਪੜ੍ਹੋ।",
+   "ਨਿਸ਼ਾਨਾ ਇਹ ਵੇਖਣਾ ਹੈ ਕਿ professional operators ਕੀ ਕਰ ਰਹੇ ਹਨ, news ਦਾ ਅੰਦਾਜ਼ਾ ਲਾਉਣਾ ਨਹੀਂ।"
+  ]
+ },
+ "introduction": {
+  "plain": "Trading ਦੁਨੀਆ ਦਾ ਸਭ ਤੋਂ ਵੱਡਾ ਕਾਰੋਬਾਰ ਹੈ, ਫਿਰ ਵੀ ਇਸ ਵਿਚਲੇ ਬਹੁਤੇ ਲੋਕ ਇਹ ਨਹੀਂ ਦੱਸ ਸਕਦੇ ਕਿ markets ਚੜ੍ਹਦੇ ਜਾਂ ਡਿੱਗਦੇ ਕਿਉਂ ਹਨ। ਲਿਖਾਰੀ ਦੀ ਗੱਲ ਸਿੱਧੀ ਹੈ: prices ਇਸ ਲਈ ਹਿੱਲਦੀਆਂ ਹਨ ਕਿ supply ਤੇ demand ਦਾ ਸੰਤੁਲਨ ਵਿਗੜਦਾ ਹੈ, ਤੇ ਇਹ ਸੰਤੁਲਨ ਵੱਡੇ professional operators ਵਿਗਾੜਦੇ ਹਨ। ਜੇ ਤੁਸੀਂ volume ਤੇ spread ਪੜ੍ਹਨਾ ਸਿੱਖ ਲਵੋ, ਤਾਂ chart ਉੱਤੇ ਉਹਨਾਂ ਦੇ ਪੈਰਾਂ ਦੇ ਨਿਸ਼ਾਨ ਦਿਸ ਪੈਂਦੇ ਹਨ।",
+  "remember": [
+   "Markets supply/demand ਦੇ ਵਿਗੜੇ ਸੰਤੁਲਨ ਉੱਤੇ ਚੱਲਦੇ ਹਨ, news ਉੱਤੇ ਨਹੀਂ।",
+   "ਇਹ ਸੰਤੁਲਨ ਵੱਡਾ ਪੈਸਾ ਵਿਗਾੜਦਾ ਹੈ, ਤੇ ਇਸ ਦੇ ਨਿਸ਼ਾਨ chart ਉੱਤੇ ਦਿਸਦੇ ਹਨ।",
+   "ਬਹੁਤੇ traders ਇਸੇ ਲਈ ਹਾਰਦੇ ਹਨ ਕਿ ਉਹ ਇਹ ਨਿਸ਼ਾਨ ਪੜ੍ਹਨਾ ਕਦੇ ਸਿੱਖਦੇ ਹੀ ਨਹੀਂ।"
+  ]
+ },
+ "random-walks-and-other-misconceptions": {
+  "plain": "ਬਹੁਤੇ ਲੋਕ ਮੰਨਦੇ ਹਨ ਕਿ markets random ਚੱਲਦੇ ਹਨ, ਕਿਉਂਕਿ moves ਦਾ news ਨਾਲ ਕੋਈ ਮੇਲ ਨਹੀਂ ਲੱਗਦਾ। ਲਿਖਾਰੀ ਇਸ ਨਾਲ ਸਹਿਮਤ ਨਹੀਂ। Moves random ਸਿਰਫ਼ ਇਸ ਲਈ ਲੱਗਦੀਆਂ ਹਨ ਕਿ ਤੁਸੀਂ ਗ਼ਲਤ ਚੀਜ਼ ਵੇਖ ਰਹੇ ਹੋ। ਜਦੋਂ ਤੁਸੀਂ volume ਨੂੰ spread ਦੇ ਨਾਲ ਪੜ੍ਹਨ ਲੱਗ ਪਵੋਗੇ, ਅਚਾਨਕ ਆਈਆਂ moves ਪਿੱਛੇ ਦਾ ਤਰਕ ਦਿਸਣ ਲੱਗ ਪਵੇਗਾ।",
+  "remember": [
+   "Markets random ਸਿਰਫ਼ ਉਦੋਂ ਲੱਗਦੇ ਹਨ ਜਦੋਂ ਤੁਸੀਂ ਗ਼ਲਤ ਇਸ਼ਾਰੇ ਪੜ੍ਹ ਰਹੇ ਹੋਵੋ।",
+   "Bear markets ਚੰਗੇ ਦਿਨਾਂ ਵਿੱਚ ਵੀ ਆ ਸਕਦੇ ਹਨ ਤੇ bull markets ਮਾੜੇ ਦਿਨਾਂ ਵਿੱਚ। News ਕਾਰਨ ਨਹੀਂ ਹੈ।",
+   "ਸਹੀ ਪੜ੍ਹੇ ਗਏ charts ਜੂਆ ਨਹੀਂ ਹਨ।"
+  ]
+ },
+ "what-is-the-market": {
+  "plain": "Index ਸਿਰਫ਼ ਵੱਖ-ਵੱਖ shares ਦੀ ਟੋਕਰੀ ਹੈ, ਆਮ ਤੌਰ ਉੱਤੇ ਸਭ ਤੋਂ ਵੱਡੇ ਤੇ ਸਭ ਤੋਂ ਵੱਧ trade ਹੋਣ ਵਾਲੇ। ਏਥੇ ਸੋਚ ਦਾ ਵੱਡਾ ਮੋੜ ਇਹ ਹੈ: trading ਲਈ ਇਹ ਭੁੱਲ ਜਾਓ ਕਿ ਕੰਪਨੀ ਦੀ 'ਅਸਲ ਕੀਮਤ' ਕੀ ਹੈ। ਮਾਇਨੇ ਇਹ ਰੱਖਦਾ ਹੈ ਕਿ price ਕੀ ਕਰ ਰਿਹਾ ਹੈ ਤੇ ਉਸ ਹਿਲਜੁਲ ਪਿੱਛੇ ਕੌਣ ਹੈ।",
+  "remember": [
+   "Index ਆਪਣੇ stocks ਦੀ ਭਾਰ ਵਾਲੀ ਔਸਤ ਹੈ।",
+   "Trading ਲਈ intrinsic value ਗੱਲ ਨਹੀਂ। Price ਦਾ ਵਿਹਾਰ ਗੱਲ ਹੈ।",
+   "Investing ਤੇ trading ਦੋ ਵੱਖਰੇ ਕੰਮ ਹਨ। ਇਹਨਾਂ ਨੂੰ ਰਲਗੱਡ ਨਾ ਕਰੋ।"
+  ]
+ },
+ "the-market-professionals": {
+  "plain": "ਜਿੱਥੇ ਵੀ ਪੈਸਾ ਹੈ, ਉੱਥੇ professionals ਹਨ, ਤੇ markets ਵੀ ਕੋਈ ਵੱਖਰੇ ਨਹੀਂ। ਪਰ ਏਥੇ 'professional' ਦਾ ਮਤਲਬ ਤੁਹਾਡਾ fund manager ਜਾਂ pension ਕੰਪਨੀ ਨਹੀਂ। ਮਤਲਬ ਉਹ operators ਹਨ ਜੋ price ਦੇ ਫ਼ਰਕ ਵਿੱਚੋਂ ਰੋਟੀ ਕਮਾਉਂਦੇ ਹਨ: syndicates, specialists, market-makers, floor traders।",
+  "remember": [
+   "'Professional' ਉਹ ਹੈ ਜੋ price ਦੇ ਫ਼ਰਕ ਸਿਰ ਜਿਊਂਦਾ ਹੈ, ਨਾ ਕਿ ਜਿਸ ਦੇ ਨਾਂ ਨਾਲ ਕੋਈ ਅਹੁਦਾ ਲੱਗਾ ਹੋਵੇ।",
+   "Fund managers ਉਹ smart money ਨਹੀਂ ਜਿਸ ਦੀ ਕਿਤਾਬ ਗੱਲ ਕਰਦੀ ਹੈ।",
+   "ਇਹ operators ਵੀ ਡਾਕਟਰਾਂ ਵਾਂਗ ਆਪਣੇ-ਆਪਣੇ ਖੇਤਰ ਵਿੱਚ ਮੁਹਾਰਤ ਰੱਖਦੇ ਹਨ।"
+  ]
+ },
+ "a-special-word-about-market-makers": {
+  "plain": "Market-makers market ਨੂੰ ਕਾਬੂ ਨਹੀਂ ਕਰਦੇ। ਉਹ market ਦਾ ਹੁੰਗਾਰਾ ਭਰਦੇ ਹਨ ਤੇ ਜੋ ਮੌਕਾ ਮਿਲੇ ਉਸ ਦਾ ਲਾਹਾ ਲੈਂਦੇ ਹਨ। ਜਦੋਂ trading ਪਤਲੀ ਹੋਵੇ ਜਾਂ ਘਬਰਾਹਟ ਹੋਵੇ, ਤਾਂ ਮੌਕਾ ਵੱਡਾ ਹੋ ਜਾਂਦਾ ਹੈ ਤੇ ਉਹ ਵਰਤ ਲੈਂਦੇ ਹਨ। ਇਹ ਸਮਝ ਲੈਣ ਨਾਲ ਤੁਸੀਂ ਉਹਨਾਂ ਨੂੰ ਸਰਬ-ਸ਼ਕਤੀਮਾਨ ਦੁਸ਼ਮਣ ਸਮਝਣਾ ਛੱਡ ਦਿਓਗੇ।",
+  "remember": [
+   "Market-makers ਹਾਲਾਤ ਦਾ ਹੁੰਗਾਰਾ ਭਰਦੇ ਹਨ। ਹਾਲਾਤ ਬਣਾਉਂਦੇ ਨਹੀਂ।",
+   "ਪਤਲੀ trading ਤੇ ਘਬਰਾਹਟ ਵਾਲੀ selling ਉਹਨਾਂ ਦੇ ਸਭ ਤੋਂ ਵਧੀਆ ਮੌਕੇ ਹਨ।",
+   "ਉਹ price ਨੂੰ ਤਾਂ ਹੀ ਏਧਰ-ਓਧਰ ਧੱਕ ਸਕਦੇ ਹਨ ਜਦੋਂ ਇਹ ਉਹਨਾਂ ਨੂੰ ਸਸਤਾ ਪਵੇ।"
+  ]
+ },
+ "volume-the-key-to-the-truth": {
+  "plain": "Volume ਉਹ ਇੱਕੋ ਚੀਜ਼ ਹੈ ਜਿਸ ਉੱਤੇ professional ਸਭ ਤੋਂ ਵੱਧ ਨਜ਼ਰ ਰੱਖਦਾ ਹੈ, ਤੇ ਲਿਖਾਰੀ ਦੱਸਦਾ ਹੈ ਕਿ exchanges ਨੇ ਹਮੇਸ਼ਾ ਅਸਲੀ volume ਦਾ data ਔਖਾ ਬਣਾ ਕੇ ਰੱਖਿਆ ਹੈ। ਇਸੇ ਤੋਂ ਪਤਾ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਕਿੰਨਾ ਕੀਮਤੀ ਹੈ। Volume ਉਸ ਹਿਲਜੁਲ ਦਾ ਰਿਕਾਰਡ ਹੈ ਜੋ ਸੱਚਮੁੱਚ ਹੋਈ, ਤੇ ਇਸ ਨੂੰ ਕੋਈ ਸੁਰਖ਼ੀ ਝੂਠਾ ਨਹੀਂ ਕਰ ਸਕਦੀ।",
+  "remember": [
+   "Volume ਅਸਲ ਹਿਲਜੁਲ ਦਾ ਰਿਕਾਰਡ ਹੈ। News ਸਿਰਫ਼ ਰਾਇ ਹੈ।",
+   "Price ਤੇ volume ਜੁੜੇ ਹੋਏ ਹਨ, ਤੇ ਇਹ ਰਿਸ਼ਤਾ ਸਿੱਧਾ-ਸਾਦਾ ਨਹੀਂ।",
+   "ਜੇ volume ਦਾ data ਔਖਾ ਮਿਲਦਾ ਹੈ, ਤਾਂ ਪੁੱਛੋ ਕਿ ਇਸ ਦਾ ਫ਼ਾਇਦਾ ਕਿਸ ਨੂੰ ਹੈ।"
+  ]
+ },
+ "further-understanding-volume": {
+  "plain": "ਇਕੱਲਾ volume ਸਿਰਫ਼ ਇੱਕ ਅੰਕੜਾ ਹੈ। ਇਹ ਜਾਣਕਾਰੀ ਉਦੋਂ ਬਣਦਾ ਹੈ ਜਦੋਂ ਤੁਸੀਂ ਇਸ ਨੂੰ ਓਸੇ bar ਦੇ price ਨਾਲ ਜੋੜ ਕੇ ਵੇਖੋ। ਇਹ ਕਰਨ ਲੱਗ ਪਵੋ ਤਾਂ ਤੁਸੀਂ ਕਹਾਣੀਆਂ ਦੀ ਥਾਂ ਵੇਖੇ ਹੋਏ ਤੱਥਾਂ ਉੱਤੇ trade ਕਰਨ ਲੱਗ ਪੈਂਦੇ ਹੋ।",
+  "remember": [
+   "Volume ਵਾਲਾ bar ਕਦੇ ਵੀ ਉੱਪਰਲੇ price bar ਨੂੰ ਵੇਖੇ ਬਿਨਾਂ ਨਾ ਪੜ੍ਹੋ।",
+   "Volume ਇੰਜਣ ਹੈ। Price ਦੀ ਕਾਰਵਾਈ ਨਤੀਜਾ ਹੈ।",
+   "'News' ਦੀ ਥਾਂ ਤੱਥ — ਸਾਰਾ ਮੋੜ ਇਹੀ ਹੈ।"
+  ]
+ },
+ "what-is-bullish-and-bearish-volume": {
+  "plain": "ਬੁਨਿਆਦੀ ਪਰਿਭਾਸ਼ਾਵਾਂ ਸੌਖੀਆਂ ਹਨ। Bullish volume ਦਾ ਮਤਲਬ up-moves ਉੱਤੇ volume ਵਧਦਾ ਹੈ ਤੇ down-moves ਉੱਤੇ ਘਟਦਾ ਹੈ। Bearish volume ਇਸ ਦਾ ਉਲਟ ਹੈ। ਲਿਖਾਰੀ ਖ਼ਬਰਦਾਰ ਕਰਦਾ ਹੈ ਕਿ ਸਿਰਫ਼ ਏਨਾ ਜਾਣ ਲੈਣਾ trade ਕਰਨ ਲਈ ਕਾਫ਼ੀ ਨਹੀਂ। ਇਹ ਸਿਰਫ਼ ਸ਼ੁਰੂਆਤ ਹੈ।",
+  "remember": [
+   "Bullish volume: up-moves ਉੱਤੇ ਵਧਦਾ, down-moves ਉੱਤੇ ਘਟਦਾ।",
+   "Bearish volume: down-moves ਉੱਤੇ ਵਧਦਾ, up-moves ਉੱਤੇ ਘਟਦਾ।",
+   "ਇਹ ਪਰਿਭਾਸ਼ਾਵਾਂ ਨੀਂਹ ਹਨ, ਆਪਣੇ-ਆਪ ਵਿੱਚ trading signal ਨਹੀਂ।"
+  ]
+ },
+ "accumulation-and-distribution": {
+  "plain": "ਵੱਡੇ operators ਇੱਕੋ ਵਾਰੀ ਵੱਡੀ position ਨਹੀਂ ਖ਼ਰੀਦ ਸਕਦੇ। ਏਦਾਂ ਕਰਨ ਨਾਲ price ਉਹਨਾਂ ਦੇ ਆਪਣੇ ਹੀ ਸਾਹਮਣੇ ਚੜ੍ਹ ਜਾਵੇਗਾ। ਸੋ ਉਹ ਯੋਜਨਾ ਨਾਲ ਮੁਹਿੰਮ ਚਲਾਉਂਦੇ ਹਨ ਤੇ ਜਦੋਂ ਵੀ selling ਦਿਸੇ, ਚੁੱਪ-ਚਾਪ ਖ਼ਰੀਦਦੇ ਰਹਿੰਦੇ ਹਨ। ਇਹੀ accumulation ਹੈ। Distribution ਇਸੇ ਦਾ ਉਲਟ ਹੈ: ਜਦੋਂ ਲੋਕ ਉਤਾਵਲੇ ਹੋ ਕੇ ਖ਼ਰੀਦ ਰਹੇ ਹੋਣ ਤਾਂ ਉਹਨਾਂ ਨੂੰ ਵੇਚਦੇ ਰਹਿਣਾ।",
+  "remember": [
+   "ਵੱਡਾ ਪੈਸਾ ਸਮੇਂ ਨਾਲ ਖ਼ਰੀਦਦਾ ਹੈ ਤੇ selling ਜਜ਼ਬ ਕਰਦਾ ਹੈ, ਤਾਂ ਜੋ price ਹੱਥੋਂ ਨਾ ਨਿਕਲੇ।",
+   "Accumulation ਥੱਲੇ ਉੱਤੇ ਚੁੱਪ-ਚਾਪ ਹੁੰਦੀ ਹੈ। Distribution ਟੀਸੀ ਉੱਤੇ ਚੰਗੀ news ਵਿੱਚ ਹੁੰਦੀ ਹੈ।",
+   "ਇਹੀ ਦੋ ਅਮਲ bull ਤੇ bear markets ਬਣਾਉਂਦੇ ਹਨ।"
+  ]
+ },
+ "strong-and-weak-holders": {
+  "plain": "Strong holders ਉਹ professionals ਹਨ ਜਿਨ੍ਹਾਂ ਕੋਲ ਪੂੰਜੀ ਤੇ ਯੋਜਨਾ ਹੈ। Weak holders ਉਹ ਸਾਰੇ ਹਨ ਜਿਨ੍ਹਾਂ ਨੇ ਬਿਨਾਂ ਯੋਜਨਾ ਖ਼ਰੀਦਿਆ ਤੇ ਪਹਿਲੇ ਹੀ ਡਰਾਵੇ ਉੱਤੇ ਘਬਰਾ ਕੇ ਨਿਕਲ ਜਾਣਗੇ। Market ਥੱਲੇ ਉੱਤੇ stock ਕਮਜ਼ੋਰ ਹੱਥਾਂ ਤੋਂ ਤਕੜੇ ਹੱਥਾਂ ਵਿੱਚ ਲੈ ਜਾਂਦਾ ਹੈ, ਤੇ ਟੀਸੀ ਉੱਤੇ ਮੁੜ ਵਾਪਸ।",
+  "remember": [
+   "Strong holders: ਡੂੰਘੀ ਜੇਬ, ਯੋਜਨਾ ਤੇ ਸਬਰ।",
+   "Weak holders: ਕੋਈ ਯੋਜਨਾ ਨਹੀਂ, ਸੌਖਿਆਂ ਹੀ ਡਰ ਕੇ ਬਾਹਰ।",
+   "ਟਿਕਵੀਂ ਚੜ੍ਹਤ ਤੋਂ ਪਹਿਲਾਂ stock ਦਾ ਕਮਜ਼ੋਰ ਤੋਂ ਤਕੜੇ ਹੱਥਾਂ ਵਿੱਚ ਜਾਣਾ ਜ਼ਰੂਰੀ ਹੈ।"
+  ]
+ },
+ "resistance-and-crowd-behaviour": {
+  "plain": "Resistance ਦਾ ਮਤਲਬ ਸਿਰਫ਼ ਏਨਾ ਹੈ ਕਿ rally ਸ਼ੁਰੂ ਹੁੰਦਿਆਂ ਹੀ ਲੋਕ ਵੇਚਣ ਲੱਗ ਪੈਂਦੇ ਹਨ। ਅਕਸਰ ਇਹ ਉਹ traders ਹੁੰਦੇ ਹਨ ਜੋ ਪਹਿਲਾਂ ਉੱਚੀਆਂ prices ਉੱਤੇ ਫਸੇ ਹੋਏ ਹਨ ਤੇ ਆਪਣਾ ਪੈਸਾ ਵਾਪਸ ਲੈਣਾ ਚਾਹੁੰਦੇ ਹਨ। ਜਦੋਂ ਤੱਕ ਸਿਰ ਉੱਤੇ ਪਈ ਇਹ supply ਨਹੀਂ ਹਟਦੀ, rallies ਓਸੇ ਥਾਂ ਅਟਕਦੀਆਂ ਰਹਿਣਗੀਆਂ।",
+  "remember": [
+   "Resistance = ਫਸੇ ਹੋਏ holders ਜੋ ਹਰ rally ਉੱਤੇ ਬਰਾਬਰ ਹੋਣ ਲਈ ਵੇਚਦੇ ਹਨ।",
+   "ਮੌਜੂਦਾ price ਤੋਂ ਉੱਪਰ ਪਏ ਪੁਰਾਣੇ trading ਵਾਲੇ ਇਲਾਕੇ ਉਹ supply ਹਨ ਜੋ ਤੁਹਾਡਾ ਰਾਹ ਰੋਕੇਗੀ।",
+   "Market ਦੇ ਸਾਫ਼ ਉੱਪਰ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ supply ਦਾ ਹਟਣਾ ਜ਼ਰੂਰੀ ਹੈ।"
+  ]
+ },
+ "supply-and-demand": {
+  "plain": "Professional ਦਾ ਸਾਰਾ ਧਿਆਨ supply ਤੇ demand ਦੀ ਹਾਲਤ ਉੱਤੇ ਹੁੰਦਾ ਹੈ। ਉਸ ਕੋਲ ਤੁਹਾਡੇ ਨਾਲੋਂ ਵਧੀਆ ਜਾਣਕਾਰੀ ਨਹੀਂ। ਉਹ ਬਸ volume, price ਦੀ ਕਾਰਵਾਈ ਤੇ spread ਸਹੀ ਪੜ੍ਹਦਾ ਹੈ। ਇਹ ਅਧਿਆਇ ਤਰੀਕੇ ਦਾ ਨਾਂ ਦੱਸਦਾ ਹੈ: Volume Spread Analysis, ਭਾਵ VSA।",
+  "remember": [
+   "Professional ਦੀ ਬੜ੍ਹਤ ਪੜ੍ਹਨ ਦਾ ਹੁਨਰ ਹੈ, ਕੋਈ ਗੁਪਤ ਜਾਣਕਾਰੀ ਨਹੀਂ।",
+   "ਹਰ ਗੱਲ ਘਟ ਕੇ supply ਤੇ demand ਦੀ ਹਾਲਤ ਉੱਤੇ ਆ ਜਾਂਦੀ ਹੈ।",
+   "VSA = volume, spread ਤੇ close ਨੂੰ ਇਕੱਠਿਆਂ ਪੜ੍ਹਨਾ।"
+  ]
+ },
+ "the-basics-of-market-reading": {
+  "plain": "ਇਹ ਅਮਲੀ ਸ਼ੁਰੂਆਤ ਹੈ। ਪਹਿਲਾਂ ਕਈ ਮਹੀਨਿਆਂ ਦੀ price ਕਾਰਵਾਈ ਪਿੱਛੇ ਵੇਖੋ। ਹਰ bar high, low ਤੇ closing price ਵਿਖਾਉਂਦਾ ਹੈ। ਫਿਰ ਹਰ bar ਉੱਤੇ ਤਿੰਨ ਗੱਲਾਂ ਪੜ੍ਹੋ: volume ਕਿੰਨਾ ਹੈ, spread ਕਿੰਨਾ ਚੌੜਾ ਹੈ, ਤੇ ਉਸ spread ਵਿੱਚ price ਕਿੱਥੇ close ਹੋਇਆ।",
+  "remember": [
+   "ਹਮੇਸ਼ਾ ਪਹਿਲਾਂ background ਪੜ੍ਹੋ, ਕਈ ਮਹੀਨੇ ਪਿੱਛੇ ਤੱਕ।",
+   "Volume ਸਿਰਫ਼ ਹਾਲੀਆ volume ਦੇ ਮੁਕਾਬਲੇ ਮਾਇਨੇ ਰੱਖਦਾ ਹੈ, ਇਕੱਲਾ ਕਦੇ ਨਹੀਂ।",
+   "ਹਰ bar ਉੱਤੇ ਤਿੰਨ ਪੜ੍ਹਤਾਂ: volume, spread ਦੀ ਚੌੜਾਈ, ਤੇ close ਦੀ ਥਾਂ।"
+  ]
+ },
+ "how-to-tell-if-a-market-is-weak-or-strong": {
+  "plain": "ਇਹ ਕਿਤਾਬ ਦੇ ਸਭ ਤੋਂ ਅਹਿਮ ਅਧਿਆਇਆਂ ਵਿੱਚੋਂ ਹੈ। Market-makers ਨੂੰ trade ਕਰਨ ਲਈ stock ਚਾਹੀਦਾ ਹੈ। ਜੇ ਉਹਨਾਂ ਕੋਲ ਪੂਰਾ ਨਾ ਹੋਵੇ, ਤਾਂ ਉਹਨਾਂ ਨੂੰ prices ਹੇਠਾਂ mark ਕਰ ਕੇ weak holders ਤੋਂ stock ਢਿੱਲਾ ਕਰਵਾਉਣਾ ਪੈਂਦਾ ਹੈ। ਸੋ ਉੱਚੇ volume ਉੱਤੇ ਤਿੱਖੀ ਡਿੱਗਤ, ਜੋ ਅੱਗੇ ਹੋਰ ਡਿੱਗਣ ਤੋਂ ਨਾਂਹ ਕਰ ਦੇਵੇ, ਅਕਸਰ buying ਹੁੰਦੀ ਹੈ, selling ਨਹੀਂ।",
+  "remember": [
+   "Strength down-bars ਉੱਤੇ ਦਿਸਦੀ ਹੈ। Weakness up-bars ਉੱਤੇ।",
+   "ਉੱਚੇ volume ਉੱਤੇ ਡਿੱਗਤ, ਤੇ ਫਿਰ ਹੋਰ ਡਿੱਗਤ ਨਹੀਂ = professionals ਖ਼ਰੀਦ ਰਹੇ ਸਨ।",
+   "ਹਮੇਸ਼ਾ ਪੁੱਛੋ ਕਿ ਅਗਲੇ bar ਉੱਤੇ ਕੀ ਹੋਇਆ। ਓਹੀ ਪੁਸ਼ਟੀ ਕਰਦਾ ਹੈ।"
+  ]
+ },
+ "how-to-identify-buying-and-selling": {
+  "plain": "Market ਦੇ ਚੜ੍ਹਨ ਲਈ ਅਸਲੀ buying ਚਾਹੀਦੀ ਹੈ, ਜੋ ਵਧਦੇ volume ਵਾਲੇ up-bar ਵਜੋਂ ਦਿਸਦੀ ਹੈ। ਪਰ ਇਸ ਦੀ ਹੱਦ ਹੈ। ਜੇ up-bar ਉੱਤੇ volume ਹੱਦੋਂ ਵੱਧ ਹੋ ਜਾਵੇ, ਤਾਂ ਉਹ ਵਾਧੂ volume professionals ਦੀ selling ਹੈ ਜੋ ਉਸ buying ਵਿੱਚ ਵਿਕ ਰਹੀ ਹੈ, ਹੋਰ demand ਨਹੀਂ।",
+  "remember": [
+   "ਸਿਹਤਮੰਦ up-move: up-bar, ਵਧਦਾ ਪਰ ਹੱਦੋਂ ਵੱਧ ਨਾ ਹੋਇਆ volume।",
+   "Up-bar ਉੱਤੇ ਹੱਦੋਂ ਵੱਧ volume ਦਾ ਮਤਲਬ ਹੈ supply ਆ ਰਹੀ ਹੈ।",
+   "ਚੜ੍ਹਦਿਆਂ ਬਹੁਤਾ volume ਖ਼ਬਰਦਾਰੀ ਹੈ, ਪੁਸ਼ਟੀ ਨਹੀਂ।"
+  ]
+ },
+ "how-to-identify-lack-of-demand": {
+  "plain": "‘No demand’ weakness ਦਾ ਸਭ ਤੋਂ ਆਮ ਇਸ਼ਾਰਾ ਹੈ ਤੇ ਇਸ ਨੂੰ ਪਛਾਣਨਾ ਸੌਖਾ ਹੈ: ਘੱਟ volume ਉੱਤੇ ਤੰਗ spread ਵਾਲਾ up-bar। Professionals ਇਸ ਚੜ੍ਹਤ ਵਿੱਚ ਸ਼ਾਮਲ ਹੀ ਨਹੀਂ ਹਨ। ਜੇ ਉਹ ਖ਼ਰੀਦ ਨਹੀਂ ਰਹੇ, ਤਾਂ ਇਸ up-move ਪਿੱਛੇ ਕੁਝ ਵੀ ਨਹੀਂ।",
+  "remember": [
+   "No demand = up-bar + ਤੰਗ spread + ਘੱਟ volume।",
+   "ਇਸ ਦਾ ਮਤਲਬ ਹੈ professionals ਇਸ rally ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ।",
+   "ਇਸ ਉੱਤੇ ਇਕੱਲੇ ਕਦੇ trade ਨਾ ਕਰੋ। Background ਵੇਖੋ ਤੇ ਪੁਸ਼ਟੀ ਦੀ ਉਡੀਕ ਕਰੋ।"
+  ]
+ },
+ "testing-supply": {
+  "plain": "Test ਕਿਤਾਬ ਦਾ ਸਭ ਤੋਂ ਵਧੀਆ ਘੱਟ-volume ਵਾਲਾ buy signal ਹੈ। Bar ਦੌਰਾਨ price ਜ਼ੋਰ ਨਾਲ ਹੇਠਾਂ mark ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਪਰ ਫਿਰ ਸੰਭਲ ਕੇ ਘੱਟ volume ਉੱਤੇ high ਦੇ ਨੇੜੇ close ਹੁੰਦਾ ਹੈ। ਡੁਬਕੀ ਉੱਤੇ ਘੱਟ volume ਦਾ ਮਤਲਬ ਹੈ ਕਿ ਵੇਚਣ ਵਾਲਾ ਬਚਿਆ ਹੀ ਨਹੀਂ। ਵੱਡਾ operator ਇਹ ਜਾਣ-ਬੁੱਝ ਕੇ ਕਰਦਾ ਹੈ ਤਾਂ ਜੋ prices mark-up ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਰਾਹ ਸਾਫ਼ ਹੋਣ ਦੀ ਪਰਖ ਹੋ ਜਾਵੇ।",
+  "remember": [
+   "Test = bar ਦੌਰਾਨ ਹੇਠਾਂ mark, high ਦੇ ਨੇੜੇ close, ਤੇ ਘੱਟ volume।",
+   "ਡੁਬਕੀ ਉੱਤੇ ਘੱਟ volume ਸਾਬਤ ਕਰਦਾ ਹੈ ਕਿ supply ਸੁੱਕ ਗਈ ਹੈ।",
+   "Test ਤਾਂ ਹੀ bullish ਹੈ ਜੇ ਪਿੱਛੇ strength ਹੋਵੇ, ਜਿਵੇਂ selling climax ਜਾਂ uptrend।",
+   "ਉੱਚੇ volume ਵਾਲਾ test ਨਾਕਾਮ ਹੈ। Supply ਹਾਲੇ ਮੌਜੂਦ ਹੈ।"
+  ]
+ },
+ "pushing-up-through-supply": {
+  "plain": "ਜਦੋਂ price ਪੁਰਾਣੀ trading range ਵਿੱਚ ਉੱਪਰ ਵੜਦਾ ਹੈ, ਤਾਂ ਸਾਹਮਣੇ ਫਸੇ ਹੋਏ ਵੇਚਣ ਵਾਲੇ ਆਉਂਦੇ ਹਨ। ਲੰਘਣ ਲਈ professional ਪੈਸੇ ਨੂੰ ਉਹ supply ਜਜ਼ਬ ਕਰਨੀ ਪੈਂਦੀ ਹੈ, ਜੋ ਉੱਚੇ volume ਵਜੋਂ ਦਿਸਦੀ ਹੈ। ਜੇ ਇਸ effort ਤੋਂ ਬਾਅਦ market ਅੱਗੇ ਤੁਰਦਾ ਰਹੇ, ਤਾਂ supply ਹਟ ਚੁੱਕੀ ਹੈ।",
+  "remember": [
+   "ਪੁਰਾਣੀਆਂ trading ranges ਜਾਣੇ-ਪਛਾਣੇ supply ਵਾਲੇ ਪੱਧਰ ਹਨ।",
+   "ਇਹਨਾਂ ਵਿੱਚੋਂ ਲੰਘਣ ਲਈ ਉੱਚਾ volume ਚਾਹੀਦਾ ਹੈ, ਤੇ ਇਹੀ absorption ਹੈ।",
+   "ਜੇ ਉੱਚੇ volume ਤੋਂ ਬਾਅਦ price ਅੱਗੇ ਵਧਦਾ ਰਹੇ, ਤਾਂ supply ਹਾਰ ਗਈ।"
+  ]
+ },
+ "high-volume-on-market-tops": {
+  "plain": "ਮੀਡੀਆ ਬੇਹੱਦ volume ਉੱਤੇ ਬਣੇ ਨਵੇਂ highs ਨੂੰ rally ਦੇ ਜਾਰੀ ਰਹਿਣ ਦਾ ਸਬੂਤ ਸਮਝਦਾ ਹੈ। ਲਿਖਾਰੀ ਇਸ ਨੂੰ ਖ਼ਤਰਨਾਕ ਕਹਿੰਦਾ ਹੈ। ਟੀਸੀ ਉੱਤੇ ਉੱਚਾ volume, ਜਦੋਂ news ਸਭ ਤੋਂ ਚੰਗੀ ਹੋਵੇ, ਆਮ ਤੌਰ ਉੱਤੇ professionals ਵੱਲੋਂ ਜੋਸ਼ ਵਿੱਚ ਆਏ ਲੋਕਾਂ ਨੂੰ stock ਸੌਂਪਣਾ ਹੁੰਦਾ ਹੈ।",
+  "remember": [
+   "ਨਵੇਂ highs ਉੱਤੇ ਬਹੁਤ ਉੱਚਾ volume ਖ਼ਬਰਦਾਰੀ ਹੈ, ਪੁਸ਼ਟੀ ਨਹੀਂ।",
+   "ਟੀਸੀ ਉੱਤੇ ਚੰਗੀ news ਉਹ ਪਰਦਾ ਹੈ ਜਿਸ ਹੇਠ distribution ਹੁੰਦੀ ਹੈ।",
+   "ਇਕੱਲਾ ਉੱਚਾ volume ਬੇਮਤਲਬ ਹੈ। Spread ਤੇ close ਵੀ ਵੇਖੋ।"
+  ]
+ },
+ "effort-versus-results": {
+  "plain": "ਇਹ ਉਹ ਸੋਚ ਹੈ ਜੋ ਬਾਕੀ ਸਭ ਕੁਝ ਪਿੱਛੇ ਖੜ੍ਹੀ ਹੈ। Effort ਹੈ volume। Result ਹੈ ਉਸ ਤੋਂ ਬਣੀ price ਦੀ ਹਿਲਜੁਲ। ਵੱਡੇ effort ਦਾ ਵੱਡਾ ਨਤੀਜਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ। ਜਦੋਂ volume ਬੇਹੱਦ ਹੋਵੇ ਪਰ price ਮਸਾਂ ਹਿੱਲੇ, ਤਾਂ ਸਾਹਮਣੇ ਵਾਲੀ ਤਾਕਤ ਉਸ ਨੂੰ ਜਜ਼ਬ ਕਰ ਰਹੀ ਹੈ, ਤੇ ਇਹੀ ਦੱਸਦਾ ਹੈ ਕਿ ਅਸਲ ਕਾਬੂ ਕਿਸ ਦਾ ਹੈ।",
+  "remember": [
+   "Effort = volume। Result = ਉਸ ਤੋਂ ਬਣੀ price ਦੀ move।",
+   "ਉੱਪਰ ਵਾਲਾ effort: ਚੌੜਾ spread, high ਉੱਤੇ close, ਵਧਿਆ (ਪਰ ਹੱਦੋਂ ਵੱਧ ਨਹੀਂ) volume।",
+   "ਵੱਡਾ effort ਪਰ ਕੋਈ ਨਤੀਜਾ ਨਹੀਂ — ਭਾਵ ਦੂਜਾ ਪਾਸਾ ਉਸ ਨੂੰ ਜਜ਼ਬ ਕਰ ਰਿਹਾ ਹੈ।",
+   "ਇਹੀ ਅਸੂਲ climaxes, tests, up-thrusts ਤੇ absorption — ਸਭ ਸਮਝਾ ਦਿੰਦਾ ਹੈ।"
+  ]
+ },
+ "the-path-of-least-resistance": {
+  "plain": "ਦਿਸ਼ਾ ਬਾਰੇ ਸੋਚਣ ਦਾ ਸਾਦਾ ਢੰਗ। ਜੇ down-move ਉੱਤੇ selling ਸੁੱਕ ਗਈ ਹੈ, ਤਾਂ ਸੌਖਾ ਰਾਹ ਉੱਪਰ ਹੈ। ਜੇ up-move ਉੱਤੇ buying ਸੁੱਕ ਗਈ ਹੈ, ਤਾਂ ਸੌਖਾ ਰਾਹ ਹੇਠਾਂ ਹੈ। Markets ਉੱਥੇ ਜਾਂਦੇ ਹਨ ਜਿੱਥੇ resistance ਸਭ ਤੋਂ ਘੱਟ ਹੋਵੇ।",
+  "remember": [
+   "Down-move ਉੱਤੇ ਘਟਦੀ selling = market ਉੱਪਰ ਜਾਣਾ ਚਾਹੁੰਦਾ ਹੈ।",
+   "Up-move ਉੱਤੇ ਘਟਦੀ buying = market ਡਿੱਗਣਾ ਚਾਹੁੰਦਾ ਹੈ।",
+   "ਅੰਦਾਜ਼ਾ ਲਾਉਣ ਦੀ ਥਾਂ ਪੁੱਛੋ ਕਿ ਕਿਸ ਪਾਸੇ ਵਿਰੋਧ ਘੱਟ ਹੈ।"
+  ]
+ },
+ "markets-can-be-marked-up-or-down": {
+  "plain": "ਇੱਕ price level ਤੋਂ ਦੂਜੇ ਤੱਕ ਵੱਡੀਆਂ moves ਤੇਜ਼ੀ ਨਾਲ ਹੁੰਦੀਆਂ ਹਨ, ਤੇ ਇਹ ਤੇਜ਼ੀ ਜਾਣ-ਬੁੱਝ ਕੇ ਹੁੰਦੀ ਹੈ। ਇਹ ਇਸੇ ਲਈ ਹੈ ਕਿ ਤੁਹਾਡੇ ਹੁੰਗਾਰਾ ਭਰਨ ਤੋਂ ਪਹਿਲਾਂ ਤੁਸੀਂ ਮਾੜੀ position ਵਿੱਚ ਬੰਦ ਹੋ ਜਾਓ ਜਾਂ ਚੰਗੀ ਤੋਂ ਬਾਹਰ ਰਹਿ ਜਾਓ। ਹੈਰਾਨ ਹੋਣ ਦੀ ਥਾਂ ਇਸ ਦੀ ਆਸ ਰੱਖੋ।",
+  "remember": [
+   "ਤੇਜ਼ mark-ups ਤੇ mark-downs ਬਣਾਏ ਜਾਂਦੇ ਹਨ, ਇਤਫ਼ਾਕ ਨਹੀਂ ਹੁੰਦੇ।",
+   "ਇਹਨਾਂ ਦਾ ਮਕਸਦ ਤੁਹਾਨੂੰ ਇੱਕ-ਦੋ bars ਵਿੱਚ ਹੀ ਅੰਦਰ ਜਾਂ ਬਾਹਰ ਫਸਾਉਣਾ ਹੈ।",
+   "ਆਪਣਾ ਹੁੰਗਾਰਾ ਪਹਿਲਾਂ ਤੋਂ ਸੋਚ ਰੱਖੋ, ਕਿਉਂਕਿ ਉਸ ਵੇਲੇ ਸੋਚਣ ਦਾ ਸਮਾਂ ਨਹੀਂ ਹੁੰਦਾ।"
+  ]
+ },
+ "volume-surges-in-related-markets": {
+  "plain": "ਜਿਹੜੇ professionals ਨੂੰ cash market ਵਿੱਚ strength ਜਾਂ weakness ਦਿਸਦੀ ਹੈ, ਉਹ ਝੱਟ ਜੁੜਵੇਂ markets ਵਿੱਚ, ਖ਼ਾਸ ਕਰ ਕੇ options ਵਿੱਚ, ਕਦਮ ਚੁੱਕਦੇ ਹਨ। ਸੋ ਕਿਸੇ ਜੁੜਵੇਂ market ਵਿੱਚ volume ਦਾ ਅਚਾਨਕ ਉਛਾਲਾ ਤੁਹਾਨੂੰ move ਬਾਰੇ ਪਹਿਲਾਂ ਹੀ ਖ਼ਬਰਦਾਰ ਕਰ ਸਕਦਾ ਹੈ।",
+  "remember": [
+   "ਜੁੜਵੇਂ markets (options, futures) cash market ਤੋਂ ਪਹਿਲਾਂ ਇਸ਼ਾਰਾ ਦੇ ਸਕਦੇ ਹਨ।",
+   "ਉੱਥੇ volume ਦੇ ਅਸਾਧਾਰਨ ਉਛਾਲੇ ਵੇਖਦੇ ਰਹੋ।",
+   "ਓਹੀ operators ਇੱਕੋ ਵੇਲੇ ਸਾਰੇ markets ਵਿੱਚ ਸਰਗਰਮ ਹੁੰਦੇ ਹਨ।"
+  ]
+ },
+ "using-different-timeframes": {
+  "plain": "ਜਦੋਂ ਰੋਜ਼ਾਨਾ bar ਸਾਫ਼ ਨਾ ਦਿਸੇ, ਤਾਂ ਓਸੇ ਦਿਨ ਦਾ intraday chart ਵੇਖੋ। ਛੋਟਾ timeframe ਅਕਸਰ ਸਾਫ਼ ਵਿਖਾ ਦਿੰਦਾ ਹੈ ਕਿ volume ਕਿੱਥੇ ਆਇਆ ਤੇ price ਨੇ ਕੀ ਹੁੰਗਾਰਾ ਭਰਿਆ, ਭਾਵ ਉਹ ਵੇਰਵਾ ਜੋ ਰੋਜ਼ਾਨਾ bar ਲੁਕਾ ਲੈਂਦਾ ਹੈ।",
+  "remember": [
+   "ਧੁੰਦਲਾ ਰੋਜ਼ਾਨਾ bar intraday chart ਉੱਤੇ ਅਕਸਰ ਸਾਫ਼ ਹੋ ਜਾਂਦਾ ਹੈ।",
+   "ਛੋਟੇ timeframes ਦੱਸਦੇ ਹਨ ਕਿ bar ਦੇ ਅੰਦਰ ਹਿਲਜੁਲ ਕਿੱਥੇ ਹੋਈ।",
+   "Timeframes ਨੂੰ ਇਕੱਠੇ ਵਰਤੋ, ਇੱਕ-ਦੂਜੇ ਦੇ ਬਦਲ ਵਜੋਂ ਨਹੀਂ।"
+  ]
+ },
+ "the-relationship-between-the-cash-and-futures-price": {
+  "plain": "Futures cash price ਦੇ ਉੱਪਰ-ਹੇਠਾਂ ਝੂਲਦੇ ਹਨ, ਪਰ ਹੱਦਾਂ cash price ਤੈਅ ਕਰਦਾ ਹੈ। ਘੱਟ ਖ਼ਰਚ ਵਾਲੇ ਵੱਡੇ ਘਰਾਣੇ ਹਰ ਪਾੜਾ arbitrage ਨਾਲ ਮੁਕਾ ਦਿੰਦੇ ਹਨ, ਜਿਸ ਨਾਲ ਦੋਵੇਂ ਬੱਝੇ ਰਹਿੰਦੇ ਹਨ। ਇਹ ਜਾਣਨਾ ਜ਼ਰੂਰੀ ਹੈ ਤਾਂ ਜੋ futures ਦੀ move ਨੂੰ ਵੱਖਰੀ ਨਾ ਸਮਝ ਲਵੋ।",
+  "remember": [
+   "Cash price ਹੱਦਾਂ ਬੰਨ੍ਹਦਾ ਹੈ। Futures ਉਸ ਦੁਆਲੇ ਝੂਲਦੇ ਹਨ।",
+   "ਵੱਡੇ dealers ਦਾ arbitrage ਦੋਹਾਂ ਨੂੰ ਨਾਲ-ਨਾਲ ਰੱਖਦਾ ਹੈ।",
+   "Futures ਦੇ ਵੱਖ ਹੋਣ ਨੂੰ ਆਪਣੇ-ਆਪ ਵਿੱਚ signal ਨਾ ਸਮਝੋ।"
+  ]
+ },
+ "manipulation-of-the-markets": {
+  "plain": "Markets ਵਿੱਚ ਹੇਰਾਫੇਰੀ ਹੁੰਦੀ ਹੈ, ਤੇ ਲਿਖਾਰੀ ਕਹਿੰਦਾ ਹੈ ਕਿ ਤੁਹਾਨੂੰ ਇਸ ਦੀ ਆਸ ਹੀ ਰੱਖਣੀ ਚਾਹੀਦੀ ਹੈ। ਨੇਮ ਵੱਡੇ ਸੌਦਿਆਂ ਦੀ ਦੇਰ ਨਾਲ ਰਿਪੋਰਟ ਦੀ ਖੁੱਲ੍ਹ ਦਿੰਦੇ ਹਨ, ਸੋ ਜੋ ਤੁਹਾਨੂੰ ਦਿਸਦਾ ਹੈ ਉਹ ਅਧੂਰਾ ਹੈ। ਚੰਗੀ ਤੇ ਮਾੜੀ news professional positions ਸੁਧਾਰਨ ਲਈ ਵਰਤੀ ਜਾਂਦੀ ਹੈ। ਇਹ ਕੋਈ ਸਾਜ਼ਿਸ਼ ਦੀ ਕਹਾਣੀ ਨਹੀਂ, ਇਹੀ ਕਾਰੋਬਾਰ ਦਾ ਢੰਗ ਹੈ।",
+  "remember": [
+   "ਹੇਰਾਫੇਰੀ ਦੀ ਆਸ ਰੱਖੋ। ਇਸ ਉੱਤੇ ਹੈਰਾਨ ਨਾ ਹੋਵੋ।",
+   "ਵੱਡੇ trades ਦੇਰ ਨਾਲ ਦਰਜ ਹੋ ਸਕਦੇ ਹਨ, ਸੋ ਤੁਹਾਡਾ data ਅਧੂਰਾ ਹੈ।",
+   "News ਨੂੰ position ਬਣਾਉਣ ਲਈ ਪਰਦੇ ਵਾਂਗ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।"
+  ]
+ },
+ "introduction-to-trends": {
+  "plain": "Trends ਵਾਲਾ ਹਿੱਸਾ ਏਥੋਂ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ। ਮੂਲ ਹਦਾਇਤ ਇਹ ਹੈ ਕਿ professional ਰਾਇ ਦੇ ਨਾਲ trade ਕਰੋ, ਉਸ ਦੇ ਉਲਟ ਨਹੀਂ। Trend lines ਉਹ ਸੰਦ ਹਨ ਜਿਨ੍ਹਾਂ ਨਾਲ ਦਿਸਦਾ ਹੈ ਕਿ ਇਸ ਵੇਲੇ ਉਹ ਰਾਇ ਕਿਸ ਪਾਸੇ ਹੈ।",
+  "remember": [
+   "Professional ਰਾਇ ਦੇ ਨਾਲ trade ਕਰੋ, ਉਸ ਦੇ ਉਲਟ ਨਹੀਂ।",
+   "Trends ਉਹ background ਦਿੰਦੇ ਹਨ ਜਿਸ ਦੇ ਸਾਹਮਣੇ ਹਰ signal ਪੜ੍ਹਿਆ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ।",
+   "ਤਰੀਕੇ ਦਾ ਇਹ ਸਭ ਤੋਂ ਵੱਧ ਨਿੱਜੀ ਰਾਇ ਵਾਲਾ ਹਿੱਸਾ ਹੈ। ਇਸ ਨੂੰ ਪ੍ਰਸੰਗ ਵਜੋਂ ਲਵੋ।"
+  ]
+ },
+ "constructing-trend-lines": {
+  "plain": "Trend lines ਇਸ ਲਈ ਖਿੱਚੀਆਂ ਜਾਂਦੀਆਂ ਹਨ ਕਿ ਹੇਠਲੇ trend ਦੀ ਦਿਸ਼ਾ ਦਿਸੇ ਤੇ ਉਹ ਥਾਵਾਂ ਨਿਸ਼ਾਨਬੱਧ ਹੋਣ ਜਿੱਥੇ price ਵਾਰ-ਵਾਰ ਮੁੜਿਆ ਹੈ। Chart ਦੇ ਇਤਿਹਾਸ ਵਿੱਚ ਬਹੁਤ ਪਿੱਛੇ ਦੀਆਂ ਪੁਰਾਣੀਆਂ ਲਕੀਰਾਂ ਵੀ ਮਾਇਨੇ ਰੱਖਦੀਆਂ ਹਨ, ਖ਼ਾਸ ਕਰ ਕੇ ਜਿੱਥੇ ਕਈ ਇਕੱਠੀਆਂ ਹੋ ਜਾਣ।",
+  "remember": [
+   "ਲਕੀਰਾਂ ਦਿਸ਼ਾ ਵਿਖਾਉਣ ਤੇ ਵਾਰ-ਵਾਰ ਮੁੜਨ ਵਾਲੀਆਂ ਥਾਵਾਂ ਨਿਸ਼ਾਨਬੱਧ ਕਰਨ ਲਈ ਖਿੱਚੋ।",
+   "ਪੁਰਾਣੀਆਂ trend lines ਹਾਲੇ ਵੀ support ਤੇ resistance ਬਣਦੀਆਂ ਹਨ।",
+   "ਪੁਰਾਣੀਆਂ ਲਕੀਰਾਂ ਦਾ ਇੱਕ-ਦੂਜੇ ਉੱਤੇ ਆਉਣਾ ਸਭ ਤੋਂ ਤਕੜੇ ਇਲਾਕੇ ਦੱਸਦਾ ਹੈ।"
+  ]
+ },
+ "bottoms-and-tops": {
+  "plain": "ਸਾਦੇ ਢਾਂਚੇ ਵਾਲੇ ਨੇਮ। ਲਗਾਤਾਰ higher lows ਦਰਮਿਆਨੇ ਸਮੇਂ ਦੀ strength ਹਨ। ਲਗਾਤਾਰ lower highs ਉਸ ਦਾ ਸ਼ੀਸ਼ਾ ਹਨ ਤੇ weakness ਵਿਖਾਉਂਦੇ ਹਨ। ਇਹੀ ਉਹ trend ਵਾਲਾ background ਦਿੰਦੇ ਹਨ ਜਿਸ ਦੇ ਸਾਹਮਣੇ ਤੁਸੀਂ ਵੱਖਰੇ bars ਪੜ੍ਹਦੇ ਹੋ।",
+  "remember": [
+   "ਲਗਾਤਾਰ higher lows = ਦਰਮਿਆਨੇ ਸਮੇਂ ਦੀ strength।",
+   "ਲਗਾਤਾਰ lower highs = ਦਰਮਿਆਨੇ ਸਮੇਂ ਦੀ weakness।",
+   "ਢਾਂਚੇ ਨੂੰ background ਵਜੋਂ ਲਵੋ, ਤੇ ਫਿਰ ਉਸ ਦੇ ਅੰਦਰ ਵੱਖਰੇ bars ਪੜ੍ਹੋ।"
+  ]
+ },
+ "trend-scaling": {
+  "plain": "Trends fractal ਹਨ। Chart ਹਰ ਪੈਮਾਨੇ ਉੱਤੇ ਦੰਦੇਦਾਰ ਲੱਗਦਾ ਹੈ, ਸੋ 'trend' ਪੂਰੀ ਤਰ੍ਹਾਂ ਉਸ timeframe ਉੱਤੇ ਨਿਰਭਰ ਹੈ ਜਿੱਥੋਂ ਤੁਸੀਂ ਵੇਖ ਰਹੇ ਹੋ। ਪਹਿਲਾਂ ਵੇਖਣ ਦੀ ਥਾਂ ਤੈਅ ਕਰੋ, ਤਾਂ ਹੀ trend ਸ਼ਬਦ ਦਾ ਕੋਈ ਮਤਲਬ ਬਣਦਾ ਹੈ।",
+  "remember": [
+   "Trends ਹਰ ਪੈਮਾਨੇ ਉੱਤੇ ਇੱਕੋ ਜਿਹੇ ਲੱਗਦੇ ਹਨ, ਸਮੁੰਦਰੀ ਕੰਢੇ ਵਾਂਗ।",
+   "ਜਦੋਂ ਤੱਕ timeframe ਤੈਅ ਨਹੀਂ, 'trend' ਬੇਮਤਲਬ ਹੈ।",
+   "ਪਹਿਲਾਂ ਆਪਣਾ timeframe ਚੁਣੋ, ਫਿਰ ਉਸ ਦੇ ਅੰਦਰ trend ਪੜ੍ਹੋ।"
+  ]
+ },
+ "why-do-trend-lines-appear-to-work": {
+  "plain": "ਇੱਕ ਇਮਾਨਦਾਰ ਅਧਿਆਇ। ਲਿਖਾਰੀ ਮੰਨਦਾ ਹੈ ਕਿ ਇਹ ਤਜਰਬਾ ਹੈ, ਸਬੂਤ ਨਹੀਂ। ਸੁਝਾਈ ਵਿਆਖਿਆ ਵਿੱਚ ਲੰਮੀਆਂ moving averages ਤੇ traders ਦੇ perceived value ਦੀ ਥਾਂ ਦੀ ਗੱਲ ਹੈ, ਜਿਸ ਕਰ ਕੇ ਓਹਨਾਂ ਹੀ ਲਕੀਰਾਂ ਉੱਤੇ ਵਾਰ-ਵਾਰ ਖ਼ਰੀਦ-ਵੇਚ ਹੁੰਦੀ ਹੈ।",
+  "remember": [
+   "ਲਿਖਾਰੀ ਖੁੱਲ੍ਹ ਕੇ ਕਹਿੰਦਾ ਹੈ ਕਿ ਇਹ ਗਣਿਤ ਨਾਲ ਸਾਬਤ ਨਹੀਂ ਹੋਇਆ।",
+   "ਵਿਆਖਿਆ traders ਦੀ ਸੋਚ ਦੀ ਹੈ, ਕੋਈ ਭੌਤਿਕ ਨੇਮ ਨਹੀਂ।",
+   "Trend lines ਨੂੰ ਕੰਮ ਦਾ ਪ੍ਰਸੰਗ ਸਮਝੋ, ਮਸ਼ੀਨੀ ਨੇਮ ਨਹੀਂ।"
+  ]
+ },
+ "using-trends-to-determine-overbought-and-oversold-levels": {
+  "plain": "ਉੱਪਰਲੀ ਤੇ ਹੇਠਲੀ trend line ਵਿਚਲੀ ਥਾਂ trading range ਹੈ। Range ਦੇ ਸਿਖਰ ਨੇੜੇ market overbought ਹੈ, ਥੱਲੇ ਨੇੜੇ oversold। Overbought ਤੇ oversold channel ਦੇ ਮੁਕਾਬਲੇ ਹੁੰਦੇ ਹਨ, ਕੋਈ ਪੱਕਾ ਅੰਕੜਾ ਨਹੀਂ।",
+  "remember": [
+   "Overbought/oversold channel ਵਿੱਚ ਥਾਂ ਨਾਲ ਤੈਅ ਹੁੰਦੇ ਹਨ।",
+   "ਇਹ ਤੁਲਨਾ ਵਾਲੇ ਹਨ, ਕਦੇ ਪੱਕਾ ਅੰਕੜਾ ਨਹੀਂ।",
+   "Sideways market ਆਪਣੀ range ਵਿੱਚ ਤੁਰਦਾ ਰਹਿੰਦਾ ਹੈ ਜਦੋਂ ਤੱਕ effort ਇਸ ਨੂੰ ਬਾਹਰ ਨਾ ਕੱਢੇ।"
+  ]
+ },
+ "perceived-value-and-trend-lines": {
+  "plain": "ਤਿੰਨ traders ਦੀ ਮਿਸਾਲ ਨਾਲ ਲਿਖਾਰੀ ਵਿਖਾਉਂਦਾ ਹੈ ਕਿ ਹਰ ਬੰਦਾ ਆਪਣੇ ਪਿਛਲੇ trades ਦੇ ਹਿਸਾਬ ਨਾਲ 'ਵਾਜਬ price' ਬਾਰੇ ਵੱਖਰੀ ਸੋਚ ਬਣਾ ਲੈਂਦਾ ਹੈ। ਇਹਨਾਂ ਇਕੱਠੀਆਂ ਹੋਈਆਂ ਰਾਵਾਂ ਤੋਂ ਹੀ ਕਿਸੇ ਲਕੀਰ ਉੱਤੇ resistance ਬਣਦਾ ਹੈ।",
+  "remember": [
+   "Resistance ਬਹੁਤ ਸਾਰੇ traders ਦੀਆਂ ਯਾਦ ਰੱਖੀਆਂ prices ਤੋਂ ਬਣਦਾ ਹੈ।",
+   "ਤੁਹਾਡੇ ਆਪਣੇ ਪਿਛਲੇ trades ਤੈਅ ਕਰਦੇ ਹਨ ਕਿ ਤੁਹਾਨੂੰ ਕੀ 'ਸਸਤਾ' ਜਾਂ 'ਮਹਿੰਗਾ' ਲੱਗਦਾ ਹੈ।",
+   "Trend lines ਇਸ ਲਈ ਕੰਮ ਕਰਦੀਆਂ ਹਨ ਕਿ ਰਾਵਾਂ ਇਕੱਠੀਆਂ ਹੋ ਜਾਂਦੀਆਂ ਹਨ, ਕਿਸੇ ਜਾਦੂ ਕਰ ਕੇ ਨਹੀਂ।"
+  ]
+ }
+}
