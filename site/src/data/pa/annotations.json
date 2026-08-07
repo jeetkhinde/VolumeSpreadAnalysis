@@ -272,5 +272,286 @@
    "ਤੁਹਾਡੇ ਆਪਣੇ ਪਿਛਲੇ trades ਤੈਅ ਕਰਦੇ ਹਨ ਕਿ ਤੁਹਾਨੂੰ ਕੀ 'ਸਸਤਾ' ਜਾਂ 'ਮਹਿੰਗਾ' ਲੱਗਦਾ ਹੈ।",
    "Trend lines ਇਸ ਲਈ ਕੰਮ ਕਰਦੀਆਂ ਹਨ ਕਿ ਰਾਵਾਂ ਇਕੱਠੀਆਂ ਹੋ ਜਾਂਦੀਆਂ ਹਨ, ਕਿਸੇ ਜਾਦੂ ਕਰ ਕੇ ਨਹੀਂ।"
   ]
+ },
+ "introducing-trend-clusters": {
+  "plain": "Trend cluster ਉਹ ਇਲਾਕਾ ਹੈ ਜਿੱਥੇ ਇਤਿਹਾਸ ਵਿੱਚੋਂ ਖਿੱਚੀਆਂ ਬਥੇਰੀਆਂ ਪੁਰਾਣੀਆਂ trend lines ਇੱਕ-ਦੂਜੇ ਨੂੰ ਕੱਟਦੀਆਂ ਹਨ। ਦਾਅਵਾ ਇਹ ਹੈ ਕਿ price ਇਹਨਾਂ ਇਲਾਕਿਆਂ ਉੱਤੇ ਸਾਫ਼ ਹੁੰਗਾਰਾ ਭਰਦਾ ਹੈ। ਇਹ ਗੱਲ ਲੰਮੇ ਇਤਿਹਾਸ ਉੱਤੇ ਆਪਣੇ-ਆਪ trend ਖਿੱਚਣ ਦੇ ਕੰਮ ਵਿੱਚੋਂ ਨਿਕਲੀ।",
+  "remember": [
+   "Cluster = ਇੱਕੋ ਇਲਾਕੇ ਵਿੱਚ ਬਥੇਰੀਆਂ ਪੁਰਾਣੀਆਂ trend lines ਦਾ ਕੱਟਣਾ।",
+   "Clusters ਅਸਾਧਾਰਨ ਤੌਰ ਉੱਤੇ ਤਕੜੇ support/resistance ਵਾਲੇ ਇਲਾਕੇ ਦੱਸਦੇ ਹਨ।",
+   "ਇਹ ਸਿਰਫ਼ ਉਹਨਾਂ ਲਕੀਰਾਂ ਤੋਂ ਬਣਦੇ ਹਨ ਜੋ ਮੌਜੂਦਾ ਸਫ਼ੇ ਤੋਂ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਹੁੰਦੀਆਂ ਹਨ।"
+  ]
+ },
+ "using-trend-clusters": {
+  "plain": "Clusters ਵਰਤਣ ਦੇ ਅਮਲੀ ਨੇਮ। Clusters ਦੀ ਲਕੀਰ ਨੂੰ ਮਨ ਵਿੱਚ ਉਸ ਤੋਂ ਅੱਗੇ ਨਾ ਵਧਾਓ ਜਿੱਥੇ ਉਹ ਸੱਚਮੁੱਚ ਮੁੱਕ ਜਾਂਦੀ ਹੈ, ਕਿਉਂਕਿ ਉਸ ਤੋਂ ਅੱਗੇ trends ਖਿੱਲਰਨ ਲੱਗ ਪੈਂਦੇ ਹਨ। ਤੇ clusters ਉਦੋਂ ਹੀ ਮਾਇਨੇ ਰੱਖਦੇ ਹਨ ਜਦੋਂ price ਸੱਚਮੁੱਚ ਉਹਨਾਂ ਦੇ ਨੇੜੇ ਹੋਵੇ।",
+  "remember": [
+   "Cluster ਦੀ ਲਕੀਰ ਨੂੰ ਉਸ ਦੇ ਕੁਦਰਤੀ ਅੰਤ ਤੋਂ ਅੱਗੇ ਕਦੇ ਨਾ ਵਧਾਓ।",
+   "Clusters ਤਾਂ ਹੀ ਮਾਇਨੇ ਰੱਖਦੇ ਹਨ ਜਦੋਂ price ਉਹਨਾਂ ਦੇ ਨੇੜੇ ਆਵੇ।",
+   "ਮੌਜੂਦਾ price ਤੋਂ ਦੂਰ ਪਏ clusters ਅਣਗੌਲੇ ਕਰ ਦਿਓ।"
+  ]
+ },
+ "analysing-volume-near-a-trend-line": {
+  "plain": "Trend ਬਦਲਣ ਲਈ effort ਚਾਹੀਦਾ ਹੈ, ਤੇ effort ਉੱਤੇ ਪੈਸਾ ਲੱਗਦਾ ਹੈ। ਇਹ effort ਆਮ ਤੌਰ ਉੱਤੇ ਉਦੋਂ ਦਿਸਦਾ ਹੈ ਜਦੋਂ price trend line ਵੱਲ ਵਧ ਰਿਹਾ ਹੋਵੇ, ਐਨ ਲਕੀਰ ਉੱਤੇ ਨਹੀਂ। ਲਕੀਰ ਨੇੜੇ ਚੌੜੇ spreads ਤੇ ਵਧਿਆ volume ਦੱਸਦੇ ਹਨ ਕਿ ਕੋਈ ਇਸ ਨੂੰ ਤੋੜਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹੈ।",
+  "remember": [
+   "Effort ਲਕੀਰ ਵੱਲ ਵਧਦਿਆਂ ਦਿਸਦਾ ਹੈ, ਐਨ ਲਕੀਰ ਉੱਤੇ ਨਹੀਂ।",
+   "Effort ਦੀ ਸ਼ਕਲ: ਚੌੜੇ spreads ਨਾਲ ਵਧਿਆ volume।",
+   "ਲਕੀਰ ਨੇੜੇ ਕੋਈ effort ਨਹੀਂ, ਤਾਂ ਟੁੱਟਣ ਦੀ ਸੰਭਾਵਨਾ ਵੀ ਨਹੀਂ।"
+  ]
+ },
+ "pushing-through-supply-support-lines": {
+  "plain": "ਉੱਚੇ volume ਉੱਤੇ ਚੌੜੇ spread ਵਾਲੀ ਚੜ੍ਹਤ ਜੋ channel ਦੇ ਸਿਖਰ ਵਿੱਚੋਂ ਲੰਘ ਜਾਵੇ, ਤੇ ਅਗਲਾ bar ਟਿਕ ਜਾਵੇ ਜਾਂ ਹੋਰ ਉੱਪਰ ਜਾਵੇ, ਉੱਚੀਆਂ prices ਵੱਲ ਇਸ਼ਾਰਾ ਹੈ। ਪਿੱਛੋਂ ਆਇਆ ਘੱਟ volume ਵਾਲਾ down-bar, ਭਾਵ test, ਇਸ ਦੀ ਪੁਸ਼ਟੀ ਕਰ ਦਿੰਦਾ ਹੈ।",
+  "remember": [
+   "Breakout: ਚੌੜਾ spread, ਉੱਚਾ volume, channel ਦੇ ਸਿਖਰ ਵਿੱਚੋਂ ਪਾਰ।",
+   "ਅਗਲੇ bar ਦਾ ਟਿਕਣਾ ਜਾਂ ਅੱਗੇ ਵਧਣਾ ਜ਼ਰੂਰੀ ਹੈ।",
+   "ਪਿੱਛੋਂ ਘੱਟ volume ਵਾਲਾ down-bar breakout ਦੀ ਪੁਸ਼ਟੀ ਕਰਦਾ ਹੈ।"
+  ]
+ },
+ "absorption-volume-and-lower-trend-lines": {
+  "plain": "ਹੇਠਲੀ trend line ਉੱਤੇ down-bar ਦਾ ਉੱਚਾ volume ਵੇਖਣ ਨੂੰ selling ਲੱਗਦਾ ਹੈ। ਪਰ ਜੇ ਅਗਲਾ bar ਉੱਪਰ ਹੈ, ਤਾਂ ਉਸ volume ਵਿੱਚ ਉਹ buying ਜ਼ਰੂਰ ਸੀ ਜਿਸ ਨੇ selling ਜਜ਼ਬ ਕੀਤੀ। ਇਹੀ ਇਸ ਨੂੰ strength ਦਾ ਇਸ਼ਾਰਾ ਬਣਾ ਦਿੰਦਾ ਹੈ।",
+  "remember": [
+   "Absorption = ਹੇਠਲੀ ਲਕੀਰ ਉੱਤੇ ਉੱਚੇ volume ਵਾਲਾ down-bar, ਤੇ ਅਗਲਾ bar ਉੱਪਰ।",
+   "ਪਿੱਛੋਂ ਆਇਆ up-bar ਹੀ ਸਾਬਤ ਕਰਦਾ ਹੈ ਕਿ volume ਵਿੱਚ buying ਸੀ।",
+   "ਅਗਲੇ bar ਤੋਂ ਬਿਨਾਂ ਇਸ ਨੂੰ absorption ਨਹੀਂ ਕਹਿ ਸਕਦੇ।"
+  ]
+ },
+ "what-starts-a-bull-market": {
+  "plain": "Bull markets ਹਨੇਰੇ ਵਿੱਚ ਸ਼ੁਰੂ ਹੁੰਦੇ ਹਨ, ਆਸ ਵਿੱਚ ਨਹੀਂ। Prices ਲੰਮਾ ਸਮਾਂ ਡਿੱਗਦੀਆਂ ਰਹਿੰਦੀਆਂ ਹਨ ਜਦੋਂ ਤੱਕ weak holders ਹਾਰ ਮੰਨ ਕੇ ਆਪਣਾ stock ਸੁੱਟ ਨਾ ਦੇਣ। Professionals ਉਹ ਘਬਰਾਹਟ ਖ਼ਰੀਦ ਲੈਂਦੇ ਹਨ। ਜਦੋਂ stock ਤਕੜੇ ਹੱਥਾਂ ਵਿੱਚ ਚਲਾ ਜਾਵੇ, ਤਾਂ ਵੇਚਣ ਲਈ ਕੁਝ ਬਚਦਾ ਹੀ ਨਹੀਂ, ਤੇ market ਚੜ੍ਹ ਸਕਦਾ ਹੈ।",
+  "remember": [
+   "Bull markets ਸਭ ਤੋਂ ਵੱਧ ਨਿਰਾਸ਼ਾ ਵਾਲੇ ਮੋੜ ਉੱਤੇ ਸ਼ੁਰੂ ਹੁੰਦੇ ਹਨ।",
+   "ਇਹਨਾਂ ਲਈ ਪਹਿਲਾਂ weak holders ਦਾ ਵਿਕ ਜਾਣਾ ਜ਼ਰੂਰੀ ਹੈ।",
+   "Supply ਬਚੀ ਹੀ ਨਾ ਹੋਵੇ = market ਥੋੜ੍ਹੀ ਜਿਹੀ buying ਉੱਤੇ ਵੀ ਚੜ੍ਹ ਜਾਂਦਾ ਹੈ।"
+  ]
+ },
+ "the-forces-of-supply-and-demand-move-the-markets": {
+  "plain": "ਲਿਖਾਰੀ ਉਸ ਸੌਖੀ ਗੱਲ ਨੂੰ ਰੱਦ ਕਰਦਾ ਹੈ ਕਿ 'ਵੇਚਣ ਵਾਲਿਆਂ ਨਾਲੋਂ ਖ਼ਰੀਦਣ ਵਾਲੇ ਵੱਧ ਹਨ'। ਹਰ trade ਵਿੱਚ ਇੱਕ ਖ਼ਰੀਦਣ ਵਾਲਾ ਤੇ ਇੱਕ ਵੇਚਣ ਵਾਲਾ ਹੁੰਦਾ ਹੈ, ਸੋ ਗਿਣਤੀ ਦੀ ਗੱਲ ਨਹੀਂ। ਗੱਲ ਇਹ ਹੈ ਕਿ ਖ਼ਰੀਦ-ਵੇਚ ਕੌਣ ਕਰ ਰਿਹਾ ਹੈ, ਤੇ buying professional ਹੈ ਜਾਂ ਆਮ ਲੋਕਾਂ ਦੀ।",
+  "remember": [
+   "ਹਰ trade ਵਿੱਚ ਖ਼ਰੀਦਣ ਤੇ ਵੇਚਣ ਵਾਲਾ ਦੋਵੇਂ ਹੁੰਦੇ ਹਨ। ਗਿਣਤੀ ਬੇਮਤਲਬ ਹੈ।",
+   "ਗੱਲ ਇਹ ਹੈ ਕਿ ਹਰ ਪਾਸੇ ਹੈ ਕੌਣ।",
+   "Professional buying move ਨੂੰ ਸਹਾਰਾ ਦਿੰਦੀ ਹੈ। ਆਮ ਲੋਕਾਂ ਦੀ buying ਨਹੀਂ ਦਿੰਦੀ।"
+  ]
+ },
+ "it-all-starts-with-a-campaign": {
+  "plain": "ਵੱਡੀ position ਬਣਾਉਣੀ ਇੱਕ ਮੁਹਿੰਮ ਹੈ ਜਿਸ ਲਈ ਯੋਜਨਾ, ਸਬਰ ਤੇ ਪੈਸਾ ਚਾਹੀਦਾ ਹੈ। ਇੱਕ ਕੰਮ ਦਾ ਨਿਸ਼ਾਨ: index ਦੇ ਡਿੱਗਦਿਆਂ stock ਡਿੱਗਣ ਤੋਂ ਨਾਂਹ ਕਰ ਦਿੰਦਾ ਹੈ। ਇਹੀ ਝਿਜਕ ਦੱਸਦੀ ਹੈ ਕਿ ਕੋਈ ਉਸ ਨੂੰ ਸਹਾਰਾ ਦੇ ਰਿਹਾ ਹੈ।",
+  "remember": [
+   "ਵੱਡੀਆਂ positions ਯੋਜਨਾ ਨਾਲ, ਸਮੇਂ ਨਾਲ ਬਣਾਈਆਂ ਜਾਂਦੀਆਂ ਹਨ।",
+   "Index ਦੇ ਡਿੱਗਦਿਆਂ ਜੋ stock ਨਹੀਂ ਡਿੱਗਦਾ, ਉਸ ਨੂੰ ਸਹਾਰਾ ਮਿਲ ਰਿਹਾ ਹੈ।",
+   "Index ਦੇ ਮੁਕਾਬਲੇ ਤਕੜਾਈ accumulation ਦਾ ਸੁਰਾਗ਼ ਹੈ।"
+  ]
+ },
+ "how-to-recognise-the-likely-market-top": {
+  "plain": "ਲੰਮੀ ਚੜ੍ਹਤ ਤੋਂ ਬਾਅਦ, ਨਵੀਂ ਉੱਚੀ ਧਰਤੀ ਵਿੱਚ, ਉਸ up-bar ਦੀ ਤਾੜ ਰੱਖੋ ਜਿਸ ਉੱਤੇ ਉੱਚਾ volume ਹੋਵੇ ਪਰ spread ਤੰਗ। ਇਹ weakness ਦਾ ਪੱਕਾ ਇਸ਼ਾਰਾ ਹੈ। ਜੇ ਏਨਾ ਵੱਡਾ volume ਸੱਚੀ buying ਹੁੰਦਾ, ਤਾਂ spread ਚੌੜਾ ਹੁੰਦਾ ਤੇ price ਤੁਰਦਾ।",
+  "remember": [
+   "ਟੀਸੀ ਦਾ signal: ਨਵੀਂ ਉੱਚੀ ਧਰਤੀ + up-bar + ਤੰਗ spread + ਉੱਚਾ volume।",
+   "ਤੰਗ spread ਹੀ ਭੇਤ ਖੋਲ੍ਹਦਾ ਹੈ। ਅਸਲੀ buying ਇਸ ਨੂੰ ਚੌੜਾ ਕਰ ਦਿੰਦੀ।",
+   "ਐਨ ਇਸੇ ਮੋੜ ਉੱਤੇ ਚੰਗੀ news ਤੇ ਜੋਸ਼ ਦੀ ਆਸ ਰੱਖੋ।"
+  ]
+ },
+ "how-to-recognise-the-likely-end-of-a-rally": {
+  "plain": "ਲਿਖਾਰੀ supply ਦੇ ਉਹ ਪੰਜ ਇਸ਼ਾਰੇ ਗਿਣਾਉਂਦਾ ਹੈ ਜੋ up-move ਰੋਕ ਦਿੰਦੇ ਹਨ: buying climax, ਨਾਕਾਮ test, ਉੱਚੇ volume ਵਾਲੇ up-bars ਉੱਤੇ ਤੰਗ spreads, up-thrusts, ਤੇ no-demand bars। ਜੇ ਤੁਸੀਂ long ਹੋ, ਤਾਂ ਇਹੀ ਪੰਜ ਵੇਖਣੇ ਹਨ।",
+  "remember": [
+   "ਪੰਜ ਇਸ਼ਾਰੇ: buying climax, ਨਾਕਾਮ test, ਉੱਚੇ volume ਵਾਲੇ up-bar ਉੱਤੇ ਤੰਗ spread, up-thrust, no demand।",
+   "ਨਾਕਾਮ test ਉਹ ਹੈ ਜੋ ਘੱਟ volume ਉੱਤੇ ਨਾ ਹੋਵੇ।",
+   "ਇਹਨਾਂ ਵਿੱਚੋਂ ਕੋਈ ਵੀ bullish move ਨੂੰ ਹੌਲੀ ਜਾਂ ਬੰਦ ਕਰ ਦਿੰਦਾ ਹੈ।"
+  ]
+ },
+ "up-thrusts-in-more-detail": {
+  "plain": "Up-thrust price ਨੂੰ ਹਾਲੀਆ highs ਤੋਂ ਉੱਪਰ ਧੱਕਦਾ ਹੈ, ਅਕਸਰ ਚੰਗੀ news ਤੇ ਗੋਲ ਅੰਕੜਿਆਂ ਉੱਤੇ, stops ਛੇੜਦਾ ਹੈ ਤੇ ਖ਼ਰੀਦਦਾਰ ਖਿੱਚ ਲਿਆਉਂਦਾ ਹੈ। ਫਿਰ ਉੱਚੇ volume ਉੱਤੇ ਵਾਪਸ ਡਿੱਗ ਕੇ bar ਦੇ low ਦੇ ਨੇੜੇ close ਹੁੰਦਾ ਹੈ। Professionals ਨੇ ਉਸ ਜੋਸ਼ ਵਿੱਚ ਵੇਚ ਦਿੱਤਾ। ਸੱਚਮੁੱਚ ਤਕੜੇ markets ਵਿੱਚ up-thrusts ਬਹੁਤ ਘੱਟ ਦਿਸਦੇ ਹਨ।",
+  "remember": [
+   "Up-thrust = ਉੱਪਰ ਧੱਕਿਆ, bar ਦੇ low ਦੇ ਨੇੜੇ close, ਉੱਚੇ volume ਉੱਤੇ।",
+   "ਇਹ rally ਤੋਂ ਬਾਅਦ, ਟੀਸੀਆਂ ਉੱਤੇ ਦਿਸਦਾ ਹੈ, ਤੇ weakness ਦਾ ਇਸ਼ਾਰਾ ਹੈ।",
+   "ਇਸ ਦਾ ਮਕਸਦ stops ਛੇੜਨਾ ਤੇ ਖ਼ਰੀਦਦਾਰ ਫਸਾਉਣਾ ਹੈ।",
+   "ਤਕੜੇ markets ਵਿੱਚ ਬਹੁਤ ਘੱਟ ਦਿਸਦਾ ਹੈ, ਸੋ background ਮਾਇਨੇ ਰੱਖਦਾ ਹੈ।"
+  ]
+ },
+ "the-selling-climax-and-professional-support": {
+  "plain": "Selling climax ਵਿੱਚ ਬੇਹੱਦ ਚੌੜੇ spreads ਹੇਠਾਂ ਵੱਲ ਹੁੰਦੇ ਹਨ, volume ਅਸਾਧਾਰਨ ਤੌਰ ਉੱਤੇ ਉੱਚਾ, ਤੇ close bar ਦੇ high ਉੱਤੇ ਜਾਂ ਉਸ ਦੇ ਨੇੜੇ। ਮਾੜੀ news ਇਸ ਨੂੰ ਹੋਰ bullish ਬਣਾਉਂਦੀ ਹੈ, ਘੱਟ ਨਹੀਂ, ਕਿਉਂਕਿ ਉਹੀ ਘਬਰਾਹਟ professionals ਨੂੰ ਵੱਡੀ ਖ਼ਰੀਦ ਦਾ ਮੌਕਾ ਦਿੰਦੀ ਹੈ। Reverse up-thrust ਇਸੇ ਗੱਲ ਦਾ ਹਲਕਾ ਰੂਪ ਹੈ।",
+  "remember": [
+   "Selling climax = ਬੇਹੱਦ ਚੌੜਾ spread ਹੇਠਾਂ + ਬਹੁਤ ਉੱਚਾ volume + high ਉੱਤੇ ਜਾਂ ਨੇੜੇ close।",
+   "ਮਾੜੀ news ਇਸ ਨੂੰ ਹੋਰ bullish ਬਣਾਉਂਦੀ ਹੈ, ਕਿਉਂਕਿ ਘਬਰਾਹਟ ਓਹੀ ਬਣਾਉਂਦੀ ਹੈ।",
+   "High ਦੇ ਨੇੜੇ close ਹੀ ਸਾਬਤ ਕਰਦਾ ਹੈ ਕਿ buying ਆਈ।",
+   "Reverse up-thrust ਇਸੇ ਦਾ ਘੱਟ ਤੇਜ਼ ਰੂਪ ਹੈ।"
+  ]
+ },
+ "the-buying-climax-and-professional-selling": {
+  "plain": "ਇਸ ਦਾ ਸ਼ੀਸ਼ਾ, ਜੋ 1989 ਦੀ Nikkei ਦੀ ਟੀਸੀ ਉੱਤੇ ਵਿਖਾਇਆ ਗਿਆ ਹੈ। ਲੰਮੀ ਚੜ੍ਹਤ ਦੇ ਅਖ਼ੀਰ ਵਿੱਚ up-weeks ਉੱਤੇ ਬੇਹੱਦ ਉੱਚਾ volume, ਤੇ ਉਸ ਤੋਂ ਬਾਅਦ market ਹੋਰ ਉੱਪਰ ਨਹੀਂ ਜਾ ਸਕਦਾ। ਸਭ ਤੋਂ ਅਹਿਮ ਵੇਰਵਾ: ਉੱਚਾ volume up-bars ਉੱਤੇ ਆਉਣਾ ਚਾਹੀਦਾ ਹੈ। ਓਥੇ ਹੀ selling ਲੁਕੀ ਹੁੰਦੀ ਹੈ।",
+  "remember": [
+   "Buying climax = ਲੰਮੀ ਚੜ੍ਹਤ ਤੋਂ ਬਾਅਦ up-bars ਉੱਤੇ ਬਹੁਤ ਉੱਚਾ volume।",
+   "ਸੱਚੀ weakness ਹਮੇਸ਼ਾ up-bar ਉੱਤੇ ਦਿਸਦੀ ਹੈ।",
+   "ਜੇ ਉਸ volume ਉੱਤੇ price ਅੱਗੇ ਨਾ ਵਧੇ, ਤਾਂ ਉਹ distribution ਸੀ।",
+   "ਇਹੀ ਅਗਲਾ bear market ਬਣਾਉਂਦਾ ਹੈ।"
+  ]
+ },
+ "a-buying-climax-in-an-individual-stock": {
+  "plain": "ਇੱਕੋ stock ਵਿੱਚ ਓਹੀ pattern: ਬਹੁਤ ਉੱਚੇ volume ਉੱਤੇ ਚੌੜੇ spreads, ਪਰ price ਉੱਪਰ ਵੱਲ ਹੁੰਗਾਰਾ ਨਹੀਂ ਭਰਦਾ। ਚੰਗੀ news ਤੇ ਤੇਜ਼ mark-up ਤੁਹਾਡੀ ਪਰਖ ਧੁੰਦਲੀ ਕਰ ਦਿੰਦੇ ਹਨ। ਇਹੀ ਤਾਂ ਬਣਾਇਆ ਹੀ ਇਸ ਲਈ ਗਿਆ ਹੈ।",
+  "remember": [
+   "ਚੌੜਾ spread + ਬਹੁਤ ਉੱਚਾ volume + ਉੱਪਰ ਕੋਈ ਹੁੰਗਾਰਾ ਨਹੀਂ = climax।",
+   "ਇਸ ਵੇਲੇ ਦੀ ਚੰਗੀ news ਜਾਲ ਹੈ, ਪੁਸ਼ਟੀ ਨਹੀਂ।",
+   "Effort ਹੋਵੇ ਪਰ result ਨਾ ਹੋਵੇ — ਇਹੀ ਭੇਤ ਖੋਲ੍ਹਦਾ ਹੈ।"
+  ]
+ },
+ "from-bear-to-bull-markets": {
+  "plain": "1990ਵਿਆਂ ਦੇ ਸ਼ੁਰੂ ਵਿੱਚ ਲਿਖੀ ਇਤਿਹਾਸਕ ਤੁਲਨਾ, ਜਿਸ ਵਿੱਚ 1989 ਤੋਂ ਬਾਅਦ ਦੇ ਜਪਾਨੀ bear market ਨੂੰ Dow ਦੀ bull ਦੌੜ ਨਾਲ ਰੱਖ ਕੇ ਵੇਖਿਆ ਗਿਆ ਹੈ। ਗੱਲ ਇਹ ਹੈ ਕਿ ਓਹੀ volume ਤੇ spread ਵਾਲੇ ਅਸੂਲ ਦੋਵੇਂ ਸਮਝਾ ਦਿੰਦੇ ਹਨ — ਹਰ market ਵਿੱਚ, ਹਰ ਦੌਰ ਵਿੱਚ।",
+  "remember": [
+   "ਇਹ ਅਸੂਲ ਕਿਸੇ ਇੱਕ market ਜਾਂ ਦੌਰ ਦੇ ਨਹੀਂ।",
+   "ਇਹ 1990ਵਿਆਂ ਦੇ ਸ਼ੁਰੂ ਵਿੱਚ ਲਿਖਿਆ ਗਿਆ। ਮਿਸਾਲਾਂ ਨੂੰ ਇਤਿਹਾਸ ਵਜੋਂ ਪੜ੍ਹੋ।",
+   "ਦੋ markets ਵਿੱਚ ਉਲਟ ਨਤੀਜੇ, ਪਰ ਹੇਠਲਾ ਤਰਕ ਇੱਕੋ।"
+  ]
+ },
+ "bear-markets-in-general": {
+  "plain": "Bear market ਵਿੱਚ prices ਰੁਕ ਕੇ sideways ਤੁਰਦੀਆਂ ਹਨ, ਸਗੋਂ ਚੜ੍ਹ ਵੀ ਸਕਦੀਆਂ ਹਨ। ਇਸ ਦੌਰਾਨ ਘੱਟ volume ਵਾਲੀ ਕੋਈ ਵੀ up-move weakness ਹੈ, ਸੰਭਲਾਈ ਨਹੀਂ। ਤੁਹਾਨੂੰ ਉਹ ਵੀ ਦਿਸ ਸਕਦਾ ਹੈ ਜੋ test ਲੱਗਦਾ ਹੈ। ਜੇ ਉਹ ਸੱਚਾ ਹੋਵੇ ਤੇ ਫਿਰ ਵੀ market ਹੁੰਗਾਰਾ ਨਾ ਭਰੇ, ਤਾਂ weakness ਪੱਕੀ ਹੋ ਜਾਂਦੀ ਹੈ।",
+  "remember": [
+   "Bear market ਵਿੱਚ ਘੱਟ volume ਵਾਲੀਆਂ up-moves weakness ਹਨ, ਸੰਭਲਾਈ ਨਹੀਂ।",
+   "ਜਿਸ test ਦਾ ਕੋਈ ਹੁੰਗਾਰਾ ਨਾ ਆਵੇ, ਉਹ weakness ਦੀ ਪੁਸ਼ਟੀ ਕਰਦਾ ਹੈ।",
+   "Downtrend ਵਿੱਚ sideways ਤੁਰਨਾ ਆਮ ਤੌਰ ਉੱਤੇ ਸਾਹ ਲੈਣਾ ਹੈ, ਮੋੜ ਨਹੀਂ।"
+  ]
+ },
+ "what-stops-a-down-move-and-how-will-i-recognise-this": {
+  "plain": "Down-bar ਉੱਤੇ ਉੱਚੇ volume ਦਾ ਮਤਲਬ ਹਮੇਸ਼ਾ ਇਹ ਹੈ ਕਿ selling ਹੋਈ। ਪਰ ਜੇ ਉਹ bar ਵਿਚਕਾਰ ਜਾਂ high ਦੇ ਨੇੜੇ close ਹੁੰਦਾ ਹੈ, ਤਾਂ professionals ਨੇ ਉਸ selling ਵਿੱਚ ਖ਼ਰੀਦਿਆ ਹੋਵੇਗਾ। ਇਹੀ absorption ਡਿੱਗਤ ਰੋਕ ਦਿੰਦੀ ਹੈ। ਉਹ ਏਦਾਂ ਤਾਂ ਹੀ ਕਰਦੇ ਹਨ ਜਦੋਂ ਉਹਨਾਂ ਨੂੰ price ਕਾਫ਼ੀ ਨੀਵਾਂ ਲੱਗੇ।",
+  "remember": [
+   "ਉੱਚੇ volume ਵਾਲਾ down-bar ਜੋ ਵਿਚਕਾਰ ਜਾਂ HIGH ਉੱਤੇ close ਹੋਵੇ = buying ਨੇ selling ਜਜ਼ਬ ਕਰ ਲਈ।",
+   "ਉੱਚੇ volume ਵਾਲਾ down-bar ਜੋ LOW ਉੱਤੇ close ਹੋਵੇ = selling ਜਿੱਤ ਗਈ।",
+   "Bar ਦੇ ਅੰਦਰ close ਦੀ ਥਾਂ ਹੀ ਫ਼ੈਸਲਾ ਕਰਦੀ ਹੈ।"
+  ]
+ },
+ "how-to-recognise-a-market-bottom": {
+  "plain": "ਕੰਮ ਕਰ ਕੇ ਵਿਖਾਈ ਮਿਸਾਲ। ਉੱਚੇ volume ਉੱਤੇ ਚੌੜੇ spread ਵਾਲੀ ਡਿੱਗਤ bearish ਲੱਗਦੀ ਹੈ, ਪਰ ਅਗਲੇ ਦਿਨਾਂ ਵਿੱਚ market ਡਿੱਗਦਾ ਨਹੀਂ, ਸਗੋਂ ਚੜ੍ਹ ਜਾਂਦਾ ਹੈ। ਜੇ ਉਹ volume ਸੱਚਮੁੱਚ selling ਹੁੰਦਾ, ਤਾਂ market ਉੱਪਰ ਜਾ ਹੀ ਨਹੀਂ ਸਕਦਾ ਸੀ। ਸੋ ਉਹ buying ਸੀ।",
+  "remember": [
+   "ਉੱਚੇ volume ਵਾਲੇ bar ਦਾ ਫ਼ੈਸਲਾ ਅਗਲੇ ਕੁਝ bars ਵੇਖ ਕੇ ਕਰੋ।",
+   "ਭਾਰੀ volume ਤੋਂ ਬਾਅਦ ਹੋਰ ਡਿੱਗਤ ਨਹੀਂ = ਉਹ volume buying ਸੀ।",
+   "‘ਅੱਗੇ ਕੀ ਹੋਇਆ’ ਵਾਲੀ ਇਹੀ ਪਰਖ ਸਾਰੇ ਤਰੀਕੇ ਦੀ ਜੜ੍ਹ ਹੈ।"
+  ]
+ },
+ "professional-support": {
+  "plain": "ਉਹ ਨਿਸ਼ਾਨ ਜੋ ਦੱਸਦੇ ਹਨ ਕਿ professionals market ਨੂੰ ਸਹਾਰਾ ਦੇ ਰਹੇ ਹਨ: downtrend ਦੇ ਅੰਦਰ ਬਹੁਤ ਉੱਚੇ volume ਵਾਲਾ down-bar ਜੋ ਵਿਚਕਾਰ ਜਾਂ high ਉੱਤੇ close ਹੋਵੇ, ਤੇ ਅਗਲਾ bar ਉੱਪਰ ਹੋਵੇ। ਉਸ ਮੋੜ ਉੱਤੇ demand, supply ਉੱਤੇ ਭਾਰੂ ਪੈ ਰਹੀ ਹੈ।",
+  "remember": [
+   "Downtrend + ਬਹੁਤ ਉੱਚੇ volume ਵਾਲਾ down-bar + ਵਿਚਕਾਰ/high ਉੱਤੇ close + ਅਗਲਾ bar ਉੱਪਰ।",
+   "ਇਹ ਜੋੜ ਦੱਸਦਾ ਹੈ ਕਿ demand ਨੇ supply ਨੂੰ ਹਰਾ ਦਿੱਤਾ ਹੈ।",
+   "Support down-bars ਉੱਤੇ ਦਿਸਦਾ ਹੈ, up-bars ਉੱਤੇ ਕਦੇ ਨਹੀਂ।"
+  ]
+ },
+ "the-shake-out": {
+  "plain": "Shake-out bear move ਦੇ ਅਖ਼ੀਰ ਨੇੜੇ ਦਿਸਦਾ ਹੈ। Prices gap down ਹੋ ਕੇ ਡਰਾਉਣੀ ਹੱਦ ਤੱਕ ਡਿੱਗਦੀਆਂ ਹਨ ਤੇ ਬਚੇ-ਖੁਚੇ weak holders ਡਰ ਕੇ ਨਿਕਲ ਜਾਂਦੇ ਹਨ। ਜੇ background ਵਿੱਚ distribution ਬਹੁਤ ਘੱਟ ਹੋਵੇ, ਤੇ market ਪਿੱਛੋਂ gap up ਕਰ ਜਾਵੇ, ਤਾਂ ਇਹ strength ਦਾ ਇਸ਼ਾਰਾ ਹੈ।",
+  "remember": [
+   "Shake-out = gap down, ਤਿੱਖੀ ਡਿੱਗਤ, ਤੇ ਫਿਰ market ਦਾ ਵਾਪਸ gap up ਕਰਨਾ।",
+   "ਇਹ ਤਾਂ ਹੀ bullish ਹੈ ਜਦੋਂ ਪਿੱਛੇ ਕੋਈ ਵੱਡੀ distribution ਨਾ ਹੋਵੇ।",
+   "ਇਸ ਦਾ ਮਕਸਦ ਆਖ਼ਰੀ weak holders ਨੂੰ ਡਰਾ ਕੇ ਕੱਢਣਾ ਹੈ।"
+  ]
+ },
+ "stopping-volume": {
+  "plain": "ਡਿੱਗਤ ਦੌਰਾਨ price ਹੋਰ ਹੇਠਾਂ ਜਾਣ ਦਾ ਵਿਰੋਧ ਕਰਨ ਲੱਗ ਪੈਂਦਾ ਹੈ। ਇਹ ਬਹੁਤ ਉੱਚੇ volume ਵਾਲੇ down-bar ਵਜੋਂ ਦਿਸਦਾ ਹੈ ਜੋ highs ਉੱਤੇ close ਹੁੰਦਾ ਹੈ। ਓਥੇ close ਹੋਣ ਲਈ buying ਦਾ ਆਉਣਾ ਜ਼ਰੂਰੀ ਸੀ। ਇਸ ਨੂੰ ਵੱਡੇ buy orders ਸਮਝੋ ਜੋ down-move ਉੱਤੇ ਬਰੇਕ ਵਾਂਗ ਕੰਮ ਕਰਦੇ ਹਨ।",
+  "remember": [
+   "Stopping volume = down-bar + ਬਹੁਤ ਉੱਚਾ volume + HIGH ਉੱਤੇ close।",
+   "ਇਹ ਉਹਨਾਂ buy orders ਤੋਂ ਬਣਦਾ ਹੈ ਜੋ ਡਿੱਗਤ ਰੋਕਣ ਜੋਗੇ ਵੱਡੇ ਹੋਣ।",
+   "ਇਹ ਹੋਰ ਡਿੱਗਤ ਸਾਹਮਣੇ ਰੁਕਾਵਟ ਦੱਸਦਾ ਹੈ, ਝੱਟ ਮੋੜ ਨਹੀਂ।"
+  ]
+ },
+ "falling-pressure": {
+  "plain": "ਘੱਟ volume ਉੱਤੇ ਚੌੜੇ spread ਵਾਲੀ ਡਿੱਗਤ, ਜੋ low ਉੱਤੇ close ਹੁੰਦੀ ਹੈ। ਵੇਖਣ ਨੂੰ ਮਾੜੀ ਲੱਗਦੀ ਹੈ, ਪਰ ਦੱਸਦੀ ਹੈ ਕਿ ਸੱਚਮੁੱਚ ਕੋਈ ਵੇਚ ਨਹੀਂ ਰਿਹਾ। ਇਹ ਇਕੱਲਾ buy signal ਨਹੀਂ। ਇਹ ਏਨਾ ਦੱਸਦਾ ਹੈ ਕਿ market ਦੇ ਬਹੁਤਾ ਹੋਰ ਡਿੱਗਣ ਦੀ ਸੰਭਾਵਨਾ ਘੱਟ ਹੈ।",
+  "remember": [
+   "Falling pressure = ਚੌੜਾ spread ਹੇਠਾਂ + ਘੱਟ volume + low ਉੱਤੇ close।",
+   "ਘੱਟ volume ਦਾ ਮਤਲਬ ਹੈ ਪੱਕੇ ਇਰਾਦੇ ਵਾਲੀ selling ਨਹੀਂ ਹੈ।",
+   "ਇਹ ਆਪਣੇ-ਆਪ ਵਿੱਚ buy signal ਨਹੀਂ। ਸਿਰਫ਼ ਏਨਾ ਕਹਿੰਦਾ ਹੈ ਕਿ ਹੋਰ ਡਿੱਗਤ ਦੀ ਸੰਭਾਵਨਾ ਘੱਟ ਹੈ।"
+  ]
+ },
+ "the-dream": {
+  "plain": "ਪੂਰੇ ਸਮੇਂ ਦਾ trader ਬਣਨ ਬਾਰੇ ਇਮਾਨਦਾਰ ਸੱਚ। ਬਹੁਤੇ ਸਿੱਖਦਿਆਂ-ਸਿੱਖਦਿਆਂ ਹੀ ਸਭ ਕੁਝ ਗੁਆ ਬੈਠਦੇ ਹਨ। ਜੋ ਬਚਦੇ ਹਨ, ਉਹ ਆਮ ਤੌਰ ਉੱਤੇ money management ਤੇ ਖ਼ਤਰਾ ਸਾਂਭਣ ਵਿੱਚ ਮਾਹਰ ਹੁੰਦੇ ਹਨ, ਭਾਵੇਂ ਹੋਰ ਬਹੁਤ ਘੱਟ ਜਾਣਦੇ ਹੋਣ।",
+  "remember": [
+   "ਬਹੁਤੇ traders ਸਿੱਖਣ ਦੇ ਅਮਲ ਵਿੱਚ ਹੀ ਸਭ ਕੁਝ ਗੁਆ ਬੈਠਦੇ ਹਨ।",
+   "ਚਤੁਰਾਈ ਵਾਲੀ ਪਰਖ ਨਾਲੋਂ money management ਵੱਧ ਮਾਇਨੇ ਰੱਖਦਾ ਹੈ।",
+   "ਪਹਿਲਾਂ ਬਚਣਾ, ਮੁਨਾਫ਼ਾ ਬਾਅਦ ਵਿੱਚ।"
+  ]
+ },
+ "beware-of-the-news": {
+  "plain": "ਕਿਤਾਬ ਦੀ ਸਭ ਤੋਂ ਸਖ਼ਤ ਖ਼ਬਰਦਾਰੀ। ਬਹੁਤੀ news ਸਿਰਫ਼ ਰੌਲਾ ਹੈ ਤੇ ਤੁਹਾਡੇ ਫ਼ਾਇਦੇ ਲਈ ਨਹੀਂ ਛਪਦੀ। ਜਿੰਨੀ ਛੇਤੀ ਇਹ ਗੱਲ ਮੰਨ ਲਵੋਗੇ, ਓਨੀ ਛੇਤੀ trading ਨੂੰ ਜਜ਼ਬਾਤਾਂ ਦੀ ਥਾਂ ਠੰਢੇ, ਮਸ਼ੀਨੀ ਢੰਗ ਨਾਲ ਕਰ ਸਕੋਗੇ।",
+  "remember": [
+   "ਬਹੁਤੀ news ਰੌਲਾ ਹੈ, ਤੇ ਤੁਹਾਡੀ ਮਦਦ ਲਈ ਨਹੀਂ ਹੈ।",
+   "News professional positions ਬਣਾਉਣ ਲਈ ਪਰਦੇ ਵਾਂਗ ਵਰਤੀ ਜਾਂਦੀ ਹੈ।",
+   "ਪੁੱਛੋ ਕਿ volume ਕੀ ਕਹਿ ਰਿਹਾ ਹੈ, ਸੁਰਖ਼ੀ ਕੀ ਕਹਿ ਰਹੀ ਹੈ — ਇਹ ਨਹੀਂ।"
+  ]
+ },
+ "you-need-a-system": {
+  "plain": "ਕੋਈ system ਪੂਰਾ ਨਹੀਂ ਹੁੰਦਾ, ਤੇ ਪੂਰਾ ਹੋਵੇ ਵੀ ਤਾਂ ਅਧੂਰਾ ਰਹੇਗਾ, ਕਿਉਂਕਿ ਉਸ ਉੱਤੇ ਬੰਦੇ ਨੇ ਚੱਲਣਾ ਹੈ। ਗੱਲ ਇਹ ਹੈ ਕਿ ਤੁਹਾਡਾ system ਪੱਕੀ ਸੋਚ ਉੱਤੇ ਟਿਕਿਆ ਹੋਵੇ ਤੇ ਦਬਾਅ ਹੇਠ ਵੀ ਤੁਸੀਂ ਸੱਚਮੁੱਚ ਉਸ ਉੱਤੇ ਚੱਲੋ।",
+  "remember": [
+   "ਕੋਈ system ਪੂਰਾ ਨਹੀਂ। ਬੰਦੇ ਦੀ ਗ਼ਲਤੀ ਇਹ ਪੱਕਾ ਕਰ ਦਿੰਦੀ ਹੈ।",
+   "System ਪੱਕੀ ਸੋਚ ਉੱਤੇ ਹੋਵੇ, ਪੁਰਾਣੇ data ਨਾਲ ਫ਼ਿੱਟ ਕੀਤੇ ਵਕਰਾਂ ਉੱਤੇ ਨਹੀਂ।",
+   "ਪਹਿਲਾਂ ਹੀ ਫ਼ੈਸਲਾ ਕਰ ਲੈਣਾ ਹੀ ਜਜ਼ਬਾਤਾਂ ਨੂੰ ਫ਼ੈਸਲਾ ਕਰਨ ਤੋਂ ਰੋਕਦਾ ਹੈ।"
+  ]
+ },
+ "trading-hints-and-tips": {
+  "plain": "ਅਮਲੀ ਸਲਾਹਾਂ ਦਾ ਸੰਗ੍ਰਹਿ: news ਸੁਣੋ ਪਰ ਨਾਲ ਹਮੇਸ਼ਾ 'ਪਰ' ਜੋੜੋ, ਅੱਗੇ ਦੇ price ਨਿਸ਼ਾਨੇ ਮਨ ਵਿੱਚ ਪੱਕੇ ਨਾ ਕਰੋ, ਹਮੇਸ਼ਾ ਯੋਜਨਾ ਰੱਖੋ, ਸੋਚੋ ਕਿ ਗ਼ਲਤ ਹੋਣ ਉੱਤੇ ਕੀ ਕਰੋਗੇ, stops ਟਾਂਕ ਅੰਕੜਿਆਂ ਉੱਤੇ ਲਾਓ ਕਿਉਂਕਿ ਭੀੜ ਗੋਲ ਅੰਕੜੇ ਵਰਤਦੀ ਹੈ, ਤੇ ਆਪਣੇ ਮਾਲਕ ਆਪ ਬਣੋ।",
+  "remember": [
+   "Stops ਟਾਂਕ ਅੰਕੜਿਆਂ ਉੱਤੇ ਲਾਓ। Professionals ਗੋਲ ਅੰਕੜਿਆਂ ਦਾ ਸ਼ਿਕਾਰ ਕਰਦੇ ਹਨ।",
+   "Stops ਪਿਛਲੀ reaction ਦੇ low ਤੋਂ ਹੇਠਾਂ ਲਾਓ, ਕਿਸੇ ਮਨਮਰਜ਼ੀ ਦੀ ਦੂਰੀ ਉੱਤੇ ਨਹੀਂ।",
+   "ਗ਼ਲਤ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਸੋਚ ਲਵੋ ਕਿ ਗ਼ਲਤ ਹੋਣ ਉੱਤੇ ਕੀ ਕਰੋਗੇ।",
+   "ਅੱਗੇ ਦਾ price ਨਿਸ਼ਾਨਾ ਮਨ ਵਿੱਚ ਪੱਕਾ ਨਾ ਕਰੋ।"
+  ]
+ },
+ "what-are-the-main-signs-of-strength": {
+  "plain": "ਲਿਖਾਰੀ ਦੀ ਆਪਣੀ ਸਮੇਟੀ ਹੋਈ ਸੂਚੀ, ਜੋ ਸਾਰੀ market ਦੇ ਥੱਲੇ ਉੱਤੇ ਮਿਲਦੀ ਹੈ: ਘੱਟ volume ਵਾਲੇ tests, ਪੁਰਾਣੇ ਉੱਚੇ volume ਵਾਲੇ ਇਲਾਕੇ ਵਿੱਚ ਵਾਪਸੀ ਉੱਤੇ ਘੱਟ volume, stopping volume, ਤੇ shake-outs। ਤਕੜੇ market ਦੇ ਪਿੱਛੇ ਕੋਈ distribution ਵੀ ਨਹੀਂ ਹੁੰਦੀ।",
+  "remember": [
+   "Testing strength ਦਾ ਸਭ ਤੋਂ ਵਧੀਆ ਇੱਕੋ ਇਸ਼ਾਰਾ ਹੈ।",
+   "ਪੁਰਾਣੇ ਉੱਚੇ volume ਵਾਲੇ ਇਲਾਕੇ ਵਿੱਚ ਵਾਪਸੀ ਉੱਤੇ ਘੱਟ volume = supply ਮੁੱਕ ਗਈ।",
+   "Stopping volume: ਉੱਚੇ volume ਵਾਲਾ down-bar ਜੋ highs ਉੱਤੇ close ਹੋਵੇ।",
+   "Shake-out down-move ਨੂੰ ਰੋਕ ਦਿੰਦਾ ਹੈ।",
+   "Strength ਲਈ ਜ਼ਰੂਰੀ ਹੈ ਕਿ background ਵਿੱਚ distribution ਨਾ ਹੋਵੇ।"
+  ]
+ },
+ "what-are-the-main-signs-of-weakness": {
+  "plain": "ਇਸ ਦਾ ਸ਼ੀਸ਼ਾ, ਤੇ ਕਿਤਾਬ ਦਾ ਸਭ ਤੋਂ ਸਿੱਧਾ ਨੇਮਾਂ ਵਿੱਚ ਢਲਣ ਵਾਲਾ ਸਫ਼ਾ: buying climax, up-thrust, no-demand bar, ਨਵੀਂ ਉੱਚੀ ਧਰਤੀ ਵਿੱਚ ਬਹੁਤ ਉੱਚੇ volume ਉੱਤੇ ਤੰਗ spread ਵਾਲਾ up-bar, ਤੇ up-bar ਉੱਤੇ ਉੱਚਾ volume ਪਰ ਅੱਗੇ ਕੋਈ ਵਧਤ ਨਹੀਂ।",
+  "remember": [
+   "Buying climax, up-thrust ਤੇ no demand — ਇਹ ਤਿੰਨ ਮੁੱਖ ਇਸ਼ਾਰੇ ਹਨ।",
+   "ਨਵੇਂ highs ਵਿੱਚ ਬਹੁਤ ਉੱਚੇ volume ਉੱਤੇ ਤੰਗ spread ਵਾਲਾ up-bar = weakness।",
+   "ਉੱਚੇ volume ਵਾਲਾ up-bar ਤੇ ਅਗਲੇ bar ਉੱਤੇ ਉੱਚੀਆਂ prices ਨਹੀਂ = weakness।",
+   "Weakness ਹਮੇਸ਼ਾ up-bars ਉੱਤੇ ਆਪਣੇ-ਆਪ ਨੂੰ ਵਿਖਾਉਂਦੀ ਹੈ।"
+  ]
+ },
+ "checklist-for-going-long-buying": {
+  "plain": "ਹਰ long ਤੋਂ ਪਹਿਲਾਂ ਚਲਾਉਣ ਵਾਲੀ ਸੂਚੀ। ਕੀ ਬਣਦਾ uptrend ਦਿਸਦਾ ਹੈ, higher lows ਨਾਲ? ਕੀ ਰੋਜ਼ support ਹੈ, ਭਾਵ ਹਰ low ਪਿਛਲੇ ਨਾਲੋਂ ਉੱਚਾ? ਕੀ ਤੁਸੀਂ move ਦੇ ਮਗਰ ਭੱਜ ਰਹੇ ਹੋ? ਕੀ background ਵਿੱਚ strength ਹੈ ਤੇ ਸਿਰ ਉੱਤੇ ਕੋਈ weakness ਨਹੀਂ?",
+  "remember": [
+   "ਤਕੜੇ market ਵਿੱਚ ਘੱਟ volume ਵਾਲੀਆਂ reactions ਉੱਤੇ ਖ਼ਰੀਦੋ। ਮਗਰ ਨਾ ਭੱਜੋ।",
+   "ਹਰ low ਪਿਛਲੇ low ਨਾਲੋਂ ਉੱਚਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।",
+   "ਖ਼ਰੀਦਣ ਤੋਂ ਪਹਿਲਾਂ ਆਪਣੇ ਉੱਪਰ weakness ਦੇ ਇਸ਼ਾਰੇ ਵੇਖੋ।",
+   "ਜਦੋਂ ਵੀ trade ਕਰਨ ਦੀ ਤਾਂਘ ਉੱਠੇ, ਹਰ ਵਾਰ ਸੂਚੀ ਚਲਾਓ।"
+  ]
+ },
+ "checklist-for-going-short-selling": {
+  "plain": "Shorts ਲਈ ਓਹੀ ਸੂਚੀ, ਉਲਟੇ ਪਾਸਿਓਂ। ਕੀ lower highs ਨਾਲ downtrend ਬਣ ਰਿਹਾ ਹੈ? ਕੀ market ਬਿਨਾਂ ਕਿਸੇ support ਦੇ ਡਿੱਗ ਰਿਹਾ ਹੈ? ਕੀ ਹਾਲੀਆ background ਵਿੱਚ up-thrusts ਜਾਂ no demand ਵਰਗੇ weakness ਦੇ ਇਸ਼ਾਰੇ ਹਨ?",
+  "remember": [
+   "ਹਰ low ਪਿਛਲੇ low ਨਾਲੋਂ ਨੀਵਾਂ ਹੋਣਾ downtrend ਦੀ ਪੁਸ਼ਟੀ ਕਰਦਾ ਹੈ।",
+   "ਵੇਖੋ ਕਿ ਡਿੱਗਦਿਆਂ ਕੋਈ support ਨਹੀਂ ਆ ਰਿਹਾ।",
+   "ਡਿੱਗਤ ਦੇ ਮਗਰ ਭੱਜਣ ਦੀ ਥਾਂ ਉਹਨਾਂ rallies ਵਿੱਚ ਵੇਚੋ ਜਿੱਥੇ no demand ਹੋਵੇ।"
+  ]
+ },
+ "how-to-select-a-stock-the-easy-way": {
+  "plain": "ਅਮਲੀ ਸ਼ਾਰਟਕੱਟ। Fundamental ਕੰਮ ਮਾਹਰਾਂ ਨੂੰ ਕਰਨ ਦਿਓ। ਤੁਹਾਨੂੰ ਕਮਾਈ ਦਾ ਜਾਂ ਇਹ ਪਤਾ ਹੋਣ ਦੀ ਲੋੜ ਨਹੀਂ ਕਿ ਕੰਪਨੀ ਬਣਾਉਂਦੀ ਕੀ ਹੈ। ਤੁਹਾਨੂੰ ਉਹ stock ਚਾਹੀਦਾ ਹੈ ਜੋ ਆਪਣੇ index ਨਾਲੋਂ ਤਕੜਾ ਚੱਲ ਰਿਹਾ ਹੋਵੇ, ਕਿਉਂਕਿ ਇਹੀ ਤਕੜਾਈ accumulation ਦੇ ਪੈਰਾਂ ਦਾ ਨਿਸ਼ਾਨ ਹੈ।",
+  "remember": [
+   "Stock trade ਕਰਨ ਲਈ fundamentals ਦੀ ਲੋੜ ਨਹੀਂ।",
+   "ਉਹ stocks ਖ਼ਰੀਦੋ ਜੋ ਆਪਣੇ ਮੁੱਖ index ਨਾਲੋਂ ਤਕੜੇ ਚੱਲ ਰਹੇ ਹੋਣ।",
+   "ਜੋ stock index ਦੀਆਂ down-moves ਦਾ ਵਿਰੋਧ ਕਰੇ, ਉਸ ਵਿੱਚ accumulation ਹੋ ਰਹੀ ਹੈ।",
+   "ਸਿਰਫ਼ ਸਸਤਾ ਲੱਗਣ ਕਰ ਕੇ ਕਦੇ ਨਾ ਖ਼ਰੀਦੋ।"
+  ]
+ },
+ "closing-comments": {
+  "plain": "ਆਖ਼ਰੀ ਸੁਨੇਹਾ। ਇਹ ਜਾਣ ਲੈਣਾ ਕਿ prices ਕਿਸ ਪਾਸੇ ਜਾਣਗੀਆਂ, ਆਪਣੇ-ਆਪ ਵਿੱਚ ਕਾਫ਼ੀ ਨਹੀਂ। ਤੁਹਾਡਾ ਆਪਣਾ ਹੁਨਰ, ਅਨੁਸ਼ਾਸਨ ਤੇ ਪਰਖ ਹੀ ਤੈਅ ਕਰਦੇ ਹਨ ਕਿ ਉਸ ਗਿਆਨ ਵਿੱਚੋਂ ਮੁਨਾਫ਼ਾ ਨਿਕਲੇਗਾ ਜਾਂ ਨਹੀਂ।",
+  "remember": [
+   "Market ਸਹੀ ਪੜ੍ਹ ਲੈਣਾ ਸਿਰਫ਼ ਅੱਧਾ ਕੰਮ ਹੈ।",
+   "ਨਤੀਜਾ trading ਦਾ ਹੁਨਰ ਤੇ ਅਨੁਸ਼ਾਸਨ ਤੈਅ ਕਰਦੇ ਹਨ।",
+   "Trading ਸਿੱਖਣ ਨੂੰ ਲੰਮੀ ਸ਼ਾਗਿਰਦੀ ਸਮਝੋ।"
+  ]
+ },
+ "suggested-reading-list": {
+  "plain": "ਪੜ੍ਹਨ ਵਾਲੀ ਸੂਚੀ, ਤੇ ਇਸ ਵਿੱਚ ਸਭ ਤੋਂ ਵੱਧ ਨਾਂ ਕਿਸ ਦਾ ਹੈ ਇਹ ਵੇਖਣ ਵਾਲੀ ਗੱਲ ਹੈ: Richard Wyckoff। VSA ਅਸਲ ਵਿੱਚ Wyckoff ਦੀ tape reading ਦਾ ਹੀ ਤਰਤੀਬ ਦਿੱਤਾ ਹੋਇਆ ਰੂਪ ਹੈ। ਜੇ ਇਸ ਤਰੀਕੇ ਦਾ ਮੂਲ ਵੇਖਣਾ ਹੈ, ਤਾਂ ਓਥੇ ਜਾਓ।",
+  "remember": [
+   "Wyckoff VSA ਦਾ ਸਿੱਧਾ ਵਡੇਰਾ ਹੈ। ਸੂਚੀ ਦੀਆਂ ਕਈ ਕਿਤਾਬਾਂ ਉਸੇ ਦੀਆਂ ਹਨ।",
+   "Humphrey Neill ਦੀ Tape Reading and Market Tactics ਦੂਜੀ ਅਹਿਮ ਕਿਤਾਬ ਹੈ।",
+   "ਮੂਲ ਕਿਤਾਬਾਂ ਪੜ੍ਹਨ ਨਾਲ ਇਸ ਕਿਤਾਬ ਦੀ ਹਰ ਗੱਲ ਹੋਰ ਡੂੰਘੀ ਹੋ ਜਾਵੇਗੀ।"
+  ]
+ },
+ "do-not-ignore-these-trading-facts": {
+  "plain": "ਅਖ਼ੀਰ ਵਿੱਚ ਕੁਝ ਸਿੱਧੇ ਅੰਕੜੇ ਤੇ ਅਸੂਲ। ਲਗਭਗ 90% traders ਦਾ ਪੈਸਾ ਡੁੱਬਦਾ ਹੈ, ਬਹੁਤੇ options ਬੇਕਾਰ ਹੀ ਮੁੱਕ ਜਾਂਦੇ ਹਨ, supply ਤੇ demand ਹੀ ਸਭ ਕੁਝ ਚਲਾਉਂਦੇ ਹਨ, ਤੇ smart money ਆਪਣੇ ਫ਼ੈਸਲੇ volume ਤੇ price ਦੇ ਬਦਲਾਅ ਵੇਖ ਕੇ ਕਰਦਾ ਹੈ।",
+  "remember": [
+   "Stock market ਵਿੱਚ ਵੜਨ ਵਾਲੇ ਲਗਭਗ 90% ਲੋਕਾਂ ਦਾ ਪੈਸਾ ਡੁੱਬਦਾ ਹੈ।",
+   "ਅਖ਼ੀਰ ਹਰ market ਨੂੰ supply ਤੇ demand ਹੀ ਚਲਾਉਂਦੇ ਹਨ।",
+   "Smart money volume ਤੇ price ਤੋਂ ਫ਼ੈਸਲਾ ਕਰਦਾ ਹੈ, news ਤੋਂ ਨਹੀਂ।"
+  ]
  }
 }

@@ -1,1 +1,597 @@
-{}
+{
+ "signals": {
+  "title": "ਚਾਰੇ bar signatures, ਨਾਲੋ-ਨਾਲ",
+  "panels": [
+   { "label": "No demand", "note": "ਤੰਗ spread ਵਾਲਾ up-bar, | ਘੱਟ volume" },
+   { "label": "Test", "note": "ਹੇਠਾਂ mark, high ਉੱਤੇ close, | ਘੱਟ volume" },
+   { "label": "Up-thrust", "note": "ਉੱਪਰ ਧੱਕਿਆ, low ਦੇ ਨੇੜੇ close, | ਉੱਚਾ volume" },
+   { "label": "Stopping volume", "note": "down-bar high ਉੱਤੇ close, | ਬਹੁਤ ਉੱਚਾ volume" }
+  ]
+ },
+ "effort-result": {
+  "title": "Effort ਬਨਾਮ result",
+  "panels": [
+   { "label": "Effort — ਤੇ ਨਤੀਜਾ ਵੀ", "note": "volume ਵਧਿਆ, price ਤੁਰਿਆ | move ਸੱਚੀ ਹੈ" },
+   { "label": "Effort — ਪਰ ਨਤੀਜਾ ਨਹੀਂ", "note": "volume ਵਧਿਆ, price ਅਟਕਿਆ | ਕੋਈ ਇਸ ਨੂੰ ਜਜ਼ਬ ਕਰ ਰਿਹਾ ਹੈ" }
+  ]
+ },
+ "bullish-bearish-volume": {
+  "title": "Bullish volume ਤੇ bearish volume",
+  "panels": [
+   { "label": "Bullish volume", "note": "up-bars ਉੱਤੇ volume ਵਧਦਾ | ਤੇ down-bars ਉੱਤੇ ਘਟਦਾ ਹੈ" },
+   { "label": "Bearish volume", "note": "down-bars ਉੱਤੇ volume ਵਧਦਾ | ਤੇ up-bars ਉੱਤੇ ਘਟਦਾ ਹੈ" }
+  ]
+ },
+ "weak-or-strong": {
+  "title": "Strength down-bars ਉੱਤੇ, weakness up-bars ਉੱਤੇ ਦਿਸਦੀ ਹੈ",
+  "panels": [
+   { "label": "Strength DOWN-bar ਉੱਤੇ ਦਿਸਦੀ ਹੈ", "note": "ਉੱਚੇ volume ਵਾਲਾ down-bar high ਉੱਤੇ close, | ਤੇ ਅਗਲਾ bar ਉੱਪਰ" },
+   { "label": "Weakness UP-bar ਉੱਤੇ ਦਿਸਦੀ ਹੈ", "note": "ਉੱਚਾ volume, ਤੰਗ spread ਵਾਲਾ up-bar, | ਤੇ ਅਗਲਾ bar ਹੇਠਾਂ" }
+  ]
+ },
+ "no-demand-vs-demand": {
+  "title": "ਅਸਲੀ demand ਬਨਾਮ no demand",
+  "panels": [
+   { "label": "ਅਸਲੀ demand", "note": "ਚੌੜੇ spread ਵਾਲਾ up-bar, | volume ਵਧਦਾ ਹੋਇਆ" },
+   { "label": "No demand", "note": "ਤੰਗ spread ਵਾਲਾ up-bar, | ਘੱਟ volume" }
+  ]
+ },
+ "test-vs-failed": {
+  "title": "ਸੱਚਾ test ਬਨਾਮ ਨਾਕਾਮ test",
+  "panels": [
+   { "label": "ਸੱਚਾ test", "note": "ਹੇਠਾਂ mark, high ਉੱਤੇ close, | ਘੱਟ volume — supply ਬਚੀ ਨਹੀਂ" },
+   { "label": "ਨਾਕਾਮ test", "note": "ਓਹੀ ਸ਼ਕਲ, ਪਰ ਉੱਚਾ volume — | supply ਹਾਲੇ ਮੌਜੂਦ ਹੈ" }
+  ]
+ },
+ "close-position": {
+  "title": "ਓਹੀ bar, ਓਹੀ volume — ਮਤਲਬ close ਤੈਅ ਕਰਦਾ ਹੈ",
+  "panels": [
+   { "label": "LOW ਉੱਤੇ close", "note": "selling ਜਿੱਤ ਗਈ" },
+   { "label": "ਵਿਚਕਾਰ close", "note": "buying ਹੁਣ ਦਿਸਣ | ਲੱਗ ਪਈ ਹੈ" },
+   { "label": "HIGH ਉੱਤੇ close", "note": "buying ਨੇ selling | ਜਜ਼ਬ ਕਰ ਲਈ" }
+  ]
+ },
+ "path-of-least-resistance": {
+  "title": "ਸਭ ਤੋਂ ਘੱਟ resistance ਵਾਲਾ ਰਾਹ ਕਿਸ ਪਾਸੇ ਹੈ?",
+  "panels": [
+   { "label": "Selling ਸੁੱਕ ਗਈ", "note": "ਹੇਠਾਂ ਜਾਂਦਿਆਂ selling ਘਟਦੀ ਜਾਂਦੀ ਹੈ | → market ਉੱਪਰ ਜਾਣਾ ਚਾਹੁੰਦਾ ਹੈ" },
+   { "label": "Buying ਸੁੱਕ ਗਈ", "note": "ਉੱਪਰ ਜਾਂਦਿਆਂ buying ਘਟਦੀ ਜਾਂਦੀ ਹੈ | → market ਡਿੱਗਣਾ ਚਾਹੁੰਦਾ ਹੈ" }
+  ]
+ },
+ "timeframes": {
+  "title": "ਓਹੀ ਦਿਨ, ਦੋ timeframes ਉੱਤੇ",
+  "panels": [
+   { "label": "ਇੱਕ ਰੋਜ਼ਾਨਾ bar", "note": "ਸਿਰਫ਼ ਏਨਾ ਦਿਸਦਾ ਹੈ ਕਿ ਚੌੜਾ spread ਹੈ | ਤੇ close high ਦੇ ਨੇੜੇ" },
+   { "label": "ਓਹੀ ਦਿਨ, intraday", "note": "ਭਾਰੀ volume low ਉੱਤੇ ਆਇਆ ਸੀ | — ਉਹ buying ਸੀ" }
+  ]
+ },
+ "trend-structure": {
+  "title": "Higher lows ਤੇ lower highs",
+  "panels": [
+   { "label": "Higher lows", "note": "ਹਰ low ਪਿਛਲੇ | ਨਾਲੋਂ ਉੱਚਾ ਹੈ" },
+   { "label": "Lower highs", "note": "ਹਰ high ਪਿਛਲੇ | ਨਾਲੋਂ ਨੀਵਾਂ ਹੈ" }
+  ]
+ },
+ "weakness-signatures": {
+  "title": "Weakness ਦੇ ਚਾਰ ਮੁੱਖ ਇਸ਼ਾਰੇ",
+  "panels": [
+   { "label": "Buying climax", "note": "ਚੌੜਾ spread ਉੱਪਰ, ਬੇਹੱਦ | volume, ਟੀਸੀ ਉੱਤੇ" },
+   { "label": "Up-thrust", "note": "ਉੱਪਰ ਝਾਕਿਆ, ਫਿਰ ਆਪਣੇ | low ਦੇ ਨੇੜੇ close" },
+   { "label": "No demand", "note": "ਤੰਗ up-bar, | ਘੱਟ volume" },
+   { "label": "ਤੰਗ spread, ਉੱਚਾ volume", "note": "ਨਵੇਂ highs ਵਿੱਚ, | ਪਰ ਕੋਈ ਵਧਤ ਨਹੀਂ" }
+  ]
+ },
+ "relative-strength": {
+  "title": "Stock ਦੀ ਚੋਣ: ਇਸ ਦੀ ਤੁਲਨਾ ਇਸ ਦੇ index ਨਾਲ ਕਰੋ",
+  "panels": [
+   { "label": "Index ਡਿੱਗਦਾ ਹੈ", "note": "ਸਾਰਾ market | ਹੇਠਾਂ ਜਾ ਰਿਹਾ ਹੈ" },
+   { "label": "ਤੁਹਾਡਾ stock ਡਿੱਗਣ ਤੋਂ ਨਾਂਹ ਕਰਦਾ ਹੈ", "note": "ਕੋਈ ਇਸ ਨੂੰ ਸਹਾਰਾ ਦੇ ਰਿਹਾ ਹੈ | — ਇਹੀ accumulation ਹੈ" }
+  ]
+ },
+ "resistance": {
+  "title": "Rallies ਓਸੇ ਥਾਂ ਕਿਉਂ ਅਟਕਦੀਆਂ ਹਨ",
+  "note": "ਹਰ rally ਓਸੇ ਪੱਟੀ ਵਿੱਚ ਅਟਕ ਜਾਂਦੀ ਹੈ। | ਓਥੇ ਫਸੇ ਖ਼ਰੀਦਦਾਰ ਸਿਰਫ਼ ਆਪਣਾ ਪੈਸਾ ਵਾਪਸ ਲੈਣ ਲਈ ਵੇਚ ਰਹੇ ਹਨ।",
+  "zones": [ { "label": "ਪੁਰਾਣੀ ਟੀਸੀ ਉੱਤੇ ਫਸੇ ਖ਼ਰੀਦਦਾਰ" } ]
+ },
+ "supply-area": {
+  "title": "Supply ਵਾਲੇ ਇਲਾਕੇ ਵਿੱਚੋਂ ਧੱਕ ਕੇ ਉੱਪਰ ਲੰਘਣਾ",
+  "note": "ਉੱਚਾ volume professional ਪੈਸੇ ਵੱਲੋਂ ਫਸੇ ਵੇਚਣ ਵਾਲਿਆਂ ਨੂੰ ਜਜ਼ਬ ਕਰਨਾ ਹੈ। | ਪਿੱਛੋਂ price ਤੁਰਦਾ ਰਹਿੰਦਾ ਹੈ, ਸੋ supply ਹਾਰ ਗਈ।",
+  "zones": [ { "label": "ਪੁਰਾਣੀ trading range = supply" } ],
+  "marks": [ { "text": "supply ਜਜ਼ਬ ਕਰਨ ਦਾ effort" } ]
+ },
+ "high-volume-top": {
+  "title": "Market ਦੀ ਟੀਸੀ ਉੱਤੇ ਉੱਚਾ volume",
+  "note": "ਜੇ ਉਹ volume ਸੱਚਮੁੱਚ buying ਹੁੰਦਾ, ਤਾਂ spread ਚੌੜਾ ਹੁੰਦਾ | ਤੇ price ਤੁਰਦਾ। ਏਦਾਂ ਨਹੀਂ ਹੋਇਆ।",
+  "marks": [ { "text": "ਰਿਕਾਰਡ volume ਉੱਤੇ ਤੰਗ spread" } ]
+ },
+ "channel": {
+  "title": "Overbought ਤੇ oversold channel ਦੇ ਮੁਕਾਬਲੇ ਹੁੰਦੇ ਹਨ",
+  "note": "Channel ਦੇ ਸਿਖਰ ਨੇੜੇ market overbought ਹੈ। | ਥੱਲੇ ਨੇੜੇ oversold। ਦੋਵੇਂ ਤੁਲਨਾ ਵਾਲੇ ਹਨ, ਪੱਕੇ ਅੰਕੜੇ ਕਦੇ ਨਹੀਂ।",
+  "lines": [ { "label": "supply line" }, { "label": "support line" } ]
+ },
+ "absorption": {
+  "title": "ਹੇਠਲੀ trend line ਉੱਤੇ absorption volume",
+  "note": "ਜੇ ਉਹ volume ਸੱਚਮੁੱਚ selling ਹੁੰਦਾ, ਤਾਂ market ਚੜ੍ਹ ਹੀ ਨਹੀਂ ਸਕਦਾ ਸੀ। | ਉਸ ਵਿੱਚ buying ਸੀ।",
+  "lines": [ { "label": "ਹੇਠਲੀ trend line" } ],
+  "marks": [ { "text": "ਉੱਚਾ volume — selling ਲੱਗਦੀ ਹੈ" }, { "text": "ਪਰ ਅਗਲਾ bar ਉੱਪਰ ਹੈ" } ]
+ },
+ "upthrust": {
+  "title": "Up-thrust, bar-ਦਰ-bar",
+  "note": "ਹਾਲੀਆ highs ਤੋਂ ਉੱਪਰ ਧੱਕਿਆ ਗਿਆ ਤਾਂ ਜੋ stops ਛਿੜਨ ਤੇ ਖ਼ਰੀਦਦਾਰ ਖਿੱਚੇ ਜਾਣ, | ਫਿਰ ਉੱਚੇ volume ਉੱਤੇ ਆਪਣੇ ਹੀ low ਦੇ ਨੇੜੇ close।",
+  "marks": [ { "text": "up-thrust" } ]
+ },
+ "selling-climax": {
+  "title": "Selling climax",
+  "note": "ਬੇਹੱਦ ਚੌੜਾ spread ਹੇਠਾਂ, ਅਸਾਧਾਰਨ volume — ਪਰ close HIGH ਦੇ ਨੇੜੇ। | ਇਹੀ ਘਬਰਾਹਟ professional ਪੈਸੇ ਨੂੰ ਵੱਡੀ ਖ਼ਰੀਦ ਦਾ ਮੌਕਾ ਦਿੰਦੀ ਹੈ।",
+  "marks": [ { "text": "selling climax" } ]
+ },
+ "buying-climax": {
+  "title": "Buying climax",
+  "note": "ਸਾਰੀ move ਦਾ ਸਭ ਤੋਂ ਭਾਰਾ volume ਟੀਸੀ ਉੱਤੇ UP-bars ਉੱਤੇ ਆਉਂਦਾ ਹੈ। | ਇਹ ਉਤਾਵਲੇ ਲੋਕਾਂ ਨੂੰ professional selling ਹੈ।",
+  "marks": [ { "text": "buying climax" } ]
+ },
+ "shakeout": {
+  "title": "Shake-out",
+  "note": "ਆਖ਼ਰੀ weak holders ਡਰਾ ਕੇ ਕੱਢੇ ਜਾਂਦੇ ਹਨ, ਫਿਰ market ਵਾਪਸ gap up ਕਰ ਜਾਂਦਾ ਹੈ। | ਇਹ ਤਾਂ ਹੀ bullish ਹੈ ਜਦੋਂ ਪਿੱਛੇ ਕੋਈ distribution ਨਾ ਹੋਵੇ।",
+  "marks": [ { "text": "gap down ਤੇ ਜ਼ੋਰਦਾਰ ਡਿੱਗਤ" }, { "text": "ਸਿੱਧਾ ਵਾਪਸ gap up" } ]
+ },
+ "stopping-volume": {
+  "title": "Stopping volume",
+  "note": "ਬਹੁਤ ਉੱਚੇ volume ਵਾਲਾ down-bar ਜੋ ਆਪਣੇ high ਉੱਤੇ close ਹੁੰਦਾ ਹੈ — | ਏਨੇ ਵੱਡੇ buy orders ਕਿ ਡਿੱਗਤ ਉੱਤੇ ਬਰੇਕ ਲੱਗ ਜਾਵੇ।",
+  "marks": [ { "text": "stopping volume" } ]
+ },
+ "falling-pressure": {
+  "title": "Falling pressure",
+  "note": "Prices ਡਿੱਗ ਰਹੀਆਂ ਹਨ, ਪਰ ਸੱਚਮੁੱਚ ਕੋਈ ਵੇਚ ਨਹੀਂ ਰਿਹਾ। | ਇਹ buy signal ਨਹੀਂ — ਸਿਰਫ਼ ਏਨਾ ਕਹਿੰਦਾ ਹੈ ਕਿ ਡਿੱਗਤ ਬਹੁਤੀ ਦੂਰ ਨਹੀਂ ਜਾਵੇਗੀ।",
+  "marks": [ { "text": "ਚੌੜਾ spread, volume ਲਗਭਗ ਨਹੀਂ" } ]
+ },
+ "buying-and-selling": {
+  "title": "ਸਿਹਤਮੰਦ buying, ਤੇ ਉਹ buying ਜਿਸ ਵਿੱਚ supply ਲੁਕੀ ਹੈ",
+  "panels": [
+   { "label": "ਸਿਹਤਮੰਦ buying", "note": "up-bars, volume ਵਧਦਾ | ਪਰ ਹੱਦੋਂ ਵੱਧ ਨਹੀਂ" },
+   { "label": "Up-bar ਉੱਤੇ ਹੱਦੋਂ ਵੱਧ volume", "note": "ਏਨੇ volume ਦਾ ਮਤਲਬ ਹੈ supply | buying ਦੇ ਸਾਹਮਣੇ ਆ ਰਹੀ ਹੈ" }
+  ]
+ },
+ "mark-up": {
+  "title": "ਵੱਡੀਆਂ moves ਏਨੀ ਤੇਜ਼ ਕਿਉਂ ਹੁੰਦੀਆਂ ਹਨ",
+  "note": "ਇਹ ਤੇਜ਼ੀ ਜਾਣ-ਬੁੱਝ ਕੇ ਹੁੰਦੀ ਹੈ। ਤੁਹਾਡੇ ਹੁੰਗਾਰਾ ਭਰਨ ਤੋਂ ਪਹਿਲਾਂ ਹੀ | ਇਹ ਤੁਹਾਨੂੰ ਚੰਗੇ trade ਤੋਂ ਬਾਹਰ ਜਾਂ ਮਾੜੇ ਵਿੱਚ ਬੰਦ ਕਰ ਦਿੰਦੀ ਹੈ।",
+  "marks": [ { "text": "ਇੱਕੋ bar ਵਿੱਚ mark up" } ]
+ },
+ "trend-lines": {
+  "title": "ਦੋਵੇਂ trend lines ਖਿੱਚਣੀਆਂ",
+  "note": "ਇੱਕ ਲਕੀਰ highs ਦੇ ਨਾਲ, ਇੱਕ lows ਦੇ ਨਾਲ। | Chart ਵਿੱਚ ਬਹੁਤ ਪਿੱਛੇ ਦੀਆਂ ਪੁਰਾਣੀਆਂ ਲਕੀਰਾਂ ਵੀ support ਤੇ resistance ਬਣਦੀਆਂ ਹਨ।",
+  "lines": [ { "label": "supply line" }, { "label": "support line" } ]
+ },
+ "trend-scaling": {
+  "title": "ਓਹੀ market, ਦੋ ਪੈਮਾਨਿਆਂ ਉੱਤੇ",
+  "panels": [
+   { "label": "ਦੂਰੋਂ ਵੇਖਿਆ", "note": "ਇੱਕ ਸਾਵਾਂ ਜਿਹਾ trend" },
+   { "label": "ਨੇੜਿਓਂ ਵੇਖਿਆ", "note": "ਓਹੀ move ਛੋਟੇ ਪੈਮਾਨੇ ਉੱਤੇ | ਦੰਦੇਦਾਰ ਹੈ" }
+  ]
+ },
+ "trend-clusters": {
+  "title": "Trend cluster ਕਿਵੇਂ ਬਣਦਾ ਹੈ",
+  "note": "ਜਿੱਥੇ ਕਈ ਪੁਰਾਣੀਆਂ trend lines ਕੱਟਦੀਆਂ ਹਨ, ਉੱਥੇ price ਹੁੰਗਾਰਾ ਭਰਦਾ ਹੈ। | ਸਿਰਫ਼ ਉਹ ਲਕੀਰਾਂ ਵਰਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ ਜੋ ਮੌਜੂਦਾ ਸਫ਼ੇ ਤੋਂ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਹੋਣ।",
+  "zones": [ { "label": "cluster" } ],
+  "lines": [ {}, {}, { "label": "ਪੁਰਾਣੀਆਂ trend lines" } ]
+ },
+ "using-clusters": {
+  "title": "Trend clusters ਸਹੀ ਢੰਗ ਨਾਲ ਪੜ੍ਹਨਾ",
+  "note": "Cluster ਦੇ ਅੰਤ ਤੋਂ ਅੱਗੇ trends ਖਿੱਲਰ ਜਾਂਦੇ ਹਨ, ਸੋ ਓਥੇ ਕੋਈ ਮਤਲਬ ਨਹੀਂ। | Cluster ਤਾਂ ਹੀ ਮਾਇਨੇ ਰੱਖਦਾ ਹੈ ਜਦੋਂ price ਸੱਚਮੁੱਚ ਉਸ ਦੇ ਨੇੜੇ ਹੋਵੇ।",
+  "zones": [ { "label": "cluster — trends ਇਕੱਠੇ ਹੋ ਰਹੇ ਹਨ" } ],
+  "marks": [ { "text": "ਇਸ ਤੋਂ ਅੱਗੇ ਨਾ ਵਧਾਓ" } ]
+ },
+ "volume-near-line": {
+  "title": "Trend line ਨੇੜੇ effort ਕਿੱਥੇ ਦਿਸਦਾ ਹੈ",
+  "note": "Trend ਬਦਲਣ ਉੱਤੇ ਪੈਸਾ ਲੱਗਦਾ ਹੈ। ਇਹ effort ਉਦੋਂ ਦਿਸਦਾ ਹੈ ਜਦੋਂ price ਲਕੀਰ ਵੱਲ ਵਧ ਰਿਹਾ ਹੋਵੇ, | ਲਕੀਰ ਉੱਤੇ ਬਹਿ ਜਾਣ ਪਿੱਛੋਂ ਨਹੀਂ।",
+  "lines": [ { "label": "supply line" } ],
+  "marks": [ { "text": "effort ਲਕੀਰ ਤੋਂ ਪਹਿਲਾਂ ਦਿਸਦਾ ਹੈ" } ]
+ },
+ "breakout-test": {
+  "title": "Channel ਦੇ ਸਿਖਰ ਵਿੱਚੋਂ ਪਾਰ ਲੰਘਣਾ",
+  "note": "ਧੱਕਾ ਉੱਚੇ volume ਉੱਤੇ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ, ਤੇ ਅਗਲੇ bar ਨੂੰ ਟਿਕਣਾ ਚਾਹੀਦਾ ਹੈ। | ਪਿੱਛੋਂ ਘੱਟ volume ਵਾਲਾ down-bar ਇਸ ਦੀ ਪੁਸ਼ਟੀ ਹੈ।",
+  "lines": [ { "label": "supply line" } ],
+  "marks": [ { "text": "ਚੌੜਾ spread, ਉੱਚਾ volume, ਲਕੀਰ ਪਾਰ" }, { "text": "ਘੱਟ volume ਵਾਲਾ test ਪੁਸ਼ਟੀ ਕਰਦਾ ਹੈ" } ]
+ },
+ "bull-start": {
+  "title": "Bull market ਕਿਵੇਂ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ",
+  "note": "Bull markets ਹਨੇਰੇ ਵਿੱਚ ਸ਼ੁਰੂ ਹੁੰਦੇ ਹਨ। ਜਦੋਂ stock ਤਕੜੇ ਹੱਥਾਂ ਵਿੱਚ ਚਲਾ ਜਾਵੇ, | ਤਾਂ market ਬਹੁਤ ਥੋੜ੍ਹੀ buying ਉੱਤੇ ਵੀ ਚੜ੍ਹ ਸਕਦਾ ਹੈ।",
+  "marks": [ { "text": "weak holders ਹਾਰ ਮੰਨ ਜਾਂਦੇ ਹਨ" }, { "text": "ਵੇਚਣ ਲਈ ਕੁਝ ਬਚਿਆ ਨਹੀਂ" } ]
+ },
+ "market-top": {
+  "title": "Market ਦੀ ਸੰਭਾਵੀ ਟੀਸੀ ਪਛਾਣਨੀ",
+  "note": "ਨਵੀਂ ਉੱਚੀ ਧਰਤੀ ਵਿੱਚ chart ਦੇ ਖੱਬੇ ਪਾਸੇ ਕੁਝ ਵੀ ਨਹੀਂ ਹੁੰਦਾ। | ਜੇ ਉਹ volume buying ਹੁੰਦਾ, ਤਾਂ spread ਚੌੜਾ ਹੁੰਦਾ।",
+  "lines": [ { "label": "ਪੁਰਾਣਾ high" } ],
+  "marks": [ { "text": "ਨਵੀਂ ਉੱਚੀ ਧਰਤੀ, ਤੰਗ spread, ਬੇਹੱਦ volume" } ]
+ },
+ "end-of-rally": {
+  "title": "ਉਹ ਪੰਜ ਇਸ਼ਾਰੇ ਜੋ up-move ਰੋਕ ਦਿੰਦੇ ਹਨ",
+  "panels": [
+   { "label": "Buying climax", "note": "up-bar ਉੱਤੇ | ਬੇਹੱਦ volume" },
+   { "label": "ਨਾਕਾਮ test", "note": "test ਵਾਲੀ ਸ਼ਕਲ, ਪਰ | volume ਉੱਚਾ" },
+   { "label": "ਤੰਗ spread, ਉੱਚਾ volume", "note": "ਵੱਡੇ effort ਉੱਤੇ | ਕੋਈ ਵਧਤ ਨਹੀਂ" },
+   { "label": "Up-thrust", "note": "ਆਪਣੇ ਹੀ low ਦੇ | ਨੇੜੇ close" },
+   { "label": "No demand", "note": "ਤੰਗ up-bar, | ਘੱਟ volume" }
+  ]
+ },
+ "stock-climax": {
+  "title": "ਕਿਸੇ ਇੱਕ stock ਵਿੱਚ buying climax",
+  "note": "ਤੇਜ਼ mark-up ਤੇ ਚੰਗੀ news ਤੁਹਾਡੀ ਪਰਖ ਧੁੰਦਲੀ ਕਰ ਦਿੰਦੇ ਹਨ। | ਇਹ ਬਣਾਇਆ ਹੀ ਇਸ ਲਈ ਗਿਆ ਹੈ।",
+  "marks": [ { "text": "ਚੌੜਾ spread ਉੱਪਰ, ਬੇਹੱਦ volume, ਕੋਈ ਹੁੰਗਾਰਾ ਨਹੀਂ" } ]
+ },
+ "bear-rally": {
+  "title": "Bear market ਦੇ ਅੰਦਰਲੀਆਂ rallies",
+  "note": "Bear market ਵਿੱਚ ਘੱਟ volume ਵਾਲੀ ਹਰ up-move weakness ਹੈ, ਸੰਭਲਾਈ ਨਹੀਂ। | Professionals ਬਸ ਸ਼ਾਮਲ ਹੀ ਨਹੀਂ ਹੋ ਰਹੇ।",
+  "marks": [ { "text": "ਘੱਟ volume ਵਾਲੀ rally = weakness" } ]
+ },
+ "market-bottom": {
+  "title": "Market ਦਾ ਥੱਲਾ ਪਛਾਣਨਾ",
+  "note": "ਜੇ (a) ਵਾਲਾ volume ਸੱਚਮੁੱਚ selling ਹੁੰਦਾ, ਤਾਂ ਕੁਝ bars ਬਾਅਦ market ਉੱਚਾ | ਨਹੀਂ ਹੋ ਸਕਦਾ ਸੀ। ਸੋ ਉਹ buying ਸੀ।",
+  "marks": [ { "text": "ਚੌੜਾ spread ਹੇਠਾਂ, ਉੱਚਾ volume" }, { "text": "ਪਰ market ਡਿੱਗਦਾ ਨਹੀਂ" } ]
+ },
+ "professional-support": {
+  "title": "Professional support ਕਿਹੋ ਜਿਹਾ ਦਿਸਦਾ ਹੈ",
+  "note": "Downtrend ਵਿੱਚ ਉੱਚੇ volume ਵਾਲਾ down-bar ਜੋ ਵਿਚਕਾਰ ਜਾਂ high ਉੱਤੇ close ਹੋਵੇ, | ਤੇ ਪਿੱਛੋਂ up-bar — ਇਹ ਦੱਸਦਾ ਹੈ ਕਿ demand ਨੇ supply ਹਰਾ ਦਿੱਤੀ।",
+  "marks": [ { "text": "ਬਹੁਤ ਉੱਚੇ volume ਉੱਤੇ ਵਿਚਕਾਰ close" } ]
+ },
+ "stops": {
+  "title": "Stop ਕਿੱਥੇ ਲਾਈਏ",
+  "note": "Stops ਪਿਛਲੀ reaction ਦੇ low ਤੋਂ ਹੇਠਾਂ ਲਾਓ, ਕਿਸੇ ਮਨਮਰਜ਼ੀ ਦੀ ਦੂਰੀ ਉੱਤੇ ਨਹੀਂ — | ਤੇ ਟਾਂਕ ਅੰਕੜਿਆਂ ਉੱਤੇ, ਕਿਉਂਕਿ ਭੀੜ ਗੋਲ ਅੰਕੜੇ ਵਰਤਦੀ ਹੈ।",
+  "lines": [ { "label": "ਪਿਛਲੀ reaction ਦਾ low" } ],
+  "marks": [ { "text": "reaction ਦਾ low" } ]
+ },
+ "reading-a-bar": {
+  "title": "ਹਰ ਇੱਕ bar ਉੱਤੇ ਕੀ ਪੜ੍ਹਨਾ ਹੈ",
+  "steps": [
+   { "label": "Volume", "sub": "ਕਿੰਨੀ ਹਿਲਜੁਲ ਹੋਈ" },
+   { "label": "Spread", "sub": "ਉਸ ਹਿਲਜੁਲ ਨੇ ਕੀ ਹਾਸਲ ਕੀਤਾ" },
+   { "label": "Close", "sub": "bar ਕਿਸ ਨੇ ਜਿੱਤਿਆ" },
+   { "label": "ਸਿੱਟਾ", "sub": "professional ਪੈਸਾ ਕੀ ਕਰ ਰਿਹਾ ਸੀ" }
+  ],
+  "note": "ਇਹਨਾਂ ਵਿੱਚੋਂ ਕੋਈ ਵੀ ਇਕੱਲਾ ਤੁਹਾਨੂੰ ਭੁਲੇਖੇ ਵਿੱਚ ਪਾ ਦੇਵੇਗਾ। ਮਤਲਬ ਇਹਨਾਂ ਦੇ ਇਕੱਠੇ ਹੋਣ ਵਿੱਚ ਹੀ ਹੈ।"
+ },
+ "market-maker-loop": {
+  "title": "Market-maker prices ਹੇਠਾਂ ਕਿਉਂ mark ਕਰਦਾ ਹੈ",
+  "steps": [
+   { "label": "ਉਸ ਨੂੰ trade ਕਰਨ ਲਈ stock ਚਾਹੀਦਾ ਹੈ" },
+   { "label": "ਸੋ ਉਹ price ਹੇਠਾਂ mark ਕਰਦਾ ਹੈ", "sub": "ਤੁਹਾਡੇ chart ਉੱਤੇ ਤਿੱਖੀ ਡਿੱਗਤ ਦਿਸਦੀ ਹੈ" },
+   { "label": "Weak holders ਘਬਰਾ ਕੇ ਨਿਕਲਦੇ ਹਨ", "sub": "ਤੇ ਉਸ ਨੂੰ stock ਦੇ ਜਾਂਦੇ ਹਨ" },
+   { "label": "ਹੁਣ ਉਸ ਕੋਲ ਮਾਲ ਹੈ", "sub": "ਤੇ ਡਿੱਗਤ ਰੁਕ ਜਾਂਦੀ ਹੈ" }
+  ],
+  "note": "ਉਹ ਹਾਲਾਤ ਦਾ ਹੁੰਗਾਰਾ ਭਰ ਰਿਹਾ ਹੈ ਤੇ ਮੌਕੇ ਦਾ ਲਾਹਾ ਲੈ ਰਿਹਾ ਹੈ — market ਨੂੰ ਹੁਕਮ ਨਹੀਂ ਦੇ ਰਿਹਾ।"
+ },
+ "volume-plus-spread": {
+  "title": "Volume ਜਾਣਕਾਰੀ ਕਿਵੇਂ ਬਣਦਾ ਹੈ",
+  "steps": [
+   { "label": "ਇਕੱਲਾ volume", "sub": "ਸਿਰਫ਼ ਇੱਕ ਅੰਕੜਾ" },
+   { "label": "Spread ਨਾਲ ਜੋੜ ਕੇ", "sub": "effort ਬਨਾਮ result" },
+   { "label": "ਤੇ close ਨਾਲ", "sub": "bar ਕਿੱਥੇ ਮੁੱਕਿਆ" },
+   { "label": "ਹੁਣ ਇਹ ਤੱਥ ਹੈ", "sub": "news ਵਾਲੀ ਕਹਾਣੀ ਨਹੀਂ" }
+  ]
+ },
+ "holders": {
+  "title": "Stock ਕਮਜ਼ੋਰ ਹੱਥਾਂ ਤੋਂ ਤਕੜੇ ਹੱਥਾਂ ਵਿੱਚ, ਤੇ ਮੁੜ ਵਾਪਸ",
+  "steps": [
+   { "label": "Weak holders", "sub": "ਕੋਈ ਯੋਜਨਾ ਨਹੀਂ, ਥੱਲੇ ਉੱਤੇ ਡਰ ਕੇ ਬਾਹਰ" },
+   { "label": "ਘਬਰਾਹਟ ਵਾਲੀ selling ਜਜ਼ਬ ਹੁੰਦੀ ਹੈ", "sub": "ਚੁੱਪ-ਚਾਪ, ਸਮੇਂ ਨਾਲ" },
+   { "label": "Strong holders", "sub": "ਪੂੰਜੀ, ਸਬਰ, ਯੋਜਨਾ" },
+   { "label": "ਟੀਸੀ ਉੱਤੇ ਮੁੜ ਵੇਚ ਦਿੱਤਾ", "sub": "ਚੰਗੀ news ਵਿੱਚ, ਨਵੇਂ weak holders ਨੂੰ" }
+  ],
+  "note": "ਟਿਕਵੀਂ ਚੜ੍ਹਤ ਉਦੋਂ ਤੱਕ ਸ਼ੁਰੂ ਨਹੀਂ ਹੋ ਸਕਦੀ ਜਦੋਂ ਤੱਕ stock ਤਕੜੇ ਹੱਥਾਂ ਵਿੱਚ ਨਾ ਚਲਾ ਜਾਵੇ।"
+ },
+ "what-is-vsa": {
+  "title": "ਇਸ ਤਰੀਕੇ ਦਾ ਨਾਂ ਕਿੱਥੋਂ ਆਇਆ",
+  "steps": [
+   { "label": "ਉਸ ਕੋਲ ਵਧੀਆ ਜਾਣਕਾਰੀ ਨਹੀਂ", "sub": "ਓਹੀ screen ਜੋ ਤੁਹਾਡੇ ਕੋਲ ਹੈ" },
+   { "label": "ਉਹ ਇਸ ਨੂੰ ਸਹੀ ਪੜ੍ਹਦਾ ਹੈ", "sub": "volume, spread ਤੇ close ਇਕੱਠੇ" },
+   { "label": "ਉਸ ਨੂੰ ਵਿਗੜਿਆ ਸੰਤੁਲਨ ਦਿਸਦਾ ਹੈ", "sub": "supply ਬਨਾਮ demand" },
+   { "label": "Volume Spread Analysis" }
+  ]
+ },
+ "related-markets": {
+  "title": "ਜੁੜਵੇਂ markets ਪਹਿਲਾਂ ਕਿਉਂ ਖ਼ਬਰਦਾਰ ਕਰਦੇ ਹਨ",
+  "steps": [
+   { "label": "Cash market ਵਿੱਚ strength ਦਿਸਦੀ ਹੈ" },
+   { "label": "Professionals ਝੱਟ ਕਦਮ ਚੁੱਕਦੇ ਹਨ", "sub": "options ਤੇ futures ਵਿੱਚ" },
+   { "label": "Volume ਪਹਿਲਾਂ ਉੱਥੇ ਉਛਲਦਾ ਹੈ", "sub": "ਤੁਹਾਡੇ chart ਦੇ ਹਿੱਲਣ ਤੋਂ ਪਹਿਲਾਂ" }
+  ]
+ },
+ "cash-futures": {
+  "title": "Futures ਦਾ price cash price ਨਾਲ ਕਿਵੇਂ ਬੱਝਾ ਹੋਇਆ ਹੈ",
+  "steps": [
+   { "label": "Cash price", "sub": "move ਦੀਆਂ ਹੱਦਾਂ ਤੈਅ ਕਰਦਾ ਹੈ" },
+   { "label": "Futures ਇਸ ਦੇ ਉੱਪਰ-ਹੇਠਾਂ ਝੂਲਦੇ ਹਨ" },
+   { "label": "Arbitrage ਇਹਨਾਂ ਨੂੰ ਵਾਪਸ ਖਿੱਚ ਲੈਂਦੀ ਹੈ", "sub": "ਘੱਟ ਖ਼ਰਚ ਵਾਲੇ ਵੱਡੇ ਘਰਾਣੇ" }
+  ],
+  "note": "ਸੋ futures ਦਾ ਵੱਖ ਹੋਣਾ ਆਪਣੇ-ਆਪ ਵਿੱਚ ਕੋਈ signal ਨਹੀਂ।"
+ },
+ "trend-first": {
+  "title": "Chart ਕਿਸ ਤਰਤੀਬ ਵਿੱਚ ਪੜ੍ਹਨਾ ਹੈ",
+  "steps": [
+   { "label": "Trend ਲੱਭੋ", "sub": "ਰਾਇ ਕਿਸ ਪਾਸੇ ਹੈ?" },
+   { "label": "ਉਸ ਦੇ ਅੰਦਰ bars ਪੜ੍ਹੋ", "sub": "volume, spread, close" },
+   { "label": "ਉਸ ਦੇ ਨਾਲ trade ਕਰੋ", "sub": "professional ਰਾਇ ਦੇ ਉਲਟ ਕਦੇ ਨਹੀਂ" }
+  ]
+ },
+ "why-lines-work": {
+  "title": "Trend line ਟਿਕਦੀ ਕਿਉਂ ਲੱਗਦੀ ਹੈ",
+  "steps": [
+   { "label": "Traders ਨੂੰ ਆਪਣੀਆਂ prices ਯਾਦ ਰਹਿੰਦੀਆਂ ਹਨ" },
+   { "label": "ਇਹ ਰਾਵਾਂ ਓਸੇ ਪੱਧਰ ਉੱਤੇ ਇਕੱਠੀਆਂ ਹੋ ਜਾਂਦੀਆਂ ਹਨ" },
+   { "label": "ਉਹ ਓਥੇ ਮੁੜ ਕਦਮ ਚੁੱਕਦੇ ਹਨ", "sub": "ਲਕੀਰ ਉੱਤੇ ਖ਼ਰੀਦਦੇ ਜਾਂ ਵੇਚਦੇ ਹੋਏ" }
+  ],
+  "note": "ਲਿਖਾਰੀ ਸਾਫ਼ ਕਹਿੰਦਾ ਹੈ ਕਿ ਇਹ ਤਜਰਬਾ ਹੈ, ਸਬੂਤ ਨਹੀਂ।"
+ },
+ "perceived-value": {
+  "title": "ਤਿੰਨ traders, ਇੱਕੋ resistance ਵਾਲਾ ਪੱਧਰ",
+  "steps": [
+   { "label": "Trader A", "sub": "ਥੋੜ੍ਹੇ ਮੁਨਾਫ਼ੇ ਉੱਤੇ ਵੇਚਿਆ — ਸਸਤਾ ਮੁੜ ਵੜਨਾ ਚਾਹੁੰਦਾ ਹੈ" },
+   { "label": "Trader B", "sub": "stop ਲੱਗ ਗਿਆ — ਸਹੀ ਸਾਬਤ ਹੋਣ ਦੀ ਉਡੀਕ ਵਿੱਚ" },
+   { "label": "Trader C", "sub": "ਹਾਲੇ ਫੜੀ ਬੈਠਾ ਹੈ — ਬਰਾਬਰ ਹੋਣਾ ਚਾਹੁੰਦਾ ਹੈ" },
+   { "label": "ਤਿੰਨੇ ਓਸੇ price ਉੱਤੇ ਕਦਮ ਚੁੱਕਦੇ ਹਨ", "sub": "ਤੇ ਇਹੀ resistance ਹੈ" }
+  ]
+ },
+ "campaign": {
+  "title": "ਮੁਹਿੰਮ, ਕਦਮ-ਦਰ-ਕਦਮ",
+  "steps": [
+   { "label": "ਯੋਜਨਾ", "sub": "ਤੈਅ ਕਰੋ ਕਿ ਕਿਹੜਾ stock ਲੈਣ ਲਾਇਕ ਹੈ" },
+   { "label": "Accumulate", "sub": "ਜਦੋਂ ਵੀ selling ਦਿਸੇ, ਚੁੱਪ-ਚਾਪ ਖ਼ਰੀਦੋ" },
+   { "label": "Test", "sub": "ਪਰਖੋ ਕਿ ਕੋਈ supply ਬਚੀ ਤਾਂ ਨਹੀਂ" },
+   { "label": "Mark up", "sub": "ਹੁਣ price ਤੁਰ ਸਕਦਾ ਹੈ" }
+  ],
+  "note": "ਜੋ stock index ਦੇ ਡਿੱਗਦਿਆਂ ਡਿੱਗਣ ਤੋਂ ਨਾਂਹ ਕਰੇ, ਉਸ ਵਿੱਚ accumulation ਹੋ ਰਹੀ ਹੈ।"
+ },
+ "system": {
+  "title": "System ਨੂੰ ਕੰਮ ਦਾ ਕੀ ਬਣਾਉਂਦਾ ਹੈ",
+  "steps": [
+   { "label": "ਪੱਕੀ ਸੋਚ", "sub": "ਪੁਰਾਣੇ data ਨਾਲ ਫ਼ਿੱਟ ਕੀਤਾ ਫ਼ਾਰਮੂਲਾ ਨਹੀਂ" },
+   { "label": "ਲਿਖਿਆ ਹੋਇਆ", "sub": "ਦਬਾਅ ਆਉਣ ਤੋਂ ਪਹਿਲਾਂ ਤੈਅ ਕੀਤਾ" },
+   { "label": "ਸੱਚਮੁੱਚ ਨਿਭਾਇਆ ਹੋਇਆ", "sub": "ਖ਼ਾਸ ਕਰ ਕੇ ਜਦੋਂ ਔਖਾ ਲੱਗੇ" }
+  ],
+  "note": "ਕੋਈ system ਪੂਰਾ ਨਹੀਂ ਹੁੰਦਾ, ਕਿਉਂਕਿ ਉਸ ਉੱਤੇ ਬੰਦੇ ਨੇ ਚੱਲਣਾ ਹੁੰਦਾ ਹੈ।"
+ },
+ "long-checklist": {
+  "title": "Long ਵਾਲੀ ਸੂਚੀ, ਤਰਤੀਬ ਨਾਲ",
+  "steps": [
+   { "label": "Uptrend ਬਣ ਰਿਹਾ ਹੈ?", "sub": "higher lows" },
+   { "label": "ਰੋਜ਼ support ਹੈ?", "sub": "ਹਰ low ਪਿਛਲੇ ਤੋਂ ਉੱਪਰ" },
+   { "label": "ਪਿੱਛੇ strength ਹੈ?", "sub": "test, shake-out ਜਾਂ stopping volume" },
+   { "label": "ਉੱਪਰ weakness ਹੈ?", "sub": "ਜੇ ਹਾਂ, ਤਾਂ ਸਾਵਧਾਨ" },
+   { "label": "ਘੱਟ volume ਵਾਲੀ reaction ਉੱਤੇ ਖ਼ਰੀਦੋ", "sub": "move ਦੇ ਮਗਰ ਕਦੇ ਨਾ ਭੱਜੋ" }
+  ]
+ },
+ "short-checklist": {
+  "title": "Short ਵਾਲੀ ਸੂਚੀ, ਤਰਤੀਬ ਨਾਲ",
+  "steps": [
+   { "label": "Downtrend ਬਣ ਰਿਹਾ ਹੈ?", "sub": "lower highs" },
+   { "label": "ਕੋਈ support ਨਹੀਂ ਆ ਰਿਹਾ?", "sub": "ਹਰ low ਪਿਛਲੇ ਤੋਂ ਹੇਠਾਂ" },
+   { "label": "ਪਿੱਛੇ weakness ਹੈ?", "sub": "up-thrust, no demand ਜਾਂ climax" },
+   { "label": "ਹੇਠਾਂ strength ਹੈ?", "sub": "ਜੇ ਹਾਂ, ਤਾਂ ਸਾਵਧਾਨ" },
+   { "label": "ਉਸ rally ਵਿੱਚ ਵੇਚੋ ਜਿੱਥੇ no demand ਹੋਵੇ" }
+  ]
+ },
+ "two-halves": {
+  "title": "Market ਪੜ੍ਹ ਲੈਣਾ ਸਿਰਫ਼ ਅੱਧਾ ਕੰਮ ਹੈ",
+  "steps": [
+   { "label": "Market ਸਹੀ ਪੜ੍ਹੋ" },
+   { "label": "ਨਾਲ trading ਦਾ ਹੁਨਰ ਤੇ ਅਨੁਸ਼ਾਸਨ ਜੋੜੋ" },
+   { "label": "ਲਗਾਤਾਰ ਮੁਨਾਫ਼ਾ" }
+  ],
+  "note": "ਸਿਰਫ਼ ਇਹ ਜਾਣ ਲੈਣਾ ਕਿ ਕੱਲ੍ਹ prices ਕਿਸ ਪਾਸੇ ਜਾਣਗੀਆਂ, ਆਪਣੇ-ਆਪ ਵਿੱਚ ਕਾਫ਼ੀ ਨਹੀਂ।"
+ },
+ "lineage": {
+  "title": "ਇਹ ਤਰੀਕਾ ਕਿੱਥੋਂ ਆਇਆ",
+  "steps": [
+   { "label": "Richard Wyckoff", "sub": "tape reading, 1900–1930ਵਿਆਂ ਵਿੱਚ" },
+   { "label": "Humphrey Neill", "sub": "Tape Reading & Market Tactics" },
+   { "label": "Tom Williams", "sub": "Volume Spread Analysis" }
+  ],
+  "note": "ਪੜ੍ਹਨ ਵਾਲੀ ਸੂਚੀ ਦੀਆਂ ਕਈ ਕਿਤਾਬਾਂ Wyckoff ਦੀਆਂ ਹਨ। VSA ਉਸੇ ਦਾ ਤਰਤੀਬ ਦਿੱਤਾ ਹੋਇਆ ਤਰੀਕਾ ਹੈ।"
+ },
+ "what-moves-price": {
+  "title": "ਬਹੁਤੇ traders ਕੀ ਵੇਖਦੇ ਹਨ, ਤੇ price ਨੂੰ ਹਿਲਾਉਂਦਾ ਕੀ ਹੈ",
+  "left": {
+   "label": "ਬਹੁਤੇ traders ਕੀ ਵੇਖਦੇ ਹਨ",
+   "items": [
+    "ਸੁਰਖ਼ੀਆਂ ਤੇ tips",
+    "ਇਸ ਬਾਰੇ ਰਾਵਾਂ ਕਿ share ਦੀ ਕੀਮਤ ਕੀ ਹੈ",
+    "Price ਨੂੰ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਸੀ"
+   ]
+  },
+  "right": {
+   "label": "Price ਨੂੰ ਅਸਲ ਵਿੱਚ ਹਿਲਾਉਂਦਾ ਕੀ ਹੈ",
+   "items": [
+    "Supply ਤੇ demand ਦੇ ਸੰਤੁਲਨ ਦਾ ਵਿਗੜਨਾ",
+    "ਵੱਡੇ operators ਦਾ positions ਬਣਾਉਣਾ ਜਾਂ ਲਾਹੁਣਾ",
+    "ਉਹਨਾਂ ਦੇ ਪੈਰਾਂ ਦੇ ਨਿਸ਼ਾਨ, ਜੋ volume ਤੇ spread ਵਿੱਚ ਦਿਸਦੇ ਹਨ"
+   ]
+  }
+ },
+ "looks-random": {
+  "title": "Market random ਕਿਉਂ ਲੱਗਦਾ ਹੈ, ਤੇ ਹੈ ਕਿਉਂ ਨਹੀਂ",
+  "left": {
+   "label": "ਕਿਉਂ random ਲੱਗਦਾ ਹੈ",
+   "items": [
+    "Moves news ਨੂੰ ਗੌਲਦੀਆਂ ਹੀ ਨਹੀਂ",
+    "Bear markets ਚੰਗੇ ਦਿਨਾਂ ਵਿੱਚ ਆ ਜਾਂਦੇ ਹਨ",
+    "Market ਤੁਹਾਡੇ ਦਿਲ ਦੀ ਗਵਾਹੀ ਤੋਂ ਉਲਟ ਕਰਦਾ ਹੈ"
+   ]
+  },
+  "right": {
+   "label": "ਕਿਉਂ ਨਹੀਂ ਹੈ",
+   "items": [
+    "ਚੜ੍ਹਤ ਤੋਂ ਪਹਿਲਾਂ ਕਿਸੇ ਵੱਡੇ ਨੂੰ ਖ਼ਰੀਦਣਾ ਪੈਂਦਾ ਹੈ",
+    "ਉਹ buying volume ਵਜੋਂ ਦਰਜ ਹੁੰਦੀ ਹੈ",
+    "Spread ਦੱਸਦਾ ਹੈ ਕਿ ਉਸ volume ਨੇ ਕੀ ਹਾਸਲ ਕੀਤਾ"
+   ]
+  }
+ },
+ "investing-vs-trading": {
+  "title": "Investing ਤੇ trading ਦੋ ਵੱਖਰੇ ਕੰਮ ਹਨ",
+  "left": {
+   "label": "Investing",
+   "items": [
+    "ਇਸ ਦੀ ਪਰਵਾਹ ਕਿ ਕੰਪਨੀ ਦੀ ਕੀਮਤ ਕੀ ਹੈ",
+    "ਕਮਾਈ, ਨਤੀਜੇ, ਉਤਪਾਦ",
+    "ਪੂਰੇ cycle ਵਿੱਚੋਂ ਲੰਘਦਿਆਂ ਫੜੀ ਰੱਖਣਾ"
+   ]
+  },
+  "right": {
+   "label": "Trading",
+   "items": [
+    "ਸਿਰਫ਼ ਇਸ ਦੀ ਪਰਵਾਹ ਕਿ price ਕੀ ਕਰ ਰਿਹਾ ਹੈ",
+    "Volume, spread, close",
+    "Professional ਪੈਸੇ ਦੇ ਮਗਰ ਤੁਰਨਾ"
+   ]
+  },
+  "note": "Trading ਲਈ intrinsic value ਭੁੱਲ ਜਾਓ। ਇਸ ਹਫ਼ਤੇ price ਨੂੰ ਉਹ ਨਹੀਂ ਹਿਲਾ ਰਿਹਾ।"
+ },
+ "who-is-professional": {
+  "title": "ਵਿਲੀਅਮਜ਼ ਦਾ ‘professional’ ਤੋਂ ਕੀ ਮਤਲਬ ਹੈ",
+  "left": {
+   "label": "ਇਹ smart money ਨਹੀਂ",
+   "items": [
+    "ਤੁਹਾਡਾ fund manager",
+    "Pension ਕੰਪਨੀਆਂ",
+    "ਉਹ broker ਜੋ ਤੁਹਾਨੂੰ ਆਪਣੀ ਰਾਇ ਵੇਚ ਰਿਹਾ ਹੈ"
+   ]
+  },
+  "right": {
+   "label": "ਉਹ operators ਜਿਨ੍ਹਾਂ ਦੀ ਗੱਲ ਹੈ",
+   "items": [
+    "Syndicate traders",
+    "Market-makers ਤੇ specialists",
+    "Floor traders — ਉਹ ਲੋਕ ਜੋ price ਦੇ ਫ਼ਰਕ ਸਿਰ ਜਿਊਂਦੇ ਹਨ"
+   ]
+  }
+ },
+ "news-vs-volume": {
+  "title": "News ਬਨਾਮ volume",
+  "left": {
+   "label": "News",
+   "items": [
+    "ਸਰੋਤਿਆਂ ਲਈ ਲਿਖੀ ਜਾਂਦੀ ਹੈ",
+    "ਆਮ ਤੌਰ ਉੱਤੇ move ਤੋਂ ਬਾਅਦ ਆਉਂਦੀ ਹੈ",
+    "ਕਿਸੇ ਹੋਰ ਦੀ position ਸੁਧਾਰਨ ਲਈ ਵਰਤੀ ਜਾ ਸਕਦੀ ਹੈ"
+   ]
+  },
+  "right": {
+   "label": "Volume",
+   "items": [
+    "ਉਹਨਾਂ trades ਦਾ ਰਿਕਾਰਡ ਜੋ ਸੱਚਮੁੱਚ ਹੋਏ",
+    "Move ਦੇ ਨਾਲ ਹੀ ਆਉਂਦਾ ਹੈ",
+    "ਇਸ ਨੂੰ ਗੱਲਾਂ ਨਾਲ ਵਧਾਇਆ-ਘਟਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ"
+   ]
+  }
+ },
+ "incomplete-tape": {
+  "title": "ਤੁਹਾਡਾ volume ਵਾਲਾ data ਪੂਰੀ ਤਸਵੀਰ ਨਹੀਂ",
+  "left": {
+   "label": "ਜੋ ਤੁਹਾਨੂੰ ਦਿਸਦਾ ਹੈ",
+   "items": [
+    "Tape, ਜਿਵੇਂ ਉਹ ਦਰਜ ਹੁੰਦੀ ਹੈ",
+    "ਤੁਹਾਡੇ chart ਉੱਤੇ price ਤੇ volume"
+   ]
+  },
+  "right": {
+   "label": "ਜੋ ਲੁਕਾਇਆ ਜਾ ਸਕਦਾ ਹੈ",
+   "items": [
+    "ਵੱਡੇ ਸੌਦੇ, ਨੱਬੇ ਮਿੰਟ ਤੱਕ ਦੇਰ ਨਾਲ ਦਰਜ",
+    "ਔਸਤ ਆਕਾਰ ਤੋਂ ਤਿੰਨ ਗੁਣਾ ਵੱਡਾ ਹਰ ਸੌਦਾ",
+    "ਸੋ ਹੇਰਾਫੇਰੀ ਉੱਤੇ ਹੈਰਾਨ ਹੋਣ ਦੀ ਥਾਂ ਉਸ ਦੀ ਆਸ ਰੱਖੋ"
+   ]
+  }
+ },
+ "who-is-buying": {
+  "title": "‘ਵੇਚਣ ਵਾਲਿਆਂ ਨਾਲੋਂ ਖ਼ਰੀਦਣ ਵਾਲੇ ਵੱਧ’ — ਇਹ ਗ਼ਲਤ ਸਵਾਲ ਹੈ",
+  "left": {
+   "label": "ਸੌਖਾ ਜਵਾਬ",
+   "items": [
+    "“Selling ਨਾਲੋਂ buying ਵੱਧ ਹੋਵੇ ਤਾਂ price ਚੜ੍ਹਦਾ ਹੈ”",
+    "ਪਰ ਹਰ trade ਵਿੱਚ ਖ਼ਰੀਦਣ ਤੇ ਵੇਚਣ ਵਾਲਾ ਦੋਵੇਂ ਹੁੰਦੇ ਹਨ",
+    "ਸੋ ਗਿਣਤੀ ਦਾ ਕੋਈ ਮਤਲਬ ਨਹੀਂ"
+   ]
+  },
+  "right": {
+   "label": "ਅਸਲ ਸਵਾਲ",
+   "items": [
+    "ਹਰ ਪਾਸੇ ਹੈ ਕੌਣ?",
+    "Professional buying move ਨੂੰ ਸਹਾਰਾ ਦਿੰਦੀ ਹੈ",
+    "ਇਕੱਲੀ ਆਮ ਲੋਕਾਂ ਦੀ buying ਨਹੀਂ ਦਿੰਦੀ"
+   ]
+  }
+ },
+ "japan-vs-dow": {
+  "title": "ਦੋ markets, ਉਲਟ ਨਤੀਜੇ, ਇੱਕੋ ਤਰਕ",
+  "left": {
+   "label": "ਜਪਾਨ, 1989 ਦੇ ਅਖ਼ੀਰ ਤੋਂ",
+   "items": [
+    "ਬੇਹੱਦ ਉੱਚੇ volume ਉੱਤੇ buying climax",
+    "ਪਿੱਛੋਂ ਕਈ ਸਾਲਾਂ ਦਾ bear market"
+   ]
+  },
+  "right": {
+   "label": "Dow, ਓਹਨਾਂ ਹੀ ਸਾਲਾਂ ਵਿੱਚ",
+   "items": [
+    "Lows ਉੱਤੇ accumulation",
+    "ਪਿੱਛੋਂ ਲੰਮਾ bull market"
+   ]
+  },
+  "note": "1990ਵਿਆਂ ਦੇ ਸ਼ੁਰੂ ਵਿੱਚ ਲਿਖਿਆ ਗਿਆ — ਮਿਸਾਲਾਂ ਇਤਿਹਾਸ ਵਜੋਂ ਪੜ੍ਹੋ, ਅਸੂਲ ਅੱਜ ਦਾ ਸਮਝੋ।"
+ },
+ "dream-vs-reality": {
+  "title": "ਸੁਪਨਾ, ਤੇ ਹਕੀਕਤ",
+  "left": {
+   "label": "ਸੁਪਨਾ",
+   "items": [
+    "ਨੌਕਰੀ ਛੱਡ ਦੇਣੀ",
+    "ਕਿਤੋਂ ਵੀ trade ਕਰਨਾ",
+    "ਹਮੇਸ਼ਾ ਵਧਦੇ ਰਹਿਣਾ"
+   ]
+  },
+  "right": {
+   "label": "ਹਕੀਕਤ",
+   "items": [
+    "ਬਹੁਤੇ ਸਿੱਖਦਿਆਂ-ਸਿੱਖਦਿਆਂ ਹੀ ਸਭ ਗੁਆ ਬੈਠਦੇ ਹਨ",
+    "ਜੋ ਬਚਦੇ ਹਨ ਉਹ money management ਵਿੱਚ ਮਾਹਰ ਹੁੰਦੇ ਹਨ",
+    "ਚਤੁਰਾਈ ਵਾਲੀ ਪਰਖ ਨਾਲੋਂ ਖ਼ਤਰੇ ਦਾ ਕਾਬੂ ਵੱਧ ਮਾਇਨੇ ਰੱਖਦਾ ਹੈ"
+   ]
+  }
+ },
+ "news-says": {
+  "title": "News ਕੀ ਕਹਿੰਦੀ ਹੈ, ਤੇ volume ਕੀ ਕਹਿੰਦਾ ਹੈ",
+  "left": {
+   "label": "News ਕਹਿੰਦੀ ਹੈ",
+   "items": [
+    "ਰਿਕਾਰਡ highs, ਵਧੀਆ ਭਵਿੱਖ, ਹੁਣੇ ਖ਼ਰੀਦੋ",
+    "ਘਬਰਾਹਟ ਤੇ ਸੰਕਟ, ਨਿਕਲ ਜਾਓ"
+   ]
+  },
+  "right": {
+   "label": "Volume ਕਹਿੰਦਾ ਹੈ",
+   "items": [
+    "ਟੀਸੀ ਉੱਤੇ up-bars ਦਾ ਬੇਹੱਦ volume = distribution",
+    "High ਉੱਤੇ close ਹੁੰਦੇ down-bar ਦਾ ਬੇਹੱਦ volume = accumulation"
+   ]
+  },
+  "note": "ਬਹੁਤੀ news ਰੌਲਾ ਹੈ, ਤੇ ਤੁਹਾਡੇ ਫ਼ਾਇਦੇ ਲਈ ਨਹੀਂ ਛਪਦੀ।"
+ },
+ "the-odds": {
+  "title": "ਹਾਲਾਤ ਕੀ ਹਨ, ਤੇ ਜੇਤੂ ਵਰਤਦੇ ਕੀ ਹਨ",
+  "left": {
+   "label": "ਹਾਲਾਤ ਜਿਵੇਂ ਹਨ",
+   "items": [
+    "ਲਗਭਗ 90% traders ਦਾ ਪੈਸਾ ਡੁੱਬਦਾ ਹੈ",
+    "Trade ਹੋਏ 85% options ਕਦੇ ਵਰਤੇ ਹੀ ਨਹੀਂ ਜਾਂਦੇ"
+   ]
+  },
+  "right": {
+   "label": "ਜੇਤੂ ਕੀ ਵਰਤਦੇ ਹਨ",
+   "items": [
+    "ਹਰ market ਨੂੰ supply ਤੇ demand ਚਲਾਉਂਦੇ ਹਨ",
+    "Smart money volume ਤੇ price ਦੇ ਬਦਲਾਅ ਤੋਂ ਫ਼ੈਸਲਾ ਕਰਦਾ ਹੈ",
+    "News ਤੋਂ ਨਹੀਂ"
+   ]
+  }
+ }
+}
